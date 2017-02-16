@@ -1,0 +1,51 @@
+/*Main header of pages*/
+.page-header {
+    background-color: @header-color;
+    padding: 10px 0;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.page-header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header__logo a{
+    img {
+        opacity: 0.5;
+        transition: @transition;
+    }
+
+    &:hover {
+        img {
+            opacity: 0.8;
+        }
+    }
+}
+
+.page-header__user-block a{
+
+        color: @blue-gray;
+        opacity: 0.6;
+        transition: @transition;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    svg {
+        fill: #4f5a67;
+        width: 24px;
+        height: 20px;
+    }
+}
+
+.page-header__icon {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}

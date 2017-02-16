@@ -8,7 +8,27 @@ var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var server = require("browser-sync");
 var rename = require("gulp-rename");
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
+var path = require('path');
 
+gulp.task('svgstore', function () {
+    return gulp
+        .src('img/svg/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('img/svgsprite'));
+});
 
 gulp.task("style", function(){
   gulp.src("less/style.less")
@@ -50,6 +70,12 @@ gulp.task("copyHtml", function() {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("copyImg", function() {
+  gulp.src("img/**/*.svg")
+  .pipe(copy())
+  .pipe(gulp.dest("build/img"));
+});
+
 
 gulp.task("show", function(){
   server.init({
@@ -61,6 +87,7 @@ gulp.task("show", function(){
 
   gulp.watch("less/**/*.less", ["style"]).on("change", server.reload);
   gulp.watch("*.html", ["copyHtml"]).on("change", server.reload);
+  gulp.watch("img/**/*.svg", ["copyImg"]).on("change", server.reload);
 });
 
-gulp.task("build", ["clean", "copyHtml", "style"]);
+gulp.task("build", ["clean", "copyHtml", "style","copyImg"]);

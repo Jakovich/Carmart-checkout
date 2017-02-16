@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+    <title>Carmart</title>
 </head>
+
 <body>
-  Hello et voila
+    <header class="page-header">
+        <div class="wrapper">
+            <div class="page-header__content">
+                <div class="page-header__logo">
+                    <a href="#"><img src="img/logo.svg" alt="Carmart"></a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-nav__items">
+                        <li class="main-nav__item"><a href="#">Как работает Carmart</a></li>
+                        <li class="main-nav__item"><a href="#">Способы оплаты</a></li>
+                        <li class="main-nav__item"><a href="#">Доставка и выдача</a></li>
+                    </ul>
+                </nav>
+                <div class="page-header__user-block">
+                    <a href="#">
+                        <span class="page-header__icon">
+                        <svg><use xlink:href="/img/svgsprite/svg.svg#login"/></svg>
+                    </span>Войти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="info">
+            <div class="wrapper">
+                <div class="info__content">
+                    <div class="info__auto">
+                        <p>
+                            <span class="info__model"></span>
+                            <span class="info__price"></span>
+                        </p>
+                        <p class="info__details"></p>
+                    </div>
+                    <div class="info__sum"></div>
+                </div>
+                <div class="info__controls">
+                    <button class="info__btn">Сохранить заказ</button>
+                    <button class="info__btn">Подробно</button>
+                </div>
+            </div>
+        </section>
+        <div class="steps">
+            <div class="wrapper">
+                <div class="steps__items">
+                    <div class="steps__item">1</div>
+                    <div class="steps__item">2</div>
+                    <div class="steps__item">3</div>
+                    <div class="steps__item">4</div>
+                    <div class="steps__item">5</div>
+                </div>
+            </div>
+        </div>
+        <section class="services">
+            <div class="wrapper">
+                <div class="tooltip">
+                    Установлен <span>1 комплект оборудования дает</span> вам скидку
+                    <span class="tooltip__price">32 000 Р <a class="tooltip__question" href="#"><svg><use xlink:href="/img/svgsprite/svg.svg#question"/></svg></a></span>
+                    <button class="tooltip__btn">Снять все оборудование</button>
+                </div>
+                <div class="services__filters">
+                    <button class="services__filter">
+                        Распродажа комплектов <span class="services__filter-count"> (15)</span>
+                    </button>
+                </div>
+                <div class="services__items">
+                    <article class="services__item">
+                        <div class="services__content">
+                            <div class="services__icon">
+                                <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
+                            </div>
+                            <div class="services__info">
+                                <h3 class="services__title">Комплект &#171;Защита автомобиля&#187; Оптимальный Pajero Sport</h3>
+                                <ul class="services__content">
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="services__control">
+                                <p class="services__price">42 800 Р</p>
+                                <p class="services__exp"></p>
+                                <button class="services__btn">Установить</button>
+                            </div>
+                        </div>
+                        <div class="services__more"><a href="#">Подробное описание</a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="page-bottom">
+            <div class="wrapper">
+                <div class="faq">
+                    <h2 class="faq__title"> Вопрос / ответ</h2>
+                    <ul class="faq__items">
+                        <li class="faq__item">
+                            <div class="faq__question faq__question--active">Как получить максимальную выгоду от покупки?</div>
+                            <div class="faq__answer">
+                                <p>Система бонусов</p>
+                                <ol>
+                                    <li>Подарки</li>
+                                    <li>Пакет</li>
+                                    <li>Ат</li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="faq__item"></li>
+                        <li class="faq__item"></li>
+                        <li class="faq__item"></li>
+                        <li class="faq__item"></li>
+                    </ul>
+                </div>
+                <div class="advantages">
+                    <div class="advantages__item">
+                        <div class="advantages__icon advantages__icon--reserve"><svg><use xlink:href="/img/svgsprite/svg.svg#reserve"/></svg></div>
+                        <p class="advantages__text">Бронь за 1 рубль! Любой авто</p>
+                    </div>
+                    <div class="advantages__item advantages__icon--return">
+                        <div class="advantages__icon">
+                            <svg><use xlink:href="/img/svgsprite/svg.svg#return"/></svg>
+                        </div>
+                        <p class="advantages__text">7 дней на возврат автомобиля</p>
+                    </div>
+                    <div class="advantages__item advantages__icon--payment">
+                        <div class="advantages__icon"><svg><use xlink:href="/img/svgsprite/svg.svg#payment"/></svg></div>
+                        <p class="advantages__text">Оплата автомобиля при получении</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="wrapper">
+            <div class="page-footer__content">
+                <div class="page-footer__copyright"> &#169; 1996&#8211;2017 OOO "Кармарт"</div>
+                <nav class="page-footer__nav">
+                    <ul class="page-footer__list">
+                        <li><a href="#">Предложение оферты</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
