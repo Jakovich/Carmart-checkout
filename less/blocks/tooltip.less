@@ -1,4 +1,8 @@
-
+.tooltip {
+  border: 2px solid #bcc3c9;
+  border-radius: 5px;
+  padding: 20px;
+}
 
 .tooltip__question {
   svg {
@@ -17,6 +21,27 @@
 .tooltip__price {
   font-weight: 500px;
   font-size: 16px;
+}
+
+.tooltip__icon {
+  svg {
+    width: 22px;
+    height: 16px;
+    fill: none;
+    stroke: #bcc3cb;
+    stroke: #08AB8A;
+  }
+}
+
+.tooltip--active {
+  .tooltip__icon {
+    svg {
+      width: 22px;
+      height: 16px;
+      fill: none;
+      stroke: #08AB8A;
+    }
+  }
 }
 
 .tooltip__btn {

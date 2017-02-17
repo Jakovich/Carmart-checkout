@@ -6,15 +6,16 @@ var clean = require('gulp-contrib-clean');
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var uglify = require("gulp-uglify");
 var server = require("browser-sync");
 var rename = require("gulp-rename");
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var path = require('path');
 
-gulp.task('svgstore', function () {
+gulp.task('svgstore-advantages', function () {
     return gulp
-        .src('img/svg/*.svg')
+        .src('img/svg/advantages/*.svg')
         .pipe(svgmin(function (file) {
             var prefix = path.basename(file.relative, path.extname(file.relative));
             return {
@@ -27,7 +28,36 @@ gulp.task('svgstore', function () {
             }
         }))
         .pipe(svgstore())
-        .pipe(gulp.dest('img/svgsprite'));
+        .pipe(gulp.dest('img/svgsprites'));
+});
+
+gulp.task('svgstore-general', function () {
+    return gulp
+        .src('img/svg/general/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('img/svgsprites'));
+});
+
+gulp.task("min-js", function(){
+
+  gulp.src("js/main.js")
+
+  .pipe(gulp.dest("build/js/"))
+  .pipe(uglify())
+  .pipe(rename("main.min.js"))
+  .pipe(gulp.dest("build/js/"))
+
 });
 
 gulp.task("style", function(){
@@ -88,6 +118,7 @@ gulp.task("show", function(){
   gulp.watch("less/**/*.less", ["style"]).on("change", server.reload);
   gulp.watch("*.html", ["copyHtml"]).on("change", server.reload);
   gulp.watch("img/**/*.svg", ["copyImg"]).on("change", server.reload);
+  gulp.watch("js/**/*.js", ["min-js"]).on("change", server.reload);
 });
 
-gulp.task("build", ["clean", "copyHtml", "style","copyImg"]);
+gulp.task("build", ["clean", "copyHtml", "style","copyImg", "min-js"]);
