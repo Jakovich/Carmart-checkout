@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
     <title>Carmart</title>
 </head>
@@ -73,38 +73,43 @@
         <section class="services">
             <div class="wrapper">
                 <div class="tooltip">
-                    <span class="tooltip__icon"><svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg> </span>Установлен <span>1 комплект оборудования дает</span> вам скидку
-                    <span class="tooltip__price">32 000 Р <a class="tooltip__question" href="#"><svg><use xlink:href="/img/svgsprite/svg.svg#question"/></svg></a></span>
+                    <span class="tooltip__icon">
+                        <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                     </span>
+                     Установлен <a href="#" class="tooltip__service">1 комплект оборудования</a> дает вам скидку
+                    <span class="tooltip__price">32 000 Р</span><button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
                     <button class="tooltip__btn">Снять все оборудование</button>
                 </div>
-                <div class="services__filters">
-                    <button class="services__filter">
-                        Распродажа комплектов <span class="services__filter-count"> (15)</span>
+                <div class="filters">
+                    <button class="filters__item">
+                        Распродажа комплектов <span class="filter__count"> (15)</span>
                     </button>
-                    <button class="services__filter">
-                        Защита автомобиля <span class="services__filter-count"> (15)</span>
+                    <button class="filters__item">
+                        Защита автомобиля <span class="filter__count"> (15)</span>
                     </button>
-                    <button class="services__filter">
-                        Экстерьер <span class="services__filter-count"> (15)</span>
+                    <button class="filters__item">
+                        Экстерьер <span class="filter__count"> (15)</span>
                     </button>
-                    <button class="services__filter">
-                        Звук и мультимедиа <span class="services__filter-count"> (15)</span>
+                    <button class="filters__item">
+                        Звук и мультимедиа <span class="filters__count"> (15)</span>
                     </button>
-                    <button class="services__filter">
-                        Комфорт <span class="services__filter-count"> (15)</span>
+                    <button class="filters__item">
+                        Комфорт <span class="filters__count"> (15)</span>
                     </button>
-                    <button class="services__filter">
-                        Электронные охранные системы <span class="services__filter-count"> (15)</span>
+                    <button class="filters__item">
+                        Электронные охранные системы <span class="filters__count"> (15)</span>
                     </button>
-                    <button class="services__filter">
-                        Парктоники <span class="services__filter-count"> (15)</span>
+                    <button class="filters__item">
+                        Парктоники <span class="filters__count"> (15)</span>
                     </button>
-                    <button class="services__filter">
-                        Аксессуары <span class="services__filter-count"> (15)</span>
+                    <button class="filters__item">
+                        Аксессуары <span class="filters__count"> (15)</span>
                     </button>
                 </div>
-                <div class="services__sorting">
-                    Упорядочено: по названию
+                <div class="sorting">
+                    <div class="sorting__content">
+                    Упорядочено: по названию <span class="sorting__icon"><svg><use xlink:href="/img/svgsprites/general.svg#order"/></svg></span>
+                    </div>
                 </div>
                 <div class="services__items">
                     <article class="services__item">

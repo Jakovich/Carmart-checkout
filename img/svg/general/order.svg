@@ -9,8 +9,8 @@
 ]]>
 </style>
 <g>
-	<line class="st0" x1="1" y1="1" x2="20" y2="1"/>
-	<line class="st0" x1="1" y1="6" x2="16.4" y2="6"/>
-	<line class="st0" x1="1" y1="11" x2="12.8" y2="11"/>
+	<line class="st0" style="stroke-width:2;stroke-linecap:round;stroke-miterlimit:10" x1="1" y1="1" x2="20" y2="1"/>
+	<line class="st0" style="stroke-width:2;stroke-linecap:round;stroke-miterlimit:10" x1="1" y1="6" x2="16.4" y2="6"/>
+	<line class="st0" style="stroke-width:2;stroke-linecap:round;stroke-miterlimit:10" x1="1" y1="11" x2="12.8" y2="11"/>
 </g>
 </svg>
