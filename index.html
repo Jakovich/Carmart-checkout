@@ -64,9 +64,13 @@
                     <div class="steps__item"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>4</span>Trade-in</div>
                     <div class="steps__item"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>5</span>Оплата</div>
                 </div>
-                <h1 class="main-title">Дополнительное оборудование</h1>
-                <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                </buttom>
+                <div class="steps__title">
+                    <h1 class="main-title">Дополнительное оборудование</h1>
+                    <div class="step-btn__wrapper">
+                        <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                        </buttom>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -75,8 +79,7 @@
                 <div class="tooltip">
                     <span class="tooltip__icon">
                         <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                     </span>
-                     Установлен <a href="#" class="tooltip__service">1 комплект оборудования</a> дает вам скидку
+                     </span> Установлен <a href="#" class="tooltip__service">1 комплект оборудования</a> дает вам скидку
                     <span class="tooltip__price">32 000 Р</span><button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
                     <button class="tooltip__btn">Снять все оборудование</button>
                 </div>
@@ -108,71 +111,81 @@
                 </div>
                 <div class="sorting">
                     <div class="sorting__content">
-                    Упорядочено: по названию <span class="sorting__icon"><svg><use xlink:href="/img/svgsprites/general.svg#order"/></svg></span>
+                        Упорядочено: по названию <span class="sorting__icon"><svg><use xlink:href="/img/svgsprites/general.svg#order"/></svg></span>
                     </div>
                 </div>
                 <div class="services__items">
-                    <article class="services__item">
+                    <article class="services__item services__item--select">
                         <div class="services__content">
-                            <div class="services__icon">
-                                <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
-                            </div>
+
                             <div class="services__info">
-                                <h3 class="services__title">Комплект &#171;Защита автомобиля&#187; Оптимальный Pajero Sport</h3>
-                                <ul class="services__content">
-                                    <li>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</li>
-                                    <li>Обработка рамы</li>
-                                    <li>Сетка для бампера</li>
-                                    <li>Обработка днища и скрытых полостей</li>
-                                    <li>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</li>
-                                    <li>Защита топливного бака УАЗ Патриот С 2016 г</li>
-                                </ul>
-                                <p class="services__sale">Скидка за комплект: <span>11 123 Р</span></p>
+                                <div class="services__icon">
+                                    <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
+                                </div>
+                                <div class="services__text">
+                                    <h3 class="services__title">Комплект &#171;Защита автомобиля&#187; Оптимальный Pajero Sport</h3>
+                                    <div class="services__details">
+                                        <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
+                                        <p>Обработка рамы</p>
+                                        <p>Сетка для бампера</p>
+                                        <p>Обработка днища и скрытых полостей</p>
+                                        <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
+                                        <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
+                                    </div>
+                                    <p class="services__sale">Скидка за комплект: <span>11 123 Р</span></p>
+                                </div>
                             </div>
                             <div class="services__control">
                                 <p class="services__price">42 800 Р</p>
                                 <p class="services__exp">Цена комплекта с установкой</p>
-                                <button class="services__btn">Установить</button>
+                                <button class="services__btn services__btn--select">Установлено</button>
                             </div>
                         </div>
                         <div class="services__more"><a href="#">Подробное описание</a></div>
                     </article>
                     <article class="services__item">
                         <div class="services__content">
-                            <div class="services__icon">
-                                <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
-                            </div>
+
                             <div class="services__info">
-                                <h3 class="services__title">Комплект &#171;Обработка салона и стекол&#187;</h3>
-                                <ul class="services__content">
-                                    <li>Обработка салона Bari-Tools</li>
-                                    <li>Обработка всех стекол( Антидождь, антигрязь)</li>
-                                </ul>
-                                <p class="services__sale">Скидка за комплект: <span>5414 Р</span></p>
+                                <div class="services__icon">
+                                    <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
+                                </div>
+                                <div class="services__text">
+                                    <h3 class="services__title">Комплект &#171;Обработка салона и стекол&#187;</h3>
+                                    <div class="services__details">
+                                        <p>Обработка салона Bari-Tools</p>
+                                        <p>Обработка всех стекол( Антидождь, антигрязь)</p>
+                                    </div>
+                                    <p class="services__sale">Скидка за комплект: <span>5414 Р</span></p>
+                                </div>
                             </div>
                             <div class="services__control">
                                 <p class="services__price">17 370 Р</p>
                                 <p class="services__exp">Цена комплекта с установкой</p>
                                 <button class="services__btn">Установлено</button>
+
                             </div>
                         </div>
                         <div class="services__more"><a href="#">Подробное описание</a></div>
                     </article>
                     <article class="services__item">
                         <div class="services__content">
-                            <div class="services__icon">
-                                <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
-                            </div>
+
                             <div class="services__info">
-                                <h3 class="services__title">Комплект &#171;Защита автомобиля&#187; Минимальный Pajero Sport</h3>
-                                <ul class="services__content">
-                                    <li>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</li>
-                                    <li>Сетка для бампера</li>
-                                    <li>Обработка днища и скрытых полостей</li>
-                                    <li>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</li>
-                                    <li>Защита топливного бака УАЗ Патриот С 2016 г</li>
-                                </ul>
-                                <p class="services__sale">Скидка за комплект: <span>6911 Р</span></p>
+                                <div class="services__icon">
+                                    <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
+                                </div>
+                                <div class="services__text">
+                                    <h3 class="services__title">Комплект &#171;Защита автомобиля&#187; Минимальный Pajero Sport</h3>
+                                    <div class="services__details">
+                                        <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
+                                        <p>Сетка для бампера</p>
+                                        <p>Обработка днища и скрытых полостей</p>
+                                        <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
+                                        <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
+                                    </div>
+                                    <p class="services__sale">Скидка за комплект: <span>6911 Р</span></p>
+                                </div>
                             </div>
                             <div class="services__control">
                                 <p class="services__price">36 968 Р</p>
@@ -184,17 +197,20 @@
                     </article>
                     <article class="services__item">
                         <div class="services__content">
-                            <div class="services__icon">
-                                <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
-                            </div>
-                            <div class="services__info">
-                                <h3 class="services__title">Обработка передних стекол (антидождь, антигрязь)</h3>
-                                <div class="services__category">Категория: Защита автомобиля</div>
-                                <p class="services__content">
-                                    Водоотталкивающее средство KillAqua имеет следующие характеристики: - защищает стекло от любой жидкости, снега, льда - снижает расход жидкости омывателя, щеток очистителя, облегчает очистку от воды, грязи, льда в любое время года - действует более года
-                                    с момента нанесения - создает водо-, насекомо- и грязеотталкивающий эффект - устойчиво к ультрафиолетовым лучам, к механическим и химическим воздействиям.
-                                </p>
 
+                            <div class="services__info">
+                                <div class="services__icon">
+                                    <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
+                                </div>
+                                <div class="services__text">
+                                    <h3 class="services__title">Обработка передних стекол (антидождь, антигрязь)</h3>
+                                    <div class="services__category">Категория: Защита автомобиля</div>
+                                    <div class="services__details">
+                                        <p>Водоотталкивающее средство KillAqua имеет следующие характеристики: - защищает стекло от любой жидкости, снега, льда - снижает расход жидкости омывателя, щеток очистителя, облегчает очистку от воды, грязи, льда
+                                            в любое время года - действует более года с момента нанесения - создает водо-, насекомо- и грязеотталкивающий эффект - устойчиво к ультрафиолетовым лучам, к механическим и химическим воздействиям.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="services__control">
                                 <p class="services__price">3 550 P</p>
@@ -206,17 +222,19 @@
                     </article>
                     <article class="services__item">
                         <div class="services__content">
-                            <div class="services__icon">
-                                <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
-                            </div>
-                            <div class="services__info">
-                                <h3 class="services__title">Обработка салона «BariTools»</h3>
-                                <div class="services__category">Категория: Защита автомобиля</div>
-                                <p class="services__content">
-                                    Водоотталкивающее средство KillAqua имеет следующие характеристики: - защищает стекло от любой жидкости, снега, льда - снижает расход жидкости омывателя, щеток очистителя, облегчает очистку от воды, грязи, льда в любое время года - действует более года
-                                    с момента нанесения - создает водо-, насекомо- и грязеотталкивающий эффект - устойчиво к ультрафиолетовым лучам, к механическим и химическим воздействиям.
-                                </p>
 
+                            <div class="services__info">
+                                <div class="services__icon">
+                                    <svg><use xlink:href="/img/svgsprite/svg.svg#1"/></svg>
+                                </div>
+                                <div class="services__text">
+                                    <h3 class="services__title">Обработка салона «BariTools»</h3>
+                                    <div class="services__category">Категория: Защита автомобиля</div>
+                                    <div class="services__details">
+                                        <p>Водоотталкивающее средство KillAqua имеет следующие характеристики: - защищает стекло от любой жидкости, снега, льда - снижает расход жидкости омывателя, щеток очистителя, облегчает очистку от воды, грязи, льда
+                                            в любое время года - действует более года с момента нанесения - создает водо-, насекомо- и грязеотталкивающий эффект - устойчиво к ультрафиолетовым лучам, к механическим и химическим воздействиям.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="services__control">
                                 <p class="services__price">14 860- P</p>
@@ -302,8 +320,10 @@
                         </div>
                     </div>
                 </div>
-                <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                </buttom>
+                <div class="step-btn__wrapper step-btn__wrapper--margin">
+                    <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                    </buttom>
+                </div>
             </div>
         </section>
     </main>
