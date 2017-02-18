@@ -1,21 +1,32 @@
 .filters {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .filters__item {
   font-size: 16px;
   font-weight: 300;
-  padding: 10px 24px;
+  padding: 10px 21px;
   outline: none;
   border-radius: 5px;
+  color: @blue-gray;
   border: 1px solid #ffffff;
   background-color: #ffffff;
   margin-bottom: 8px;
   margin-right: 8px;
   cursor: pointer;
+  transition: @transition;
+  &:hover {
+    color: @green;
+    border-color: #b3b3b3;
+  }
+  
+  &:focus {
+    border-color: #b3b3b3;
+    background-color: #e5e6e8;
+  }
 }
 
 .filters__item--active {
   font-weight: 500;
-  border: 1px solid #cccccc;
+  border-color: #cccccc;
 }

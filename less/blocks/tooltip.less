@@ -1,8 +1,10 @@
 .tooltip {
-    border: 2px solid #bcc3c9;
+    border: 2px solid rgba(128,141,155,0.4);
     border-radius: 5px;
-    padding: 20px;
+    padding: 26px 20px;
     margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tooltip {
@@ -11,9 +13,13 @@
 }
 
 .tooltip__price {
-    font-weight: 500px;
+    font-weight: 500;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  color: @green;
     font-size: 16px;
-    border-bottom: 1.5px dashed @text-color;
+    border-bottom: 1.5px dashed @green;
 }
 
 .tooltip__icon {
@@ -21,21 +27,11 @@
         width: 22px;
         height: 16px;
         fill: none;
-        stroke: #bcc3cb;
-        stroke: #08AB8A;
+        stroke: @blue-gray-light;
+      opacity: 0.4;
     }
 }
 
-.tooltip--active {
-    .tooltip__icon {
-        svg {
-            width: 22px;
-            height: 16px;
-            fill: none;
-            stroke: #08AB8A;
-        }
-    }
-}
 
 .tooltip__service {
     color: @text-color;
@@ -43,7 +39,7 @@
     text-decoration: none;
 }
 
-.tooltip__btn {
+.tooltip__btn { 
     font-size: 15px;
     display: inline-block;
     text-transform: uppercase;
@@ -54,5 +50,37 @@
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: 1.5px dashed @blue-gray;
+    color: @blue-gray;
+    opacity: 0.8;
+    display: none;
+  transition: @transition;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.tooltip--active {
+  
+  .tooltip__btn { 
+  display: inline-block;
+  }
+  
+   .tooltip__icon {
+        svg {
+            width: 22px;
+            height: 16px;
+            fill: none;
+          opacity: 1;
+            stroke: #08AB8A;
+        }
+    }
+  
+  .tooltip__price {
+    font-weight: 500;
+    font-size: 16px;
+    color: @text-color;
     border-bottom: 1.5px dashed @text-color;
+  }
+  
 }

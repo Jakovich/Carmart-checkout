@@ -1,3 +1,9 @@
+.steps {
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+
+
 .steps__items {
     display: flex;
     justify-content: space-between;
@@ -8,7 +14,7 @@
 .steps__item {
     font-size: 16px;
     text-align: center;
-    color: #dddddd;
+    color: rgba(26,26,26,0.3);
     position: relative;
 
     &::before {
@@ -32,7 +38,7 @@
 .steps__number {
     font-size: 20px;
     display: block;
-    margin: 0 auto 5px;
+    margin: 0 auto 8px;
     cursor: pointer;
     text-align: center;
     position: relative;
@@ -55,7 +61,7 @@
 }
 
 .steps__item--active {
-    color: @text-color;
+    color: @text-color-dark;
 
     &::before {
         background-color: @green;
