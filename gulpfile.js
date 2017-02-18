@@ -49,6 +49,24 @@ gulp.task('svgstore-general', function () {
         .pipe(gulp.dest('img/svgsprites'));
 });
 
+gulp.task('svgstore-services', function () {
+    return gulp
+        .src('img/svg/services/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('img/svgsprites'));
+});
+
 gulp.task("min-js", function(){
 
   gulp.src("js/main.js")

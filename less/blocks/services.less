@@ -3,7 +3,12 @@
     padding: 25px 0;
 }
 
-.services__icon svg {}
+.services__icon svg {
+  width: 101px;
+  height: 90px;
+  filter: url('img/grayscale.svg#grayscale');
+  filter: grayscale(100%);
+}
 
 .services__item {
     background-color: #ffffff;
@@ -18,6 +23,9 @@
 .services__item--select {
     box-shadow: none;
     border: 1px solid #ffffff;
+  .services__icon svg {
+    filter: none;
+  }
 }
 
 .services__item:hover {
