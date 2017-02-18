@@ -17,8 +17,10 @@
 }
 
 .info__content {
+  padding: 3px 0;
     display: flex;
     justify-content: space-between;
+  align-items: flex-start;
 }
 
 .info__auto {
@@ -41,6 +43,7 @@
     padding: 4px 17px 4px 6px;
     border-radius: 4px;
     margin-left: 20px;
+  margin-bottom: 4px;
 }
 
 .info__basic {
@@ -50,13 +53,15 @@
 .info__details {
     font-size: 14px;
     color: rgba(255,255,255,0.5);
-    margin-top: 4px;
+    margin-top: 0;
     margin-bottom: 0;
-
+    span {
+      font-weight: 600;
+    }
 }
 
 .info__sum {
-    padding-top: 5px;
+    padding-top: 6px;
     font-size: 18px;
     color: rgba(255,255,255,0.7);
     flex-grow: 1;
@@ -68,14 +73,27 @@
 
 
 .info__controls {
-    border-left: 2px solid rgba(255,255,255,0.5);
+    
+  position: relative;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 6px;
     flex-grow: 1;
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
+  align-items: flex-start;
     padding-left: 2%;
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -5px;
+    bottom: -10px;
+    width: 1px;
+    background-color: rgba(255,255,255,0.5);
+    
+  }
 }
+
 .info__btn {
     color: #ffffff;
     background-color: transparent;
@@ -99,10 +117,23 @@
     }
 }
 
+
+/*additional section*/
+
+.info__addit {
+  padding-top: 25px;
+  display: none;
+}
+
 .info__addit-details {
   width: 100%;
-  
+  padding-bottom: 18px;
+  margin-bottom: 13px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
   caption{
+    border-top: 1px solid rgba(255,255,255,0.5);
+    padding-top: 13px;
+    padding-bottom: 8px;
     text-align: left;
     color: #ffffff;
     font-size: 18px;
@@ -112,6 +143,20 @@
 .info__addit-name {
   color: rgba(255,255,255,0.5);
   font-weight: 300;
+  position: relative;
+  padding: 5px 0;
+  padding-left: 15px;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 7px;
+    left: 0;
+    top: 50%;
+    margin-top: -3.5px;
+    background-image: url('../img/point.svg');
+    
+  }
 }
 
 .info__addit-price {
@@ -151,6 +196,8 @@
 
 
 .info__addit-sale {
+  display: inline-block;
+  vertical-align: middle;
   background-color: #ffffff;
   border-radius: 5px;
   padding: 4px 12px;
