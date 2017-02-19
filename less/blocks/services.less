@@ -4,8 +4,8 @@
 }
 
 .services__icon svg {
-  width: 101px;
-  height: 90px;
+  width: 70px;
+  height: 78px;
   filter: url('img/grayscale.svg#grayscale');
   filter: grayscale(100%);
 }
@@ -43,8 +43,8 @@
 }
 
 .services__icon {
-    width: 70px;
-    min-width: 70px;
+    width: 85px;
+    min-width: 85px;
 }
 
 .services__title {
@@ -55,6 +55,7 @@
 }
 
 .services__details {
+
     p {
         font-size: 14px;
         font-weight: 300;
@@ -84,6 +85,7 @@
 
 .services__info {
     display: flex;
+    max-width: 74%;
 }
 
 .services__control {
@@ -118,10 +120,21 @@
     }
 }
 
+.services__btn-icon {
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
 
 .services__btn--select {
     background-color: #e5f6f3;
     color: @green;
+      svg {
+        stroke: @green;
+        fill: none;
+      }
 }
 
 .services__category {

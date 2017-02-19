@@ -73,7 +73,7 @@
 
 
 .info__controls {
-    
+
   position: relative;
     text-align: center;
     padding-top: 6px;
@@ -90,7 +90,7 @@
     bottom: -10px;
     width: 1px;
     background-color: rgba(255,255,255,0.5);
-    
+
   }
 }
 
@@ -104,6 +104,7 @@
     cursor: pointer;
     padding: 0;
     font-weight: 400;
+    transition: @transition;
     span {
         display: inline-block;
         vertical-align: middle;
@@ -114,6 +115,10 @@
         fill: #a7acb2;
         width: 20px;
         height: 20px;
+    }
+
+    &:hover {
+      opacity: 0.6;
     }
 }
 
@@ -155,7 +160,7 @@
     top: 50%;
     margin-top: -3.5px;
     background-image: url('../img/point.svg');
-    
+
   }
 }
 
@@ -175,6 +180,7 @@
   font-size: 14px;
   color:#ffffff;
   text-transform: uppercase;
+  transition: @transition;
   span {
     display: inline-block;
     vertical-align: middle;
@@ -184,6 +190,10 @@
       width: 17px;
       height: 12px;
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
   }
 }
 
