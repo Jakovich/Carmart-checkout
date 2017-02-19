@@ -103,13 +103,18 @@
 .services__btn {
     font-weight: 400;
     font-size: 15px;
+  text-align: left;
     text-transform: uppercase;
     background-color: #e6e6e6;
-    padding: 13px 30px;
+    padding: 17px 30px;
+  padding-left: 73px;
+  width: 212px;
     border-radius: 5px;
     border: none;
+  color: @blue-gray;
     outline: none;
     cursor: pointer;
+  position: relative;
 
     &:hover {
         background-color: #f2f2f2;
@@ -121,7 +126,18 @@
 }
 
 .services__btn-icon {
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+   border-right: 1px solid rgba(128,128,128,0.5);
   svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+   
     width: 22px;
     height: 22px;
   }
@@ -131,6 +147,9 @@
 .services__btn--select {
     background-color: #e5f6f3;
     color: @green;
+  .services__btn-icon {
+    border-color: rgba(0,171,138,0.5);
+  }
       svg {
         stroke: @green;
         fill: none;
