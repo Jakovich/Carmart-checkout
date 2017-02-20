@@ -81,7 +81,25 @@ gulp.task('svgmin-services', function () {
                 }]
             }
         }))
-        
+
+        .pipe(gulp.dest('img/svgmin'));
+});
+
+gulp.task('svgmin-general', function () {
+    return gulp
+        .src('img/general/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+
         .pipe(gulp.dest('img/svgmin'));
 });
 

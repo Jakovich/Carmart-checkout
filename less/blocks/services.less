@@ -3,17 +3,6 @@
     padding: 25px 0;
 }
 
-
-
-.services__icon svg {
-  width: 70px;
-  height: 78px;
-  filter: url('img/grayscale.svg#grayscale');
-  filter: grayscale(100%);
-}
-
-
-
 .services__item {
     background-color: #ffffff;
     margin-bottom: 12px;
@@ -27,9 +16,22 @@
 .services__item--select {
     box-shadow: none;
     border: 1px solid #ffffff;
-  .services__icon svg {
-    filter: none;
-  }
+
+    .services__icon img {
+        filter: none;
+    }
+
+    .services__btn {
+        background-color: #e5f6f3;
+        color: @green;
+        &::before {
+            background-image: url('../img/check.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            border-right: 1px solid  rgba(0,171,138,0.5);
+        }
+    }
+
 }
 
 .services__item:hover {
@@ -46,26 +48,40 @@
     justify-content: space-between;
 }
 
-.services__icon {
-    width: 85px;
-    min-width: 85px;
+.services__info {
+    display: flex;
+    width: 74%;
+    margin-right: 20px;
 }
+
+.services__icon {
+    min-width: 85px;
+    width: 13%;
+
+    img {
+        width: 86%;
+        height: auto;
+        filter: url( 'img/grayscale.svg#grayscale');
+        filter: grayscale(100%);
+    }
+}
+
+.services__text {}
 
 .services__title {
     font-weight: 500;
     font-size: 20px;
     margin-top: 0;
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .services__details {
-
     p {
         font-size: 14px;
         font-weight: 300;
         line-height: 22px;
         margin: 0;
-      color: @text-color-dark;
+        color: @text-color-dark;
     }
 }
 
@@ -73,24 +89,19 @@
     font-weight: 300;
     opacity: 0.6;
     font-size: 14px;
-  color: @blue-gray;
-  span {
-    font-weight: 500;
-  }
+    color: @blue-gray;
+
+    span {
+        font-weight: 500;
+    }
 }
 
 .services__price {
     font-size: 20px;
     font-weight: 500;
-  margin-bottom: 17px;
+    margin-bottom: 17px;
     margin-top: 0;
     text-align: right;
-}
-
-.services__info {
-    display: flex;
-    max-width: 74%;
-    margin-right: 20px;
 }
 
 .services__control {
@@ -101,25 +112,37 @@
     font-size: 14px;
     font-weight: 300;
     text-align: right;
-  color: @blue-gray;
-  opacity: 0.75;
+    color: @blue-gray;
+    opacity: 0.75;
 }
 
 .services__btn {
     font-weight: 400;
     font-size: 15px;
-  text-align: left;
+    text-align: left;
     text-transform: uppercase;
     background-color: #e6e6e6;
-    padding: 17px 30px;
-  padding-left: 73px;
-  width: 212px;
+    padding: 17px 30px 17px 73px;
+    width: 212px;
     border-radius: 5px;
     border: none;
-  color: @blue-gray;
+    color: @blue-gray;
     outline: none;
     cursor: pointer;
-  position: relative;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        width: 50px;
+        content: '';
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url('../img/plus.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border-right: 1px solid rgba(128,128,128,0.5);
+    }
 
     &:hover {
         background-color: #f2f2f2;
@@ -130,44 +153,17 @@
     }
 }
 
-.services__btn-icon {
-  position: absolute;
-  width: 50px;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  text-align: center;
-  padding-top: 15px;
-   border-right: 1px solid rgba(128,128,128,0.5);
-  svg {
-    width: 22px;
-    height: 22px;
-  }
-}
-
-
-.services__btn--select {
-    background-color: #e5f6f3;
-    color: @green;
-  .services__btn-icon {
-    border-color: rgba(0,171,138,0.5);
-  }
-      svg {
-        stroke: @green;
-        fill: none;
-      }
-}
 
 .services__category {
-  background-color: #e6e8eb;
-  display: inline-block;
-  font-weight: 300;
-  font-size: 14px;
-  padding: 3px 14px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  position: relative;
-  top: -10px;
+    background-color: #e6e8eb;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 3px 14px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -10px;
 }
 
 .services__more {

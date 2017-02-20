@@ -7,12 +7,12 @@ $(document).ready(function() {
   answer.slideToggle(300);
   currentItem.toggleClass('faq__item').toggleClass('faq__item faq__item--active');
   });
-  
+
   //show/hide additional info in section info
   $('.info__addit-btn').on('click', function(event){
     $('.info__addit').slideToggle(300);
   })
-  
+
   $('.info__btn--more').on('click', function(event){
     $('.info__addit').slideToggle(300);
   })
@@ -22,10 +22,22 @@ $(document).ready(function() {
     var currentItem = $(event.target).closest('.services__item');
     currentItem.addClass('services__item--focus');
   });
-  
+
   $('.services__btn').on('mouseup', function(event){
     var currentItem = $(event.target).closest('.services__item');
     currentItem.removeClass('services__item--focus');
+    $(this).blur();
   });
-  
+
+  //add/delete select class for services-items
+  $('.services__btn').on('click', function(event){
+    var currentBtn = $(this);
+    var currentItem = $(event.target).closest('.services__item');
+    if (currentItem.hasClass('services__item--select')) {
+      currentBtn.text('Установить');
+    } else {
+      currentBtn.text('Установлено');
+    }
+    currentItem.toggleClass('services__item').toggleClass('services__item services__item--select');
+  });
 });
