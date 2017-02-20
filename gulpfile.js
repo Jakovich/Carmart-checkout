@@ -15,7 +15,7 @@ var path = require('path');
 
 gulp.task('svgstore-advantages', function () {
     return gulp
-        .src('img/svg/advantages/*.svg')
+        .src('img/advantages/*.svg')
         .pipe(svgmin(function (file) {
             var prefix = path.basename(file.relative, path.extname(file.relative));
             return {
@@ -33,7 +33,7 @@ gulp.task('svgstore-advantages', function () {
 
 gulp.task('svgstore-general', function () {
     return gulp
-        .src('img/svg/general/*.svg')
+        .src('img/general/*.svg')
         .pipe(svgmin(function (file) {
             var prefix = path.basename(file.relative, path.extname(file.relative));
             return {
@@ -51,7 +51,7 @@ gulp.task('svgstore-general', function () {
 
 gulp.task('svgstore-services', function () {
     return gulp
-        .src('img/svg/services/*.svg')
+        .src('img/services/*.svg')
         .pipe(svgmin(function (file) {
             var prefix = path.basename(file.relative, path.extname(file.relative));
             return {
@@ -65,6 +65,24 @@ gulp.task('svgstore-services', function () {
         }))
         .pipe(svgstore())
         .pipe(gulp.dest('img/svgsprites'));
+});
+
+gulp.task('svgmin-services', function () {
+    return gulp
+        .src('img/services/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        
+        .pipe(gulp.dest('img/svgmin'));
 });
 
 gulp.task("min-js", function(){
@@ -119,7 +137,7 @@ gulp.task("copyHtml", function() {
 });
 
 gulp.task("copyImg", function() {
-  gulp.src("img/**/*.svg")
+  gulp.src("img/**/*.{png,svg}")
   .pipe(copy())
   .pipe(gulp.dest("build/img"));
 });
