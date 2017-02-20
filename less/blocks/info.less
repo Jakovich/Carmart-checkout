@@ -18,9 +18,7 @@
 
 .info__content {
     padding: 3px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+
 }
 
 .info__auto {}
@@ -52,7 +50,6 @@
     font-size: 14px;
     color: rgba(255,255,255,0.5);
     margin-top: 0;
-    flex-basis: 40%;
     min-width: 360px;
     margin-bottom: 0;
 
@@ -63,10 +60,10 @@
 
 .info__sum {
     padding: 6px 5px 0;
-    font-size: 18px;
+    font-size: 17px;
     color: rgba(255,255,255,0.7);
-    flex-basis: 28.5%;
-    text-align: center;
+
+    text-align: left;
 
     span {
         white-space: nowrap;
@@ -81,12 +78,12 @@
     position: relative;
     //text-align: right;
     padding-top: 6px;
-    //flex-basis: 31.5%;
-    flex-basis: 29%;
-    min-width: 290px;
+
+
+    //min-width: 290px;
 
     text-align: justify;
-    padding-left: 3%;
+    //padding-left: 3%;
     &::after {
         width: 100%;
         height: 0;
@@ -119,7 +116,7 @@
     padding: 0;
     font-weight: 400;
     transition: @transition;
-    margin-left: 4%;
+
 
     span {
         display: inline-block;
@@ -138,6 +135,10 @@
     }
 }
 
+.info__btn--save {
+    margin-left: 5%;
+}
+
 
 /*additional section*/
 .info__addit {
@@ -146,13 +147,16 @@
 }
 
 .info__addit-details {
-    width: 100%;
+    table {
+        width: 100%;
+    }
+
     padding-bottom: 18px;
     margin-bottom: 13px;
     border-bottom: 1px solid rgba(255,255,255,0.5);
-
+    border-top: 1px solid rgba(255,255,255,0.5);
     caption {
-        border-top: 1px solid rgba(255,255,255,0.5);
+
         padding-top: 13px;
         padding-bottom: 8px;
         text-align: left;
@@ -215,9 +219,7 @@
 }
 
 .info__addit-total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
 }
 
 .info__addit-sale {
@@ -232,6 +234,10 @@
     span {
         font-weight: 600;
     }
+}
+
+.info__addit-control {
+    text-align: right;
 }
 
 @media (max-width: 945px) {

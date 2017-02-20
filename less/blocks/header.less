@@ -2,16 +2,14 @@
 .page-header {
     background-color: @header-color;
     padding: 10px 0;
-
+    margin: 0;
     a {
         text-decoration: none;
     }
 }
 
 .page-header__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
 }
 
 .page-header__logo a{
@@ -27,8 +25,9 @@
     }
 }
 
-.page-header__user-block a{
-
+.page-header__user-block {
+    text-align: right;
+a{
         color: @blue-gray;
         opacity: 0.6;
         transition: @transition;
@@ -42,6 +41,7 @@
         width: 24px;
         height: 20px;
     }
+}
 }
 
 .page-header__icon {
