@@ -4,21 +4,22 @@
     padding-top: 26px;
     padding-bottom: 26px;
     margin-bottom: 12px;
-  //display: flex;
-  //justify-content: space-between;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 26px 15px;
+
 }
 
 .tooltip-info {
-    font-weight: 300;
-    font-size: 16px;
+
 }
 
 .tooltip-info__price {
     font-weight: 500;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 15px;
-  color: @green;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1%;
+    color: @green;
     font-size: 16px;
     border-bottom: 1.5px dashed @green;
 }
@@ -29,10 +30,9 @@
         height: 16px;
         fill: none;
         stroke: @blue-gray-light;
-      opacity: 0.4;
+        opacity: 0.4;
     }
 }
-
 
 .tooltip-info__service {
     color: @text-color;
@@ -55,33 +55,36 @@
     color: @blue-gray;
     opacity: 0.8;
     display: none;
-  transition: @transition;
-  &:hover {
-    opacity: 1;
-  }
+    transition: @transition;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .tooltip-info--active {
+    .tooltip-info__btn {
+        display: inline-block;
+    }
 
-  .tooltip-info__btn {
-  display: inline-block;
-  }
-
-   .tooltip-info__icon {
+    .tooltip-info__icon {
         svg {
             width: 22px;
             height: 16px;
             fill: none;
-          opacity: 1;
+            opacity: 1;
             stroke: #08AB8A;
         }
     }
 
-  .tooltip-info__price {
-    font-weight: 500;
-    font-size: 16px;
-    color: @text-color;
-    border-bottom: 1.5px dashed @text-color;
-  }
+    .tooltip-info__price {
+        font-weight: 500;
+        font-size: 16px;
+        color: @text-color;
+        border-bottom: 1.5px dashed @text-color;
+    }
+}
 
+.tooltip-info__control {
+text-align: right;
 }

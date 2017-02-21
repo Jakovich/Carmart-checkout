@@ -3,16 +3,13 @@
     background-color: @header-color;
     padding: 10px 0;
     margin: 0;
+
     a {
         text-decoration: none;
     }
 }
 
-.page-header__content {
-
-}
-
-.page-header__logo a{
+.page-header__logo a {
     img {
         opacity: 0.5;
         transition: @transition;
@@ -27,21 +24,23 @@
 
 .page-header__user-block {
     text-align: right;
-a{
+
+    a {
         color: @blue-gray;
         opacity: 0.6;
         transition: @transition;
         font-size: 15px;
-    &:hover {
-        opacity: 1;
-    }
 
-    svg {
-        fill: #4f5a67;
-        width: 24px;
-        height: 20px;
+        &:hover {
+            opacity: 1;
+        }
+
+        svg {
+            fill: #4f5a67;
+            width: 24px;
+            height: 20px;
+        }
     }
-}
 }
 
 .page-header__icon {
