@@ -1,20 +1,19 @@
 .sorting {
-  text-align: right;
-  margin-bottom: 10px;
+    text-align: right;
+    margin-bottom: 10px;
 }
 
 .sorting__content {
-  display: inline-block;
-  color: @blue-gray;
-  font-size: 18px;
-  font-weight: 300;
-
+    display: inline-block;
+    color: @blue-gray;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .sorting__name {
-  border-bottom: 1.5px dashed @blue-gray;
-  display: inline-block;
-  vertical-align: middle;
+    border-bottom: 1.5px dashed @blue-gray;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .sorting__select {
@@ -28,18 +27,27 @@
     appearance: none!important;
     cursor: pointer;
     background-color: transparent;
-    color:@blue-gray;
+    color: @blue-gray;
     font-weight: 300;
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 .sorting__icon {
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-  svg {
-    stroke: @blue-gray-light;
-    width: 20px;
-    height: 12px;
-  }
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+
+    svg {
+        stroke: @blue-gray-light;
+        width: 20px;
+        height: 12px;
+    }
+}
+
+.sorting__icon--down {
+    transform: none;
+}
+
+.sorting__icon--up {
+    transform: rotate(180deg) scale(-1, 1);;
 }

@@ -1,38 +1,40 @@
 .step-btn__wrapper {
-  text-align: right;
+    text-align: right;
 }
 
 .step-btn__wrapper--margin {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .step-btn {
-  display: inline-block;
-  font-size: 16px;
-  text-transform: uppercase;
-  cursor: pointer;
- background-color: @green;
- color: #ffffff;
- padding: 10px 35px;
- position: relative;
- border-radius: 5px;
-  transition: @transition;
-  &:hover {
-    opacity: 0.8;
-  }
-  
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: @green;
+    color: #ffffff; // padding: 10px 35px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    transition: @transition;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .step-btn__icon {
-  position: absolute;
-  right: 14px;
-  top: 50%;
- transform: translateY(-45%);
-  svg {
-    width: 10px;
-    height: 15px;
-    stroke: #ffffff;
-    fill:none;
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-45%);
 
-  }
+    svg {
+        width: 10px;
+        height: 15px;
+        stroke: #ffffff;
+        fill: none;
+    }
 }

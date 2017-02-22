@@ -40,4 +40,9 @@ $(document).ready(function() {
     }
     currentItem.toggleClass('services__item').toggleClass('services__item services__item--select');
   });
+
+  //toggle sorting order
+  $('.sorting__icon').on('click', function() {
+    $(this).toggleClass('sorting__icon--down').toggleClass('sorting__icon--up')
+  });
 });
