@@ -38,7 +38,7 @@
     font-size: 20px;
     display: block;
     margin: 0 auto 8px;
-    cursor: pointer;
+
     text-align: center;
     position: relative;
     width: 52px;
@@ -68,7 +68,7 @@
 
     .steps__number {
         color: @green;
-
+      cursor: pointer;
         svg {
             fill: #ffffff;
             stroke: @green;
@@ -83,7 +83,7 @@
 
     .steps__number {
         color: #ffffff;
-
+      cursor: pointer;
         svg {
             fill: @green;
             stroke: @green;
@@ -91,6 +91,8 @@
     }
 }
 
+.steps__item--select,
+.steps__item--active {
 .steps__number:hover {
     color: @green;
 
@@ -98,4 +100,5 @@
         fill: #ffffff;
         stroke: @green;
     }
+}
 }

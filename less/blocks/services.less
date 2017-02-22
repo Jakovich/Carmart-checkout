@@ -29,7 +29,7 @@
             background-image: url('../img/check.svg');
             background-repeat: no-repeat;
             background-position: center;
-            border-right: 1px solid rgba(0,171,138,0.5);
+            border-right: 1px solid rgba(0,171,138,0.3);
         }
     }
 }
@@ -51,13 +51,14 @@
 .services__info {
     display: flex;
     width: 74%;
+    flex-basis: 74%;
     margin-right: 20px;
 }
 
 .services__icon {
     min-width: 85px;
     width: 13%;
-
+    flex-basis: 13%;
     img {
         width: 86%;
         height: auto;
@@ -66,7 +67,10 @@
     }
 }
 
-.services__text {}
+.services__text {
+    width: 87%;
+    flex-basis: 87%;
+}
 
 .services__title {
     font-weight: 500;
@@ -141,7 +145,7 @@
         background-image: url('../img/plus.svg');
         background-repeat: no-repeat;
         background-position: center;
-        border-right: 1px solid rgba(128,128,128,0.5);
+        border-right: 1px solid rgba(128,128,128,0.3);
     }
 
     &:hover {
