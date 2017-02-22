@@ -41,8 +41,15 @@ $(document).ready(function() {
     currentItem.toggleClass('services__item').toggleClass('services__item services__item--select');
   });
 
-  //toggle sorting order
+  //toggle icon of sorting
   $('.sorting__icon').on('click', function() {
-    $(this).toggleClass('sorting__icon--down').toggleClass('sorting__icon--up')
+    $(this).toggleClass('sorting__icon--down').toggleClass('sorting__icon--up');
+  });
+
+
+  /*Credit Calculator*/
+
+  $('.credit-calcul__term input').on('change', function(){
+    $('.credit-calcul__sum').text($(this).val());
   });
 });

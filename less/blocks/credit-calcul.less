@@ -1,0 +1,82 @@
+.credit-calcum__terms {
+ display: flex;
+}
+
+
+.credit-calcul__term {
+  flex-grow: 1;
+  input {
+    display: none;
+  }
+
+  label {
+    width: 100%;
+    text-align: center;
+    padding: 13px 0;
+    padding-top: 16px;
+    cursor: pointer;
+    border: 1px solid #333333;
+    position: relative;
+
+  }
+
+  &:first-child {
+    label {
+      border-bottom-left-radius: @border-radius;
+    }
+  }
+
+  &:nth-child(6) {
+    label {
+      border-top-right-radius: @border-radius;
+      border-bottom-right-radius: @border-radius;
+    }
+  }
+
+
+
+}
+
+.credit-calcul__term-text {
+  border-bottom: 1px dashed #333333;
+}
+
+.credit-calcul__check-icon {
+  svg {
+    width: 21px;
+    height: 15px;
+  }
+
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.credit-calcul__term--note {
+  label {
+    &::before {
+      content: '';
+      position: absolute;
+      height: 6px;
+      background-color: @green;
+      top: 0;
+      left:0;
+      right: 0;
+    }
+
+  }
+}
+
+
+.credit-calcul__term input:checked~label {
+  background-color: @green;
+  color: #ffffff;
+  .credit-calcul__check-icon svg {
+    stroke: #ffffff;
+    opacity: 0.6;
+  }
+  .credit-calcul__term-text {
+    border-bottom: none;
+  }
+}

@@ -105,8 +105,8 @@
                     <div class="col-md-12">
                         <div class="steps__items">
 
-                            <div class="steps__item steps__item--active"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>1</span> Оборудование</div>
-                            <div class="steps__item steps__item"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>2</span> Кредит</div>
+                            <div class="steps__item steps__item--select"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>1</span> Оборудование</div>
+                            <div class="steps__item steps__item--active"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>2</span> Кредит</div>
                             <div class="steps__item"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>3</span>Страховка</div>
                             <div class="steps__item"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>4</span>Trade-in</div>
                             <div class="steps__item"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>5</span>Оплата</div>
@@ -114,8 +114,12 @@
                     </div>
                 </div>
                 <div class="steps__title row">
-                    <h1 class="main-title col-md-6 col-sm-6">Дополнительное оборудование</h1>
-                    <div class="step-btn__wrapper col-md-3 col-md-offset-3  col-sm-4 col-sm-offset-2">
+                    <h1 class="main-title col-md-6 col-sm-4">Кредит Кармарт. С точностью до рубля</h1>
+                    <div class="step-btn__wrapper col-md-3  col-sm-4">
+                        <buttom class="step-btn step-btn--prev">Предыдущий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                        </buttom>
+                    </div>
+                    <div class="step-btn__wrapper col-md-3  col-sm-4">
                         <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
                         </buttom>
                     </div>
@@ -126,85 +130,83 @@
         <section class="services">
             <div class="container-fluid">
 
-                <div class="tooltip-info">
+                <div class="tooltip-info tooltip-info--active">
                     <div class="row">
                         <div class="tooltip-info__text col-sm-8">
                             <span class="tooltip-info__icon">
                         <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                     </span> Установите <a href="#" class="tooltip-info__service">оборудование</a> чтобы получить скидку до <span class="tooltip-info__price">32 000 Р</span><button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                    </span> Оформление автомобиля в кредит дает вам скидку <span class="tooltip-info__price">18 570 Р</span><button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
                         </div>
                         <div class="col-sm-4 tooltip-info__control">
-                            <button class="tooltip-info__btn">Снять все оборудование</button>
+                            <button class="tooltip-info__btn">Мне не нужен кредит</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="tooltip-info tooltip-info--active">
-                    <div class="row">
-
-                        <div class="tooltip-info__text col-sm-8">
-                            <span class="tooltip-info__icon">
-                                    <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                                 </span> Установлен <a href="#" class="tooltip-info__service">1 комплект оборудования</a> дает вам скидку
-                            <span class="tooltip-info__price">32 000 Р</span><button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                <section class="credit-calcul">
+                    <div class="credit-calcul__item"></div>
+                    <div class="credit-calcul__term">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="credit-calcul__title">Срок кредита</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="credit-calcul__sum">2 года</div>
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="credit-calcum__terms">
+                                    <div class="credit-calcul__term credit-calcul__term--note">
+                                        <input type="radio" id="one-year" name="credit-term" value="1 год">
+                                        <label for="one-year">
+                                        <span class="credit-calcul__check-icon">
+                                <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                            </span> <span class="credit-calcul__term-text">1 год</span></label>
+                                    </div>
 
-                        <div class="col-sm-4 tooltip-info__control">
-                            <button class="tooltip-info__btn">Снять все оборудование</button>
+                                    <div class="credit-calcul__term credit-calcul__term--note">
+                                        <input type="radio" checked id="two-year" name="credit-term" value="2 года">
+                                        <label for="two-year"><span class="credit-calcul__check-icon">
+                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                        </span> <span class="credit-calcul__term-text">2 года</span></label>
+                                    </div>
+
+                                    <div class="credit-calcul__term credit-calcul__term--note">
+                                        <input type="radio" id="three-year" name="credit-term" value="3 годa">
+                                        <label for="three-year"><span class="credit-calcul__check-icon">
+                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                        </span> <span class="credit-calcul__term-text">3 года</span></label>
+                                    </div>
+
+                                    <div class="credit-calcul__term credit-calcul__term--note">
+                                        <input type="radio" id="four-year" name="credit-term" value="4 года">
+                                        <label for="four-year"><span class="credit-calcul__check-icon">
+                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                        </span> <span class="credit-calcul__term-text">4 года</span></label>
+                                    </div>
+
+                                    <div class="credit-calcul__term">
+                                        <input type="radio" id="five-year" name="credit-term" value="5 лет">
+                                        <label for="five-year"><span class="credit-calcul__check-icon">
+                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                        </span> <span class="credit-calcul__term-text">5 лет</span></label>
+                                    </div>
+
+                                    <div class="credit-calcul__term">
+                                        <input type="radio" id="six-year" name="credit-term" value="6 лет">
+                                        <label for="six-year"><span class="credit-calcul__check-icon">
+                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                        </span> <span class="credit-calcul__term-text">6 лет</span></label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-
                     </div>
-                </div>
-
-
-                <div class="filters row">
-                    <div class="col-md-12">
-                        <div class="filters__item">
-                            <input type="checkbox" id="sale" value="sale">
-                            <label for="sale">Распродажа комплектов <span class="filter__count"> (15)</span></label>
-                        </div>
-
-                        <div class="filters__item">
-                            <input type="checkbox" id="protect"  value="protect">
-                            <label for="protect" data-title="Защита автомобиля (15)">Защита автомобиля <span class="filter__count"> (15)</span></label>
-                        </div>
-
-
-                        <div class="filters__item">
-                            <input type="checkbox" id="exterior"  value="exterior">
-                            <label for="exterior">Экстерьер <span class="filter__count"> (15)</span></label>
-                        </div>
+                </section>
 
 
 
-                        <div class="filters__item">
-                            <input type="checkbox" id="sound"  value="sound">
-                            <label for="sound">Звук и мультимедиа <span class="filters__count"> (15)</span></label>
-                        </div>
-
-                        <div class="filters__item">
-                            <input type="checkbox" id="comfort" value="comfort">
-                            <label for="comfort">Комфорт <span class="filters__count"> (15)</span></label>
-                        </div>
-
-                        <div class="filters__item">
-                            <input type="checkbox" id="security"  value="security">
-                            <label for="security">Электронные охранные системы <span class="filters__count"> (15)</span></label>
-                        </div>
-
-                        <div class="filters__item">
-                            <input type="checkbox" id="parctronic"  value="parctronic">
-                            <label for="parctronic">Парктроники <span class="filters__count"> (15)</span></label>
-                        </div>
-
-                        <div class="filters__item">
-                            <input type="checkbox" id="accessory"  value="accessory">
-                            <label for="accessory">Аксессуары <span class="filters__count"> (15)</span></label>
-                        </div>
-
-                    </div>
-                </div>
                 <div class="sorting row">
                     <div class="sorting__content col-md-12">
                         <div class="sorting__name">
@@ -569,42 +571,40 @@
     </footer>
 
     <section class="popup-descr">
-    <div class="popup-descr__close">
-      <button class="close-btn">Закрыть</button>
-    </div>
+        <div class="popup-descr__close">
+            <button class="close-btn">Закрыть</button>
+        </div>
 
-     <div class="popup-descr__icon"></div>
-      <h3 class="popup-descr__title">Комплект «Защита автомобиля» Outlander Максимальный</h3>
-      <p class="popup-descr__price">стоимость: 16 000 Р</p>
-      <div class="popup-descr__text">
-        <p>Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает
-Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщика:</p>
-     <ul class="popup-descr__advantages">
-       <li>не дает обеззвучить сирену автосигнализации</li>
-       <li>не позволяет восстановить блокировки двигателя, расположенные под капотом</li>
-       <li>не позволяет завести автомобиль, используя автономную (не штатную) систему управления двигателем (т.н. «паук»), а также автономную систему питания
-</li>
-       <li>не позволяет произвести замену контроллера управления двигателем (для обхода штатного иммобилайзера)</li>
-       <li>делает недоступным диагностический разъем (в тех случаях, когда он находится под капотом), затрудняя выявление блокировок и манипуляции со штатным иммобилайзером</li>
-       <li>значительно затрудняет угон на том этапе, когда автосигнализация уже обезврежена (вскрыт или подобран код радиоканала), но под заблокированным капотом остается невосстановленная блокировка двигателя</li>
-     </ul>
+        <div class="popup-descr__icon"></div>
+        <h3 class="popup-descr__title">Комплект «Защита автомобиля» Outlander Максимальный</h3>
+        <p class="popup-descr__price">стоимость: 16 000 Р</p>
+        <div class="popup-descr__text">
+            <p>Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщика:</p>
+            <ul class="popup-descr__advantages">
+                <li>не дает обеззвучить сирену автосигнализации</li>
+                <li>не позволяет восстановить блокировки двигателя, расположенные под капотом</li>
+                <li>не позволяет завести автомобиль, используя автономную (не штатную) систему управления двигателем (т.н. «паук»), а также автономную систему питания
+                </li>
+                <li>не позволяет произвести замену контроллера управления двигателем (для обхода штатного иммобилайзера)</li>
+                <li>делает недоступным диагностический разъем (в тех случаях, когда он находится под капотом), затрудняя выявление блокировок и манипуляции со штатным иммобилайзером</li>
+                <li>значительно затрудняет угон на том этапе, когда автосигнализация уже обезврежена (вскрыт или подобран код радиоканала), но под заблокированным капотом остается невосстановленная блокировка двигателя</li>
+            </ul>
 
-      </div>
-      <div class="popup-desc__consist">
-        <h4 class="popup-descr_consist-title">Состав комплекта:</h4>
-        <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
-        <p>Обработка рамы</p>
-        <p>Сетка для бампера</p>
-        <p>Обработка днища и скрытых полостей</p>
-        <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
-        <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
-      </div>
-      <button class="service-btn">Установить</button>
+        </div>
+        <div class="popup-desc__consist">
+            <h4 class="popup-descr_consist-title">Состав комплекта:</h4>
+            <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
+            <p>Обработка рамы</p>
+            <p>Сетка для бампера</p>
+            <p>Обработка днища и скрытых полостей</p>
+            <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
+            <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
+        </div>
+        <button class="service-btn">Установить</button>
     </section>
     <div class="popup-tooltip">
-      <h4 class="popup-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
-      <p class="popup-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает
-Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщикап.</p>
+        <h4 class="popup-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
+        <p class="popup-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщикап.</p>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
     </script>
