@@ -66,6 +66,8 @@ $(document).ready(function() {
             decimals: 0,
             postfix: '%',
         }),
+        animate: true,
+	    animationDuration: 100,
         pips: {
             mode: 'positions',
             values: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
@@ -89,6 +91,12 @@ $(document).ready(function() {
         step.classList.add('credit-calcul__condition--active');
         }
     }
+
+    $('.noUi-value').on('click', function(){
+        var currentSum = $(this).text();
+        var currentNumber = parseInt(currentSum);
+        rangeSlider.noUiSlider.set(currentNumber);
+    })
 
     //show value
     var inputPercent = document.querySelector('.credit-calcul__fee-percent');
