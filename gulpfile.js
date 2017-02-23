@@ -149,9 +149,12 @@ gulp.task("copyHtml", function() {
   gulp.src("*.html")
   .pipe(copy())
   .pipe(gulp.dest("build"));
-  gulp.src("*.ico")
+});
+
+gulp.task("copyVendor", function() {
+  gulp.src("vendor/**/*")
   .pipe(copy())
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("build/vendor"));
 });
 
 gulp.task("copyImg", function() {
@@ -173,6 +176,7 @@ gulp.task("show", function(){
   gulp.watch("*.html", ["copyHtml"]).on("change", server.reload);
   gulp.watch("img/**/*.svg", ["copyImg"]).on("change", server.reload);
   gulp.watch("js/**/*.js", ["min-js"]).on("change", server.reload);
+  gulp.watch("vendor/**/*.js", ["copyVendor"]).on("change", server.reload);
 });
 
-gulp.task("build", ["clean", "copyHtml", "style","copyImg", "min-js"]);
+gulp.task("build", ["clean", "copyHtml", "style","copyImg", "copyVendor", "min-js"]);

@@ -1,0 +1,26 @@
+.noUi-handle {
+  background-color: red;
+}
+
+.noUi-marker {
+  display: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  background-image: url('../img/general/range.svg');
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 42px;
+  height: 42px;
+  left: -21px;
+  top: -13px;
+  &::before, &::after {
+    display: none;
+  }
+}
+
+.noUi-value {
+  border-bottom: 1px dashed #333333;
+}

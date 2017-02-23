@@ -1,5 +1,10 @@
-.credit-calcum__terms {
+.credit-calcul__item {
+  margin-bottom: 80px;
+}
+
+.credit-calcul__terms {
  display: flex;
+
 }
 
 
@@ -79,4 +84,33 @@
   .credit-calcul__term-text {
     border-bottom: none;
   }
+}
+
+.credit-calcul__conditions {
+  display: flex;
+
+
+}
+
+.credit-calcul__condition {
+  border-right: 1px solid black;
+  text-align: center;
+  border-bottom: 18px solid #8a919b;
+  margin-bottom: -18px;
+  position: relative;
+  z-index: 1;
+  &:nth-child(1) {
+    flex-basis: 30%;
+  }
+  &:nth-child(2) {
+    flex-basis: 25%;
+  }
+  &:nth-child(3) {
+    flex-basis: 45%;
+  }
+}
+
+.credit-calcul__condition--active {
+  background-color: #cfdbd9;
+  border-color: @green;
 }
