@@ -1,0 +1,19 @@
+.sorting-icon {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+
+    svg {
+        stroke: @green;
+        width: 20px;
+        height: 12px;
+    }
+}
+
+.sorting-icon--down {
+    transform: none;
+}
+
+.sorting-icon--up {
+    transform: rotate(180deg) scale(-1, 1);;
+}

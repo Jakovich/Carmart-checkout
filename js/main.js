@@ -42,8 +42,8 @@ $(document).ready(function() {
     });
 
     //toggle icon of sorting
-    $('.sorting__icon').on('click', function() {
-        $(this).toggleClass('sorting__icon--down').toggleClass('sorting__icon--up');
+    $('.sorting-icon').on('click', function() {
+        $(this).toggleClass('sorting-icon--down').toggleClass('sorting-icon--up');
     });
 
 
