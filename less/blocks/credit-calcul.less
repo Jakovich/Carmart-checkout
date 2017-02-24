@@ -1,5 +1,17 @@
+.credit-calcul {
+  background-color: #f8f8f8;
+  padding: 0 30px;
+  padding-top: 27px;
+ padding-bottom: 43px;
+  border-radius: @border-radius;
+  border: 1px solid rgba(128,141,155,0.7);
+}
+
 .credit-calcul__item {
-  margin-bottom: 80px;
+  &:first-child {
+    margin-bottom: 60px;
+  }
+  
 }
 
 .credit-calcul__terms {
@@ -7,9 +19,48 @@
 
 }
 
+.credit-calcul__title {
+  font-size: 20px;
+}
+
+.credit-calcul__fee-percent {
+  font-weight: 300;
+  color: @blue-gray-light;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.credit-calcul__fee-sum-wrp {
+  text-align: right;
+}
+.credit-calcul__fee-sum {
+  font-size: 20px;
+  font-weight: 500;
+  min-width: 180px;
+  color: @blue-gray-light;
+  border: 2pt solid @blue-gray-light;
+  border-radius: @border-radius;
+  display: inline-block;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  span {
+    color: @text-color;
+  }
+}
+
+
+.credit-calcul__sum-wrp {
+  text-align: right;
+}
+
+.credit-calcul__sum {
+  font-size: 20px;
+  font-weight: 500;
+}
 
 .credit-calcul__term {
   flex-grow: 1;
+  margin-top: 16px;
   input {
     display: none;
   }
@@ -20,7 +71,8 @@
     padding: 13px 0;
     padding-top: 16px;
     cursor: pointer;
-    border: 1px solid #333333;
+    border: 1px solid @blue-gray-light;
+    border-left: none;
     position: relative;
 
   }
@@ -28,6 +80,7 @@
   &:first-child {
     label {
       border-bottom-left-radius: @border-radius;
+      border-left: 1px solid @blue-gray-light;
     }
   }
 
@@ -38,12 +91,13 @@
     }
   }
 
-
-
 }
 
 .credit-calcul__term-text {
-  border-bottom: 1px dashed #333333;
+  border-bottom: 2px dashed @blue-gray-light;
+  font-size: 16px;
+  font-weight: 400;
+  color: @blue-gray;
 }
 
 .credit-calcul__check-icon {
@@ -68,39 +122,47 @@
       top: 0;
       left:0;
       right: 0;
+      z-index:5;
     }
-
   }
 }
-
 
 .credit-calcul__term input:checked~label {
   background-color: @green;
   color: #ffffff;
+  box-shadow: inset 0 0 5px #777d83;
+  box-shadow: inset 0 0 5px #64686c;
+  z-index:6;
+  position: relative;
   .credit-calcul__check-icon svg {
     stroke: #ffffff;
     opacity: 0.6;
   }
   .credit-calcul__term-text {
     border-bottom: none;
+    color: #ffffff;
   }
 }
 
 .credit-calcul__conditions {
   display: flex;
-
-
 }
 
 .credit-calcul__condition {
-  border-right: 1px solid black;
+  border-right: 1px solid rgba(128,141,155,0.5);
   text-align: center;
-  border-bottom: 18px solid #8a919b;
+  border-bottom: 18px solid #929aa2;
   margin-bottom: -18px;
   position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #e6e7e9;
   z-index: 1;
   &:nth-child(1) {
     flex-basis: 30%;
+    border-left: 1px solid rgba(128,141,155,0.5);
   }
   &:nth-child(2) {
     flex-basis: 25%;
@@ -111,6 +173,6 @@
 }
 
 .credit-calcul__condition--active {
-  background-color: #cfdbd9;
-  border-color: @green;
+  background-color: #deebe8;
+  border-bottom-color: @green;
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="55.612px" height="61.696px" viewBox="0 0 55.612 61.696" style="enable-background:new 0 0 55.612 61.696;"
+	 xml:space="preserve">
+<g>
+	<g id="XMLID_52_" style="opacity:0.8;">
+		<g style="opacity:0.7;">
+			<path style="fill:#808D9B;" d="M27.806,1c1.208,0,2.416,0.312,3.498,0.937L51.11,13.363c2.167,1.25,3.502,3.562,3.502,6.063
+				v22.844c0,2.502-1.335,4.813-3.502,6.063L31.304,59.761c-1.082,0.624-2.29,0.936-3.498,0.936c-1.208,0-2.415-0.312-3.497-0.936
+				L4.502,48.334C2.335,47.084,1,44.772,1,42.271V19.426c0-2.501,1.335-4.813,3.502-6.063L24.309,1.937
+				C25.391,1.312,26.598,1,27.806,1 M27.806,0c-1.401,0-2.783,0.37-3.997,1.07L4.002,12.497C1.534,13.921,0,16.577,0,19.426v22.844
+				c0,2.851,1.534,5.506,4.002,6.93l19.807,11.427c1.213,0.7,2.596,1.069,3.997,1.069c1.401,0,2.783-0.369,3.997-1.069L51.61,49.2
+				c2.469-1.424,4.002-4.079,4.002-6.93V19.426c0-2.85-1.533-5.505-4.002-6.93L31.804,1.07C30.59,0.37,29.207,0,27.806,0L27.806,0z"
+				/>
+		</g>
+	</g>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="4.514" y="8.227" width="44.974" height="44.974">
+			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="4.514" y="8.227" width="44.974" height="44.974" id="SVGID_1_">
+		<g style="filter:url(#Adobe_OpacityMaskFilter);">
+			<g>
+				<g id="XMLID_1_">
+					<path style="fill:#FFFFFF;" d="M1,19.426v22.844c0,2.502,1.335,4.813,3.502,6.063l19.807,11.427
+						c2.164,1.248,4.83,1.248,6.995,0L51.11,48.334c2.167-1.25,3.502-3.562,3.502-6.063V19.426c0-2.501-1.335-4.813-3.502-6.063
+						L31.304,1.937c-2.165-1.249-4.831-1.249-6.995,0L4.502,13.363C2.335,14.613,1,16.925,1,19.426z"/>
+				</g>
+			</g>
+		</g>
+	</mask>
+	<g transform="matrix(1 0 0 1 1.448408e-007 3.775678e-007)" style="mask:url(#SVGID_1_);">
+		
+			<image style="overflow:visible;" width="300" height="300" xlink:href="unicredit-logo.jpg"  transform="matrix(0.1499 0 0 0.1499 4.5137 8.2266)">
+		</image>
+	</g>
+</g>
+</svg>

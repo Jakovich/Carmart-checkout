@@ -148,10 +148,10 @@
                     <div class="credit-calcul__item">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="credit-calcul__title">Первоначальный взнос <span class="credit-calcul__fee-percent">43%</span></div>
+                                <div class="credit-calcul__title">Первоначальный взнос <span class="credit-calcul__fee-percent">(43%)</span></div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="credit-calcul__fee-sum">123 000 руб</div>
+                            <div class="col-md-6 credit-calcul__fee-sum-wrp">
+                              <div class="credit-calcul__fee-sum"><span>123 000</span> P</div>
                             </div>
                         </div>
                         <div class="row">
@@ -176,7 +176,7 @@
                             <div class="col-md-6">
                                 <div class="credit-calcul__title">Срок кредита</div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 credit-calcul__sum-wrp">
                                 <div class="credit-calcul__sum">2 года</div>
                             </div>
                         </div>
@@ -230,26 +230,13 @@
                         </div>
                     </div>
                 </section>
-
-                <div class="sorting row">
-                    <div class="sorting__content col-md-12">
-                        <div class="sorting__name">
-                            Упорядочено:
-                            <select class="sorting__select">
-                          <option value="">по названию</option>
-                          <option value="">по цене</option>
-                      </select>
-                        </div>
-                        <span class="sorting__icon sorting__icon--down">
-                                <svg><use xlink:href="/img/svgsprites/general.svg#sorting"/></svg>
-                            </span>
-                    </div>
-                </div>
-
+                
                 <div class="bancs">
+                   
                     <div class="bancs__header">
                         <div class="row">
                             <div class="col-md-12">
+                               <div class="bancs__header-content">
                                 <div class="bancs__info">
                                     Название банка
                                 </div>
@@ -262,13 +249,14 @@
                                 <div class="bancs__fee">Первоначальный взнос</div>
                                 <div class="bancs__payment">Ежемесячный платеж</div>
                             </div>
+                            </div>
                         </div>
                     </div>
                     <div class="bancs__body">
                         <div class="row">
                             <div class="col-md-12">
                                 <article class="bancs__item">
-                                    <div class="bancs__content ">
+                                    <div class="bancs__content">
 
                                         <div class="bancs__info">
                                             <div class="bancs__icon">
@@ -276,25 +264,56 @@
 
                                             </div>
                                             <p class="bancs__name">Сетелем</p>
-                                            <p class="bancs__exp">Партнерский промокомплироанный </p>
+                                          <p class="bancs__exp">«Партнерский: ПРОМО СУБСИДИРОВАННЫЙ» для новых автомобилей</p>
                                             <p class="bancs__documents">Для оформления нужны <span>4 документа</span></p>
                                         </div>
 
                                         <div class="bancs__percent">6 % <span>min</span></div>
 
                                         <div class="bancs__term">2 года</div>
-                                        <div class="bancs__fee">150 000 руб</div>
-                                        <div class="bancs__payment">150 000 руб</div>
+                                        <div class="bancs__fee">150 000 Р</div>
+                                        <div class="bancs__payment">12 000 Р</div>
 
                                     </div>
-                                    <div class="bancs__control col-md-12">
+                                    <div class="bancs__control">
                                         <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
                                         </buttom>
                                     </div>
-
+</div>
                                 </article>
                             </div>
-                        </div>
+                            
+                            <div class="row">
+                            <div class="col-md-12">
+                                <article class="bancs__item">
+                                    <div class="bancs__content">
+
+                                        <div class="bancs__info">
+                                            <div class="bancs__icon">
+                                                <img src="img/bancs/unicredit.svg" alt="">
+
+                                            </div>
+                                            <p class="bancs__name">Юникредит банк</p>
+                                          
+                                            <p class="bancs__documents">Для оформления нужны <span>4 документа</span></p>
+                                        </div>
+
+                                        <div class="bancs__percent">6 % <span>min</span></div>
+
+                                        <div class="bancs__term">2 года</div>
+                                        <div class="bancs__fee">150 000 Р</div>
+                                        <div class="bancs__payment">12 000 Р</div>
+
+                                    </div>
+                                    <div class="bancs__control">
+                                        <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                                        </buttom>
+                                    </div>
+</div>
+                                </article>
+                            </div>
+                  </div>
+                            
                     </div>
                     <div class="options">
                         <div class="options__details">
@@ -303,7 +322,7 @@
                                     <table class="options__sum">
                                         <tr>
                                             <td>Первоначальный взнос:</td>
-                                            <td>150 000 руб</td>
+                                            <td class="options__sum-fee">150 000 руб</td>
                                         </tr>
                                         <tr>
                                             <td>Ужемесячный платеж:</td>
@@ -340,7 +359,7 @@
                                     </span> Финансовая защита платежа <button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
                                     </p>
                                     <p class="options__exp">
-                                        Кармарт защищает
+                                        Кармарт защищает ваши средства и ваш новый автомобиль
                                     </p>
 
                                 </div>

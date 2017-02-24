@@ -22,6 +22,24 @@
 }
 
 .noUi-value {
-  border-bottom: 1px dashed #333333;
+  border-bottom: 1px dashed @blue-gray-light;
   cursor: pointer;
+  font-size: 16px;
+  color: @blue-gray-light;
+  
+  
+}
+
+.noUi-value-horizontal {
+  
+    -webkit-transform: translate3d(-50%,20%,0);
+    transform: translate3d(-50%,20%,0);
+    &:nth-child(2) {
+      -webkit-transform: none;
+    transform: none;
+    }
+  &:nth-child(22) {
+      -webkit-transform: translate3d(-100%,20%,0);
+    transform: translate3d(-100%,20%,0);
+    }
 }

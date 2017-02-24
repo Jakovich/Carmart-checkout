@@ -115,6 +115,6 @@ $(document).ready(function() {
             } else if (currentNumber > 55){
                 addActiveClass(step3)
             }
-	       inputPercent.innerHTML = currentValue;
+	       inputPercent.innerHTML = '(' + currentValue + ')';
     });
 });
