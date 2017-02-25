@@ -1,3 +1,7 @@
+.bancs {
+  margin-top: 15px;
+}
+
 .bancs__header-content,
 .bancs__content {
   display: flex;
@@ -5,11 +9,18 @@
 }
 
 .bancs__header .bancs__header-content {
+  padding: 10px 0;
+  & > div {
+  tex-align: center;
+  }
+}
+
+.bancs__column-name {
   font-size: 18px;
   font-weight: 300;
   color: @blue-gray;
-  
-  padding: 20px 0;
+  display: inline-block;
+  border-bottom: 2px dashed @blue-gray;
 }
 
 //active: @text-color-dark
@@ -19,28 +30,55 @@
   background-color: #ffffff;
   border-radius: @border-radius;
   box-shadow: @shadow-item;
-  
+  margin-bottom: 10px;
+  padding-bottom: 15px;
 }
-
 .bancs__info {
   flex-basis: 43%;
   text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+
+}
+.bancs__body .bancs__info {
+  display: flex;
+}
+
+.bancs__icon {
+  flex-basis: 20%;
+  text-align: center;
+
+  img {
+    width: 70%;
+  }
+}
+.bancs__text {
+  flex-basis: 80%;
+  padding-top: 10px;
 }
 
 .bancs__percent {
   flex-basis: 13%;
+  padding: 10px 0;
+  padding-top: 20px;
 }
 
 .bancs__term {
   flex-basis: 11%;
+  padding: 10px 0;
+    padding-top: 20px;
 }
 
 .bancs__fee {
   flex-basis: 15%;
+  padding: 10px 0;
+    padding-top: 20px;
 }
 
 .bancs__payment {
   flex-basis: 18%;
+  padding: 10px 0;
+    padding-top: 20px;
 }
 
 .bancs__name {
@@ -53,11 +91,11 @@
   text-decoration: underline;
 }
 
-.bancs__documents {
+.bancs__body .bancs__documents {
   font-size: 14px;
   font-weight: 300;
   color: @blue-gray;
-  
+
   span {
     display: inline-block;
     font-weight: 500;
@@ -65,7 +103,7 @@
   }
 }
 
-.bancs__percent {
+.bancs__body .bancs__percent {
   font-weight: 500;
   font-size: 18px;
   span {
@@ -74,19 +112,45 @@
   }
 }
 
-.bancs__term {
+.bancs__body .bancs__term {
   font-size: 18px;
   font-weight: 300;
 }
 
-.bancs__fee {
+.bancs__body .bancs__fee {
   font-size: 18px;
   font-weight: 300;
   color: @text-color-dark;
 }
 
-.bancs__payment {
+.bancs__body .bancs__payment {
   font-size: 18px;
   font-weight: 500;
   color: @blue-gray;
+}
+
+
+
+.bancs__control {
+  display: none;
+  text-align: right;
+  padding-right: 5%;
+
+  transition: @transition;
+
+}
+
+.bancs__control__btn {
+  width: 35%;
+  min-width: 345px;
+  display: inline-block;
+
+}
+
+.bancs__item:hover {
+  border: 3px solid @green;
+  .bancs__control {
+  display: block;
+
+  }
 }

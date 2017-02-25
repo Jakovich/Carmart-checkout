@@ -31,23 +31,26 @@
     font-weight: 500;
     border-color: #cccccc;
 }*/
+.filters__items {
 
+}
 .filters__item {
   position: relative;
   display: inline-block;
-
   margin-bottom: 8px;
+  //margin-right: 8px;
   margin-right: 8px;
   input {
     display: none;
   }
 
   label {
-    padding: 10px 20px;
+    padding: 10px 23px;
+
     border-radius: 5px;
     border: 1px solid #ffffff;
     background-color: #ffffff;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     font-weight: 300;
 
@@ -79,10 +82,11 @@
 .filters__item input:checked~label {
   //font-weight: 500;
   border-color: #cccccc;
-  //font-weight: bold;
-  //text-shadow: 0 0  #33333, 0 0  #333333;
+  font-weight: bold;
+
+  //text-shadow: 0 1px  #333333, 0 1px  #333333;
   //text-shadow: -0.1px -0.1px 0 #333333, 0.1px -0.1px 0 #333333, -0.1px 0.1px 0 #333333, 0.1px 0.1px 0 #333333;
-  
+
 }
 
 .filters__item:active label {

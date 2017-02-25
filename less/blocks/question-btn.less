@@ -10,6 +10,8 @@
     margin-left: 5px;
     transition: @transition;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     svg {
         width: 18px;
         height: 18px;
@@ -24,4 +26,13 @@
 
         //opacity: 0.6;
     }
+}
+
+.question-btn--relative {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    transform: none;
+    margin-top: 0;
+    top: auto;
 }
