@@ -248,7 +248,7 @@
                                     <div class="services__control">
                                         <p class="services__price">42 800 Р</p>
                                         <p class="services__exp">Цена комплекта с установкой</p>
-                                        <button class="services__btn">Установить</button>
+                                        <button class="services-btn">Установить</button>
                                     </div>
                                 </div>
                                 <div class="services__more"><a href="#">Подробное описание</a></div>
@@ -277,7 +277,7 @@
                                     <div class="services__control">
                                         <p class="services__price">17 370 Р</p>
                                         <p class="services__exp">Цена комплекта с установкой</p>
-                                        <button class="services__btn">Установить</button>
+                                        <button class="services-btn">Установить</button>
 
                                     </div>
                                 </div>
@@ -309,7 +309,7 @@
                                     <div class="services__control">
                                         <p class="services__price">36 968 Р</p>
                                         <p class="services__exp">Цена комплекта с установкой</p>
-                                        <button class="services__btn">Установить</button>
+                                        <button class="services-btn">Установить</button>
                                     </div>
                                 </div>
                                 <div class="services__more"><a href="#">Подробное описание</a></div>
@@ -337,7 +337,7 @@
                                     <div class="services__control">
                                         <p class="services__price">17 370 Р</p>
                                         <p class="services__exp">Цена комплекта с установкой</p>
-                                        <button class="services__btn">Установить</button>
+                                        <button class="services-btn">Установить</button>
 
                                     </div>
                                 </div>
@@ -369,7 +369,7 @@
                                     <div class="services__control">
                                         <p class="services__price">17 370 Р</p>
                                         <p class="services__exp">Цена комплекта с установкой</p>
-                                        <button class="services__btn">Установить</button>
+                                        <button class="services-btn">Установить</button>
 
                                     </div>
                                 </div>
@@ -401,7 +401,7 @@
                                     <div class="services__control">
                                         <p class="services__price">17 370 Р</p>
                                         <p class="services__exp">Цена комплекта с установкой</p>
-                                        <button class="services__btn">Установить</button>
+                                        <button class="services-btn">Установить</button>
 
                                     </div>
                                 </div>
@@ -430,7 +430,7 @@
                                     <div class="services__control">
                                         <p class="services__price">3 550 P</p>
                                         <p class="services__exp">Цена комплекта с установкой</p>
-                                        <button class="services__btn">Установить</button>
+                                        <button class="services-btn">Установить</button>
                                     </div>
                                 </div>
                                 <div class="services__more"><a href="#">Подробное описание</a></div>
@@ -459,7 +459,7 @@
                                     <div class="services__control">
                                         <p class="services__price">14 860- P</p>
                                         <p class="services__exp">Цена комплекта с установкой</p>
-                                        <button class="services__btn">Установить</button>
+                                        <button class="services-btn">Установить</button>
                                     </div>
                                 </div>
                                 <div class="services__more"><a href="#">Подробное описание</a></div>
@@ -569,14 +569,19 @@
 
     </footer>
 
-    <section class="popup-descr">
-    <div class="popup-descr__close">
-      <button class="close-btn">Закрыть</button>
-    </div>
-
-     <div class="popup-descr__icon"></div>
+    <div class="popup-descr">
+    <button class="close-btn"><span class="close-btn__text">Закрыть</span>
+        <span class="close-btn__icon">
+            <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+        </span>
+      </button>
+      <div class="popup-descr__header">
+     <div class="popup-descr__icon"><img src="img/services/window.png" alt=""></div>
+     <div class="popup-descr__header-info">
       <h3 class="popup-descr__title">Комплект «Защита автомобиля» Outlander Максимальный</h3>
       <p class="popup-descr__price">стоимость: 16 000 Р</p>
+      </div>
+      </div>
       <div class="popup-descr__text">
         <p>Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает
 Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщика:</p>
@@ -600,13 +605,17 @@
         <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
         <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
       </div>
-      <button class="service-btn">Установить</button>
-    </section>
+      <div class="popup-descr__btn">
+      <button class="services-btn">Установить</button>
+      </div>
+    </div>
+    
     <div class="popup-tooltip">
       <h4 class="popup-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
       <p class="popup-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает
 Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщикап.</p>
     </div>
+    <div class="popup-wrp">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
     </script>
     <script src="js/main.min.js"></script>

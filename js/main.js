@@ -18,26 +18,28 @@ $(document).ready(function() {
     })
 
     //add class active for services__item when add burron is clicked
-    $('.services__btn').on('mousedown', function(event) {
+    $('.services-btn').on('mousedown', function(event) {
         var currentItem = $(event.target).closest('.services__item');
         currentItem.addClass('services__item--focus');
     });
 
-    $('.services__btn').on('mouseup', function(event) {
+    $('.services-btn').on('mouseup', function(event) {
         var currentItem = $(event.target).closest('.services__item');
         currentItem.removeClass('services__item--focus');
         $(this).blur();
     });
 
     //add/delete select class for services-items
-    $('.services__btn').on('click', function(event) {
+    $('.services-btn').on('click', function(event) {
         var currentBtn = $(this);
+        
         var currentItem = $(event.target).closest('.services__item');
-        if (currentItem.hasClass('services__item--select')) {
+        if (currentBtn.hasClass('services-btn--select')) {
             currentBtn.text('Установить');
         } else {
             currentBtn.text('Установлено');
         }
+        currentBtn.toggleClass('services-btn').toggleClass('services-btn services-btn--select');
         currentItem.toggleClass('services__item').toggleClass('services__item services__item--select');
     });
 

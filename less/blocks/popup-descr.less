@@ -1,5 +1,5 @@
 .popup-descr {
-  display: none;
+
   width: 600px;
   max-width: 95%;
   position: absolute;
@@ -10,15 +10,33 @@
   background-color: #ffffff;
   border-radius: @border-radius;
   box-shadow: @shadow-popup;
+   z-index: 45;
+}
+
+.popup-descr__header {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.popup-descr__icon {
+  flex-basis: 21%;
+  img {
+    width: 80%;
+    }
+}
+
+.popup-descr__header-info {
+  flex-basis: 79%
 }
 
 .popup-descr__title {
   font-weight: 500;
   font-size: 24px;
+  margin-bottom: 5px;
 }
 
 .popup-descr__price {
-  fonr-size: 16px;
+  font-size: 16px;
   font-weight: 300;
   color: @blue-gray;
 }
@@ -44,12 +62,14 @@
     font-size: 14px;
     font-weight: 300;
     margin: 0;
+    color: @text-color-dark;
   }
 
 }
 
-.popup-descr__close {
-  position: absolute;
-  right: 0;
-  top: -60px;
+.popup-descr__btn {
+  text-align: right;
+  margin: 10px 0;
 }
+
+
