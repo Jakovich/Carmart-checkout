@@ -112,6 +112,13 @@ gulp.task("min-js", function(){
   .pipe(rename("main.min.js"))
   .pipe(gulp.dest("build/js/"))
 
+  gulp.src("js/step-two.js")
+
+  .pipe(gulp.dest("build/js/"))
+  .pipe(uglify())
+  .pipe(rename("step-two.min.js"))
+  .pipe(gulp.dest("build/js/"))
+
 });
 
 gulp.task("style", function(){

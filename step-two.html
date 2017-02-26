@@ -139,7 +139,7 @@
                     </span> Оформление автомобиля в кредит дает вам скидку <span class="tooltip-info__price">18 570 Р</span><button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
                         </div>
                         <div class="col-sm-4 tooltip-info__control">
-                            <button class="tooltip-info__btn">Мне не нужен кредит</button>
+                            <button class="tooltip-info__btn" data-modal="refusing">Мне не нужен кредит</button>
                         </div>
                     </div>
                 </div>
@@ -536,15 +536,15 @@
         <h4 class="popup-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
         <p class="popup-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщикап.</p>
     </div>
-    
-    <div class="popup-refusing">
+
+    <div class="popup-refusing" data-rel="refusing">
       <h4 class="popup-refusing__title">Отказаться от кредита?</h4>
       <p class="popup-refusing__text">Отказываясь от кредита, вы поступаете очень неправильно, к тому же вы теряете скидку в <span>14 647  Р</span></p>
       <div class="popup-refusing__btn-wrp">
       <button class="popup-refusing__btn">Оставить как есть</button>
       </div>
     </div>
-    
+
     <div class="popup-credit">
       <button class="close-btn"><span class="close-btn__text">Закрыть</span>
         <span class="close-btn__icon">
@@ -572,14 +572,15 @@
       <button class="popup-credit__btn">ВЫБРАТЬ ЭТОТ КРЕДИТ</button>
       </div>
     </div>
-    
-    
-    <div class="popup-wrp">
+
+
+    <div class="popup-wrp"></div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
     </script>
     <script src="vendor/nouislider/wNumb.js"></script>
     <script src="vendor/nouislider/nouislider.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script src="js/step-two.js"></script>
 </body>
 
 </html>
