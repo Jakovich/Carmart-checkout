@@ -16,17 +16,17 @@
     <header class="page-header">
         <div class="container-fluid">
             <div class="page-header__content row">
-                <div class="page-header__logo col-md-3 col-sm-3">
+                <div class="page-header__logo col-md-3 col-sm-3 col-xs-3">
                     <a href="#"><img src="img/logo.svg" alt="Carmart"></a>
                 </div>
-                <nav class="main-nav col-md-6 col-sm-7">
+                <nav class="main-nav col-md-6 col-sm-7 col-xs-7">
                     <ul class="main-nav__items">
                         <li class="main-nav__item"><a href="#">Как работает Carmart</a></li>
                         <li class="main-nav__item"><a href="#">Способы оплаты</a></li>
                         <li class="main-nav__item"><a href="#">Доставка и выдача</a></li>
                     </ul>
                 </nav>
-                <div class="page-header__user-block col-md-3 col-sm-2">
+                <div class="page-header__user-block col-md-3 col-sm-2 col-xs-2">
                     <a href="#">
                         <span class="page-header__icon">
                         <svg><use xlink:href="/img/svgsprites/general.svg#login"/></svg>
@@ -40,8 +40,8 @@
             <div class="container-fluid">
                 <div class="info__content row">
 
-                    <div class="info__auto col-md-5 col-sm-5">
-                        <p class="info__basic">
+                    <div class="info__auto col-md-5 col-sm-6 col-xs-6">
+                        <div class="info__basic">
                             <span class="info__model">Mitsubishi Pajero Sport:</span>
                             <span class="info__price">1 232 500 Р</span>
                             <div class="question-tooltip">
@@ -52,21 +52,22 @@
                                         для угонщикап.</p>
                                 </div>
                             </div>
-                        </p>
+
+                        </div>
                         <p class="info__details">2016 / NEW / 3.0 AT (249 л.с.) / АИ-95 / 4WD</p>
                         <p class="info__details"><span>Цвет:</span> Темно-серый (металлик): <span>Кузов:</span> Внедорожник</p>
                     </div>
-                    <div class="col-md-3 col-sm-4">
-                        <div class="info__sum">Сумма заказа: <span>1 350 000 Р</span></div>
-                    </div>
-                    <div class="col-md-4 col-sm-3 ">
-                        <div class="info__controls">
+                    <div class="col-md-7 col-sm-6 col-xs-6">
+                        <div class="info__right">
+                            <div class="info__sum">Сумма заказа: <span>1 350 000 Р</span></div>
+                            <div class="info__controls">
+                                <div class="info__btn-wrp">
+                                    <button class="info__btn info__btn--save"><span><svg><use xlink:href="/img/svgsprites/general.svg#save"/></svg></span>Сохранить заказ</button>
 
-                            <button class="info__btn info__btn--save"><span><svg><use xlink:href="/img/svgsprites/general.svg#save"/></svg></span>Сохранить заказ</button>
 
-
-                            <button class="info__btn info__btn--more"><span><svg><use xlink:href="/img/svgsprites/general.svg#more"/></svg></span>Подробно</button>
-
+                                    <button class="info__btn info__btn--more"><span><svg><use xlink:href="/img/svgsprites/general.svg#more"/></svg></span>Подробно</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -98,7 +99,15 @@
 
                     <div class="info__addit-total row">
                         <div class="info__addit-info col-sm-5">
-                            <div class="info__addit-sale">Ваша скидка: <span>120 000 Р</span> </div> <button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                            <div class="info__addit-sale">Ваша скидка: <span>120 000 Р</span> </div>
+                             <div class="question-tooltip">
+                                <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                                <div class="question-tooltip__body">
+                                    <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
+                                    <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия
+                                        для угонщикап.</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="info__addit-control col-sm-3 col-sm-offset-4">
                             <button class="info__addit-btn"><span><svg><use xlink:href="/img/svgsprites/general.svg#arrow-up"/></svg></span>Свернуть чек</button>
@@ -122,14 +131,14 @@
                     </div>
                 </div>
                 <div class="steps__title row">
-                    <h1 class="main-title col-md-6 col-sm-4">Кредит Кармарт. С точностью до рубля</h1>
-                    <div class="step-btn__wrapper col-md-3  col-sm-4">
-                        <buttom class="step-btn step-btn--prev">Предыдущий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                        </buttom>
+                    <h1 class="main-title col-md-6 col-sm-12">Кредит Кармарт. С точностью до рубля</h1>
+                    <div class="step-btn__wrapper col-md-3  col-sm-6">
+                        <button class="step-btn step-btn--prev">Предыдущий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                        </button>
                     </div>
-                    <div class="step-btn__wrapper col-md-3  col-sm-4">
-                        <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                        </buttom>
+                    <div class="step-btn__wrapper col-md-3  col-sm-6">
+                        <button class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -143,7 +152,7 @@
                         <div class="tooltip-info__text col-sm-8">
                             <span class="tooltip-info__icon">
                         <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                    </span> Оформление автомобиля в кредит дает вам скидку <span class="tooltip-info__price">18 570 Р</span>
+                    </span> Оформление автомобиля в кредит дает вам скидку <span class="tooltip-info__price">18 570 Р
                             <div class="question-tooltip">
                                 <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
                                 <div class="question-tooltip__body">
@@ -152,6 +161,7 @@
                                         для угонщикап.</p>
                                 </div>
                             </div>
+                            </span>
                         </div>
                         <div class="col-sm-4 tooltip-info__control">
                             <button class="tooltip-info__btn" data-modal="refusing">Мне не нужен кредит</button>
@@ -162,10 +172,10 @@
                 <section class="credit-calcul">
                     <div class="credit-calcul__item">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6 col-xs-6">
                                 <div class="credit-calcul__title">Первоначальный взнос <span class="credit-calcul__fee-percent">(43%)</span></div>
                             </div>
-                            <div class="col-md-6 credit-calcul__fee-sum-wrp">
+                            <div class="col-sm-6 col-xs-6 credit-calcul__fee-sum-wrp">
                                 <div class="credit-calcul__fee-sum"><span>123 000</span> P</div>
                             </div>
                         </div>
@@ -188,10 +198,10 @@
                     </div>
                     <div class="credit-calcul__item">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-xs-6">
                                 <div class="credit-calcul__title">Срок кредита</div>
                             </div>
-                            <div class="col-md-6 credit-calcul__sum-wrp">
+                            <div class="col-md-6 col-xs-6 credit-calcul__sum-wrp">
                                 <div class="credit-calcul__sum">2 года</div>
                             </div>
                         </div>
@@ -304,8 +314,8 @@
                                     </div>
                                     <div class="bancs__control">
                                         <div class="bancs__control__btn">
-                                            <buttom class="step-btn">Сохранить и перейти на КАСКО <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                                            </buttom>
+                                            <button class="step-btn">Сохранить и перейти на КАСКО <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                                            </button>
                                         </div>
                                     </div>
 
@@ -340,8 +350,8 @@
                                     </div>
                                     <div class="bancs__control">
                                         <div class="bancs__control__btn">
-                                            <buttom class="step-btn">Сохранить и перейти на КАСКО <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                                            </buttom>
+                                            <button class="step-btn">Сохранить и перейти на КАСКО <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                                            </button>
                                         </div>
                                     </div>
 
@@ -380,19 +390,21 @@
 
                                     </div>
                                     <div class="col-sm-6">
-                                        <buttom class="step-btn step-btn--padding">Сохранить чек и рассчитать КАСКО<span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                                        </buttom>
+                                        <button class="step-btn step-btn--padding">Сохранить чек и рассчитать&nbsp;КАСКО<span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="options__footer">
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 col-xs-6">
                                         <div class="options__banc">
+                                            <div class="options__banc-name">
                                             <span class="options__banc-icon"><img src="img/bancs/unicredit-noborder.png" width="45" height="45" alt=""></span>Юнит-кредит банк
                                         </div>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 col-xs-6">
                                         <div class="options__info">
                                             <div class="options__protect-wrp">
                                                 <p class="options__protect">
@@ -500,9 +512,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="step-btn__wrapper step-btn__wrapper--margin col-md-3 col-md-offset-9  col-sm-4 col-sm-offset-8">
-                    <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                    </buttom>
+                <div class="step-btn__wrapper step-btn__wrapper--margin col-md-3  col-md-offset-6 col-sm-4 col-sm-offset-4">
+                    <button class="step-btn step-btn--prev">Предыдущий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                    </button>
+                </div>
+                <div class="step-btn__wrapper step-btn__wrapper--margin col-md-3  col-sm-4">
+                    <button class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                    </button>
                 </div>
             </div>
         </section>

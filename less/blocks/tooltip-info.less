@@ -22,6 +22,7 @@
     color: @green;
     font-size: 16px;
     border-bottom: 1.5px dashed @green;
+    position: relative;
 }
 
 .tooltip-info__icon {
@@ -87,4 +88,11 @@
 
 .tooltip-info__control {
 text-align: right;
+}
+
+@media (max-width: 768px) {
+     .tooltip-info__control {
+         text-align: left;
+         margin-top: 10px;
+     }
 }

@@ -35,15 +35,22 @@
     display: inline-block;
     position: relative;
     margin-bottom: 0;
+    border-bottom: 1px dashed #5d5d5d;
+    position: relative;
+    margin-left: 25px;
+}
 
-    &::after {
-        position: absolute;
-        content: '';
-        left: 25px;
-        right: -20px;
-        bottom: -1px;
-        border: 1px dashed #5d5d5d;
-        transition: @transition;
+.faq__icon {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    transition: @transition;
+
+    svg {
+        width: 9px;
+        height: 16px;
+        stroke: #7f8d9a;
+        fill: none;
     }
 }
 
@@ -68,21 +75,13 @@
     }
 
     .faq__question {
-        &::after {
-            opacity: 0;
-        }
+        border-bottom: none;
     }
 }
 
-.faq__icon {
-    display: inline-block;
-    margin-right: 10px;
-    transition: @transition;
-
-    svg {
-        width: 9px;
-        height: 16px;
-        stroke: #7f8d9a;
-        fill: none;
+@media (max-width: 768px) {
+    .faq__content {
+        min-height: auto;
+        margin-bottom: 20px;
     }
 }

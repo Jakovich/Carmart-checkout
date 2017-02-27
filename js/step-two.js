@@ -74,8 +74,14 @@ $(document).ready(function() {
   //select banc-item
   $('.bancs__item').on('click', function(){
     var allBancs = $('.bancs__item');
-    allBancs.removeClass('bancs__item--select');
-    $(this).addClass('bancs__item--select')
+    var currentBanc = $(this);
+    if(currentBanc.hasClass('bancs__item--select')) {
+      currentBanc.removeClass('bancs__item--select');
+    } else {
+      allBancs.removeClass('bancs__item--select');
+      $(this).addClass('bancs__item--select');
+    }
+
   })
 
 

@@ -63,6 +63,8 @@
     font-size: 18px;
     color: rgba(255,255,255,0.7);
     text-align: center;
+    margin-right: 20px;
+    min-width: 132px;
 
     span {
         white-space: nowrap;
@@ -73,33 +75,33 @@
     }
 }
 
+.info__right {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .info__controls {
     padding-top: 6px;
-    text-align: justify;
-    padding-left: 15%;
+    text-align: right;
     line-height: 0;
     font-size: 0;
-
-    &::after {
-        width: 100%;
-        height: 0;
-        line-height: 0;
-        text-indent: 0.1;
-        visibility: hidden;
-        overflow: hidden;
-        content: '';
-        display: inline-block;
-    }
+    position: relative;
+    min-width: 302px;
 
     &::before {
         position: absolute;
         content: '';
-        left: 5px;
+        left: 0;
         top: -5px;
         bottom: -8px;
         width: 1px;
         background-color: rgba(255,255,255,0.5);
     }
+}
+
+.info__btn-wrp {
+    text-align: left;
+    display: inline-block;
 }
 
 .info__btn {
@@ -117,6 +119,7 @@
     font-weight: 400;
     margin: 4px 0;
     transition: @transition;
+    margin-left: 20px;
 
     span {
         display: inline-block;
@@ -133,11 +136,15 @@
     &:hover {
         opacity: 0.6;
     }
-}
 
-.info__btn--save {
-    margin-right: 5px;
+    &:focus {
+        opacity: 1;
+        outline: none;
+    }
 }
+/*.info__btn--save {
+    margin-right: 5px;
+}*/
 /*additional section*/
 .info__addit {
     padding-top: 25px;
@@ -213,6 +220,11 @@
     &:hover {
         opacity: 0.6;
     }
+
+    &:focus {
+        opacity: 1;
+        outline: none;
+    }
 }
 
 .info__addit-total {}
@@ -234,22 +246,14 @@
 .info__addit-control {
     text-align: right;
 }
-@media (max-width: 1170px) {
+@media (max-width: 960px) {
     .info__controls {
-        padding-left: 10%;
-    }
-}
-@media (max-width: 992px) {
-    .info__controls {
-        padding-left: 15%;
-
-        &::before {
-            left: -5px;
-        }
+        min-width: auto;
+        width: 180px;
     }
 
     .info__sum {
-        max-width: 207px;
-        margin: 0 auto;
+        min-width: auto;
+        width: 132px;
     }
 }

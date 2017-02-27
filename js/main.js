@@ -30,6 +30,12 @@ $(document).ready(function() {
         $(this).blur();
     });
 
+    $('button').on('mouseup', function(event) {
+        $(this).blur();
+    });
+
+
+
     //add/delete select class for services-items
     $('.services-btn').on('click', function(event) {
         var currentBtn = $(this);

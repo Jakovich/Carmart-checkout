@@ -18,13 +18,16 @@
     text-align: center;
     position: relative;
     border-radius: 5px;
+    border:none;
+    outline: none;
     transition: @transition;
 
     &:hover {
-        opacity: 0.8;
+        background-color: #33bca1
     }
     &:focus {
-        opacity: 1;
+        background-color: #039c7f;
+        outline: none;
     }
 }
 
@@ -45,7 +48,14 @@
 .step-btn--prev {
     background-color: #e7e8ec;
     color: @text-color;
+    &:hover {
+      background-color: #d9d9d9;
+    }
 
+    &:focus {
+      background-color: #e6e6e6;
+      outline: none;
+    }
     .step-btn__icon {
         right: auto;
         left: 7%;
@@ -61,5 +71,6 @@
 }
 
 .step-btn--padding {
-  padding: 25px 0;
+  padding: 25px 35px;
+  margin-bottom: 5px;
 }
