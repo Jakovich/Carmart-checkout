@@ -2,15 +2,23 @@
     display: none;
     width: 600px;
     max-width: 95%;
-    position: absolute;
+    position: fixed;
+
+    height: 85%;
     top: 100px;
     left: 50%;
-    padding: 20px 30px;
+
     transform: translateX(-50%);
+    z-index: 45;
+}
+
+.popup-descr__content {
     background-color: #ffffff;
     border-radius: @border-radius;
     box-shadow: @shadow-popup;
-    z-index: 45;
+    padding: 20px 30px;
+    overflow-y: auto;
+    height: 100%;
 }
 
 .popup-descr__header {

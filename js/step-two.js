@@ -1,3 +1,4 @@
+'use strict';
 $(document).ready(function() {
 /*Credit Calculator*/
 
@@ -69,4 +70,13 @@ $(document).ready(function() {
           }
        inputPercent.innerHTML = '(' + currentValue + ')';
   });
+
+  //select banc-item
+  $('.bancs__item').on('click', function(){
+    var allBancs = $('.bancs__item');
+    allBancs.removeClass('bancs__item--select');
+    $(this).addClass('bancs__item--select')
+  })
+
+
   });

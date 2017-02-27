@@ -1,30 +1,21 @@
 .popup-tooltip {
-  display: none;
   top: 50px;
-  position: fixed;
+  position: absolute;
   width: 350px;
   padding: 20px;
   box-shadow: @shadow-popup;
   border-radius: @border-radius;
-  background-color: #ffffff;
-}
-
-.popup-tooltip--dark {
   background-color: @blue-gray;
-  .popup-tooltip__title,
-  .popup-tooltip__text {
-    color: #ffffff;
-  }
-
 }
 
 .popup-tooltip__title {
   font-size: 18px;
   font-weight: 500;
+  color: #ffffff;
 }
 
 .popup-tooltip__text {
   font-size: 14px;
   font-weight: 300;
-  color: @text-color-dark;
+  color: #ffffff;
 }

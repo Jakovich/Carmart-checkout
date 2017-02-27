@@ -1,3 +1,4 @@
+'use strict';
 $(document).ready(function() {
 
     //show/hide questions
@@ -60,12 +61,27 @@ $(document).ready(function() {
         $('.popup-wrp').fadeOut();
     }
 
-
     $('[data-modal]').on('click', function(evt){
         evt.preventDefault();
         var currentPopup = $('[data-rel="' + this.dataset.modal + '"]');
         showPopup(currentPopup);
     });
+
+    $('[data-action="close"]').on('click', function(evt){
+        evt.preventDefault();
+        var currentPopup = $(this).closest('[data-rel]');
+        hidePopup(currentPopup);
+    })
+
+    $('.popup-wrp').on('click', function(evt) {
+        var allPopups = $('[data-rel]');
+            allPopups.each(function(){
+                    hidePopup($(this));
+            })
+    })
+
+
+
 
 
 

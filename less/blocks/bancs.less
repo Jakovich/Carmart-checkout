@@ -24,10 +24,22 @@
 
 .bancs__item {
     background-color: #ffffff;
+    border: 3px solid #ffffff;
     border-radius: @border-radius;
     box-shadow: @shadow-item;
     margin-bottom: 10px;
     padding-bottom: 15px;
+}
+
+.bancs__item:hover {
+    border: 3px solid @green;
+}
+
+.bancs__item--select {
+    border: 3px solid @green;
+    .bancs__control {
+        display: block;
+    }
 }
 
 .bancs__info {
@@ -35,7 +47,7 @@
     text-align: left;
     padding: 20px 0 8px;
     padding-left: 20px;
-  
+
 }
 
 .bancs__body .bancs__info {
@@ -83,6 +95,7 @@
 .bancs__exp {
     font-size: 14px;
     font-weight: 300;
+    color: @text-color;
     text-decoration: underline;
 }
 
@@ -136,12 +149,4 @@
     width: 35%;
     min-width: 345px;
     display: inline-block;
-}
-
-.bancs__item:hover {
-    border: 3px solid @green;
-
-    .bancs__control {
-        display: block;
-    }
 }

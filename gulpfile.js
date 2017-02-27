@@ -106,14 +106,14 @@ gulp.task('svgmin-general', function () {
 gulp.task("min-js", function(){
 
   gulp.src("js/main.js")
-
+  .pipe(plumber())
   .pipe(gulp.dest("build/js/"))
   .pipe(uglify())
   .pipe(rename("main.min.js"))
   .pipe(gulp.dest("build/js/"))
 
   gulp.src("js/step-two.js")
-
+  .pipe(plumber())
   .pipe(gulp.dest("build/js/"))
   .pipe(uglify())
   .pipe(rename("step-two.min.js"))
