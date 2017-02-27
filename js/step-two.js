@@ -72,7 +72,8 @@ $(document).ready(function() {
   });
 
   //select banc-item
-  $('.bancs__item').on('click', function(){
+  $('.bancs__item').on('click', function(evt){
+    if(!$(evt.target).hasClass('bancs__exp')&&!$(evt.target).hasClass('step-btn')&&!$(evt.target).hasClass('bancs__documents-list')) {
     var allBancs = $('.bancs__item');
     var currentBanc = $(this);
     if(currentBanc.hasClass('bancs__item--select')) {
@@ -81,7 +82,7 @@ $(document).ready(function() {
       allBancs.removeClass('bancs__item--select');
       $(this).addClass('bancs__item--select');
     }
-
+}
   })
 
 
