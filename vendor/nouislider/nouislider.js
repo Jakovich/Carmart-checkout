@@ -901,7 +901,9 @@ function closure ( target, options, originalOptions ){
 
 		var origin = addNodeTo(base, options.cssClasses.origin);
 		var handle = addNodeTo(origin, options.cssClasses.handle);
-
+      if(scope_Target.id == 'credit-range') {
+        handle.innerHTML = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="42px" height="42px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve"><g><g><circle style="fill:#037C58;fill-opacity:0.2;" cx="21" cy="21" r="21"/><path class="range-circle" style="stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" d="M25.1,7.5l-8.5,0c-2.5,0-4.8,1.3-6.1,3.5l-3.9,6.8c-1.3,2.2-1.3,4.8,0,7l3.9,6.8c1.2,2.2,3.6,3.5,6.1,3.5l8.5,0c2.5,0,4.8-1.3,6.1-3.5l3.9-6.8c1.3-2.2,1.3-4.8,0-7L31.1,11C29.9,8.8,27.6,7.5,25.1,7.5z"/></g><g style="opacity:0.6;"><polyline class="range-arrow" style="stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="24,17 28,21 24,25 "/><polyline class="range-arrow" style="stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="18,25 14,21 18,17"/></g></g></svg>';
+      }
 		handle.setAttribute('data-handle', handleNumber);
 
 		if ( handleNumber === 0 ) {
