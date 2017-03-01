@@ -11,11 +11,12 @@ $(document).ready(function() {
 
     //show/hide additional info in section info
     $('.info__addit-btn').on('click', function(event) {
-        $('.info__addit').slideToggle(300);
+      $(event.target).closest('.info').find('.info__addit').slideToggle(300);
+      //  $('.info__addit').slideToggle(300);
     })
 
     $('.info__btn--more').on('click', function(event) {
-        $('.info__addit').slideToggle(300);
+        $(event.target).closest('.info').find('.info__addit').slideToggle(300);
     })
 
     //add class active for services__item when add burron is clicked

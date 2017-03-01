@@ -6,7 +6,6 @@
 .bancs__header-content {
     display: flex;
     text-align: center;
-
 }
 
 .bancs__header-content {
@@ -29,9 +28,6 @@
 .bancs__column-name--active {
     color: @text-color-dark
 }
-
-
-
 
 .bancs__item {
     background-color: #ffffff;
@@ -59,9 +55,11 @@
 
 .bancs__item--select {
     border: 3px solid @green;
+
     .bancs__icon {
         opacity: 1;
     }
+
     .bancs__control {
         display: block;
     }
@@ -75,7 +73,6 @@
     flex-basis: 43%;
     text-align: left;
     padding-left: 20px;
-
 }
 
 .bancs__body .bancs__info {
@@ -86,6 +83,7 @@
     flex-basis: 20%;
     text-align: center;
     opacity: 0.6;
+
     img {
         width: 70%;
     }
@@ -96,26 +94,20 @@
     padding-top: 6px;
 }
 
-
-
 .bancs__percent {
     flex-basis: 13%;
-
 }
 
 .bancs__term {
     flex-basis: 11%;
-
 }
 
 .bancs__fee {
     flex-basis: 15%;
-
 }
 
 .bancs__payment {
     flex-basis: 18%;
-
 }
 
 .bancs__name {
@@ -128,14 +120,20 @@
     line-height: 16px;
     font-weight: 300;
     color: @blue-gray;
-  opacity: 0.8;
+    opacity: 0.8;
     text-decoration: none;
     border-bottom: 1px dashed @blue-gray;
 
     &:hover {
         opacity: 1;
-      text-decoration: none;
-      color: @blue-gray;
+        text-decoration: none;
+        color: @blue-gray;
+    }
+
+    &:focus {
+        opacity: 1;
+        text-decoration: none;
+        color: @blue-gray;
     }
 }
 
@@ -149,10 +147,17 @@
     display: inline-block;
     font-weight: 500;
     color: @blue-gray;
-  opacity: 0.8;
+    opacity: 0.8;
     text-decoration: none;
     border-bottom: 2px dashed @blue-gray;
+
     &:hover {
+        text-decoration: none;
+        opacity: 1;
+        color: @blue-gray;
+    }
+
+    &:focus {
         text-decoration: none;
         opacity: 1;
         color: @blue-gray;
@@ -200,9 +205,7 @@
     min-width: 345px;
     display: inline-block;
 }
-
 //второй вариант
-
 .bancs__body .bancs__info-check {
     display: flex;
 }
@@ -226,12 +229,12 @@
     left: 0;
     top: 0;
     bottom: 0;
-
     width: 57px;
+
     svg {
         width: 22px;
-      height: 16px;
-      fill: none;
-      stroke: #ffffff;
+        height: 16px;
+        fill: none;
+        stroke: #ffffff;
     }
 }

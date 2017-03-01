@@ -86,11 +86,46 @@
     text-align: center;
     margin-bottom: 0;
   display: inline-block;
+  input {
+    display: none;
+  }
 }
 
+.options__protect {
+  label:hover {
+    .options__check-stroke {
+      stroke: #808D9B;
+      opacity: 0.5;
+    }
+
+    .options__check-border {
+      opacity: 0.8;
+    }
+  }
+}
+
+.options__protect input:checked~label {
+  .options__check-stroke {
+    stroke: #08AB8A;
+    opacity: 1;
+  }
+
+  .options__check-border {
+    opacity: 0.4;
+  }
+}
+
+.options__check-stroke {
+  stroke: #808D9B;
+  opacity: 0.3;
+}
+
+.options__check-border {
+  opacity: 0.4;
+}
 //иконка выбора
 //вкл
-.options__check-stroke {
+/*.options__check-stroke {
   stroke: #08AB8A;
 }
 
@@ -117,7 +152,7 @@
 
 .options__check-border {
   opacity: 0.8;
-}
+}*/
 
 
 
@@ -126,6 +161,7 @@
     position: absolute;
     left: -45px;
     top: -6px;
+    cursor: pointer;
     svg {
         width: 36px;
         height: 34px;
