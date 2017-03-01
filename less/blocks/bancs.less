@@ -31,6 +31,8 @@
 }
 
 
+
+
 .bancs__item {
     background-color: #ffffff;
     border: 3px solid #ffffff;
@@ -125,10 +127,15 @@
     font-size: 14px;
     line-height: 16px;
     font-weight: 300;
-    color: @text-color;
-    text-decoration: underline;
+    color: @blue-gray;
+  opacity: 0.8;
+    text-decoration: none;
+    border-bottom: 1px dashed @blue-gray;
+
     &:hover {
-        color: @blue-gray;
+        opacity: 1;
+      text-decoration: none;
+      color: @blue-gray;
     }
 }
 
@@ -142,11 +149,12 @@
     display: inline-block;
     font-weight: 500;
     color: @blue-gray;
+  opacity: 0.8;
     text-decoration: none;
     border-bottom: 2px dashed @blue-gray;
     &:hover {
         text-decoration: none;
-        opacity: 0.8;
+        opacity: 1;
         color: @blue-gray;
     }
 }

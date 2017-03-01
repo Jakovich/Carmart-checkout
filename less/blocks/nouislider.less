@@ -7,7 +7,6 @@
 }
 
 .noUi-horizontal .noUi-handle {
-  background-image: url('../img/general/range.svg');
   background-color: transparent;
   border: none;
   outline: none;
@@ -16,30 +15,45 @@
   height: 42px;
   left: -21px;
   top: -13px;
+  
   &::before, &::after {
     display: none;
+  }
+  .range-circle, .range-arrow {
+    fill: #037C58;
+    transition: @transition;
+  }
+  
+
+  &:hover {
+    .range-circle, .range-arrow { 
+      fill: #00ab8a;
+    }
   }
 }
 
 .noUi-value {
-  border-bottom: 1px dashed @blue-gray-light;
+  border-bottom: 1px dashed @blue-gray;
   cursor: pointer;
   font-size: 16px;
-  color: @blue-gray-light;
-  
-  
+  color: @blue-gray;
+  transition: @transition;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .noUi-value-horizontal {
   
-    -webkit-transform: translate3d(-50%,20%,0);
-    transform: translate3d(-50%,20%,0);
+    -webkit-transform: translate3d(-50%,19%,0);
+    transform: translate3d(-50%,19%,0);
     &:nth-child(2) {
-      -webkit-transform: none;
-    transform: none;
+      -webkit-transform: translate3d(0,19%,0);;
+   transform: translate3d(0,19%,0);
     }
   &:nth-child(22) {
-      -webkit-transform: translate3d(-100%,20%,0);
-    transform: translate3d(-100%,20%,0);
+      -webkit-transform: translate3d(-100%,19%,0);
+    transform: translate3d(-100%,19%,0);
     }
 }

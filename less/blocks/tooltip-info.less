@@ -39,6 +39,12 @@
     color: @text-color;
     border-bottom: 1.5px dashed @text-color;
     text-decoration: none;
+  transition: @transition;
+  &:hover {
+    text-decoration: none;
+    color: @green;
+    border-color: @green;
+  }
 }
 
 .tooltip-info__btn {
@@ -59,7 +65,8 @@
     transition: @transition;
 
     &:hover {
-        opacity: 1;
+       color: @green;
+      border-color: @green;
     }
 }
 

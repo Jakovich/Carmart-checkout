@@ -7,6 +7,7 @@
     z-index: 10;
     display: inline-block;
     text-align: left;
+  
     &:hover {
         .question-tooltip__body {
             display: block;
@@ -21,6 +22,10 @@
     transform: none;
     margin-top: 0;
     top: auto;
+}
+
+.question-tooltip--inside {
+  right: -25px;
 }
 
 .question-tooltip--left {
@@ -56,6 +61,7 @@
 }
 
 .question-tooltip__body {
+  border: 2px solid #344149;
     display: none;
     top: 15px;
     position: absolute;
@@ -66,16 +72,21 @@
     border-radius: @border-radius;
     background-color: @blue-gray;
     z-index: 12;
+  padding-bottom: 17px;
+    
 }
 
 .question-tooltip__title {
     font-size: 18px;
     font-weight: 500;
     color: #ffffff;
+    margin-top: 0;
+  text-shadow: 0 1px rgba(0,0,0,0.2);
 }
 
 .question-tooltip__text {
     font-size: 14px;
     font-weight: 300;
     color: #ffffff;
+  text-shadow: 0 1px rgba(0,0,0,0.2);
 }

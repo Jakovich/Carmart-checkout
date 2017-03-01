@@ -24,13 +24,16 @@
 .credit-calcul__title {
   font-size: 20px;
 }
+.credit-calcul__title-text {
+  display: inline-block;vertical-align: middle;
+}
 
 .credit-calcul__fee-percent {
   font-weight: 300;
   color: @blue-gray-light;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 .credit-calcul__fee-sum-wrp {
   text-align: right;
@@ -56,6 +59,31 @@
  text-align: right;
 }
 
+//цвета
+//verdgin
+/*
+рубль:808d9b
+цифры: #000000
+прозрачность 0.4
+граница: 808d9b 0.7
+*/
+//нормальный
+/*рубль:808d9b
+цифры: #000000
+прозрачность 1
+граница: 808d9b 0.7*/
+
+//фокус
+
+/*рубль:808d9b
+цифры: #000000
+прозрачность 1
+граница: зеленый 1*/
+//ховер
+/*рубль:808d9b
+цифры: #000000
+прозрачность 1
+граница: 808d9b 1*/
 
 .credit-calcul__sum-wrp {
   text-align: right;
@@ -79,16 +107,25 @@
     padding: 13px 0;
     padding-top: 16px;
     cursor: pointer;
-    border: 1px solid @blue-gray-light;
-    border-left: none;
+    border: 0.5px solid @blue-gray-light;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    //border-left: none;
     position: relative;
-
+    transition: color 0.2s ease;
+    &:hover {
+      border-color: @green;
+      .credit-calcul__term-text {
+        color: @green;
+        border-bottom-color: @green;
+      }
+    }
   }
 
   &:first-child {
     label {
       border-bottom-left-radius: @border-radius;
-      border-left: 1px solid @blue-gray-light;
+      border-left-width: 1px;
     }
   }
 
@@ -96,16 +133,19 @@
     label {
       border-top-right-radius: @border-radius;
       border-bottom-right-radius: @border-radius;
+      border-right-width: 1px;
     }
   }
 
 }
+
 
 .credit-calcul__term-text {
   border-bottom: 2px dashed @blue-gray-light;
   font-size: 16px;
   font-weight: 400;
   color: @blue-gray;
+  transition: @transition;
 }
 
 .credit-calcul__check-icon {
