@@ -85,5 +85,12 @@ $(document).ready(function() {
 }
   })
 
+  //init price format for credit-calcul__fee-input
+  $('input[name=credit-fee]').priceFormat({
+        prefix: '',
+        thousandsSeparator: ' ',
+        centsSeparator: '',
+        centsLimit: 0
+      });
 
   });

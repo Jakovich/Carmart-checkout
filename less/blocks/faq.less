@@ -38,6 +38,14 @@
     border-bottom: 1px dashed #5d5d5d;
     position: relative;
     margin-left: 25px;
+    transition: @transition;
+    &:hover {
+      color: @green;
+      border-bottom-color: @green;
+      .faq__icon svg {
+          stroke: @green;
+      }
+    }
 }
 
 .faq__icon {
