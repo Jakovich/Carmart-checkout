@@ -1,0 +1,30 @@
+.info-fluid {}
+
+.info-short {
+    background-color: #d9dce1;
+    margin-top: -15px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 9;
+}
+
+.info-short__text {
+  position: relative;
+  padding-left: 15px;
+  &::after {
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 7px;
+        left: 0;
+        top: 50%;
+        margin-top: -3.5px;
+        background-image: url('../img/point.svg');
+    }
+}
+
+.info-short__sale {
+  color: @green;
+  font-weight: 500;
+}

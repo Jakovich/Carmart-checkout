@@ -12,49 +12,33 @@ $(document).ready(function() {
     //show/hide additional info in section info
     $('.info__addit-btn').on('click', function(event) {
       $(event.target).closest('.info').find('.info__addit').slideToggle(300);
-      //  $('.info__addit').slideToggle(300);
+      $(event.target).closest('.info-fluid').find('.info-short').slideToggle(300);
     })
 
     $('.info__btn--more').on('click', function(event) {
         $(event.target).closest('.info').find('.info__addit').slideToggle(300);
+        $(event.target).closest('.info-fluid').find('.info-short').slideToggle(300);
     })
 
-    //add class active for services__item when add burron is clicked
-    $('.services-btn').on('mousedown', function(event) {
-        var currentItem = $(event.target).closest('.services__item');
-        currentItem.addClass('services__item--focus');
-    });
-
-    $('.services-btn').on('mouseup', function(event) {
-        var currentItem = $(event.target).closest('.services__item');
-        currentItem.removeClass('services__item--focus');
-        $(this).blur();
-    });
-
-    $('button').on('mouseup', function(event) {
-        $(this).blur();
-    });
-
-
-
-    //add/delete select class for services-items
-    $('.services-btn').on('click', function(event) {
-        var currentBtn = $(this);
-
-        var currentItem = $(event.target).closest('.services__item');
-        if (currentBtn.hasClass('services-btn--select')) {
-            currentBtn.text('Установить');
-        } else {
-            currentBtn.text('Установлено');
-        }
-        currentBtn.toggleClass('services-btn').toggleClass('services-btn services-btn--select');
-        currentItem.toggleClass('services__item').toggleClass('services__item services__item--select');
-    });
 
     //toggle icon of sorting
     $('.sorting-icon').on('click', function() {
         $(this).toggleClass('sorting-icon--down').toggleClass('sorting-icon--up');
     });
+
+    //show short check
+
+
+
+    $(window).scroll(function(){
+        //element['fade'+ ($(this).scrollTop() > 400 ? 'In': 'Out')](500);
+        if ($(this).scrollTop() > 350) {
+             $('.info-fluid').fadeIn();
+        } else {
+            $('.info-fluid').fadeOut();
+        }
+    });
+
 
     //show/hide popup
 

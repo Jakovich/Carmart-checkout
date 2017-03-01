@@ -1,64 +1,73 @@
 .credit-calcul {
-  background-color: #f8f8f8;
-  padding: 0 30px;
-  padding-top: 27px;
- padding-bottom: 43px;
-  border-radius: @border-radius;
-  border: 1px solid rgba(128,141,155,0.7);
+    background-color: #f8f8f8;
+    padding: 27px 30px 43px;
+    border-radius: @border-radius;
+    border: 1px solid rgba(128,141,155,0.7);
 }
 
-
-
 .credit-calcul__item {
-  &:first-child {
-    margin-bottom: 60px;
-  }
-
+    &:first-child {
+        margin-bottom: 60px;
+    }
 }
 
 .credit-calcul__terms {
- display: flex;
-
+    display: flex;
 }
 
 .credit-calcul__title {
-  font-size: 20px;
+    font-size: 20px;
 }
+
 .credit-calcul__title-text {
-  display: inline-block;vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .credit-calcul__fee-percent {
-  font-weight: 300;
-  color: @blue-gray-light;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 6px;
+    font-weight: 300;
+    color: @blue-gray-light;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
 }
+
 .credit-calcul__fee-sum-wrp {
-  text-align: right;
+    text-align: right;
 }
+
 .credit-calcul__fee-sum {
-  font-size: 20px;
-  font-weight: 500;
-  min-width: 180px;
-  color: @blue-gray-light;
-  border: 2pt solid @blue-gray-light;
-  border-radius: @border-radius;
-  display: inline-block;
-  padding: 10px 12px;
-  margin-bottom: 10px;
-  span {
-    color: @text-color;
-  }
+    position: relative;
 }
 
 .credit-calcul__fee-input {
- background-color: #f8f8f8;
- border:none;
- text-align: right;
+    background-color: #f8f8f8;
+    border: none;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+    width: 180px;
+    color: @blue-gray-light;
+    border: 2pt solid @blue-gray-light;
+    border-radius: @border-radius;
+    display: inline-block;
+    padding: 10px 30px 10px 12px;
+    margin-bottom: 10px;
+    transition: @transition;
+    &:focus {
+        border-color: @green;
+        outline: none;
+        color: #000000;
+    }
 }
 
+.credit-calcul__fee-currency {
+    position: absolute;
+    right: 12px;
+    top: 9.5px;
+    font-size: 20px;
+    color: @blue-gray-light;
+}
 //цвета
 //verdgin
 /*
@@ -72,9 +81,7 @@
 цифры: #000000
 прозрачность 1
 граница: 808d9b 0.7*/
-
 //фокус
-
 /*рубль:808d9b
 цифры: #000000
 прозрачность 1
@@ -84,143 +91,146 @@
 цифры: #000000
 прозрачность 1
 граница: 808d9b 1*/
-
 .credit-calcul__sum-wrp {
-  text-align: right;
+    text-align: right;
 }
 
 .credit-calcul__sum {
-  font-size: 20px;
-  font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .credit-calcul__term {
-  flex-grow: 1;
-  margin-top: 16px;
-  input {
-    display: none;
-  }
+    flex-grow: 1;
+    margin-top: 16px;
 
-  label {
-    width: 100%;
-    text-align: center;
-    padding: 13px 0;
-    padding-top: 16px;
-    cursor: pointer;
-    border: 0.5px solid @blue-gray-light;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    //border-left: none;
-    position: relative;
-    transition: color 0.2s ease;
-    &:hover {
-      border-color: @green;
-      .credit-calcul__term-text {
-        color: @green;
-        border-bottom-color: @green;
-      }
+    input {
+        display: none;
     }
-  }
 
-  &:first-child {
     label {
-      border-bottom-left-radius: @border-radius;
-      border-left-width: 1px;
-    }
-  }
+        width: 100%;
+        text-align: center;
+        padding: 16px 0 13px;
+        cursor: pointer;
+        border: 0.5px solid @blue-gray-light;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        //border-left: none;
+        position: relative;
+        transition: color 0.2s ease;
 
-  &:nth-child(6) {
-    label {
-      border-top-right-radius: @border-radius;
-      border-bottom-right-radius: @border-radius;
-      border-right-width: 1px;
-    }
-  }
+        &:hover {
+            border-color: @green;
 
+            .credit-calcul__term-text {
+                color: @green;
+                border-bottom-color: @green;
+            }
+        }
+    }
+
+    &:first-child {
+        label {
+            border-bottom-left-radius: @border-radius;
+            border-left-width: 1px;
+        }
+    }
+
+    &:nth-child(6) {
+        label {
+            border-top-right-radius: @border-radius;
+            border-bottom-right-radius: @border-radius;
+            border-right-width: 1px;
+        }
+    }
 }
 
-
 .credit-calcul__term-text {
-  border-bottom: 2px dashed @blue-gray-light;
-  font-size: 16px;
-  font-weight: 400;
-  color: @blue-gray;
-  transition: @transition;
+    border-bottom: 2px dashed @blue-gray-light;
+    font-size: 16px;
+    font-weight: 400;
+    color: @blue-gray;
+    transition: @transition;
 }
 
 .credit-calcul__check-icon {
-  svg {
-    width: 21px;
-    height: 15px;
-  }
-
-  position: absolute;
-  left: 15%;
-  top: 50%;
-  transform: translateY(-50%);
+    svg {
+        width: 21px;
+        height: 15px;
+    }
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .credit-calcul__term--note {
-  label {
-    &::before {
-      content: '';
-      position: absolute;
-      height: 6px;
-      background-color: @green;
-      top: 0;
-      left:0;
-      right: 0;
-      z-index:5;
+    label {
+        &::before {
+            content: '';
+            position: absolute;
+            height: 6px;
+            background-color: @green;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 5;
+        }
     }
-  }
 }
 
 .credit-calcul__term input:checked~label {
-  background-color: @green;
-  color: #ffffff;
-  box-shadow: inset 0 0 5px #777d83;
-  box-shadow: inset 0 0 5px #64686c;
-  z-index:6;
-  position: relative;
-  .credit-calcul__check-icon svg {
-    stroke: #ffffff;
-    opacity: 0.6;
-  }
-  .credit-calcul__term-text {
-    border-bottom: none;
+    background-color: @green;
     color: #ffffff;
-  }
+    box-shadow: inset 0 0 5px #777d83;
+    box-shadow: inset 0 0 5px #64686c;
+    z-index: 6;
+    position: relative;
+
+    .credit-calcul__check-icon svg {
+        stroke: #ffffff;
+        opacity: 0.6;
+    }
+
+    .credit-calcul__term-text {
+        border-bottom: none;
+        color: #ffffff;
+    }
 }
 
 .credit-calcul__conditions {
-  display: flex;
+    display: flex;
 }
 
 .credit-calcul__condition {
-  border-right: 1px solid rgba(128,141,155,0.5);
-  text-align: center;
-  border-bottom: 18px solid #929aa2;
-  margin-bottom: -18px;
-  position: relative;
-  font-size: 14px;
-  font-weight: 500;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  background-color: #e6e7e9;
-  z-index: 1;
-  &:nth-child(1) {
-    flex-basis: 30%;
-    border-left: 1px solid rgba(128,141,155,0.5);
-  }
-  &:nth-child(2) {
-    flex-basis: 25%;
-  }
-  &:nth-child(3) {
-    flex-basis: 45%;
-  }
+    border-right: 1px solid rgba(128,141,155,0.5);
+    text-align: center;
+    border-bottom: 18px solid #929aa2;
+    margin-bottom: -18px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #e6e7e9;
+    z-index: 1;
+
+    &:nth-child(1) {
+        flex-basis: 30%;
+        border-left: 1px solid rgba(128,141,155,0.5);
+    }
+
+    &:nth-child(2) {
+        flex-basis: 25%;
+    }
+
+    &:nth-child(3) {
+        flex-basis: 45%;
+    }
 }
 
 .credit-calcul__condition--active {
-  background-color: #deebe8;
-  border-bottom-color: @green;
+    background-color: #deebe8;
+    border-bottom-color: @green;
 }

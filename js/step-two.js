@@ -6,6 +6,24 @@ $(document).ready(function() {
       $('.credit-calcul__sum').text($(this).val());
   });
 
+  /*Sorting of bancs*/
+$('.bancs__column-title').on('click', function(event) {
+
+  var currentItem = $(event.target).closest('.bancs__column-name');
+  var allItems = $('.bancs__column-name');
+  if (currentItem.hasClass('bancs__column-name--active')) {
+    currentItem.find('.sorting-icon').toggleClass('sorting-icon--down').toggleClass('sorting-icon--up');
+  } else {
+
+    allItems.each(function(){
+      $(this).removeClass('bancs__column-name--active');
+      currentItem.addClass('bancs__column-name--active');
+    })
+
+  }
+  })
+
+
   /*Credit range slider*/
   var rangeSlider = document.querySelector('.credit-calcul__range');
   //slider init

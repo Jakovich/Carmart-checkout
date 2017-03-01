@@ -116,7 +116,8 @@
                 </div>
             </div>
         </section>
-        <section class="info info--fluid">
+        <div class="info-fluid">
+        <section class="info">
             <div class="container-fluid">
                 <div class="info__content row">
 
@@ -196,6 +197,16 @@
                 </div>
             </div>
         </section>
+        <div class="info-short">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="info-short__text">Установленное <a href="#" class="info-short__link">дополнительное оборудование</a> (4 позиции на сумму 57 000 Р) дает вам скидку на а/м: <span class="info-short__sale">118 000 Р</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
         <div class="steps">
             <div class="container-fluid">
                 <div class="row">
@@ -257,7 +268,7 @@
                                 <div class="credit-calcul__title"><span class="credit-calcul__title-text">Первоначальный взнос</span> <span class="credit-calcul__fee-percent">(43%)</span></div>
                             </div>
                             <div class="col-sm-6 col-xs-6 credit-calcul__fee-sum-wrp">
-                                <div class="credit-calcul__fee-sum"><input class="credit-calcul__fee-input" type="text" name="credit-fee" placeholder="123 000">P</div>
+                                <div class="credit-calcul__fee-sum"><input class="credit-calcul__fee-input" type="text" name="credit-fee" placeholder="123 000"><span class="credit-calcul__fee-currency">P</span></div>
                             </div>
                         </div>
                         <div class="row">
@@ -294,43 +305,56 @@
                                         <input type="radio" id="one-year" name="credit-term" value="1 год">
                                         <label for="one-year">
                                         <span class="credit-calcul__check-icon">
-                                <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                            </span> <span class="credit-calcul__term-text">1 год</span></label>
+                                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                                        </span>
+                                        <span class="credit-calcul__term-text">1 год</span>
+                                    </label>
                                     </div>
 
                                     <div class="credit-calcul__term credit-calcul__term--note">
                                         <input type="radio" checked id="two-year" name="credit-term" value="2 года">
-                                        <label for="two-year"><span class="credit-calcul__check-icon">
-                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                        </span> <span class="credit-calcul__term-text">2 года</span></label>
+                                        <label for="two-year">
+                                            <span class="credit-calcul__check-icon">
+                                                <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                                            </span> <span class="credit-calcul__term-text">2 года</span></label>
                                     </div>
 
                                     <div class="credit-calcul__term credit-calcul__term--note">
                                         <input type="radio" id="three-year" name="credit-term" value="3 годa">
-                                        <label for="three-year"><span class="credit-calcul__check-icon">
-                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                        </span> <span class="credit-calcul__term-text">3 года</span></label>
+                                        <label for="three-year">
+                                            <span class="credit-calcul__check-icon">
+                                                <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                                            </span>
+                                            <span class="credit-calcul__term-text">3 года</span>
+                                        </label>
                                     </div>
 
                                     <div class="credit-calcul__term credit-calcul__term--note">
                                         <input type="radio" id="four-year" name="credit-term" value="4 года">
-                                        <label for="four-year"><span class="credit-calcul__check-icon">
-                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                        </span> <span class="credit-calcul__term-text">4 года</span></label>
+                                        <label for="four-year">
+                                            <span class="credit-calcul__check-icon">
+                                                <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                                            </span>
+                                            <span class="credit-calcul__term-text">4 года</span>
+                                        </label>
                                     </div>
 
                                     <div class="credit-calcul__term">
                                         <input type="radio" id="five-year" name="credit-term" value="5 лет">
-                                        <label for="five-year"><span class="credit-calcul__check-icon">
-                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                        </span> <span class="credit-calcul__term-text">5 лет</span></label>
+                                        <label for="five-year">
+                                            <span class="credit-calcul__check-icon">
+                                                <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                                            </span>
+                                            <span class="credit-calcul__term-text">5 лет</span>
+                                        </label>
                                     </div>
 
                                     <div class="credit-calcul__term">
                                         <input type="radio" id="six-year" name="credit-term" value="6 лет">
-                                        <label for="six-year"><span class="credit-calcul__check-icon">
-                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                        </span> <span class="credit-calcul__term-text">6 лет</span></label>
+                                        <label for="six-year">
+                                            <span class="credit-calcul__check-icon">
+                                                <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                                            </span> <span class="credit-calcul__term-text">6 лет</span></label>
                                     </div>
                                 </div>
                             </div>
@@ -346,12 +370,16 @@
                                 <div class="bancs__header-content">
                                     <div class="bancs__info">
                                         <div class="bancs__column-name">
-                                            Название банка
+                                            <span class="bancs__column-title">Название банка</span>
+                                            <div class="bancs__sorting-icon"><span class="sorting-icon sorting-icon--down">
+                                            <svg><use xlink:href="/img/svgsprites/general.svg#sorting"/></svg>
+                                        </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="bancs__percent">
                                         <div class="bancs__column-name bancs__column-name--active">
-                                            Ставка
+                                            <span class="bancs__column-title">Ставка</span>
                                             <div class="bancs__sorting-icon"><span class="sorting-icon sorting-icon--down">
                                             <svg><use xlink:href="/img/svgsprites/general.svg#sorting"/></svg>
                                         </span>
@@ -359,15 +387,30 @@
                                         </div>
                                     </div>
                                     <div class="bancs__term">
-                                        <div class="bancs__column-name">Срок
+                                        <div class="bancs__column-name">
+                                            <span class="bancs__column-title">Срок</span>
+                                            <div class="bancs__sorting-icon"><span class="sorting-icon sorting-icon--down">
+                                            <svg><use xlink:href="/img/svgsprites/general.svg#sorting"/></svg>
+                                        </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="bancs__fee">
-                                        <div class="bancs__column-name">Перв. взнос
+                                        <div class="bancs__column-name">
+                                            <span class="bancs__column-title">Перв. взнос</span>
+                                            <div class="bancs__sorting-icon"><span class="sorting-icon sorting-icon--down">
+                                            <svg><use xlink:href="/img/svgsprites/general.svg#sorting"/></svg>
+                                        </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="bancs__payment">
-                                        <div class="bancs__column-name">Ежемес. платеж</div>
+                                        <div class="bancs__column-name">
+                                            <span class="bancs__column-title">Ежемес. платеж</span>
+                                            <div class="bancs__sorting-icon"><span class="sorting-icon sorting-icon--down">
+                                            <svg><use xlink:href="/img/svgsprites/general.svg#sorting"/></svg>
+                                        </span>
+                                            </div></div>
                                     </div>
                                 </div>
                             </div>

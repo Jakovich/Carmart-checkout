@@ -21,12 +21,28 @@
     font-weight: 300;
     color: @blue-gray;
     display: inline-block;
-    border-bottom: 2px dashed @blue-gray;
+
     position: relative;
+    cursor: pointer;
 }
 
+.bancs__column-title {
+    border-bottom: 2px dashed @blue-gray;
+
+}
+.bancs__sorting-icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    width: 20px;
+    height: 12px;
+}
 .bancs__column-name--active {
-    color: @text-color-dark
+    color: @text-color-dark;
+    .bancs__sorting-icon {
+        display: block;
+    }
 }
 
 .bancs__item {
@@ -41,13 +57,7 @@
     position: relative;
 }
 
-.bancs__sorting-icon {
-    position: absolute;
-    top: 0;
-    right: -25px;
-    width: 20px;
-    height: 12px;
-}
+
 
 .bancs__item:hover {
     border: 3px solid @green;

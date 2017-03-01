@@ -4,6 +4,7 @@
     padding: 5px 0;
     border-bottom: 10px solid transparent;
     border-width: 10px 0;
+    position: relative;
     background-color: @blue-gray;
     background-color: hsla(0, 0%, 0%, 0);
     background-image: -webkit-linear-gradient(@blue-gray, @blue-gray), -webkit-linear-gradient(top left, transparent 50.5%, @blue-gray 50.5%), -webkit-linear-gradient(top right, transparent 50.5%, @blue-gray 50.5%), -webkit-linear-gradient(bottom left, transparent 50.5%, @blue-gray 50.5%), -webkit-linear-gradient(bottom right, transparent 50.5%, @blue-gray 50.5%);
@@ -14,6 +15,7 @@
     background-size: auto auto, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
     background-clip: padding-box, border-box, border-box, border-box, border-box;
     background-origin: padding-box, border-box, border-box, border-box, border-box;
+    z-index:10;
 }
 
 .info__content {
@@ -26,6 +28,8 @@
     font-weight: 500;
     font-size: 18px;
     color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .info__price {
@@ -146,12 +150,14 @@
     margin-right: 5px;
 }*/
 /*additional section*/
-.info__short {
-  color: @blue-gray;
-  font-size: 14px;
-  font-weight: 300px;
-  border-bottom: 1px solid rgba(128,141,155,0.6);
-  background-color: #d9dde1;
+.info-fluid {
+
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  z-index: 50;
 }
 //дополнительное оборудование font-weight:500;
 //сумма скидкиfont-weight: 500
