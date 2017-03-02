@@ -20,6 +20,16 @@ $(document).ready(function() {
         $(event.target).closest('.info-fluid').find('.info-short').slideToggle(300);
     })
 
+    //unblur links & buttons after click
+
+    $('button').on('mouseup', function(event) {
+        $(this).blur();
+    });
+
+    $('a').on('mouseup', function(event) {
+        $(this).blur();
+    });
+
 
     //toggle icon of sorting
     $('.sorting-icon').on('click', function() {

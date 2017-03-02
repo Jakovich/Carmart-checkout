@@ -13,7 +13,7 @@
     cursor: pointer;
     background-color: @green;
     color: #ffffff; // padding: 10px 35px;
-    padding: 14px 0;
+    padding: 12px 0;
     width: 100%;
     text-align: center;
     position: relative;
@@ -21,13 +21,18 @@
     border:none;
     outline: none;
     transition: @transition;
+    text-decoration: none;
 
     &:hover {
-        background-color: #33bca1
+        background-color: #33bca1;
+        text-decoration: none;
+        color: #ffffff;
     }
     &:focus {
         background-color: #039c7f;
         outline: none;
+        text-decoration: none;
+        color: #ffffff;
     }
 }
 
@@ -50,11 +55,13 @@
     color: @text-color;
     &:hover {
       background-color: #d9d9d9;
+      color: @text-color;
     }
 
     &:focus {
       background-color: #e6e6e6;
       outline: none;
+      color: @text-color;
     }
     .step-btn__icon {
         right: auto;

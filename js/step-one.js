@@ -10,9 +10,7 @@
       $(this).blur();
   });
 
-  $('button').on('mouseup', function(event) {
-      $(this).blur();
-  });
+
 
 
 

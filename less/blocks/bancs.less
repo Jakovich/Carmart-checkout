@@ -148,20 +148,21 @@
     line-height: 16px;
     font-weight: 300;
     color: @blue-gray;
-    opacity: 0.8;
+    opacity: 1;
     text-decoration: none;
     border-bottom: 1px dashed @blue-gray;
-
+    transition: @transition;
     &:hover {
-        opacity: 1;
+        color: @text-color-dark;
         text-decoration: none;
-        color: @blue-gray;
+        border-color: @text-color-dark;
     }
 
     &:focus {
         opacity: 1;
         text-decoration: none;
-        color: @blue-gray;
+        color: @text-color-dark;
+        border-color: @text-color-dark;
     }
 }
 
@@ -175,20 +176,21 @@
     display: inline-block;
     font-weight: 500;
     color: @blue-gray;
-    opacity: 0.8;
+    opacity: 1;
     text-decoration: none;
     border-bottom: 2px dashed @blue-gray;
-
+    transition: @transition;
     &:hover {
         text-decoration: none;
-        opacity: 1;
-        color: @blue-gray;
+        color: @text-color-dark;
+        border-color: @text-color-dark;
     }
 
     &:focus {
         text-decoration: none;
         opacity: 1;
-        color: @blue-gray;
+        color: @text-color-dark;
+        border-color: @text-color-dark;
     }
 }
 
@@ -244,6 +246,7 @@
     flex-basis: 43%;
     text-align: left;
     text-align: left;
+    flex-grow: 1;
 }
 
 .bancs__check {
