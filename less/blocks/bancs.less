@@ -2,58 +2,6 @@
     margin-top: 15px;
 }
 
-.bancs__content,
-.bancs__header-content {
-    display: flex;
-    text-align: center;
-}
-
-.bancs__header-content {
-    align-items: flex-end;
-}
-
-.bancs__header .bancs__header-content {
-    padding: 10px 0;
-}
-
-.bancs__column-name {
-   
-    display: inline-block;
-
-    position: relative;
-    cursor: pointer;
-}
-
-.bancs__column-title {
-    border-bottom: 2px dashed @blue-gray;
-    font-size: 18px;
-    font-weight: 300;
-    color: @blue-gray;
-  transition: @transition;
-  opacity: 0.8;
-  &:hover {
-    opacity: 1;
-  }
-}
-.bancs__sorting-icon {
-    display: none;
-    position: absolute;
-    top: 4px;
-    right: -25px;
-    width: 20px;
-    height: 12px;
-}
-.bancs__column-name--active {
-    
-    .bancs__sorting-icon {
-        display: inline-block;
-    }
-  .bancs__column-title {
-    color: @text-color-dark;
-    opacity: 1;
-  }
-}
-
 .bancs__item {
     background-color: #ffffff;
     border: 3px solid #ffffff;
@@ -65,8 +13,6 @@
     min-height: 130px;
     position: relative;
 }
-
-
 
 .bancs__item:hover {
     border: 3px solid @green;
@@ -88,23 +34,78 @@
     }
 }
 
+.bancs__content,
+.bancs__header-content {
+    display: flex;
+    text-align: center;
+}
+//header
+.bancs__header-content {
+    align-items: flex-end;
+}
+
+.bancs__header .bancs__header-content {
+    padding: 10px 0;
+}
+
+.bancs__column-name {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.bancs__column-title {
+    border-bottom: 2px dashed @blue-gray;
+    font-size: 18px;
+    font-weight: 300;
+    color: @blue-gray;
+    transition: @transition;
+    opacity: 0.8;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.bancs__sorting-icon {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: -25px;
+    width: 20px;
+    height: 12px;
+}
+
+.bancs__column-name--active {
+    .bancs__sorting-icon {
+        display: inline-block;
+    }
+
+    .bancs__column-title {
+        color: @text-color-dark;
+        opacity: 1;
+    }
+}
+
+
+
 .bancs__info {
     flex-basis: 43%;
     text-align: left;
     padding-left: 20px;
 }
-
+//body
 .bancs__body .bancs__info {
     display: flex;
 }
 
 .bancs__icon {
     flex-basis: 20%;
-    text-align: center;
+    text-align: left;
     opacity: 0.6;
-
+    padding-left: 8px;
     img {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -123,10 +124,12 @@
 
 .bancs__fee {
     flex-basis: 15%;
+    min-width: 125px;
 }
 
 .bancs__payment {
     flex-basis: 18%;
+    min-width: 165px;
 }
 
 .bancs__name {
@@ -225,12 +228,13 @@
     display: inline-block;
 }
 //второй вариант
+
 .bancs__body .bancs__info-check {
     display: flex;
 }
 
 .bancs__info-check {
-    padding-left: 57px;
+    padding-left: 65px;
     flex-basis: 43%;
     text-align: left;
     text-align: left;
@@ -255,5 +259,11 @@
         height: 16px;
         fill: none;
         stroke: #ffffff;
+    }
+}
+
+@media (max-width: 860px) {
+    .bancs__icon {
+        padding-left: 0;
     }
 }

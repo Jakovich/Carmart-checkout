@@ -108,7 +108,13 @@ $('.bancs__column-title').on('click', function(event) {
         prefix: '',
         thousandsSeparator: ' ',
         centsSeparator: '',
-        centsLimit: 0
+        centsLimit: 0,
       });
 
   });
+//empty input
+$('input[name=credit-fee]').on('blur', function() {
+  if ($(this).val() == '0') {
+      $(this).val('');
+  }
+})
