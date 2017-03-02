@@ -93,6 +93,7 @@
     flex-basis: 43%;
     text-align: left;
     padding-left: 20px;
+    flex-grow: 1;
 }
 //body
 .bancs__body .bancs__info {
@@ -104,6 +105,7 @@
     text-align: left;
     opacity: 0.6;
     padding-left: 8px;
+    max-width: 100px;
     img {
         width: 80%;
     }
@@ -116,20 +118,24 @@
 
 .bancs__percent {
     flex-basis: 13%;
+    max-width: 120px;
 }
 
 .bancs__term {
     flex-basis: 11%;
+    max-width: 90px;
 }
 
 .bancs__fee {
     flex-basis: 15%;
     min-width: 125px;
+    max-width: 165px;
 }
 
 .bancs__payment {
     flex-basis: 18%;
     min-width: 165px;
+    max-width: 180px;
 }
 
 .bancs__name {
@@ -218,7 +224,7 @@
 .bancs__control {
     display: none;
     text-align: right;
-    padding-right: 5%;
+    padding-right: 3.5%;
     transition: @transition;
 }
 
