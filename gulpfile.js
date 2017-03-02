@@ -128,6 +128,15 @@ gulp.task("min-js", function(){
 
 });
 
+gulp.task("min-vendor-js", function(){
+  gulp.src("vendor/nouislider/nouislider.js")
+  .pipe(plumber())
+  .pipe(gulp.dest("js/vendor/"))
+  .pipe(uglify())
+  .pipe(rename("nouislider.min.js"))
+  .pipe(gulp.dest("js/vendor/"))
+});
+
 gulp.task("style", function(){
   gulp.src("less/style.less")
   .pipe(plumber())
