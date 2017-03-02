@@ -17,9 +17,7 @@
 }
 
 .bancs__column-name {
-    font-size: 18px;
-    font-weight: 300;
-    color: @blue-gray;
+   
     display: inline-block;
 
     position: relative;
@@ -28,7 +26,14 @@
 
 .bancs__column-title {
     border-bottom: 2px dashed @blue-gray;
-
+    font-size: 18px;
+    font-weight: 300;
+    color: @blue-gray;
+  transition: @transition;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
 }
 .bancs__sorting-icon {
     display: none;
@@ -39,10 +44,14 @@
     height: 12px;
 }
 .bancs__column-name--active {
-    color: @text-color-dark;
+    
     .bancs__sorting-icon {
-        display: block;
+        display: inline-block;
     }
+  .bancs__column-title {
+    color: @text-color-dark;
+    opacity: 1;
+  }
 }
 
 .bancs__item {

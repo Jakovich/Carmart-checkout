@@ -1,17 +1,20 @@
-.info-fluid {}
-
 .info-short {
     background-color: #d9dce1;
     margin-top: -15px;
-    padding-top: 35px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
     position: relative;
     z-index: 9;
+    border-bottom: 1px solid rgba(128,141,155,0.5);
 }
 
 .info-short__text {
   position: relative;
   padding-left: 15px;
+  margin: 0;
+  font-size: 14px;
+  color: @blue-gray;
+  font-weight: 300;
   &::after {
         position: absolute;
         content: '';
@@ -27,4 +30,17 @@
 .info-short__sale {
   color: @green;
   font-weight: 500;
+}
+
+.info-short__link {
+  font-weight: 500;
+  color: @blue-gray;
+  border-bottom: 2px dashed @blue-gray;
+  transition: @transition;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+    color: @blue-gray;
+    text-decoration: none;
+  }
 }
