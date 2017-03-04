@@ -67,6 +67,24 @@ gulp.task('svgstore-services', function () {
         .pipe(gulp.dest('img/svgsprites'));
 });
 
+gulp.task('svgstore-insurance', function () {
+    return gulp
+        .src('img/insurance/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('img/svgsprites'));
+});
+
 gulp.task('svgmin-services', function () {
     return gulp
         .src('img/services/*.svg')
@@ -112,18 +130,25 @@ gulp.task("min-js", function(){
   .pipe(rename("main.min.js"))
   .pipe(gulp.dest("build/js/"))
 
-  gulp.src("js/step-one.js")
+  gulp.src("js/step-equipment.js")
   .pipe(plumber())
   .pipe(gulp.dest("build/js/"))
   .pipe(uglify())
-  .pipe(rename("step-one.min.js"))
+  .pipe(rename("step-equipment.min.js"))
   .pipe(gulp.dest("build/js/"))
 
-  gulp.src("js/step-two.js")
+  gulp.src("js/step-credit.js")
   .pipe(plumber())
   .pipe(gulp.dest("build/js/"))
   .pipe(uglify())
-  .pipe(rename("step-two.min.js"))
+  .pipe(rename("step-credit.min.js"))
+  .pipe(gulp.dest("build/js/"))
+
+  gulp.src("js/step-insurance.js")
+  .pipe(plumber())
+  .pipe(gulp.dest("build/js/"))
+  .pipe(uglify())
+  .pipe(rename("step-insurance.min.js"))
   .pipe(gulp.dest("build/js/"))
 
 });

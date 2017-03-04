@@ -1,0 +1,62 @@
+.checkbox-main {
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+  display: inline-block;
+
+  input {
+    display: none;
+  }
+  label {
+    font-weight: 300;
+  }
+}
+
+.checkbox-main {
+  label:hover {
+    .checkbox-main__stroke {
+      stroke: #808D9B;
+      opacity: 0.5;
+    }
+
+    .checkbox-main__border {
+      opacity: 0.8;
+    }
+  }
+}
+
+.checkbox-main input:checked~label {
+  .checkbox-main__stroke {
+    stroke: #08AB8A;
+    opacity: 1;
+  }
+
+  .checkbox-main__border {
+    opacity: 0.4;
+  }
+}
+
+.checkbox-main__stroke {
+  stroke: #808D9B;
+  opacity: 0.3;
+}
+
+.checkbox-main__border {
+  opacity: 0.4;
+}
+
+
+
+
+.checkbox-main__icon {
+    position: absolute;
+    left: -45px;
+    top: -6px;
+    cursor: pointer;
+    svg {
+        width: 36px;
+        height: 34px;
+    }
+}

@@ -1,0 +1,68 @@
+.drivers {
+
+}
+
+.drivers__content {
+    background-color: #ffffff;
+    border-radius: @border-radius;
+    text-align: center;
+    padding: 35px 30px;
+    border: 1px solid @blue-gray-light;
+    box-shadow: @shadow-item;
+    margin-bottom: 17px;
+}
+.drivers__checkbox-wrp {
+    text-align: left;
+    width: 470px;
+    margin: 0 auto;
+    padding: 25px 0;
+    padding-left: 47px;
+    position: relative;
+    margin-bottom: 20px;
+    &::after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        bottom:0;
+        left: -10px;
+        right: -10px;
+        background-color: rgba(128,141,155,0.5);
+    }
+}
+
+
+.dirvers__btn-wrp {
+    position: relative;
+    width: 470px;
+    margin: 0 auto;
+}
+
+.drivers__btn {
+    border: none;
+    outline: none;
+    border-radius: @border-radius;
+    background-color: rgba(128,128,128,0.2);
+    padding: 15px;
+    font-size: 15px;
+    color: @blue-gray;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+}
+
+.dirvers__btn-icon {
+    position: absolute;
+    buttom: 0;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 56px;
+    border-right: 0.5px solid rgba(128,128,128,0.5);
+    text-align: center;
+    padding-top: 7px;
+
+    svg {
+        width: 33px;
+        height: 26px;
+    }
+}

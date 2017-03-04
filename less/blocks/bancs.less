@@ -40,6 +40,7 @@
     text-align: center;
 }
 //header
+
 .bancs__header-content {
     align-items: flex-end;
 }
@@ -87,8 +88,6 @@
     }
 }
 
-
-
 .bancs__info {
     flex-basis: 43%;
     text-align: left;
@@ -96,6 +95,7 @@
     flex-grow: 1;
 }
 //body
+
 .bancs__body .bancs__info {
     display: flex;
 }
@@ -106,6 +106,7 @@
     opacity: 0.6;
     padding-left: 8px;
     max-width: 100px;
+
     img {
         width: 80%;
     }
@@ -138,9 +139,28 @@
     max-width: 180px;
 }
 
+.bancs__cost {
+    flex-basis: 18%;
+    min-width: 165px;
+    max-width: 180px;
+}
+
+.bancs__addit {
+    flex-basis: 30%;
+    min-width: 165px;
+    max-width: 180px;
+}
+
 .bancs__name {
     font-size: 18px;
     margin-bottom: 0;
+}
+
+.bancs__name-icon {
+    svg {
+        width: 22px;
+        height: 13px;
+    }
 }
 
 .bancs__exp {
@@ -152,6 +172,7 @@
     text-decoration: none;
     border-bottom: 1px dashed @blue-gray;
     transition: @transition;
+
     &:hover {
         color: @text-color-dark;
         text-decoration: none;
@@ -180,6 +201,7 @@
     text-decoration: none;
     border-bottom: 2px dashed @blue-gray;
     transition: @transition;
+
     &:hover {
         text-decoration: none;
         color: @text-color-dark;
@@ -270,7 +292,6 @@
         stroke: #ffffff;
     }
 }
-
 @media (max-width: 860px) {
     .bancs__icon {
         padding-left: 0;
