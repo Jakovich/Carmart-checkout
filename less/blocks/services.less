@@ -4,18 +4,23 @@
 }
 
 .services__item {
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,0.75);
     margin-bottom: 12px;
     border-radius: 5px;
     padding: 16px 22px;
     box-shadow: @shadow-item;
-    border: 1px solid #ccd1d7;
-    border-radius: @border-radius
+    border: 3px solid rgba(255,255,255,0.75);
+    border-radius: @border-radius;
+
+    &:hover {
+        border: 3px solid #00ab8a;
+    }
 }
 
 .services__item--select {
+    background-color: rgba(255,255,255,1);
     box-shadow: none;
-    border: 1px solid #ffffff;
+    
 
     .services__icon img {
         filter: none;
@@ -34,9 +39,7 @@
     }*/
 }
 
-.services__item:hover {
-    border: 1px solid #b3bbc3;
-}
+
 
 .services__item--focus {
     background-color: #edeef0;

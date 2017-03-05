@@ -1,0 +1,54 @@
+
+.casco-options__name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.casco-options__name--margin {
+  margin-bottom: 7px;
+}
+
+.casco-options__text{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.casco-options__control {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.casco-options__show {
+  display: inline-block;
+  border: none;
+  outline: none;
+  transition: @transition;
+  font-size: 15px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-bottom: 2px dashed;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.casco-options__show--more {
+    color: @green;
+    border-color: @green;
+}
+
+.casco-options__show--less {
+    color: @blue-gray;
+    border-color: @blue-gray;
+    &:hover {
+      color: @green;
+      border-color: @green;
+    }
+}
+
+.casco-option__addit {
+  display: none;
+}

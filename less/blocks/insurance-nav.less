@@ -1,0 +1,39 @@
+.insurance-nav {
+    display: flex;
+    list-style: none;
+    background-color: #e6e8eb;
+}
+
+.insurance-nav__item {
+    width: 50%;
+    font-size: 20px;
+
+    &:last-child {
+        font-weight: 500;
+    }
+}
+
+.insurance-nav__link {
+    text-align: center;
+    display: block;
+    color: @blue-gray;
+    background-color: #e6e8eb;
+    text-decoration: none;
+    transition: @transition;
+
+    span {
+        border-bottom: 2px dashed @blue-gray;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+}
+
+.insurance-nav__link--active {
+    background-color: @green;
+    span {
+        border-bottom: none;
+    }
+    border-bottom: none;
+}

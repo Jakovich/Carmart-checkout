@@ -5,8 +5,7 @@
 .options__content {
     background-color: #ffffff;
     border-radius: @border-radius;
-    padding: 30px;
-    padding-bottom: 10px;
+    padding: 30px 30px 10px;
     border-bottom: 10px solid transparent;
     border-width: 10px 0;
     background-color: hsla(0, 0%, 0%, 0);
@@ -41,9 +40,9 @@
 }
 
 .options__title {
-  font-size: 18px;
-  color: @blue-gray;
-  margin-bottom: 5px;
+    font-size: 18px;
+    color: @blue-gray;
+    margin-bottom: 5px;
 }
 
 .options__banc {
@@ -56,25 +55,25 @@
 }
 
 .options__banc {
-  display: inline-block;
-  position: relative;
+    display: inline-block;
+    position: relative;
 }
 
 .options__banc-icon {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  vertical-align: top;
-    margin-right: 15px;
-  img {
+    display: inline-block;
+    position: absolute;
+    left: 0;
     vertical-align: top;
-  }
+    margin-right: 15px;
+
+    img {
+        vertical-align: top;
+    }
 }
 
 .options__info {
-  text-align: center;
+    text-align: center;
 }
-
 
 .options__exp {
     font-size: 14px;
@@ -83,4 +82,30 @@
     text-align: center;
     width: 270px;
     display: inline-block;
+}
+
+.options__refusing {
+    text-align: right;
+}
+
+.options__refusing-link {
+    font-size: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.5px dashed @blue-gray;
+    color: @blue-gray;
+    opacity: 0.8;
+    transition: @transition;
+
+    &:hover {
+        color: @green;
+        border-color: @green;
+    }
 }
