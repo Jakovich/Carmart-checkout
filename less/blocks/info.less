@@ -31,8 +31,15 @@
     padding: 3px 0;
 }
 
-.info__auto {}
-
+.info__auto {
+  display: flex;
+}
+.info__img {
+  margin-right: 10px;
+  img {
+      clip-path: url(#autoimgPath);
+    }
+}
 .info__model {
     font-weight: 500;
     font-size: 18px;

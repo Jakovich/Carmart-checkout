@@ -6,18 +6,18 @@ $(document).ready(function() {
         $('.credit-calcul__sum').text($(this).val());
     });
 
-    /*Sorting of bancs*/
-    $('.bancs__column-title').on('click', function(event) {
+    /*Sorting of financial*/
+    $('.financial__column-title').on('click', function(event) {
 
-        var currentItem = $(event.target).closest('.bancs__column-name');
-        var allItems = $('.bancs__column-name');
-        if (currentItem.hasClass('bancs__column-name--active')) {
+        var currentItem = $(event.target).closest('.financial__column-name');
+        var allItems = $('.financial__column-name');
+        if (currentItem.hasClass('financial__column-name--active')) {
             currentItem.find('.sorting-icon').toggleClass('sorting-icon--down').toggleClass('sorting-icon--up');
         } else {
 
             allItems.each(function() {
-                $(this).removeClass('bancs__column-name--active');
-                currentItem.addClass('bancs__column-name--active');
+                $(this).removeClass('financial__column-name--active');
+                currentItem.addClass('financial__column-name--active');
             })
 
         }
@@ -90,15 +90,15 @@ $(document).ready(function() {
     });
 
     //select banc-item
-    $('.bancs__item').on('click', function(evt) {
-        if (!$(evt.target).hasClass('bancs__exp') && !$(evt.target).hasClass('step-btn') && !$(evt.target).hasClass('bancs__documents-list')) {
+    $('.financial__item').on('click', function(evt) {
+        if (!$(evt.target).hasClass('financial__exp') && !$(evt.target).hasClass('step-btn') && !$(evt.target).hasClass('financial__documents-list')) {
             var allBancs = $('.bancs__item');
             var currentBanc = $(this);
-            if (currentBanc.hasClass('bancs__item--select')) {
-                currentBanc.removeClass('bancs__item--select');
+            if (currentBanc.hasClass('financial__item--select')) {
+                currentBanc.removeClass('financial__item--select');
             } else {
-                allBancs.removeClass('bancs__item--select');
-                $(this).addClass('bancs__item--select');
+                allBancs.removeClass('financial__item--select');
+                $(this).addClass('financial__item--select');
             }
         }
     })

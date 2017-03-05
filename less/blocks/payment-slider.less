@@ -1,0 +1,82 @@
+.payment-slider {
+    margin-top: 10px;
+    border-top: 1px solid #EDEBEB;
+    border-bottom: 1px solid #EDEBEB;
+}
+.payment-slider__content {
+    padding: 0 6%;
+}
+
+
+
+.payment-slider__wrapper {
+    margin: 0 auto;
+    padding: 0 80px;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    //max-width: 795px;
+    max-width: 1100px;
+
+}
+
+/** Carousel **/
+
+.payment-slider__jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.payment-slider__items {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.payment-slider__items li {
+    width: 200px;
+    float: left;
+    border: 1px solid #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.payment-slider__items img {
+    display: block;
+    width: 100%;
+    max-width: 100%!important;
+    height: auto !important;
+}
+
+/** Carousel Controls **/
+
+.payment-slider__control-prev,
+.payment-slider__control-next {
+    position: absolute;
+    top: 40%;
+    margin-top: -15px;
+    width: 60px;
+    height: 53px;
+    text-align: center;
+    text-decoration: none;
+    transition: @transition;
+    &:hover {
+        opacity: 0.7;
+    }
+        svg {
+            width: 60px;
+            height: 57px;
+        }
+}
+
+.payment-slider__control-prev {
+    left: 0;
+}
+
+.payment-slider__control-next{
+    right: 0;
+}

@@ -1,8 +1,8 @@
-.bancs {
+.financial {
     margin-top: 15px;
 }
 
-.bancs__item {
+.financial__item {
     background-color: rgba(255,255,255,0.75);
     border: 3px solid #ffffff;
     border-radius: @border-radius;
@@ -14,48 +14,48 @@
     position: relative;
 }
 
-.bancs__item:hover {
+.financial__item:hover {
     border: 3px solid @green;
 }
 
-.bancs__item--select {
+.financial__item--select {
     border: 3px solid @green;
     background-color: rgba(255,255,255,1);
-    .bancs__icon {
+    .financial__icon {
         opacity: 1;
     }
 
-    .bancs__control {
+    .financial__control {
         display: block;
     }
 
-    .bancs__check {
+    .financial__check {
         background-color: @green;
     }
 }
 
-.bancs__content,
-.bancs__header-content {
+.financial__content,
+.financial__header-content {
     display: flex;
     text-align: center;
 }
 //header
 
-.bancs__header-content {
+.financial__header-content {
     align-items: flex-end;
 }
 
-.bancs__header .bancs__header-content {
+.financial__header .financial__header-content {
     padding: 10px 0;
 }
 
-.bancs__column-name {
+.financial__column-name {
     display: inline-block;
     position: relative;
     cursor: pointer;
 }
 
-.bancs__column-title {
+.financial__column-title {
     border-bottom: 2px dashed @blue-gray;
     font-size: 18px;
     font-weight: 300;
@@ -68,7 +68,7 @@
     }
 }
 
-.bancs__sorting-icon {
+.financial__sorting-icon {
     display: none;
     position: absolute;
     top: 4px;
@@ -77,18 +77,18 @@
     height: 12px;
 }
 
-.bancs__column-name--active {
-    .bancs__sorting-icon {
+.financial__column-name--active {
+    .financial__sorting-icon {
         display: inline-block;
     }
 
-    .bancs__column-title {
+    .financial__column-title {
         color: @text-color-dark;
         opacity: 1;
     }
 }
 
-.bancs__info {
+.financial__info {
     flex-basis: 43%;
     text-align: left;
     padding-left: 20px;
@@ -96,11 +96,11 @@
 }
 //body
 
-.bancs__body .bancs__info {
+.financial__body .financial__info {
     display: flex;
 }
 
-.bancs__icon {
+.financial__icon {
     flex-basis: 20%;
     text-align: left;
     opacity: 0.6;
@@ -112,58 +112,58 @@
     }
 }
 
-.bancs__text {
+.financial__text {
     flex-basis: 80%;
     padding-top: 6px;
 }
 
-.bancs__percent {
+.financial__percent {
     flex-basis: 13%;
     max-width: 120px;
 }
 
-.bancs__term {
+.financial__term {
     flex-basis: 11%;
     max-width: 90px;
 }
 
-.bancs__fee {
+.financial__fee {
     flex-basis: 15%;
     min-width: 125px;
     max-width: 165px;
 }
 
-.bancs__payment {
+.financial__payment {
     flex-basis: 18%;
     min-width: 165px;
     max-width: 180px;
 }
 
-.bancs__cost {
+.financial__cost {
     flex-basis: 18%;
     min-width: 165px;
     max-width: 180px;
 }
 
-.bancs__addit {
+.financial__addit {
     flex-basis: 30%;
     min-width: 165px;
     max-width: 180px;
 }
 
-.bancs__name {
+.financial__name {
     font-size: 18px;
     margin-bottom: 0;
 }
 
-.bancs__name-icon {
+.financial__name-icon {
     svg {
         width: 22px;
         height: 13px;
     }
 }
 
-.bancs__exp {
+.financial__exp {
     font-size: 14px;
     line-height: 16px;
     font-weight: 300;
@@ -187,13 +187,13 @@
     }
 }
 
-.bancs__body .bancs__documents {
+.financial__body .financial__documents {
     font-size: 14px;
     font-weight: 300;
     color: @blue-gray;
 }
 
-.bancs__documents-list {
+.financial__documents-list {
     display: inline-block;
     font-weight: 500;
     color: @blue-gray;
@@ -216,54 +216,54 @@
     }
 }
 
-.bancs__body .bancs__percent {
+.financial__body .financial__percent {
     font-weight: 500;
     font-size: 18px;
 }
 
-.bancs__min {
+.financial__min {
     color: @green;
     display: block;
     margin-top: -5px;
     font-weight: 500;
 }
 
-.bancs__body .bancs__term {
+.financial__body .financial__term {
     font-size: 18px;
     font-weight: 300;
 }
 
-.bancs__body .bancs__fee {
+.financial__body .financial__fee {
     font-size: 18px;
     font-weight: 300;
     color: @text-color-dark;
 }
 
-.bancs__body .bancs__payment {
+.financial__body .financial__payment {
     font-size: 18px;
     font-weight: 500;
     color: @blue-gray;
 }
 
-.bancs__control {
+.financial__control {
     display: none;
     text-align: right;
     padding-right: 3.5%;
     transition: @transition;
 }
 
-.bancs__control__btn {
+.financial__control__btn {
     width: 35%;
     min-width: 345px;
     display: inline-block;
 }
 //второй вариант
 
-.bancs__body .bancs__info-check {
+.financial__body .financial__info-check {
     display: flex;
 }
 
-.bancs__info-check {
+.financial__info-check {
     padding-left: 65px;
     flex-basis: 43%;
     text-align: left;
@@ -271,7 +271,7 @@
     flex-grow: 1;
 }
 
-.bancs__check {
+.financial__check {
     cursor: pointer;
     background-color: #ffffff;
     position: absolute;
@@ -293,7 +293,7 @@
     }
 }
 @media (max-width: 860px) {
-    .bancs__icon {
+    .financial__icon {
         padding-left: 0;
     }
 }

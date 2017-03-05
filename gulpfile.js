@@ -85,6 +85,24 @@ gulp.task('svgstore-insurance', function () {
         .pipe(gulp.dest('img/svgsprites'));
 });
 
+gulp.task('svgstore-payment', function () {
+    return gulp
+        .src('img/payment/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('img/svgsprites'));
+});
+
 gulp.task('svgmin-services', function () {
     return gulp
         .src('img/services/*.svg')
@@ -102,6 +120,7 @@ gulp.task('svgmin-services', function () {
 
         .pipe(gulp.dest('img/svgmin'));
 });
+
 
 gulp.task('svgmin-general', function () {
     return gulp
@@ -149,6 +168,13 @@ gulp.task("min-js", function(){
   .pipe(gulp.dest("build/js/"))
   .pipe(uglify())
   .pipe(rename("step-insurance.min.js"))
+  .pipe(gulp.dest("build/js/"))
+
+  gulp.src("js/step-payment.js")
+  .pipe(plumber())
+  .pipe(gulp.dest("build/js/"))
+  .pipe(uglify())
+  .pipe(rename("step-payment.min.js"))
   .pipe(gulp.dest("build/js/"))
 
 });
@@ -206,7 +232,7 @@ gulp.task("copyVendor", function() {
 });
 
 gulp.task("copyImg", function() {
-  gulp.src("img/**/*.{png,svg}")
+  gulp.src("img/**/*.{png,svg,jpg}")
   .pipe(copy())
   .pipe(gulp.dest("build/img"));
 });
