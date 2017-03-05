@@ -89,10 +89,10 @@ $(document).ready(function() {
         inputPercent.innerHTML = '(' + currentValue + ')';
     });
 
-    //select banc-item
+    //select financial-item
     $('.financial__item').on('click', function(evt) {
         if (!$(evt.target).hasClass('financial__exp') && !$(evt.target).hasClass('step-btn') && !$(evt.target).hasClass('financial__documents-list')) {
-            var allBancs = $('.bancs__item');
+            var allBancs = $('.financial__item');
             var currentBanc = $(this);
             if (currentBanc.hasClass('financial__item--select')) {
                 currentBanc.removeClass('financial__item--select');

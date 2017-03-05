@@ -27,4 +27,18 @@ $(document).ready(function() {
         });
         currentItem.show();
     });
+
+    //select financial-item
+      $('.financial__item').on('click', function(evt) {
+          if (!$(evt.target).hasClass('financial__exp') && !$(evt.target).hasClass('step-btn') && !$(evt.target).hasClass('financial__documents-list')) {
+              var allBancs = $('.financial__item');
+              var currentBanc = $(this);
+              if (currentBanc.hasClass('financial__item--select')) {
+                  currentBanc.removeClass('financial__item--select');
+              } else {
+                  allBancs.removeClass('financial__item--select');
+                  $(this).addClass('financial__item--select');
+              }
+          }
+      })
 })
