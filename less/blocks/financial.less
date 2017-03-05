@@ -30,7 +30,10 @@
     }
 
     .financial__check {
-        background-color: @green;
+        svg {
+            display: block;
+        }
+        background-color: rgba(0,171,138,0.15);
     }
 }
 
@@ -269,6 +272,7 @@
     text-align: left;
     text-align: left;
     flex-grow: 1;
+
 }
 
 .financial__check {
@@ -284,12 +288,13 @@
     top: 0;
     bottom: 0;
     width: 57px;
-
+    background-color: rgba(255,255,255,0.15);
     svg {
+        display: none;
         width: 22px;
         height: 16px;
         fill: none;
-        stroke: #ffffff;
+        stroke: @green;
     }
 }
 @media (max-width: 860px) {

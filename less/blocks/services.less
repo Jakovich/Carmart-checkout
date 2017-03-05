@@ -20,7 +20,9 @@
 .services__item--select {
     background-color: rgba(255,255,255,1);
     box-shadow: none;
-    
+    .services__title-icon {
+        display: inline-block;
+    }
 
     .services__icon img {
         filter: none;
@@ -81,6 +83,50 @@
     margin-top: 0;
     margin-bottom: 15px;
 }
+
+.services__title-icon {
+
+    display: none;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: @transition;
+    position: relative;
+    &:hover {
+        opacity: 1;
+        .services__title-tooltip {
+            display: block;
+        }
+    }
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+}
+
+.services__title-tooltip {
+      border: 2px solid #344149;
+    display: none;
+    top: 17px;
+    position: absolute;
+    width: 300px;
+    left: 17px;
+    padding: 20px;
+    box-shadow: @shadow-popup;
+    border-radius: @border-radius;
+    background-color: @blue-gray;
+    z-index: 12;
+     padding-bottom: 17px;
+     font-size: 14px;
+    line-height: 22px;
+     font-weight: 300;
+     color: #ffffff;
+   text-shadow: 0 1px rgba(0,0,0,0.2);
+}
+
 
 .services__details {
     p {
