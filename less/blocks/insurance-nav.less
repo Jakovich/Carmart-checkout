@@ -2,12 +2,18 @@
     display: flex;
     list-style: none;
     background-color: #e6e8eb;
+    padding: 0;
+    margin: 0;
+    background: #d2d4d9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .insurance-nav__item {
     width: 50%;
     font-size: 20px;
-
+    padding:0;
+    margin: 0;
     &:last-child {
         font-weight: 500;
     }
@@ -16,10 +22,17 @@
 .insurance-nav__link {
     text-align: center;
     display: block;
+    padding: 20px 0;
     color: @blue-gray;
-    background-color: #e6e8eb;
+    background: #d2d4d9;
+    border: 1px solid #d2d4d9;
     text-decoration: none;
-    transition: @transition;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    &:hover {
+      background-color: #ccd1d7;
+      color: @blue-gray;
+    }
 
     span {
         border-bottom: 2px dashed @blue-gray;
@@ -31,9 +44,50 @@
 }
 
 .insurance-nav__link--active {
-    background-color: @green;
+    background: @green;
+    background: linear-gradient(to top, #00ab8a, #55c6b0);
+    color: #ffffff;
+    position: relative;
+    border-color: #007b57;
+    .insurance-nav__caret {
+      display: block;
+    }
+    &:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
     span {
         border-bottom: none;
     }
-    border-bottom: none;
+
+}
+
+.insurance-nav__caret {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+
+}
+
+
+
+.insurance-nav__caret:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 12px solid #007b57;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+.insurance-nav__caret:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 0;
+  border-top: 11px solid #00ab8a;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
 }

@@ -9,12 +9,12 @@
     }
   }
 
-  input:disabled~label {
+/*  input~label {
     &::after,&::before{
       opacity: 0.4;
       cursor: text;
     }
-  }
+  }*/
 }
 .radio-inputs__text {
   color: @text-color-dark;
@@ -43,6 +43,7 @@
     top: -3px;
     left: 0;
     cursor: pointer;
+    opacity: 0.4;
   }
 
   &::after {
@@ -55,7 +56,16 @@
     border-radius: 50%;
     background: @green;
     background: linear-gradient(to top, #00ab8a, #55c6b0);
-    left: 5.5px;
-    top: 2.5px;
+    left: 6px;
+    opacity: 0.4;
+    top: 3px;
   }
+}
+
+.radio-inputs__title {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 7px;
+  color: @blue-gray;
+  position: relative;
 }

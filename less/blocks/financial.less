@@ -16,6 +16,11 @@
 
 .financial__item:hover {
     border: 3px solid @green;
+    .radio-inputs__label {
+        &::before, &::after {
+            opacity: 1;
+        }
+    }
 }
 
 .financial__item--select {
@@ -34,6 +39,11 @@
             display: block;
         }
         background-color: rgba(0,171,138,0.15);
+    }
+    .radio-inputs__label {
+        &::before, &::after {
+            opacity: 1;
+        }
     }
 }
 
@@ -102,9 +112,7 @@
     flex-grow: 1;
 }
 
-.financial__info-check--small {
-    flex-basis: 40%;
-}
+
 
 .financial__cost {
     flex-basis: 15%;
@@ -117,13 +125,41 @@
     flex-basis: 45%;
     text-align: left;
     //min-width: 460px;
-    //max-width: 420px;
+    max-width: 450px;
 }
 
 //body
+.financial__info-check--small {
+    flex-basis: 40%;
+    display: flex;
+}
+
+.financial__info-check--small {
+    flex-basis: 40%;
+}
+
+.financial__info-align {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 
 .financial__body .financial__info {
     display: flex;
+}
+
+.financial__insurance-name {
+    display: inline-block;
+    vertical-align: middle;
+  color: @text-color-dark;
+  border-bottom: 2px dashed @text-color-dark;
+  transition: @transition;
+  text-decoration: none;
+  &:hover {
+      color: @text-color-dark;
+      opacity: 0.8;
+      text-decoration: none;
+  }
 }
 
 .financial__icon {
@@ -138,9 +174,18 @@
     }
 }
 
+.financial__icon--insurance {
+    flex-basis: 18%;
+    min-width: 50px;
+}
+
 .financial__text {
     flex-basis: 80%;
     padding-top: 6px;
+}
+
+.financial__text--insurance {
+    flex-basis: 82%;
 }
 
 .financial__percent {

@@ -1,27 +1,43 @@
-
+.casco-options {
+    margin-top: 25px;
+}
 
 .casco-options__control {
-  text-align: center;
-  margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.casco-options__title {
+    font-size: 18px;
+    font-weight: 300;
+    color: @blue-gray;
+    margin-bottom: 5px;
 }
 
 .casco-option__content {
-  background-color: #ffffff;
+    background-color: #ffffff;
+    border-radius: @border-radius;
+    padding: 5px 0 15px;
+    box-shadow: @shadow-item;
+}
+
+.casco-options__status {
+    display: none;
 }
 
 .casco-options__show {
-  display: inline-block;
-  border: none;
-  outline: none;
-  transition: @transition;
-  font-size: 15px;
-  background-color: transparent;
-  text-transform: uppercase;
-  border-bottom: 2px dashed;
+    display: inline-block;
+    border: none;
+    outline: none;
+    transition: @transition;
+    font-size: 15px;
+    background-color: transparent;
+    text-transform: uppercase;
+    border-bottom: 2px dashed;
 
-  &:hover {
-    opacity: 0.8;
-  }
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .casco-options__show--more {
@@ -32,12 +48,17 @@
 .casco-options__show--less {
     color: @blue-gray;
     border-color: @blue-gray;
+
     &:hover {
-      color: @green;
-      border-color: @green;
+        color: @green;
+        border-color: @green;
     }
 }
 
-.casco-option__addit {
-  display: none;
+.casco-option__item {
+    border-bottom: 1px solid rgba(26,26,26,0.2);
+}
+
+.casco-option__item--addit {
+    display: none;
 }

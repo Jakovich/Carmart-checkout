@@ -1,0 +1,100 @@
+.popup-insurance {
+    position: fixed;
+    display: none;
+    top: 100px;
+    z-index: 45;
+    width: 600px;
+    max-width: 95%;
+    height: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .radio-inputs__label {
+
+      &::before,&:after {
+          opacity: 1;
+      }
+  }
+}
+
+.popup-insurance_content {
+    background-color: #ffffff;
+    border-radius: @border-radius;
+    box-shadow: @shadow-popup;
+    padding: 20px 30px 10px;
+    padding-bottom: 30px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.popup-insurance__title {
+    display: flex;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    &::after {
+        content:'';
+        position: absolute;
+        height: 1px;
+        background-color: rgba(26,26,26,0.2);
+        left: -30px;
+        right: -30px;
+        bottom: 0;
+    }
+}
+
+.popup-insurance__icon {
+    margin-right: 18px;
+}
+
+.popup-insurance__name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.popup-insurance__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: @blue-gray;
+    margin-bottom: 0;
+}
+
+.popup-insurance__price {
+    font-size: 26px;
+    color: @blue-gray-light;
+    margin-bottom: 0;
+    margin-top: -6px;
+}
+
+.popup-insurance__btn {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 395px;
+}
+
+.popup-insurance__info {
+    padding-top: 3px;
+    border-top: 1px dashed rgba(128,141,155,0.5);
+}
+
+.popup-insurance__info-title {
+    font-size: 18px;
+    font-weight: 300;
+    color: @blue-gray;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.popup-insurance__info-subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.popup-insurance__info-text {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    color: @text-color-dark;
+}

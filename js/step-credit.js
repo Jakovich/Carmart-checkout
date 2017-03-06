@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 
     /*Sorting of financial*/
-    $('.financial__column-title').on('click', function(event) {
+    $('[data-sorting]').on('click', function(event) {
 
         var currentItem = $(event.target).closest('.financial__column-name');
         var allItems = $('.financial__column-name');

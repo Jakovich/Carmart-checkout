@@ -1,8 +1,41 @@
+.insurance-setting {
+  padding: 15px 17px;
+
+}
+
+.insurance-setting--border {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    background-color: rgba(26,26,26,0.2);
+    left:0;
+    top: 0;
+    bottom: 3px;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    background-color: rgba(26,26,26,0.2);
+    right: 0;
+    top: 0;
+    bottom: 3px;
+  }
+}
+
 .insurance-setting__name {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 0;
   text-transform: uppercase;
+  position: relative;
+}
+
+.insurance-setting__exp {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .insurance-setting__name--margin {
