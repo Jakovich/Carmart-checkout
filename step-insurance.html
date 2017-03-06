@@ -279,6 +279,11 @@
                                         <form action="POST">
                                             <div class="driver-license__input-wrp">
                                                 <input class="driver-license__input" type="text" placeholder="Фамилия Имя Отчество">
+                                                <div class="driver-license__tooltip">
+                                                    <div class="driver-license__tooltip-caret"></div>
+                                                    Пожалуйста заполните ФИО водителя
+
+                                                </div>
                                             </div>
                                             <div class="driver-license__inline-wrp">
                                                 <input class="driver-license__input driver-license__input--inline" type="text" placeholder="Дата рождения">
@@ -297,13 +302,14 @@
                                         </select>
                                             </div>
                                         </form>
+
                                     </div>
                                     <div class="drivers__checkbox-wrp">
 
-                                        <div class="checkbox-main">
+                                        <div class="checkbox-main checkbox-main--left">
                                             <input type="checkbox" name="driver-save" id="driver-save">
                                             <label for="driver-save">
-                                            <span class="checkbox-main__icon">
+                                            <span class="checkbox-main__icon checkbox-main__icon--inline checkbox-main__icon--top">
                                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                      width="36.3px" height="33.8px" viewbox="0 0 36.3 33.8" style="enable-background:new 0 0 36.3 33.8;" xml:space="preserve">
                                                     <g>
@@ -311,7 +317,7 @@
                                                        <polyline class="checkbox-main__stroke" style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="25.5,12.1 15.8,21.8 10.8,16.7 	"/>
                                                    </g>
                                                 </svg>
-                                            </span>Сохранять данные о водителях
+                                            </span><p class="insurance-setting__name">Сохранять данные о водителях</p>
 
                                             </label>
                                         </div>
@@ -332,21 +338,21 @@
                             <div class="insurance-advantages">
                                 <p class="insurance-advantages__title">Опции</p>
                                 <div class="insurance-advantages__item">
-                                    <div class="insurance-advantages__icon"><svg><use xlink:href="/img/svgsprites/insurance.svg#options-sale"/></svg></div>
+                                    <div class="insurance-advantages__icon"><img src="img/insurance/options-sale.svg" alt=""></div>
                                     <div class="insurance-advantages__text">
                                         <h6 class="insurance-advantages__name">Расчет страховок с учетом ваших скидок</h6>
                                         <p class="insurance-advantages__exp">Кармарт учтет все ваши скидки и сделает вам выгодное предложение пот страховке!</p>
                                     </div>
                                 </div>
                                 <div class="insurance-advantages__item">
-                                    <div class="insurance-advantages__icon"><svg><use xlink:href="/img/svgsprites/insurance.svg#options-friend"/></svg></div>
+                                    <div class="insurance-advantages__icon"><img src="img/insurance/options-friend.svg" alt=""></div>
                                     <div class="insurance-advantages__text">
                                         <h6 class="insurance-advantages__name">Вписывайте всех друзей в страховку</h6>
                                         <p class="insurance-advantages__exp">Впишите всех друзей в страховку для удобства. Это практически не повлияет на стоимость</p>
                                     </div>
                                 </div>
                                 <div class="insurance-advantages__item">
-                                    <div class="insurance-advantages__icon"><svg><use xlink:href="/img/svgsprites/insurance.svg#options-casco"/></svg></div>
+                                    <div class="insurance-advantages__icon"><img src="img/insurance/options-casco.svg" alt=""></div>
                                     <div class="insurance-advantages__text">
                                         <h6 class="insurance-advantages__name">Каско для кредита</h6>
                                         <p class="insurance-advantages__exp">Кармарт учтет все ваши скидки и сделает вам выгодное предложение пот страховке!</p>
@@ -421,7 +427,7 @@
                                                         </div>
                                                         <div class="financial__info-align">
                                                         <div class="financial__icon financial__icon--insurance">
-                                                            <img src="img/bancs/unicredit-hexagone.png" alt="">
+                                                            <img src="img/bancs/alfa-hexagone.png" alt="">
 
                                                         </div>
                                                         <div class="financial__text financial__text--insurance">
@@ -466,13 +472,14 @@
                                                         <div class="financial__check">
                                                             <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
                                                         </div>
-                                                        <div class="financial__icon">
+                                                        <div class="financial__info-align">
+                                                        <div class="financial__icon financial__icon--insurance">
                                                             <img src="img/bancs/unicredit-hexagone.png" alt="">
 
                                                         </div>
-                                                        <div class="financial__text">
-                                                            <p class="financial__name">Альфастрахование <span class="financial__name-icon"><svg><use xlink:href="/img/svgsprites/insurance.svg#crown"/></svg></span></p>
-
+                                                        <div class="financial__text financial__text--insurance">
+                                                            <p class="financial__name"><a href="#" data-modal="insurance" class="financial__insurance-name">Объединенная страховая компания</a> </p>
+                                                        </div>
                                                         </div>
                                                     </div>
 

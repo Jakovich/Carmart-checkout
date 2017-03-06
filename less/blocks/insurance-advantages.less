@@ -4,22 +4,24 @@
   align-items: center;
   padding: 20px 0;
   border-top: 1px dashed rgba(128,141,155,0.5);
-
+max-width: 440px;
   &:last-child {
     border-bottom: 1px dashed rgba(128,141,155,0.5);
   }
 }
 
 .insurance-advantages__icon {
-  flex-basis: 27%;
-  svg {
-    width: 100%;
+  flex-basis: 33%;
+
+  img {
+    width: 80%;
     height: auto;
   }
 }
 
 .insurance-advantages__text {
-  flex-basis: 66%;
+  flex-basis: 67%;
+  flex-grow: 1;
 }
 
 .insurance-advantages__name {
@@ -31,4 +33,11 @@
 .insurance-advantages__exp {
   font-size: 16px;
   font-weight: 300;
+}
+
+.insurance-advantages__title {
+  font-size: 18px ;
+  font-weight: 300;
+  color: @blue-gray;
+  margin-bottom: 15px;
 }
