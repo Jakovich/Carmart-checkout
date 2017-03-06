@@ -62,6 +62,7 @@ $(document).ready(function() {
 
     $('[data-modal]').on('click', function(evt){
         evt.preventDefault();
+        evt.stopPropagation();
         var currentPopup = $('[data-rel="' + this.dataset.modal + '"]');
         showPopup(currentPopup);
     });

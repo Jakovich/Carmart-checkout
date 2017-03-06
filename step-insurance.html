@@ -39,24 +39,31 @@
         <section class="info">
             <div class="container-fluid">
                 <div class="info__content row">
-
-                    <div class="info__auto col-md-5 col-sm-6 col-xs-6">
-                        <div class="info__basic">
-                            <div class="info__photo"></div>
-                            <span class="info__model">Mitsubishi Pajero Sport:</span>
-                            <span class="info__price">1 232 500 Р</span>
-                            <div class="question-tooltip">
-                                <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
-                                <div class="question-tooltip__body">
-                                    <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
-                                    <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия
-                                        для угонщикап.</p>
-                                </div>
+                    <div class="col-md-5 col-sm-6 col-xs-6">
+                        <div class="info__auto">
+                            <div class="info__img">
+                                <img src="img/auto.jpg" alt="" width="76" height="86">
                             </div>
+                            <div class="info__text">
+                                <div class="info__basic">
 
+
+                                    <span class="info__model">Mitsubishi Pajero Sport:</span>
+                                    <span class="info__price">1 232 500 Р</span>
+                                    <div class="question-tooltip">
+                                        <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                                        <div class="question-tooltip__body">
+                                            <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
+                                            <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия
+                                                для угонщикап.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <p class="info__details">2016 / NEW / 3.0 AT (249 л.с.) / АИ-95 / 4WD</p>
+                                <p class="info__details"><span>Цвет:</span> Темно-серый (металлик): <span>Кузов:</span> Внедорожник</p>
+                            </div>
                         </div>
-                        <p class="info__details">2016 / NEW / 3.0 AT (249 л.с.) / АИ-95 / 4WD</p>
-                        <p class="info__details"><span>Цвет:</span> Темно-серый (металлик): <span>Кузов:</span> Внедорожник</p>
                     </div>
                     <div class="col-md-7 col-sm-6 col-xs-6">
                         <div class="info__right">
@@ -71,7 +78,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="info__addit">
                     <div class="row">
@@ -122,7 +128,7 @@
                 <div class="container-fluid">
                     <div class="info__content row">
 
-                        <div class="info__auto col-md-5 col-sm-6 col-xs-6">
+                        <div class="info__auto info__auto--noflex col-md-5 col-sm-6 col-xs-6">
                             <div class="info__basic">
                                 <span class="info__model">Mitsubishi Pajero Sport:</span>
                                 <span class="info__price">1 232 500 Р</span>
@@ -370,8 +376,8 @@
                                 <div class="financial__header">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="financial__header-content">
-                                                <div class="financial__info">
+                                            <div class="financial__header-content financial__header-content--left">
+                                                <div class="financial__info-check">
                                                     <div class="financial__column-name">
                                                         <span class="financial__column-title">Название страховой</span>
                                                         <div class="financial__sorting-icon">
@@ -382,7 +388,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="financial__cost">
-                                                    <div class="financial__column-name financial__column-name--active">
+                                                    <div class="financial__column-name financial__column-name--left financial__column-name--active">
                                                         <span class="financial__column-title">Стоимость</span>
                                                         <div class="financial__sorting-icon">
                                                             <span class="sorting-icon sorting-icon--down">
@@ -397,8 +403,6 @@
 
                                                     </div>
                                                 </div>
-
-
                                             </div>
                                         </div>
                                     </div>
@@ -419,13 +423,81 @@
                                                         </div>
                                                         <div class="financial__text">
                                                             <p class="financial__name">Альфастрахование <span class="financial__name-icon"><svg><use xlink:href="/img/svgsprites/insurance.svg#crown"/></svg></span></p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="financial__cost">90 000 Р
+                                                    <span class="financial__min">min</span></div>
+
+                                                    <div class="financial__addit">
+
+                                                        <div class="radio-inputs">
+                                                            <div class="radio-inputs__item">
+                                                                    <input disabled checked type="radio" name="franchise" id="15">
+                                                                    <label class="radio-inputs__label" for="15"><a href="#" data-modal="description"
+                                                                     class="radio-inputs__text">Франшиза 15 000 Р</a></label>
+
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="financial__control">
+                                                    <div class="financial__control__btn">
+                                                        <a href="#" class="step-btn">Сохранить и перейти на КАСКО <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                                                    </a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <article class="financial__item">
+                                                <div class="financial__content">
+
+                                                    <div class="financial__info-check financial__info-check--small">
+                                                        <div class="financial__check">
+                                                            <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                                                        </div>
+                                                        <div class="financial__icon">
+                                                            <img src="img/bancs/unicredit-hexagone.png" alt="">
+
+                                                        </div>
+                                                        <div class="financial__text">
+                                                            <p class="financial__name">Альфастрахование <span class="financial__name-icon"><svg><use xlink:href="/img/svgsprites/insurance.svg#crown"/></svg></span></p>
 
                                                         </div>
                                                     </div>
 
-                                                    <div class="financial__cost">9.5 %</div>
+                                                    <div class="financial__cost">90 000 Р
+                                                    <span class="financial__min">min</span></div>
 
-                                                    <div class="financial__addit">2 года</div>
+                                                    <div class="financial__addit">
+                                                    <p class="financial__addit__title">Выберите одну из Противоугонных систем</p>
+                                                        <div class="radio-inputs">
+                                                            <div class="radio-inputs__item">
+                                                                    <input checked type="radio" name="protect" id="M17">
+                                                                    <label class="radio-inputs__label" for="M17"><a href="#" data-modal="description"
+                                                                     class="radio-inputs__text">Маяк «StarLine M17»</a></label>
+
+                                                            </div>
+                                                            <div class="radio-inputs__item">
+                                                                    <input type="radio" name="protect" id="B94">
+                                                                    <label class="radio-inputs__label" for="B94">
+                                                                        <a href="#" data-modal="description"
+                                                                         class="radio-inputs__text">Сигнализация «StarLine B94 CAN GSM/GPS»</a>
+                                                                        </label>
+                                                            </div>
+                                                            <div class="radio-inputs__item">
+                                                                    <input type="radio" name="protect" id="A93">
+                                                                    <label class="radio-inputs__label" for="A93"><a href="#" data-modal="description"
+                                                                     class="radio-inputs__text">Сигнализация  «StarLine A93 (A39)»</a></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
 
                                                 </div>
@@ -811,15 +883,18 @@
         </div>
     </div>
 
-    <div class="popup-credit" data-rel="credit">
+    <div class="popup-insurance" data-rel="insurance">
         <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
         <span class="close-btn__icon">
             <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
         </span>
       </button>
-        <h4 class="popup-credit__title">
-      Сетелем
-      </h4>
+        <div class="popup-insurance__title">
+                <div class="popup-insurance__icon"><img src="img/bancs/unicredit-hexagone.png" alt=""></div>
+              <h4 class="popup-insurance__name">Альфа-Страхование</h4>
+              <p class="popup-insurance__subtitle">Cтоимость КАСКО: </p>
+              <p class="popup-insurance__price">90 000 Р</p>
+      </div>
         <p class="popup-credit__subtitle">«Партнерский: ПРОМО СУБСИДИРОВАННЫЙ» для новых автомобилей</p>
         <div class="popup-credit__info">
             <p class="popup-credit__info-title">Программа: </p>
@@ -839,8 +914,59 @@
         </div>
     </div>
 
+    <div class="popup-descr" data-rel="description">
+    <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+    <span class="close-btn__icon">
+        <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+    </span>
+  </button>
+    <div class="popup-descr__content">
+        <div class="popup-descr__header">
+            <div class="popup-descr__icon"><img src="img/services/window.png" alt=""></div>
+            <div class="popup-descr__header-info">
+                <h3 class="popup-descr__title">Комплект «Защита автомобиля» Outlander Максимальный</h3>
+                <p class="popup-descr__price">стоимость: 16 000 Р</p>
+            </div>
+        </div>
+        <div class="popup-descr__text">
+            <p>Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщика:</p>
+            <ul class="popup-descr__advantages">
+                <li>не дает обеззвучить сирену автосигнализации</li>
+                <li>не позволяет восстановить блокировки двигателя, расположенные под капотом</li>
+                <li>не позволяет завести автомобиль, используя автономную (не штатную) систему управления двигателем (т.н. «паук»), а также автономную систему питания
+                </li>
+                <li>не позволяет произвести замену контроллера управления двигателем (для обхода штатного иммобилайзера)</li>
+                <li>делает недоступным диагностический разъем (в тех случаях, когда он находится под капотом), затрудняя выявление блокировок и манипуляции со штатным иммобилайзером</li>
+                <li>значительно затрудняет угон на том этапе, когда автосигнализация уже обезврежена (вскрыт или подобран код радиоканала), но под заблокированным капотом остается невосстановленная блокировка двигателя</li>
+            </ul>
+
+        </div>
+        <div class="popup-desc__consist">
+            <h4 class="popup-descr_consist-title">Состав комплекта:</h4>
+            <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
+            <p>Обработка рамы</p>
+            <p>Сетка для бампера</p>
+            <p>Обработка днища и скрытых полостей</p>
+            <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
+            <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
+        </div>
+        <div class="popup-descr__btn">
+            <button class="services-btn">Установить</button>
+        </div>
+    </div>
+</div>
+
 
     <div class="popup-wrp"></div>
+    <div width="0" height="0" style="font-size:0;line-height:0;">
+    <svg height="0" width="0" style="line-height:0;">
+        <defs>
+            <clippath id="autoimgPath">
+                <path  d="M0,24.88V60.64a7,7,0,0,0,3.5,6.06l31,17.88a7,7,0,0,0,7,0l31-17.88A7,7,0,0,0,76,60.64V24.88a7,7,0,0,0-3.5-6.06L41.5.94a7,7,0,0,0-7,0L3.5,18.82A7,7,0,0,0,0,24.88Z" fill="#fff"/>
+            </clippath>
+        </defs>
+    </svg>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
     </script>
     <script src="js/main.min.js"></script>
