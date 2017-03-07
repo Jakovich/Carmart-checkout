@@ -64,4 +64,27 @@ $(document).ready(function() {
             }
         })
 
+
+//show tooltip in driver-license__close
+  $('[data-action="insurance-calcul"]').on('click', function(evt){
+    evt.preventDefault();
+    if ( $('[data-role="required"]').val() === "" ) {
+      $('.driver-license__tooltip').fadeIn(100);
+    }
+  })
+
+  $('[data-role="required"]').on('keyup', function() {
+    $('.driver-license__tooltip').fadeOut(100);
+  })
+
+
+//inputmask for form of driver licence
+
+  $('.drivers__form [name=insurance-number]') .inputmask("99 99 9999999", {
+    "placeholder": " ",
+    "showMaskOnHover": false
+
+  });
+
+
 })

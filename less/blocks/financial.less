@@ -16,8 +16,10 @@
 
 .financial__item:hover {
     border: 3px solid @green;
+
     .radio-inputs__label {
-        &::before, &::after {
+        &::after,
+        &::before {
             opacity: 1;
         }
     }
@@ -26,6 +28,7 @@
 .financial__item--select {
     border: 3px solid @green;
     background-color: rgba(255,255,255,1);
+
     .financial__icon {
         opacity: 1;
     }
@@ -40,8 +43,10 @@
         }
         background-color: rgba(0,171,138,0.15);
     }
+
     .radio-inputs__label {
-        &::before, &::after {
+        &::after,
+        &::before {
             opacity: 1;
         }
     }
@@ -112,8 +117,6 @@
     flex-grow: 1;
 }
 
-
-
 .financial__cost {
     flex-basis: 15%;
     text-align: left;
@@ -126,13 +129,13 @@
     text-align: left;
     //min-width: 460px;
     max-width: 450px;
+    padding-right: 10px;
 }
 
 .financial__addit--small {
     flex-basis: 25%;
     max-width: 250px;
 }
-
 //body
 .financial__info-check--small {
     flex-basis: 40%;
@@ -142,6 +145,7 @@
 .financial__info-check--small {
     flex-basis: 40%;
     min-width: 350px;
+    padding-right: 10px;
 }
 
 .financial__info-align {
@@ -152,25 +156,25 @@
 
 .financial__body .financial__info {
     display: flex;
-
 }
 
 .financial__insurance-name {
     display: inline-block;
     vertical-align: middle;
-  color: @text-color-dark;
-  border-bottom: 2px dashed @text-color-dark;
-display: inline-block;
-margin-right: 20px;
-position: relative;
+    color: @text-color-dark;
+    border-bottom: 2px dashed @text-color-dark;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    display: inline;
+    transition: @transition;
+    text-decoration: none;
 
-  transition: @transition;
-  text-decoration: none;
-  &:hover {
-      color: @text-color-dark;
-      opacity: 0.8;
-      text-decoration: none;
-  }
+    &:hover {
+        color: @text-color-dark;
+        opacity: 0.8;
+        text-decoration: none;
+    }
 }
 
 .financial__icon {
@@ -221,7 +225,6 @@ position: relative;
     max-width: 180px;
 }
 
-
 .financial__name {
     font-size: 18px;
     margin-bottom: 0;
@@ -231,6 +234,7 @@ position: relative;
     position: absolute;
     right: -25px;
     top: 0;
+
     svg {
         width: 22px;
         height: 13px;
@@ -290,8 +294,8 @@ position: relative;
     }
 }
 
-.financial__body .financial__percent,
-.financial__body .financial__cost {
+.financial__body .financial__cost,
+.financial__body .financial__percent {
     font-weight: 500;
     font-size: 18px;
 }
@@ -349,10 +353,10 @@ position: relative;
 }
 
 .financial__addit-kbm {
-  font-size: 16px;
-  font-weight: 500;
-  color: @text-color-dark;
-  position:relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: @text-color-dark;
+    position: relative;
 }
 
 .financial__check {
@@ -369,6 +373,7 @@ position: relative;
     bottom: 0;
     width: 57px;
     background-color: rgba(255,255,255,0.15);
+
     svg {
         display: none;
         width: 22px;

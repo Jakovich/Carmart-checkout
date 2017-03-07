@@ -13,6 +13,27 @@
   padding-right: 6.5%;
   padding-top: 10px;
   padding-bottom: 13px;
+  position: relative;
+}
+
+.driver-license__close {
+  position: absolute;
+  right: -22px;
+  top: -22px;
+  cursor: pointer;
+  transition: @transition;
+  &:hover {
+    svg {
+      fill-opacity: 1;
+    }
+  }
+
+  svg {
+    width: 43px;
+    height: 43px;
+    fill-opacity: 0.4;
+    transition: @transition;
+  }
 }
 
 .driver-license__input {
