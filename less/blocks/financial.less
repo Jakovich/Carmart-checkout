@@ -117,7 +117,7 @@
 .financial__cost {
     flex-basis: 15%;
     text-align: left;
-    //min-width: 165px;
+    min-width: 125px;
     //max-width: 180px;
 }
 
@@ -136,6 +136,7 @@
 
 .financial__info-check--small {
     flex-basis: 40%;
+    min-width: 350px;
 }
 
 .financial__info-align {
@@ -154,6 +155,10 @@
     vertical-align: middle;
   color: @text-color-dark;
   border-bottom: 2px dashed @text-color-dark;
+display: inline-block;
+margin-right: 20px;
+position: relative;
+
   transition: @transition;
   text-decoration: none;
   &:hover {
@@ -218,6 +223,9 @@
 }
 
 .financial__name-icon {
+    position: absolute;
+    right: -25px;
+    top: 0;
     svg {
         width: 22px;
         height: 13px;

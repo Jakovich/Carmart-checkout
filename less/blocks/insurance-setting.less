@@ -25,6 +25,21 @@
   }
 }
 
+.insurance-setting--right-border {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    background-color: rgba(26,26,26,0.2);
+    right: -10px;
+    top: 3px;
+    bottom: -35px;
+
+  }
+
+}
+
 .insurance-setting__name {
   font-size: 16px;
   font-weight: 600;
@@ -45,4 +60,13 @@
 .insurance-setting__text{
   font-size: 16px;
   font-weight: 300;
+}
+
+.insurance-setting__content {
+  display: flex;
+}
+
+.insurance-setting__right {
+  flex-grow: 1;
+  margin-left: 10px;
 }

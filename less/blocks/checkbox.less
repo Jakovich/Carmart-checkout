@@ -15,8 +15,11 @@
 }
 
 .checkbox-main--left {
-  padding-left:45px;
+
   text-align: left;
+  label {
+    padding-left:45px;
+  }
 }
 
 .checkbox-main {
@@ -69,6 +72,17 @@
   top: 30px;
 }
 
+.checkbox-main__icon--short {
+    left:0;
+    top: 30px;
+
+}
+
+.checkbox-main__icon--select {
+  left:0;
+  top: 35px;
+}
+
 .checkbox-main__icon--top {
   top: -5px;
   left: 0;
@@ -80,4 +94,12 @@
     margin-top: -5px;
     color: @blue-gray;
     margin-bottom:0;
+}
+
+.checkbox-main--short {
+  label {
+    width: 36px;
+    height: 33px;
+    padding: 0;
+  }
 }
