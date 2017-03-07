@@ -18,7 +18,11 @@ $(document).ready(function(){
                 carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
             })
             .jcarousel({
-                wrap: 'circular'
+                wrap: 'circular',
+                animation: {
+                duration: 150,
+                easing:   'linear'
+                }
             });
 
         $('.payment-slider__control-prev')
