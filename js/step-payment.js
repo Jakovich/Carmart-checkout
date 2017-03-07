@@ -1,4 +1,8 @@
-(function($) {
+'use strict';
+
+$(document).ready(function(){
+
+//slider
     $(function() {
         var jcarousel = $('.payment-slider__jcarousel');
 
@@ -29,4 +33,19 @@
 
 
     });
-})(jQuery);
+
+    //shopo/hide additionals blocks
+    function showAddit(evt) {
+        evt.preventDefault()
+        var currentItem = $(evt.target).closest('.payment-summary__item');
+        currentItem.find('.payment-summary__item-addit').slideToggle(300);
+        currentItem.find('.payment-summary__caret').toggleClass('payment-summary__caret--up').toggleClass('payment-summary__caret--down');
+    }
+    $('.payment-summary__control').on('click', function(evt){
+     showAddit(evt);
+    });
+    $('.payment-summary__item-name').on('click', function(evt){
+     showAddit(evt);
+    });
+
+})

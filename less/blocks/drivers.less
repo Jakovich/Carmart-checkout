@@ -6,8 +6,8 @@
     background-color: #ffffff;
     border-radius: @border-radius;
     text-align: center;
-    padding: 35px 30px;
-
+    padding: 30px 30px;
+    padding-bottom: 35px;
     box-shadow: @shadow-item;
     margin-bottom: 17px;
 }
@@ -51,6 +51,10 @@
     text-transform: uppercase;
     width: 100%;
     display: block;
+    transition: @transition;
+    &:hover {
+      background-color: rgba(128,128,128,0.4);
+    }
 }
 
 .dirvers__btn-icon {
@@ -63,7 +67,8 @@
     width: 56px;
     border-right: 0.5px solid rgba(128,128,128,0.5);
     text-align: center;
-    padding-top: 7px;
+    padding-top: 10px;
+
 
     svg {
         width: 33px;
@@ -85,6 +90,11 @@
   text-align: left;
   margin: 0 auto;
   max-width: 470px;
+  margin-top: -10px;
+}
+
+.drivers__nav-icon {
+  margin-top: 7px;
 }
 
 .drivers__nav-item {
@@ -96,27 +106,50 @@
     font-size: 40px;
     font-weight: 300;
     color: rgba(26,26,26,0.5);
+    transition: @transition;
+    &:hover {
+      color: @text-color-dark;
+    }
   }
 }
 
 .drivers__nav-icon {
   display: inline-block;
   vertical-align: middle;
+  margin-left: -8px;
   svg {
     width: 71px;
     height: 52px;
   }
 
-
-
 }
 
 .drivers__nav-item {
+
 .cls-1 {
-  opacity: 0!important;
+  opacity: 0;
 }
 
 .cls-4 {
   fill:#808d9b;
 }
+}
+
+.drivers__nav-item--active {
+  a {
+    color: @text-color-dark;
+
+  }
+  .drivers__nav-icon {
+    margin-left: -4px;
+  }
+  .cls-1 {
+    display: block;
+    opacity: 0.7;
+  }
+
+  .cls-4 {
+    fill:@green;
+  }
+
 }

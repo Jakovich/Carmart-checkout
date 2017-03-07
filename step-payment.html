@@ -232,13 +232,13 @@
                     </div>
                 </div>
                 <div class="steps__title row">
-                    <h1 class="main-title col-md-4 col-sm-12">Общий чек заказа</h1>
-                    <div class="step-btn__wrapper col-md-3  col-sm-6">
+                    <h1 class="main-title col-lg-5 col-md-4 col-sm-12">Общий чек заказа</h1>
+                    <div class="step-btn__wrapper col-lg-3 col-md-3  col-sm-6">
                         <a href="#" class="step-btn step-btn--prev">Предыдущий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
                         </a>
                     </div>
-                    <div class="step-btn__wrapper col-md-5  col-sm-6">
-                        <a href="#" class="step-btn">сохранить и перейти в гараж <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                    <div class="step-btn__wrapper col-lg-4 col-md-5  col-sm-6">
+                        <a href="#" class="step-btn">сохранить и перейти в гараж <span class="step-btn__icon step-btn__icon--garage"><svg><use xlink:href="/img/svgsprites/payment.svg#garage"/></svg></span>
                         </a>
                     </div>
                 </div>
@@ -274,13 +274,13 @@
             <div class="container-fluid">
 
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
                         <div class="payment-title__auto">
                             <span class="payment-title__icon"><svg><use xlink:href="/img/svgsprites/payment.svg#star"/></svg></span>
                             <span class="payment-title__model">Mitsubishi Pajero Sport</span> по суперцене
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
                         <div class="payment-title__price-wrp">
                             <div class="payment-title__price">
                                 1 232 500 Р
@@ -307,7 +307,7 @@
                                 <span class="payment-summary__title-icon">
                                     <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
                                 </span> Условия супер-цены выполнены
-                                <div class="question-tooltip">
+                                <div class="question-tooltip question-tooltip--left">
                                     <button class="question-tooltip__btn">
                                         <svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg>
                                     </button>
@@ -320,6 +320,9 @@
                     </h4>
                     <div class="payment-summary__items">
                         <div class="payment-summary__item">
+                            <div class="payment-summary__item-basic">
+
+
                             <div class="payment-summary__item-content">
                                 <a class="payment-summary__item-name" href="#">Дополнительное Оборудование</a>
                                 <div class="payment-summary__item-price">47 000</div>
@@ -327,8 +330,14 @@
                             <div class="payment-summary__control">
                                 <span class="payment-summary__caret"><svg><use xlink:href="/img/svgsprites/payment.svg#arrow-down"/></svg></span>
                             </div>
+                            </div>
+                            <div class="payment-summary__item-addit">
+                                текст
+                            </div>
                         </div>
                         <div class="payment-summary__item">
+                            <div class="payment-summary__item-basic">
+
                             <div class="payment-summary__item-content">
                                 <a class="payment-summary__item-name" href="#">Оборудование</a>
                                 <div class="payment-summary__item-price">89 000</div>
@@ -337,13 +346,22 @@
                                 <span class="payment-summary__caret"><svg><use xlink:href="/img/svgsprites/payment.svg#arrow-down"/></svg></span>
                             </div>
                         </div>
+                        <div class="payment-summary__item-addit">
+                            текст
+                        </div>
+                        </div>
                         <div class="payment-summary__item">
+                            <div class="payment-summary__item-basic">
                             <div class="payment-summary__item-content">
                                 <a class="payment-summary__item-name" href="#">Автомобиль в Trade-in</a>
                                 <div class="payment-summary__item-price payment-summary__item-price--sale">(скидка) +25 000</div>
                             </div>
                             <div class="payment-summary__control">
                                 <span class="payment-summary__caret"><svg><use xlink:href="/img/svgsprites/payment.svg#arrow-down"/></svg></span>
+                            </div>
+                        </div>
+                            <div class="payment-summary__item-addit">
+                                текст
                             </div>
                         </div>
                     </div>
@@ -376,17 +394,19 @@
                     </div>
                     <div class="payment-summary__controls">
                         <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <a href="#" class="step-btn">Оплатить <span>1 350 000 Р</span></a>
+                            <div class="col-md-6 col-sm-12">
+                                <a href="#" class="step-btn step-btn--padding step-btn--padding--payment">Оплатить <span>1 350 000 Р</span> <span class="step-btn__icon step-btn__icon-purse"><svg><use xlink:href="/img/svgsprites/payment.svg#purse"/></svg></span></a>
                             </div>
-                            <div class="col-md-6 col-sm-6">
-                                <a href="#" class="step-btn">Забронировать на 5 дней за 1 Р <span class="step-btn__icon step-btn__icon--big"><svg><use xlink:href="/img/svgsprites/payment.svg#purse"/></svg></span></a>
+                            <div class="col-md-6 col-sm-12">
+                                <a href="#" class="step-btn step-btn--padding">Забронировать на 5 дней за 1 Р <span class="step-btn__icon step-btn__icon--reserve"><svg><use xlink:href="/img/svgsprites/payment.svg#check-border"/></svg></span>
+
+                                </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="payment__refusing">
-                                    <button data-modal="refusing" class="payment__refusing-link">Я куплю автомобиль позже <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/payment.svg#check-border"/></svg></span></button>
+                                    <button data-modal="refusing" class="payment__refusing-link">Я куплю автомобиль позже <span class="step-btn__icon  step-btn__icon--reserve"></span></button>
                                 </div>
 
                             </div>
@@ -510,36 +530,9 @@
         </div>
     </div>
 
-    <div class="popup-credit" data-rel="credit">
-        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
-        <span class="close-btn__icon">
-            <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
-        </span>
-      </button>
-        <h4 class="popup-credit__title">
-      Сетелем
-      </h4>
-        <p class="popup-credit__subtitle">«Партнерский: ПРОМО СУБСИДИРОВАННЫЙ» для новых автомобилей</p>
-        <div class="popup-credit__info">
-            <p class="popup-credit__info-title">Программа: </p>
-            <p class="popup-credit__info-text">ГОСПРОГРАММА: У Вас есть уникальная возможность приобрести любой автомобиль Mitsubishi в кредит без КАСКО!
-            </p>
-            <p class="popup-credit__info-text">В рамках государственной программы субсидирования процентных ставок по автокредиту бестселлеры Hyundai доступны в кредит на специальных условиях по ставке от 13%
-            </p>
-            <p class="popup-credit__info-title">Документы для оформления кредита: </p>
-            <ol class="popup-credit__info-list">
-                <li>Паспорт</li>
-                <li>Водительское удостоверениe</li>
-                <li>Справка о доходах (либо 2-НДФЛ, либо по форме банка)</li>
-            </ol>
-        </div>
-        <div class="popup-credit__btn-wrp">
-            <button class="popup-credit__btn">ВЫБРАТЬ ЭТОТ КРЕДИТ</button>
-        </div>
-    </div>
-
-
     <div class="popup-wrp"></div>
+
+
     <div width="0" height="0" style="font-size:0;line-height:0;">
         <svg height="0" width="0" style="line-height:0;">
         <defs>

@@ -73,7 +73,8 @@
     .step-btn__icon {
         right: auto;
         left: 7%;
-        transform: translateY(-52%) rotate(180deg);
+        transform: translateY(-60%) rotate(180deg);
+
         svg {
             width: 10px;
             height: 15px;
@@ -82,9 +83,50 @@
         }
     }
 
+
+}
+
+
+.step-btn__icon--garage {
+  svg {
+    width: 21px;
+    height: 16px;
+    fill: #ffffff;
+    transform: none!important;
+  }
+}
+
+.step-btn__icon--reserve {
+  svg {
+    width: 24.6px;
+    height: 30px;
+    fill: none;
+    stroke: #ffffff;
+    transform: none!important;
+  }
+}
+
+.step-btn__icon-purse {
+  svg {
+    width: 28px;
+    height: 21px;
+    stroke: none;
+
+  }
 }
 
 .step-btn--padding {
   padding: 25px 35px;
   margin-bottom: 5px;
+}
+
+.step-btn--padding--payment {
+  border: 2px solid @green;
+  padding: 23px 35px;
+  color: @green;
+  background-color: rgba(79,90,103,0.15);
+  &:hover {
+    background-color: rgba(79,90,103,0.05);
+    color: @green;
+  }
 }

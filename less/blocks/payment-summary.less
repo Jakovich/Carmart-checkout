@@ -20,6 +20,7 @@
     position: relative;
     font-size: 22px;
     font-weight: 300;
+    margin-bottom: 25px;
 }
 
 .payment-summary__title-icon {
@@ -34,9 +35,29 @@
 .payment-summary__item {
     border: 2px @blue-gray solid;
     border-radius: @border-radius;
+
+    margin-bottom: 10px;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        top: 3px;
+        bottom: 3px;
+        right: 53px;
+        background-color: rgba(128,141,155,0.5);
+    }
+    //border-left: 1px solid rgba(128,141,155,0.5);
+}
+
+.payment-summary__item-basic {
     display: flex;
     width: 100%;
-    margin-bottom: 10px;
+}
+
+.payment-summary__item-addit {
+    padding: 25px;
+    display: none;
 }
 
 .payment-summary__item-content {
@@ -77,9 +98,14 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-left: 1px solid rgba(128,141,155,0.5);
-    margin-top: 1px;
-    margin-bottom: 1px;
+    transition: @transition;
+    &:hover {
+        .payment-summary__caret {
+            svg {
+                stroke: @blue-gray;
+            }
+        }
+    }
 }
 
 .payment-summary__caret {
@@ -92,6 +118,10 @@
         stroke: @text-color-dark;
         fill: none;
     }
+}
+
+.payment-summary__caret--up {
+    transform: rotate(180deg);
 }
 
 .payment__options {
