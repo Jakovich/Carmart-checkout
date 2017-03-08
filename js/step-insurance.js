@@ -83,8 +83,16 @@ $(document).ready(function() {
   $('.drivers__form [name=insurance-number]') .inputmask("99 99 9999999", {
     "placeholder": " ",
     "showMaskOnHover": false
-
   });
 
+$('.drivers__form [name=date-birdthday]').inputmask("date", {
+  "showMaskOnHover": false,
+    "clearIncomplete": true
+});
+
+$('.drivers__form [name=date-delivery]').inputmask("date", {
+  "showMaskOnHover": false,
+  "clearIncomplete": true
+});
 
 })

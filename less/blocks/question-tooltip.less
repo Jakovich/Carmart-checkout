@@ -4,7 +4,6 @@
     transform: translateY(-50%);
     margin-top: 2px;
     margin-left: 5px;
-    z-index: 10;
     display: inline-block;
     text-align: left;
 
@@ -63,6 +62,7 @@
     padding: 0;
     border: none;
     transition: @transition;
+    position: relative;
     z-index:10;
     svg {
         width: 18px;
@@ -95,8 +95,9 @@
     box-shadow: @shadow-popup;
     border-radius: @border-radius;
     background-color: @blue-gray;
-    z-index: 12;
-  padding-bottom: 17px;
+    z-index: 20;
+    padding-bottom: 17px;
+
 
 }
 
