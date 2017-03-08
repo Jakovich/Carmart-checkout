@@ -34,85 +34,86 @@ $(document).ready(function() {
     });
 
     //select financial-item
-      $('.financial__item').on('click', function(evt) {
-          if (!$(evt.target).hasClass('financial__exp') && !$(evt.target).hasClass('step-btn') && !$(evt.target).hasClass('financial__documents-list')) {
-              var allBancs = $('.financial__item');
-              var currentBanc = $(this);
-              if (currentBanc.hasClass('financial__item--select')) {
-                  currentBanc.removeClass('financial__item--select');
-              } else {
-                  allBancs.removeClass('financial__item--select');
-                  $(this).addClass('financial__item--select');
-              }
-          }
-      });
-
-      /*Sorting of financial*/
-        $('[data-sorting]').on('click', function(event) {
-
-            var currentItem = $(event.target).closest('.financial__column-name');
-            var allItems = $('.financial__column-name');
-            if (currentItem.hasClass('financial__column-name--active')) {
-                currentItem.find('.sorting-icon').toggleClass('sorting-icon--down').toggleClass('sorting-icon--up');
+    $('.financial__item').on('click', function(evt) {
+        if (!$(evt.target).hasClass('financial__exp') && !$(evt.target).hasClass('step-btn') && !$(evt.target).hasClass('financial__documents-list')) {
+            var allBancs = $('.financial__item');
+            var currentBanc = $(this);
+            if (currentBanc.hasClass('financial__item--select')) {
+                currentBanc.removeClass('financial__item--select');
             } else {
-
-                allItems.each(function() {
-                    $(this).removeClass('financial__column-name--active');
-                    currentItem.addClass('financial__column-name--active');
-                })
-
+                allBancs.removeClass('financial__item--select');
+                $(this).addClass('financial__item--select');
             }
-        })
-
-
-//show tooltip in driver-license & show/hide button "Рассчитать"
-  $('[data-action="insurance-calcul"]').on('click', function(evt){
-    evt.preventDefault();
-    if ( $('[data-role="required"]').val() === "" ) {
-      $('.driver-license__tooltip').fadeIn(100);
-    } else {
-      $(this).fadeOut(50);
-    }
-  })
-
-  $('[data-role="required"]').on('keyup', function() {
-    $('.driver-license__tooltip').fadeOut(100);
-  })
-
-  $('.drivers__form input, .drivers__form select').on('keyup', function() {
-    $('[data-action="insurance-calcul"]').fadeIn(100);
-  })
-
-
-//inputmask for form of driver licence
-
-  $('.drivers__form [name=insurance-number]') .inputmask("99 99 9999999", {
-    "placeholder": " ",
-    "showMaskOnHover": false
-  });
-
-$('.drivers__form [name=date-birdthday]').inputmask("date", {
-  "showMaskOnHover": false,
-    "clearIncomplete": true
-});
-
-$('.drivers__form [name=date-delivery]').inputmask("date", {
-  "showMaskOnHover": false,
-  "clearIncomplete": true
-});
-
-//show/switch driver licence
-
-$('.drivers__nav-link').click(function(evt) {
-    evt.preventDefault();
-    $('.drivers__nav-link').removeClass('drivers__nav-link--active');
-    $(this).addClass('drivers__nav-link--active');
-    var currentItem = $('[data-drivercontent="' + this.dataset.driverlink + '"]');
-
-    var allItems = $('[data-drivercontent]');
-    allItems.each(function() {
-        $(this).hide();
+        }
     });
-    currentItem.show();
-});
+
+    /*Sorting of financial*/
+    $('[data-sorting]').on('click', function(event) {
+
+        var currentItem = $(event.target).closest('.financial__column-name');
+        var allItems = $('.financial__column-name');
+        if (currentItem.hasClass('financial__column-name--active')) {
+            currentItem.find('.sorting-icon').toggleClass('sorting-icon--down').toggleClass('sorting-icon--up');
+        } else {
+
+            allItems.each(function() {
+                $(this).removeClass('financial__column-name--active');
+                currentItem.addClass('financial__column-name--active');
+            })
+
+        }
+    })
+
+
+    //show tooltip in driver-license & show/hide button "Рассчитать"
+    $('[data-action="insurance-calcul"]').on('click', function(evt) {
+        evt.preventDefault();
+        if ($('[data-role="required"]').val() === "") {
+            $('.driver-license__tooltip').fadeIn(100);
+        } else {
+            $(this).fadeOut(50);
+        }
+    })
+
+    $('[data-role="required"]').on('keyup', function() {
+        $('.driver-license__tooltip').fadeOut(100);
+    })
+
+    $('.drivers__form input, .drivers__form select').on('keyup', function() {
+        $('[data-action="insurance-calcul"]').fadeIn(100);
+    })
+
+
+    //inputmask for form of driver licence
+
+    $('.drivers__form [name=insurance-number]').inputmask("99 99 9999999", {
+        "placeholder": " ",
+        "showMaskOnHover": false
+    });
+
+    $('.drivers__form [name=date-birdthday]').inputmask("date", {
+        "showMaskOnHover": false,
+        "clearIncomplete": true
+    });
+
+    $('.drivers__form [name=date-delivery]').inputmask("date", {
+        "showMaskOnHover": false,
+        "clearIncomplete": true
+    });
+
+    //show/switch driver licence
+
+    $('.drivers__nav-link').click(function(evt) {
+        evt.preventDefault();
+        $('.drivers__nav-link').removeClass('drivers__nav-link--active');
+        $(this).addClass('drivers__nav-link--active');
+        var currentItem = $('[data-drivercontent="' + this.dataset.driverlink + '"]');
+        var allItems = $('[data-drivercontent]');
+        allItems.each(function() {
+            $(this).hide();
+        });
+        currentItem.show();
+    });
+
+    
 })
