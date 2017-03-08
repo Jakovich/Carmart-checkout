@@ -82,18 +82,21 @@
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 15px;
+    position: relative;
+    padding-right: 25px;
 }
 
 .services__title-icon {
 
     display: none;
-    margin-top: -5px;
-    margin-bottom: -5px;
+    //margin-top: -5px;
+    //margin-bottom: -5px;
     vertical-align: middle;
     cursor: pointer;
     opacity: 0.5;
     transition: @transition;
-    position: relative;
+    position: absolute;
+    margin-left: 7px;
     &:hover {
         opacity: 1;
         .services__title-tooltip {

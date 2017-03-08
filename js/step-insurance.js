@@ -65,16 +65,22 @@ $(document).ready(function() {
         })
 
 
-//show tooltip in driver-license__close
+//show tooltip in driver-license & show/hide button "Рассчитать"
   $('[data-action="insurance-calcul"]').on('click', function(evt){
     evt.preventDefault();
     if ( $('[data-role="required"]').val() === "" ) {
       $('.driver-license__tooltip').fadeIn(100);
+    } else {
+      $(this).fadeOut(50);
     }
   })
 
   $('[data-role="required"]').on('keyup', function() {
     $('.driver-license__tooltip').fadeOut(100);
+  })
+
+  $('.drivers__form input, .drivers__form select').on('keyup', function() {
+    $('[data-action="insurance-calcul"]').fadeIn(100);
   })
 
 
