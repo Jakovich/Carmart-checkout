@@ -101,7 +101,7 @@ $(document).ready(function() {
         "clearIncomplete": true
     });
 
-    //show/switch driver licence
+    //switch driver licence
 
     $('.drivers__nav-link').click(function(evt) {
         evt.preventDefault();
@@ -115,5 +115,4 @@ $(document).ready(function() {
         currentItem.show();
     });
 
-    
 })
