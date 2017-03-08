@@ -57,7 +57,9 @@ $(document).ready(function() {
 
     function hidePopup(popup) {
         popup.fadeOut();
-        $('.popup-wrp').fadeOut();
+        if($('[data-rel]:visible').length === 1) {
+            $('.popup-wrp').fadeOut();
+        }
     }
 
     $('[data-modal]').on('click', function(evt){
@@ -74,10 +76,7 @@ $(document).ready(function() {
     })
 
     $('.popup-wrp').on('click', function(evt) {
-        var allPopups = $('[data-rel]');
-            allPopups.each(function(){
-                    hidePopup($(this));
-            })
+            hidePopup($('[data-rel]:visible:last'));
     })
 
 
