@@ -101,4 +101,18 @@ $('.drivers__form [name=date-delivery]').inputmask("date", {
   "clearIncomplete": true
 });
 
+//show/switch driver licence
+
+$('.drivers__nav-link').click(function(evt) {
+    evt.preventDefault();
+    $('.drivers__nav-link').removeClass('drivers__nav-link--active');
+    $(this).addClass('drivers__nav-link--active');
+    var currentItem = $('[data-drivercontent="' + this.dataset.driverlink + '"]');
+
+    var allItems = $('[data-drivercontent]');
+    allItems.each(function() {
+        $(this).hide();
+    });
+    currentItem.show();
+});
 })

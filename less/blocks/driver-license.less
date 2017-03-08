@@ -14,7 +14,15 @@
   padding-top: 10px;
   padding-bottom: 13px;
   position: relative;
+  display: none;
+  &:first-child {
+    display: block;
+    .driver-license__close {
+      display: none;
+    }
+  }
 }
+
 
 .driver-license__close {
   position: absolute;
