@@ -72,6 +72,7 @@ $(document).ready(function() {
             $('.driver-license__tooltip').fadeIn(100);
         } else {
             $(this).fadeOut(50);
+            $('.insurance-info').fadeIn(100);
         }
     })
 
