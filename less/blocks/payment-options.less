@@ -1,0 +1,79 @@
+.payment-options {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border-bottom: 2px dashed rgba(128,141,155,0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-options__link {
+    border-bottom: 2px dashed @green;
+    color: @green;
+    text-decoration: none;
+    transition: @transition;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left: 45px;
+    &:hover {
+        text-decoration: none;
+        color: @green;
+        opacity: 0.8;
+    }
+}
+
+.payment-options__refusing {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.payment-options__refusing-link {
+    font-size: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.5px dashed @blue-gray;
+    color: @blue-gray;
+    opacity: 0.8;
+    transition: @transition;
+
+    &:hover {
+        color: @green;
+        border-color: @green;
+    }
+}
+
+.payment-options__sum {
+    text-align: right;
+    padding: 5px 20px;
+    border-left: 1px solid rgba(26,26,26,0.15);
+}
+.payment-options__price {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(26,26,26,0.6);
+
+    margin:0;
+    span {
+        color: rgba(26,26,26,1);
+    }
+}
+
+.payment-options__topay {
+    font-size: 18px;
+    font-weight: 300;
+    margin:0;
+    color: rgba(26,26,26,0.6);
+    span {
+        font-size: 24px;
+        font-weight: 500;
+        color: @green;
+    }
+}

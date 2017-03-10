@@ -2,76 +2,61 @@
     margin-bottom: 10px;
 }
 
-
 .filters__items {
-
+    font-size: 0;
 }
 
 .filters__item {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 8px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 8px;
 
-  margin-right: 8px;
-  input {
-    display: none;
-  }
-
-  label {
-    padding: 10px 23px;
-
-    border-radius: 5px;
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    display: block;
-    font-size: 16px;
-    font-weight: 300;
-
-    outline: none;
-
-    color: @blue-gray;
-
-
-    cursor: pointer;
-    transition: color 0.3s ease;
-    &:hover {
-      background-color: #ffffff;
-      color: @green;
+    input {
+        display: none;
     }
-    &::after {
-    display: block;
-    content: attr(data-title);
-    font-weight: bold;
-    height: 1px;
-    color: transparent;
-    overflow: hidden;
-    visibility: hidden;
-    margin-bottom: -1px;
-  }
-  }
+
+    label {
+        padding: 10px 23px;
+        border-radius: 5px;
+        border: 2px solid #ffffff;
+        background-color: #ffffff;
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        outline: none;
+        color: @blue-gray;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        margin-bottom: 0;
+        &:hover {
+            background-color: #ffffff;
+            color: @green;
+        }
+
+        &::after {
+            display: block;
+            content: attr(data-title);
+            font-weight: bold;
+            height: 1px;
+            color: transparent;
+            overflow: hidden;
+            visibility: hidden;
+            margin-bottom: -1px;
+        }
+    }
 }
 
-
 .filters__item input:checked~label {
-
-  border-color: #cccccc;
-  font-weight: 500;
-
-  //text-shadow: 0 1px  #333333, 0 1px  #333333;
-
-
+    border-color: #cccccc;
+    font-weight: 500;
 }
 
 .filters__item:active label {
-  border-color: #b3b3b3;
-  background-color: #e5e6e8;
+    border-color: #b3b3b3;
+    background-color: #e5e6e8;
 }
 
-
-
 .filters__item input:checked~label:hover {
-  //font-weight: 500;
-  border-color: #cccccc;
-  //text-shadow: 0 0  #33333, 0 0  #333333;
-  //text-shadow: -0.1px -0.1px 0 @green, 0.1px -0.1px 0 @green, -0.1px 0.1px 0 @green, 0.1px 0.1px 0 @green;
+    border-color: #cccccc;
 }

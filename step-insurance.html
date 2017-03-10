@@ -792,12 +792,14 @@
                                             <div class="col-md-4 col-sm-4 col-xs-4">
                                                 <div class="insurance-setting">
                                                     <p class="insurance-setting__name insurance-setting__name--margin">Франшиза</p>
-                                                    <div class="select__wrp">
-                                                        <select name="franchise" class="select">
-                                                        <option val="2">Без франшизы</option>
-                                                        <option val="1">С франшизой</option>
-                                                        <option val="2">С франшизой</option>
-                                                </select>
+                                                    <div class="insurance-setting__select">
+                                                        <div class="select__wrp">
+                                                            <select name="franchise" class="select">
+                                                                <option val="2">Без франшизы</option>
+                                                                <option val="1">С франшизой</option>
+                                                                <option val="2">С франшизой</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -808,40 +810,23 @@
                                             <div class="col-md-6 col-sm-6 col-xs-6">
                                                 <div class="insurance-setting insurance-setting--right-border">
 
-                                                    <div class="insurance-setting__content">
-                                                        <div class="checkbox-main checkbox-main--short">
-                                                            <input type="checkbox" name="payment-one" id="payment-one">
-                                                            <label for="payment-one">
-                                                        <span class="checkbox-main__icon checkbox-main__icon--short checkbox-main__icon--select">
-                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                     width="36.3px" height="33.8px" viewbox="0 0 36.3 33.8" style="enable-background:new 0 0 36.3 33.8;" xml:space="preserve">
-                                                    <g>
-                                                        <path class="checkbox-main__border" style="fill:#808D9B;" d="M22.7,2c2.5,0,4.8,1.3,6.1,3.5l4.6,7.9c1.3,2.2,1.3,4.8,0,7l-4.6,7.9c-1.3,2.2-3.6,3.5-6.1,3.5h-9.1c-2.5,0-4.8-1.3-6.1-3.5l-4.6-7.9c-1.3-2.2-1.3-4.8,0-7l4.6-7.9C8.8,3.3,11.1,2,13.6,2H22.7M22.7,0h-9.1c-3.2,0-6.2,1.7-7.8,4.5l-4.6,7.9c-1.6,2.8-1.6,6.2,0,9l4.6,7.9c1.6,2.8,4.6,4.5,7.8,4.5h9.1c3.2,0,6.2-1.7,7.8-4.5l4.6-7.9c1.6-2.8,1.6-6.2,0-9l-4.6-7.9C28.9,1.7,25.9,0,22.7,0L22.7,0z"/>
-                                                       <polyline class="checkbox-main__stroke" style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="25.5,12.1 15.8,21.8 10.8,16.7 	"/>
-                                                   </g>
-                                                </svg>
-                                                        </span>
+                                                    <div class="insurance-setting__name insurance-setting__name--margin">Выплата без справок
+                                                        <div class="question-tooltip question-tooltip--inline">
+                                                            <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                                                            <div class="question-tooltip__body">
+                                                                <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
+                                                                <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщикап.
+                                                                </p>
+                                                            </div>
+                                                        </div><span class="insurance-setting__exp">(стеклянные элементы)</span>
 
-                                                    </label>
-                                                        </div>
-                                                        <div class="insurance-setting__right">
-                                                            <div class="insurance-setting__name insurance-setting__name--margin">Выплата без справок <span class="insurance-setting__exp">(стеклянные элементы)</span>
-                                                                <div class="question-tooltip question-tooltip--inline">
-                                                                    <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
-                                                                    <div class="question-tooltip__body">
-                                                                        <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
-                                                                        <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает
-                                                                            серьезные препятствия для угонщикап.
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="select__wrp">
-                                                                <select name="payment-one" class="select">
-                                                        <option val="0">без выплат</option>
-                                                        <option val="1">1 выплата</option>
-                                                    </select>
-                                                            </div>
+                                                    </div>
+                                                    <div class="insurance-setting__select">
+                                                        <div class="select__wrp">
+                                                            <select name="payment-one" class="select">
+                                                            <option val="0">без выплат</option>
+                                                            <option val="1">1 выплата</option>
+                                                        </select>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -849,44 +834,30 @@
                                             <div class="col-md-6 col-sm-6 col-xs-6">
                                                 <div class="insurance-setting">
 
-                                                    <div class="insurance-setting__content">
-                                                        <div class="checkbox-main checkbox-main--short">
-                                                            <input type="checkbox" name="payment-two" id="payment-two">
-                                                            <label for="payment-two">
-                                                        <span class="checkbox-main__icon checkbox-main__icon--short checkbox-main__icon--select">
-                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                     width="36.3px" height="33.8px" viewbox="0 0 36.3 33.8" style="enable-background:new 0 0 36.3 33.8;" xml:space="preserve">
-                                                    <g>
-                                                        <path class="checkbox-main__border" style="fill:#808D9B;" d="M22.7,2c2.5,0,4.8,1.3,6.1,3.5l4.6,7.9c1.3,2.2,1.3,4.8,0,7l-4.6,7.9c-1.3,2.2-3.6,3.5-6.1,3.5h-9.1c-2.5,0-4.8-1.3-6.1-3.5l-4.6-7.9c-1.3-2.2-1.3-4.8,0-7l4.6-7.9C8.8,3.3,11.1,2,13.6,2H22.7M22.7,0h-9.1c-3.2,0-6.2,1.7-7.8,4.5l-4.6,7.9c-1.6,2.8-1.6,6.2,0,9l4.6,7.9c1.6,2.8,4.6,4.5,7.8,4.5h9.1c3.2,0,6.2-1.7,7.8-4.5l4.6-7.9c1.6-2.8,1.6-6.2,0-9l-4.6-7.9C28.9,1.7,25.9,0,22.7,0L22.7,0z"/>
-                                                       <polyline class="checkbox-main__stroke" style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="25.5,12.1 15.8,21.8 10.8,16.7 	"/>
-                                                   </g>
-                                                </svg>
-                                                        </span>
-
-                                                    </label>
-                                                        </div>
-                                                        <div class="insurance-setting__right">
-                                                            <div class="insurance-setting__name insurance-setting__name--margin">Выплата без справок <span class="insurance-setting__exp">(стеклянные элементы)</span>
-                                                                <div class="question-tooltip question-tooltip--left question-tooltip--inline">
-                                                                    <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
-                                                                    <div class="question-tooltip__body">
-                                                                        <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
-                                                                        <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает
-                                                                            серьезные препятствия для угонщикап.
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
+                                                    <div class="insurance-setting__name insurance-setting__name--margin">Выплата без справок
+                                                        <div class="question-tooltip question-tooltip--left question-tooltip--inline">
+                                                            <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                                                            <div class="question-tooltip__body">
+                                                                <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
+                                                                <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает
+                                                                    серьезные препятствия для угонщикап.
+                                                                </p>
                                                             </div>
-                                                            <div class="select__wrp">
-                                                                <select name="payment-two" class="select">
+
+                                                        </div> <span class="insurance-setting__exp">(стеклянные элементы)</span>
+
+                                                    </div>
+                                                    <div class="insurance-setting__select">
+                                                        <div class="select__wrp">
+                                                            <select name="payment-two" class="select">
                                                         <option val="0">без выплат</option>
                                                         <option val="1">1 выплата</option>
                                                     </select>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
 

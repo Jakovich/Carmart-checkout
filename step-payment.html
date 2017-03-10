@@ -281,14 +281,6 @@
                         <div class="payment-title__price-wrp">
                             <div class="payment-title__price">
                                 1 232 500 Р
-                                <div class="question-tooltip question-tooltip--left question-tooltip--relative">
-                                    <button class="question-tooltip__btn question-tooltip__btn--margin"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
-                                    <div class="question-tooltip__body">
-                                        <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
-                                        <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия
-                                            для угонщикап.</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -319,15 +311,12 @@
                         <div class="payment-summary__item">
                             <div class="payment-summary__item-basic">
 
+                                    <a class="payment-summary__item-name" href="#">
+                                    <span class="payment-summary__caret"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>Дополнительное Оборудование</a>
 
-                                <div class="payment-summary__item-content">
-                                    <a class="payment-summary__item-name" href="#">Дополнительное Оборудование</a>
                                     <div class="payment-summary__item-price">47 000</div>
                                 </div>
-                                <div class="payment-summary__control">
-                                    <span class="payment-summary__caret"><svg><use xlink:href="/img/svgsprites/payment.svg#arrow-down"/></svg></span>
-                                </div>
-                            </div>
+
                             <div class="payment-summary__item-addit">
                                 текст
                             </div>
@@ -335,39 +324,49 @@
                         <div class="payment-summary__item">
                             <div class="payment-summary__item-basic">
 
-                                <div class="payment-summary__item-content">
-                                    <a class="payment-summary__item-name" href="#">Оборудование</a>
-                                    <div class="payment-summary__item-price">89 000</div>
+                                    <a class="payment-summary__item-name" href="#">
+                                    <span class="payment-summary__caret"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>Страховки</a>
+
+                                    <div class="payment-summary__item-price">47 000</div>
                                 </div>
-                                <div class="payment-summary__control">
-                                    <span class="payment-summary__caret"><svg><use xlink:href="/img/svgsprites/payment.svg#arrow-down"/></svg></span>
-                                </div>
-                            </div>
+
                             <div class="payment-summary__item-addit">
                                 текст
                             </div>
                         </div>
                         <div class="payment-summary__item">
                             <div class="payment-summary__item-basic">
-                                <div class="payment-summary__item-content">
-                                    <a class="payment-summary__item-name" href="#">Автомобиль в Trade-in</a>
-                                    <div class="payment-summary__item-price payment-summary__item-price--sale">(скидка) +25 000</div>
+
+                                    <a class="payment-summary__item-name" href="#">
+                                    <span class="payment-summary__caret"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>Автомобиль в Trade-in</a>
+
+                                    <div class="payment-summary__item-price">47 000</div>
                                 </div>
-                                <div class="payment-summary__control">
-                                    <span class="payment-summary__caret"><svg><use xlink:href="/img/svgsprites/payment.svg#arrow-down"/></svg></span>
-                                </div>
+                            <div class="payment-summary__item-addit">
+                                текст
                             </div>
+                        </div>
+
+                        <div class="payment-summary__item">
+                            <div class="payment-summary__item-basic">
+
+                                    <a class="payment-summary__item-name" href="#">
+                                    <span class="payment-summary__caret"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>Кредит Юникредит-банк</a>
+
+                                    <div class="payment-summary__item-price">47 000</div>
+                                </div>
+
                             <div class="payment-summary__item-addit">
                                 текст
                             </div>
                         </div>
                     </div>
-                    <div class="payment__options">
-                        <div class="payment__chackbox-wrp">
+                    <div class="payment-options">
+                        <div class="payment-options__checkbox-wrp">
                             <div class="checkbox-main checkbox-main--left">
-                                <input type="checkbox" name="banc-protect" id="banc-protect">
-                                <label for="banc-protect">
-                                    <span class="checkbox-main__icon checkbox-main__icon--inline checkbox-main__icon--top">
+                                <input type="checkbox" name="road-protect" id="road-protect">
+                                <label for="road-protect">
+                                    <span class="checkbox-main__icon checkbox-main__icon--inline checkbox-main__icon--middle">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="36.3px" height="33.8px" viewbox="0 0 36.3 33.8" style="enable-background:new 0 0 36.3 33.8;" xml:space="preserve">
                                         <g>
@@ -387,12 +386,17 @@
                             </label>
                             </div>
                         </div>
-                        <a href="#" class="payment__options-link">Все пакеты</a>
+
+                        <div class="payment-options__sum">
+                            <p class="payment-options__price">Сумма заказа: <span>1 350 000 Р</span></p>
+                            <p class="payment-options__topay">К оплате: <span>280 000 Р</span></p>
+                        </div>
+
                     </div>
-                    <div class="payment-summary__controls">
+                    <div class="payment-options__controls">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
-                                <a href="#" class="step-btn step-btn--padding step-btn--padding--payment">Оплатить <span>1 350 000 Р</span> <span class="step-btn__icon step-btn__icon-purse"><svg><use xlink:href="/img/svgsprites/payment.svg#purse"/></svg></span></a>
+                                <a href="#" class="step-btn step-btn--padding step-btn--payment">Оплатить <span>1 350 000 Р</span> <span class="step-btn__icon step-btn__icon-purse"><svg><use xlink:href="/img/svgsprites/payment.svg#purse"/></svg></span></a>
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <a href="#" class="step-btn step-btn--padding">Забронировать на 5 дней за 1 Р <span class="step-btn__icon step-btn__icon--reserve"><svg><use xlink:href="/img/svgsprites/payment.svg#check-border"/></svg></span>
@@ -402,8 +406,8 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="payment__refusing">
-                                    <button data-modal="refusing" class="payment__refusing-link">Я куплю автомобиль позже <span class="step-btn__icon  step-btn__icon--reserve"></span></button>
+                                <div class="payment-options__refusing">
+                                    <button data-modal="refusing" class="payment-options__refusing-link">Я куплю автомобиль позже <span class="step-btn__icon  step-btn__icon--reserve"></span></button>
                                 </div>
 
                             </div>

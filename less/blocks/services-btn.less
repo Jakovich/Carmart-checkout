@@ -3,16 +3,17 @@
     font-size: 15px;
     text-align: left;
     text-transform: uppercase;
-    background-color: #e6e6e6;
+
     padding: 17px 30px 17px 77px;
     width: 212px;
     border-radius: 5px;
     border: none;
-    color: @blue-gray;
+
     outline: none;
     cursor: pointer;
     position: relative;
-
+    background-color: #e5f6f3;
+    color: @green;
     &::before {
         position: absolute;
         width: 50px;
@@ -23,7 +24,7 @@
         background-image: url('../img/plus.svg');
         background-repeat: no-repeat;
         background-position: center;
-        border-right: 1px solid rgba(128,128,128,0.5);
+        border-right: 1px solid rgba(0,171,138,0.3);
     }
 
     &:hover {
@@ -36,13 +37,13 @@
 }
 
 .services-btn--select {
-        background-color: #e5f6f3;
-        color: @green;
 
+        background-color: #e6e6e6;
+        color: @blue-gray;
         &::before {
             background-image: url('../img/check.svg');
             background-repeat: no-repeat;
             background-position: center;
-            border-right: 1px solid rgba(0,171,138,0.3);
+            border-right: 1px solid rgba(128,128,128,0.5);
         }
     }

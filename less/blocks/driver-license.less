@@ -21,6 +21,10 @@
       display: none;
     }
   }
+
+  .select:focus {
+    border-color: @green;
+  }
 }
 
 
@@ -53,6 +57,11 @@
   font-weight: 500;
   width: 100%;
   color: @text-color-dark;
+}
+
+.driver-license__input:focus {
+  border-color: @green;
+  outline: none;
 }
 
 .driver-license__input[name="driver-name"] {

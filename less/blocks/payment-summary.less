@@ -33,39 +33,49 @@
 }
 
 .payment-summary__item {
-    border: 2px @blue-gray solid;
+    //border: 2px @blue-gray-light solid;
     border-radius: @border-radius;
 
     margin-bottom: 10px;
-    position: relative;
-    &::after {
-        position: absolute;
-        content: '';
-        width: 1px;
-        top: 3px;
-        bottom: 3px;
-        right: 53px;
-        background-color: rgba(128,141,155,0.5);
-    }
-    //border-left: 1px solid rgba(128,141,155,0.5);
+
 }
 
 .payment-summary__item-basic {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    padding: 15px 18px 15px 25px;
+    border-radius: @border-radius;
+    border: 2px @blue-gray-light solid;
+    background: #ededed;
+    background: linear-gradient(to top, rgba(0,0,0,0.1), rgba(255,255,255,0.1));
+}
+
+.payment-summary__caret {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    transition: @transition;
+
+    svg {
+        width: 9px;
+        height: 16px;
+        stroke: #7f8d9a;
+        fill: none;
+        transition: @transition;
+    }
 }
 
 .payment-summary__item-addit {
     padding: 25px;
     display: none;
+    border: 2px @blue-gray-light solid;
+    border-top: 0;
+    position: relative;
+    top: -3px;
+    border-bottom-left-radius: @border-radius;
+    border-bottom-right-radius: @border-radius;
 }
 
-.payment-summary__item-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 18px 15px 25px;
-    flex-grow: 1;
-}
 
 .payment-summary__item-name {
     color: @text-color-dark;
@@ -73,12 +83,17 @@
     text-decoration: none;
     font-size: 18px;
     transition: @transition;
-
+    position: relative;
+    margin-left: 25px;
     &:hover {
-        color: @text-color-dark;
+        color: @green;
         text-decoration: none;
-        opacity: 0.8;
+        border-color: @green;
+        svg {
+            stroke: @green;
+        }
     }
+
 }
 
 .payment-summary__item-price {
@@ -92,83 +107,6 @@
     font-weight: 400;
 }
 
-.payment-summary__control {
-    width: 53px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: @transition;
-    &:hover {
-        .payment-summary__caret {
-            svg {
-                stroke: @blue-gray;
-            }
-        }
-    }
-}
-
-.payment-summary__caret {
-    transition: @transition;
-    //transform: rotate(90deg);
-
-    svg {
-        width: 16px;
-        height: 9px;
-        stroke: @text-color-dark;
-        fill: none;
-    }
-}
-
 .payment-summary__caret--up {
-    transform: rotate(180deg);
-}
-
-.payment__options {
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    padding-top: 10px;
-    border-bottom: 2px dashed rgba(128,141,155,0.6);
-}
-
-.payment__options-link {
-    border-bottom: 2px dashed @green;
-    color: @green;
-    text-decoration: none;
-    transition: @transition;
-    text-transform: uppercase;
-    font-size: 15px;
-    margin-left: 45px;
-    &:hover {
-        text-decoration: none;
-        color: @green;
-        opacity: 0.8;
-    }
-}
-
-.payment__refusing {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.payment__refusing-link {
-    font-size: 15px;
-    display: inline-block;
-    text-transform: uppercase;
-    background-color: transparent;
-    padding: 0;
-    outline: none;
-    cursor: pointer;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1.5px dashed @blue-gray;
-    color: @blue-gray;
-    opacity: 0.8;
-    transition: @transition;
-
-    &:hover {
-        color: @green;
-        border-color: @green;
-    }
+    transform: rotate(90deg);
 }
