@@ -28,8 +28,39 @@
 .trade-sale__item--select {
   box-shadow: none;
     background-color: rgba(255,255,255,1);
+    .trade-sale__exp {
+      display: block;
+    }
 }
 
 .trade-sale__exp {
   padding: 19px;
+  padding-top: 9px;
+  display: none;
+}
+
+.trade-sale__radio {
+  position:relative;
+  &::after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    width: 1px;
+    background-color: rgba(26,26,26,0.2);
+    left: 55px;
+    top: 2px;
+    bottom: 2px;
+  }
+}
+
+.trade-sale__radio--mitsubishi::before {
+  position: absolute;
+  content: '';
+  width: 27px;
+  height: 34px;
+  right: 10px;
+  top: 50%;
+  margin-top: -17px;
+  background-image: url('../img/trade-in/mitsubishi-logo.jpg');
+  background-size: contain;
 }

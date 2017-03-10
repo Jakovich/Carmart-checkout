@@ -268,15 +268,14 @@
                     </div>
                 </div>
 
-
             </div>
 
             <section class="trade-in">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-8 col-sm-8">
+                        <div class="col-md-8 col-sm-8 col-xs-8">
 
-                            <div class="trade-options" data-trade="trade_1">
+                            <div class="trade-options" data-trade="trade-in_1">
                                 <div class="trade-options__title">Параметры автомобиля:</div>
                                 <div class="trade-options__content">
                                     <div class="trade-options__select">
@@ -289,17 +288,17 @@
                                     </div>
                                     <div class="trade-options__select">
                                         <div class="select__wrp">
-                                            <select name="auto" class="select">
-                                                <option val="0" disabled>Модель</option>
-                                                <option val="1">Не Mitsubishi</option>
+                                            <select name="model" class="select" >
+                                                <option val="0" disabled selected>Модель</option>
+                                                <option val="1">Модель 2</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="trade-options__select">
                                         <div class="select__wrp">
-                                            <select name="auto" class="select">
-                                                <option val="0" disabled>Год выпуска</option>
-                                                <option val="1">Не Mitsubishi</option>
+                                            <select name="year" class="select">
+                                                <option val="0" disabled selected>Год выпуска</option>
+                                                <option val="1">1965</option>
                                             </select>
                                         </div>
                                     </div>
@@ -330,12 +329,12 @@
                                 </div>
                             </div>
 
-                            <div class="trade-options" data-trade="trade_2">
+                            <div class="trade-options" data-trade="trade-in_2">
                                 <div class="trade-options__title">Параметры автомобиля:</div>
                                 <div class="trade-options__content">
                                     <div class="trade-options__select">
                                         <div class="select__wrp">
-                                            <select disabled name="auto" class="select">
+                                            <select name="auto" class="select">
                                                 <option val="0">Mitsubishi</option>
                                                 <option val="1">Не Mitsubishi</option>
                                             </select>
@@ -343,17 +342,17 @@
                                     </div>
                                     <div class="trade-options__select">
                                         <div class="select__wrp">
-                                            <select name="auto" class="select">
-                                                <option val="0" disabled>Модель</option>
-                                                <option val="1">Не Mitsubishi</option>
+                                            <select name="model" class="select" >
+                                                <option val="0" disabled selected>Модель</option>
+                                                <option val="1">Модель 2</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="trade-options__select">
                                         <div class="select__wrp">
-                                            <select name="auto" class="select">
-                                                <option val="0" disabled>Год выпуска</option>
-                                                <option val="1">Не Mitsubishi</option>
+                                            <select name="year" class="select">
+                                                <option val="0" disabled selected>Год выпуска</option>
+                                                <option val="1">1965</option>
                                             </select>
                                         </div>
                                     </div>
@@ -384,8 +383,8 @@
                                 </div>
                             </div>
 
-                            <div class="trade-options" data-trade="trade_3">
-                                <div class="trade-options__title">Параметры автомобиля:</div>
+                            <div class="trade-options" data-trade="trade-in_3">
+                                <div class="trade-options__title">Свидетельство об утилизации:</div>
                                 <div class="trade-options__content">
                                     <div class="download"></div>
                                     <div class="trade-options__info">
@@ -406,25 +405,56 @@
 
                         </div>
 
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-4 col-sm-4 col-xs-4">
                             <div class="trade-sale">
                                 <div class="trade-sale__title">Тип скидки:</div>
                                 <div class="trade-sale__item">
                                     <div class="trade-sale__radio">
-                                      <div class="radio-inputs__item">
+                                        <div class="radio-inputs">
+                                      <div class="radio-inputs__item radio-inputs__item--trade">
                                           <input checked type="radio" name="trade-in" id="trade-in_1">
-                                          <label class="radio-inputs__label" for="M17">Скидка за Trade-in автомобилей других марок <span class="radio-inputs__label-note">55 000 Р</span></label>
-
+                                          <label class="radio-inputs__label radio-inputs__label--trade"  for="trade-in_1">Скидка за Trade-in автомобилей других марок <span class="radio-inputs__label-note">55 000 Р</span></label>
                                       </div>
-
-
+                                    </div>
                                     </div>
                                     <div class="trade-sale__exp">
                                         <p class="trade-sale__text">Вы получите доп. скидку на покупаемый автомобиль просто за использование Trade-in Цена а/м со скидкой: 1 280 000 Р (бабах в чеке!)</p>
                                         <p class="trade-sale__text trade-sale__text--note">10 000 Р из этих 50 000 дарит Кармарт и Максимум!</p>
                                     </div>
                                 </div>
+
+                                <div class="trade-sale__item">
+                                    <div class="trade-sale__radio trade-sale__radio--mitsubishi">
+                                        <div class="radio-inputs">
+                                      <div class="radio-inputs__item radio-inputs__item--trade">
+                                          <input  type="radio" name="trade-in" id="trade-in_2">
+                                          <label class="radio-inputs__label radio-inputs__label--trade" for="trade-in_2">Скидка по программе «Trade-in Mitsubishi на Mitsubishi» <span class="radio-inputs__label-note">75 000 Р</span></label>
+                                      </div>
+                                    </div>
+                                    </div>
+                                    <div class="trade-sale__exp">
+                                        <p class="trade-sale__text">Вы получите доп. скидку на покупаемый автомобиль просто за использование Trade-in Цена а/м со скидкой: 1 280 000 Р (бабах в чеке!)</p>
+                                        <p class="trade-sale__text trade-sale__text--note">10 000 Р из этих 50 000 дарит Кармарт и Максимум!</p>
+                                    </div>
+                                </div>
+
+                                <div class="trade-sale__item">
+                                    <div class="trade-sale__radio">
+                                        <div class="radio-inputs">
+                                      <div class="radio-inputs__item radio-inputs__item--trade">
+                                          <input type="radio" name="trade-in" id="trade-in_3">
+                                          <label class="radio-inputs__label radio-inputs__label--trade" for="trade-in_3">Скидка по программе «Утилизация по справке» <span class="radio-inputs__label-note">95 000 Р Р</span></label>
+                                      </div>
+                                    </div>
+                                    </div>
+                                    <div class="trade-sale__exp">
+                                        <p class="trade-sale__text">Достаточно предоставить справку об утилизации. Цена а/м со скидкой: <span>1 240 000 Р</span></p>
+                                        <p class="trade-sale__text trade-sale__text--note">40 000 Р из этих 90 000 дарит Кармарт и Максимум!</p>
+                                    </div>
+                                </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
