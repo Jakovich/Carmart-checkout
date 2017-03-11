@@ -41,8 +41,20 @@
 
 .info__img {
   margin-right: 10px;
+  width: 76px;
+  flex-basis: 76px;
+  min-width: 76px;
+  height: 86px;
+  clip-path: url(#autoimgPath);
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
   img {
-      clip-path: url(#autoimgPath);
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     }
 }
 .info__model {
