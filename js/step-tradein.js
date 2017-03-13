@@ -15,11 +15,27 @@ $(document).ready(function(){
   }
 
   toggleTrade();
-  
+
   $('input[name=trade-in]').on('change', function() {
     toggleTrade();
   });
 
+  $('#uploadForm').fileupload({
+         dataType: 'json',
+         done: function (e, data) {
+             $.each(data.result.files, function (index, file) {
+                 $('<p/>').text(file.name).appendTo(document.body);
+             });
+         },
+         progressall: function (e, data) {
+        var progress = parseInt(data.loaded / data.total * 100, 10);
+        $('.upload__progress-bar .upload__progress-active').css(
+            'width',
+            progress + '%'
+        );
+    },
+    dropZone: $('.upload__dropzone')
+     });
 
 
 
