@@ -39,7 +39,7 @@
         <section class="info">
             <div class="container-fluid">
                 <div class="info__content row">
-                    <div class="col-md-5 col-sm-6 col-xs-6" >
+                    <div class="col-md-5 col-sm-6 col-xs-6">
                         <div class="info__auto">
                             <div class="info__img">
                                 <img src="img/auto.jpg" alt="" width="76" height="86">
@@ -278,160 +278,177 @@
 
                             <div class="trade-options" data-trade="trade-in_1">
                                 <div class="trade-options__title">Параметры автомобиля:</div>
-                                <div class="trade-options__content">
-                                    <div class="trade-options__select">
-                                        <div class="select__wrp">
-                                            <select name="auto" class="select">
+                                <form action="/" name="trade-in_1">
+                                    <div class="trade-options__content">
+                                        <div class="trade-options__select">
+                                            <div class="select__wrp">
+                                                <select name="auto" class="select">
                                                 <option val="0">Mitsubishi</option>
                                                 <option val="1">Не Mitsubishi</option>
                                             </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="trade-options__select">
-                                        <div class="select__wrp">
-                                            <select name="model" class="select" >
+                                        <div class="trade-options__select">
+                                            <div class="select__wrp">
+                                                <select name="model" class="select">
                                                 <option val="0" disabled selected>Модель</option>
                                                 <option val="1">Модель 2</option>
                                             </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="trade-options__select">
-                                        <div class="select__wrp">
-                                            <select name="year" class="select">
+                                        <div class="trade-options__select">
+                                            <div class="select__wrp">
+                                                <select name="year" class="select">
                                                 <option val="0" disabled selected>Год выпуска</option>
                                                 <option val="1">1965</option>
                                             </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="trade-options__info">
-                                        <div class="trade-options__icon"><img src="img/trade-in/trade-visit.svg" alt=""></div>
-                                        <div class="trade-options__text">
-                                            <div class="trade-options__checkbox">
-                                                <div class="checkbox-main checkbox-main--left">
-                                                    <input type="checkbox" name="trade-visit" id="trade-visit">
-                                                    <label for="trade-visit">
+                                        <div class="trade-options__info">
+                                            <div class="trade-options__icon"><img src="img/trade-in/trade-visit.svg" alt=""></div>
+                                            <div class="trade-options__text">
+                                                <div class="trade-options__checkbox">
+                                                    <div class="checkbox-main checkbox-main--left">
+                                                        <input type="checkbox" name="trade-visit" id="trade-visit">
+                                                        <label for="trade-visit">
                                                             <span class="checkbox-main__icon checkbox-main__icon--inline checkbox-main__icon--top">
                                                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36.3px" height="33.8px" viewbox="0 0 36.3 33.8" style="enable-background:new 0 0 36.3 33.8;" xml:space="preserve"><g><path class="checkbox-main__border" style="fill:#808D9B;" d="M22.7,2c2.5,0,4.8,1.3,6.1,3.5l4.6,7.9c1.3,2.2,1.3,4.8,0,7l-4.6,7.9c-1.3,2.2-3.6,3.5-6.1,3.5h-9.1c-2.5,0-4.8-1.3-6.1-3.5l-4.6-7.9c-1.3-2.2-1.3-4.8,0-7l4.6-7.9C8.8,3.3,11.1,2,13.6,2H22.7M22.7,0h-9.1c-3.2,0-6.2,1.7-7.8,4.5l-4.6,7.9c-1.6,2.8-1.6,6.2,0,9l4.6,7.9c1.6,2.8,4.6,4.5,7.8,4.5h9.1c3.2,0,6.2-1.7,7.8-4.5l4.6-7.9c1.6-2.8,1.6-6.2,0-9l-4.6-7.9C28.9,1.7,25.9,0,22.7,0L22.7,0z"/><polyline class="checkbox-main__stroke" style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="25.5,12.1 15.8,21.8 10.8,16.7 	"/></g></svg>
                                                             </span>
                                                             <p class="insurance-setting__name">ВЫЕЗДНОЙ TRADE-IN</p>
                                                         </label>
+                                                    </div>
                                                 </div>
+                                                <p class="trade-options__exp">Наш специалист, обладающий необходимым багажом знаний, закрепленный диагностическими приборами, приедет в указанное время, чтобы проверить ваш автомобиль (провести тщательную диагностику). Выявит реальное
+                                                    состояние автомобиля и даст повод для торга.</p>
                                             </div>
-                                            <p class="trade-options__exp">Наш специалист, обладающий необходимым багажом знаний, закрепленный диагностическими приборами, приедет в указанное время, чтобы проверить ваш автомобиль (провести тщательную диагностику). Выявит реальное состояние
-                                                автомобиля и даст повод для торга.</p>
                                         </div>
-                                    </div>
-                                    <div class="trade-options__btn">
-                                        <div class="step-btn__wrapper">
-                                            <a href="#" class="step-btn">СОХРАНИТЬ И ПЕРЕЙТИ НА Д.О. <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                                        <div class="trade-options__btn">
+                                            <div class="step-btn__wrapper">
+                                                <a href="#" class="step-btn">СОХРАНИТЬ И ПЕРЕЙТИ НА Д.О. <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
                                             </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
 
                             <div class="trade-options" data-trade="trade-in_2">
                                 <div class="trade-options__title">Параметры автомобиля:</div>
-                                <div class="trade-options__content">
-                                    <div class="trade-options__select">
-                                        <div class="select__wrp">
-                                            <select name="auto" class="select">
+                                <form action="/" name="trade-in_2">
+                                    <div class="trade-options__content">
+                                        <div class="trade-options__select">
+                                            <div class="select__wrp">
+                                                <select name="auto" class="select">
                                                 <option val="0">Mitsubishi</option>
                                                 <option val="1">Не Mitsubishi</option>
                                             </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="trade-options__select">
-                                        <div class="select__wrp">
-                                            <select name="model" class="select" >
+                                        <div class="trade-options__select">
+                                            <div class="select__wrp">
+                                                <select name="model" class="select">
                                                 <option val="0" disabled selected>Модель</option>
                                                 <option val="1">Модель 2</option>
                                             </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="trade-options__select">
-                                        <div class="select__wrp">
-                                            <select name="year" class="select">
+                                        <div class="trade-options__select">
+                                            <div class="select__wrp">
+                                                <select name="year" class="select">
                                                 <option val="0" disabled selected>Год выпуска</option>
                                                 <option val="1">1965</option>
                                             </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="trade-options__info">
-                                        <div class="trade-options__icon"><img src="img/trade-in/trade-visit.svg" alt=""></div>
-                                        <div class="trade-options__text">
-                                            <div class="trade-options__checkbox">
-                                                <div class="checkbox-main checkbox-main--left">
-                                                    <input type="checkbox" name="trade-visit" id="trade-visit_2">
-                                                    <label for="trade-visit_2">
+                                        <div class="trade-options__info">
+                                            <div class="trade-options__icon"><img src="img/trade-in/trade-visit.svg" alt=""></div>
+                                            <div class="trade-options__text">
+                                                <div class="trade-options__checkbox">
+                                                    <div class="checkbox-main checkbox-main--left">
+                                                        <input type="checkbox" name="trade-visit" id="trade-visit_2">
+                                                        <label for="trade-visit_2">
                                                             <span class="checkbox-main__icon checkbox-main__icon--inline checkbox-main__icon--top">
                                                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36.3px" height="33.8px" viewbox="0 0 36.3 33.8" style="enable-background:new 0 0 36.3 33.8;" xml:space="preserve"><g><path class="checkbox-main__border" style="fill:#808D9B;" d="M22.7,2c2.5,0,4.8,1.3,6.1,3.5l4.6,7.9c1.3,2.2,1.3,4.8,0,7l-4.6,7.9c-1.3,2.2-3.6,3.5-6.1,3.5h-9.1c-2.5,0-4.8-1.3-6.1-3.5l-4.6-7.9c-1.3-2.2-1.3-4.8,0-7l4.6-7.9C8.8,3.3,11.1,2,13.6,2H22.7M22.7,0h-9.1c-3.2,0-6.2,1.7-7.8,4.5l-4.6,7.9c-1.6,2.8-1.6,6.2,0,9l4.6,7.9c1.6,2.8,4.6,4.5,7.8,4.5h9.1c3.2,0,6.2-1.7,7.8-4.5l4.6-7.9c1.6-2.8,1.6-6.2,0-9l-4.6-7.9C28.9,1.7,25.9,0,22.7,0L22.7,0z"/><polyline class="checkbox-main__stroke" style="fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="25.5,12.1 15.8,21.8 10.8,16.7 	"/></g></svg>
                                                             </span>
                                                             <p class="insurance-setting__name">ВЫЕЗДНОЙ TRADE-IN</p>
                                                         </label>
+                                                    </div>
                                                 </div>
+                                                <p class="trade-options__exp">Наш специалист, обладающий необходимым багажом знаний, закрепленный диагностическими приборами, приедет в указанное время, чтобы проверить ваш автомобиль (провести тщательную диагностику). Выявит реальное
+                                                    состояние автомобиля и даст повод для торга.</p>
                                             </div>
-                                            <p class="trade-options__exp">Наш специалист, обладающий необходимым багажом знаний, закрепленный диагностическими приборами, приедет в указанное время, чтобы проверить ваш автомобиль (провести тщательную диагностику). Выявит реальное состояние
-                                                автомобиля и даст повод для торга.</p>
                                         </div>
-                                    </div>
-                                    <div class="trade-options__btn">
-                                        <div class="step-btn__wrapper">
-                                            <a href="#" class="step-btn">СОХРАНИТЬ И ПЕРЕЙТИ НА Д.О. <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                                        <div class="trade-options__btn">
+                                            <div class="step-btn__wrapper">
+                                                <a href="#" class="step-btn">СОХРАНИТЬ И ПЕРЕЙТИ НА Д.О. <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
                                             </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
 
                             <div class="trade-options" data-trade="trade-in_3">
                                 <div class="trade-options__title">Свидетельство об утилизации:</div>
-                                <div class="trade-options__content">
-                                    <div class="upload">
-                                        <div class="upload__drop">
-                                            <p class="upload__text">Перетащите сюда копию свидетельства об утилизации </p>
+                                <form action="/" name="trade-in_2">
+                                    <div class="trade-options__content">
+                                        <div class="upload">
+                                            <div class="upload__dropzone">
+                                                <p class="upload__text">Перетащите сюда копию свидетельства об утилизации </p>
+                                            </div>
+                                            <div class="upload__dropzone">
+                                                <div class="upload__progress">
+                                                    <p class="upload__progress-title">Файл загружается</p>
+                                                    <div class="upload__progress-bar">
+                                                        <div class="upload__progress-active"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="upload__dropzone upload__dropzone--active">
+                                                <div class="upload__items">
+                                                    <div class="upload__item">
+
+
+                                                    <div class="upload__item-preview">
+                                                        <span class="upload__close-icon"><svg><use xlink:href="/img/svgsprites/general.svg#close-circle"/></svg></span>
+                                                    </div>
+                                                    <div class="upload__item-add">
+                                                        <label>
+                                                            <input type="file" style="display: none;">
+                                                            <span class="upload__add-icon"><svg><use xlink:href="/img/svgsprites/general.svg#plus-circle"/></svg></span></label>
+                                                    </div>
+
+                                                </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="upload__control">
+                                                <div class="upload__btn">
+                                                    <label class="upload__btn-label"><input type="file"><span class="upload__btn-icon"><svg><use xlink:href="/img/svgsprites/general.svg#upload"/></svg></span> <span class="upload__btn-text">Выбрать файл</span></label>
+
+                                                </div>
+                                                <div class="upload__info">
+                                                    <span class="upload__info-icon"><svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg></span>Загружена <span class="upload__info-count">1</span> страница
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="upload__drop">
-                                        <div class="upload__progress">
-                                            <p class="upload__progress-title">Файл загружается</p>
-                                            <div class="upload__progress-bar">
-                                                <div class="upload__progress-active"></div>
+                                        <div class="trade-options__info">
+                                            <div class="trade-options__icon"><img src="img/trade-in/trade-recycling.svg" alt=""></div>
+                                            <div class="trade-options__text">
+                                                <p class="trade-options__text-title">Отличная выгода за утилизацию</p>
+                                                <p class="trade-options__exp">Наш специалист, обладающий необходимым багажом знаний, закрепленный утилизационными приборами, приедет в указанное время, чтобы полностью аннигшилировать ваш автомобиль (провести тщательную диагностику).</p>
+                                            </div>
+                                        </div>
+                                        <div class="trade-options__btn">
+                                            <div class="step-btn__wrapper">
+                                                <a href="#" class="step-btn">СОХРАНИТЬ И ПЕРЕЙТИ НА Д.О. <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
+                                            </a>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="upload__drop upload__drop--active">
-                                        <div class="upload__items">
-                                            <div class="upload__item upload__item--select"><img src="" alt=""><span class="upload__item-delete"></span></div>
-                                            <div class="upload__item"><span class="upload__plus"></span></div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="upload__control">
-                                        <div class="upload__btn">
-                                        <label class="upload__btn-label" for="file-upload"><span class="upload__btn-icon"><svg><use xlink:href="/img/svgsprites/general.svg#upload"/></svg></span> <span class="upload__btn-text">Выбрать файл</span></label>
-                                        <input type="file" id="file-upload">
-                                        </div>
-                                        <div class="upload__info">
-                                            <span class="upload__info-icon"><svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg></span>Загружена <span class="upload__info-count">1</span> страница
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="trade-options__info">
-                                        <div class="trade-options__icon"><img src="img/trade-in/trade-recycling.svg" alt=""></div>
-                                        <div class="trade-options__text">
-                                            <p class="trade-options__text-title">Отличная выгода за утилизацию</p>
-                                            <p class="trade-options__exp">Наш специалист, обладающий необходимым багажом знаний, закрепленный утилизационными приборами, приедет в указанное время, чтобы полностью аннигшилировать ваш автомобиль (провести тщательную диагностику). </p>
-                                        </div>
-                                    </div>
-                                    <div class="trade-options__btn">
-                                        <div class="step-btn__wrapper">
-                                            <a href="#" class="step-btn">СОХРАНИТЬ И ПЕРЕЙТИ НА Д.О. <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
 
                         </div>
@@ -442,11 +459,11 @@
                                 <div class="trade-sale__item">
                                     <div class="trade-sale__radio">
                                         <div class="radio-inputs">
-                                      <div class="radio-inputs__item radio-inputs__item--trade">
-                                          <input checked type="radio" name="trade-in" id="trade-in_1">
-                                          <label class="radio-inputs__label radio-inputs__label--trade"  for="trade-in_1">Скидка за Trade-in автомобилей других марок <span class="radio-inputs__label-note">55 000 Р</span></label>
-                                      </div>
-                                    </div>
+                                            <div class="radio-inputs__item radio-inputs__item--trade">
+                                                <input checked type="radio" name="trade-in" id="trade-in_1">
+                                                <label class="radio-inputs__label radio-inputs__label--trade" for="trade-in_1">Скидка за Trade-in автомобилей других марок <span class="radio-inputs__label-note">55 000 Р</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="trade-sale__exp">
                                         <p class="trade-sale__text">Вы получите доп. скидку на покупаемый автомобиль просто за использование Trade-in Цена а/м со скидкой: 1 280 000 Р (бабах в чеке!)</p>
@@ -457,11 +474,11 @@
                                 <div class="trade-sale__item">
                                     <div class="trade-sale__radio trade-sale__radio--mitsubishi">
                                         <div class="radio-inputs">
-                                      <div class="radio-inputs__item radio-inputs__item--trade">
-                                          <input  type="radio" name="trade-in" id="trade-in_2">
-                                          <label class="radio-inputs__label radio-inputs__label--trade" for="trade-in_2">Скидка по программе «Trade-in Mitsubishi на Mitsubishi» <span class="radio-inputs__label-note">75 000 Р</span></label>
-                                      </div>
-                                    </div>
+                                            <div class="radio-inputs__item radio-inputs__item--trade">
+                                                <input type="radio" name="trade-in" id="trade-in_2">
+                                                <label class="radio-inputs__label radio-inputs__label--trade" for="trade-in_2">Скидка по программе «Trade-in Mitsubishi на Mitsubishi» <span class="radio-inputs__label-note">75 000 Р</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="trade-sale__exp">
                                         <p class="trade-sale__text">Вы получите доп. скидку на покупаемый автомобиль просто за использование Trade-in Цена а/м со скидкой: 1 280 000 Р (бабах в чеке!)</p>
@@ -472,11 +489,11 @@
                                 <div class="trade-sale__item">
                                     <div class="trade-sale__radio">
                                         <div class="radio-inputs">
-                                      <div class="radio-inputs__item radio-inputs__item--trade">
-                                          <input type="radio" name="trade-in" id="trade-in_3">
-                                          <label class="radio-inputs__label radio-inputs__label--trade" for="trade-in_3">Скидка по программе «Утилизация по справке» <span class="radio-inputs__label-note">95 000 Р Р</span></label>
-                                      </div>
-                                    </div>
+                                            <div class="radio-inputs__item radio-inputs__item--trade">
+                                                <input type="radio" name="trade-in" id="trade-in_3">
+                                                <label class="radio-inputs__label radio-inputs__label--trade" for="trade-in_3">Скидка по программе «Утилизация по справке» <span class="radio-inputs__label-note">95 000 Р</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="trade-sale__exp">
                                         <p class="trade-sale__text">Достаточно предоставить справку об утилизации. Цена а/м со скидкой: <span>1 240 000 Р</span></p>
