@@ -1,6 +1,7 @@
 'use strict';
 $(document).ready(function() {
     //show/hide additional info in CASCO
+    $('.casco-option__item--addit').hide();
     $('.casco-options__show').click(function(evt) {
         evt.preventDefault();
         var itemsStatus = $('.casco-options__status');

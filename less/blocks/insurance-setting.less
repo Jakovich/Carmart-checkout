@@ -1,16 +1,38 @@
 .insurance-setting {
-  padding: 15px 17px;
+  padding: 15px 20px;
 
 }
 
+.casco-option__item {
+  display: flex;
+  justify-content: flex-start;
+}
+.casco-option__item--basic {
+
+  .insurance-setting {
+    flex-basis: 33.3%
+  }
+}
+
+.casco-option__item--addit {
+
+  .insurance-setting {
+    flex-basis: 50%
+  }
+}
+
+
+
 .insurance-setting--border {
   position: relative;
+  //padding-left:5px;
+  //padding-right: 5px;
   &::before {
     position: absolute;
     content: '';
     width: 1px;
     background-color: rgba(26,26,26,0.2);
-    left: -5px;
+    left: 0;
     top: 0;
     bottom: 3px;
   }
@@ -19,7 +41,7 @@
     content: '';
     width: 1px;
     background-color: rgba(26,26,26,0.2);
-    right: -5px;
+    right: 0;
     top: 0;
     bottom: 3px;
   }
@@ -32,7 +54,7 @@
     content: '';
     width: 1px;
     background-color: rgba(26,26,26,0.2);
-    right: -10px;
+    right: 0;
     top: 3px;
     bottom: -35px;
 
@@ -74,4 +96,10 @@
 .insurance-setting__right {
   flex-grow: 1;
   margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+  .insurance-setting__select {
+    padding-right: 0;
+  }
 }
