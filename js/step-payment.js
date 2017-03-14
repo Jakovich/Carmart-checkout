@@ -52,4 +52,45 @@ $(document).ready(function(){
      showAddit(evt);
     });
 
+    //show/hide info in popup PAT
+    $('.popup-pat__show').click(function(evt) {
+        evt.preventDefault();
+        if ($(this).hasClass('popup-pat__show--more')) {
+            $(this).text('Cкрыть  опции');
+        } else {
+            $(this).text('Показать опции пакета');
+        }
+
+        $(this).toggleClass('popup-pat__show--more').toggleClass('popup-pat__show--less');
+        $(this).closest('.popup-pat__item').find('.popup-pat__info-body').slideToggle(300);
+
+    });
+
+    //add/delete select class for popup PAT items
+
+    $('.popup-pat .services-btn').on('click', function(event) {
+      //cancel popup show when we click on service-item
+      event.stopPropagation();
+      var currentBtn = $(this);
+      var titleWrp = $('.popup-pat__selected span');
+      var currentItem = $(event.target).closest('.popup-pat__item');
+      var currentTitle = currentItem.find('.popup-pat__name').text();
+      titleWrp.text(currentTitle);
+
+      var allBtns = $('.popup-pat .services-btn');
+      allBtns.each(function() {
+          $(this).removeClass('services-btn--select');
+          $(this).text('Выбрать');
+      });
+      currentBtn.text('Выбрано');
+      currentBtn.addClass('services-btn--select');
+      var allItems = $('.popup-pat__item');
+      allItems.each(function() {
+          $(this).removeClass('popup-pat__item--select');
+      });
+
+      currentItem.addClass('popup-pat__item--select');
+
+  });
+
 })

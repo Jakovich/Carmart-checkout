@@ -1,0 +1,174 @@
+.popup-pat {
+    position: fixed;
+    top: 100px;
+    z-index: 45;
+    width: 875px;
+    max-width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: @border-radius;
+    box-shadow: @shadow-popup;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    height: 550px;
+    display: none;
+}
+
+.popup-pat__title {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-pat__selected {
+    font-size: 22px;
+    font-weight: 300;
+    color: @blue-gray;
+}
+
+.popup-pat__close {
+    font-size: 15px;
+    padding: 0;
+    color: @blue-gray;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    border-bottom: 2px dashed @blue-gray-light;
+    transition: @transition;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.popup-pat__item {
+    padding: 20px 24px;
+    padding-bottom: 12px;
+    border-top: 1px solid rgba(26,26,26,0.2);
+    background-color: #ffffff;
+}
+
+.popup-pat__item-content {
+    display: flex;
+}
+
+.popup-pat__item--select {
+    background-color: rgba(128,141,155,0.1);
+
+    .popup-pat__price {
+        font-weight: 400;
+    }
+
+    .popup-pat__check {
+        display: block;
+    }
+}
+
+.popup-pat__left {
+    margin-right: 25px;
+}
+
+.popup-pat__img {
+    position: relative;
+}
+
+.popup-pat__check {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    display: none;
+
+    svg {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.popup-pat__price {
+    font-size: 20px;
+    color: @text-color-dark;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.popup-pat__info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.popup-pat__info-title {
+    padding-right: 40px;
+}
+
+.popup-pat__name {
+    font-size: 18px;
+}
+
+.popup-pat__expl {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.popup-pat__info-body {
+    display: none;
+}
+
+.popup-pat__list {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+        margin-bottom: 5px;
+
+        &::before {
+            content: '\2022';
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 5px;
+        }
+    }
+}
+
+.popup-pat__control {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.popup-pat__show {
+    display: inline-block;
+    border: none;
+    outline: none;
+    transition: @transition;
+    font-size: 15px;
+    background-color: transparent;
+    text-transform: uppercase;
+    border-bottom: 2px dashed;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.popup-pat__show--more {
+    color: @green;
+    border-color: @green;
+}
+
+.popup-pat__show--less {
+    color: @blue-gray;
+    border-color: @blue-gray;
+
+    &:hover {
+        color: @green;
+        border-color: @green;
+    }
+}
