@@ -72,7 +72,7 @@ $(document).ready(function(){
       //cancel popup show when we click on service-item
       event.stopPropagation();
       var currentBtn = $(this);
-      var titleWrp = $('.popup-pat__selected span');
+      var titleWrp = $('.popup-pat__title span');
       var currentItem = $(event.target).closest('.popup-pat__item');
       var currentTitle = currentItem.find('.popup-pat__name').text();
       titleWrp.text(currentTitle);
