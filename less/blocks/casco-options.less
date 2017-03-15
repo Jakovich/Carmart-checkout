@@ -3,8 +3,9 @@
 }
 
 .casco-options__control {
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
+    padding: 0 20px;
 }
 
 .casco-options__title {
@@ -25,10 +26,29 @@
     display: none;
 }
 
+.casco-options__calcul {
+
+    text-align: left;
+
+    //padding: 0 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0;
+
+}
+
+@media (max-width: 992px) {
+    .casco-options__calcul {
+        width: 100%;
+    }
+}
+
 .casco-options__show {
     display: inline-block;
     border: none;
     outline: none;
+    margin: 12px 0;
+    padding: 0;
     transition: @transition;
     font-size: 15px;
     background-color: transparent;
