@@ -59,6 +59,7 @@ $(document).ready(function() {
         popup.fadeOut();
         if($('[data-rel]:visible').length === 1) {
             $('.popup-wrp').fadeOut();
+
         }
     }
 
