@@ -87,7 +87,7 @@ gulp.task('svgstore-insurance', function () {
 
 gulp.task('svgstore-payment', function () {
     return gulp
-        .src('img/payment/*.svg')
+        .src('img/payment/payment/*.svg')
         .pipe(svgmin(function (file) {
             var prefix = path.basename(file.relative, path.extname(file.relative));
             return {
