@@ -6,24 +6,35 @@
     max-width: 95%;
     left: 50%;
     transform: translateX(-50%);
-
+    height: 85%;
     display: none;
 }
 
 .popup-pat__content {
-    border-radius: @border-radius;
-    box-shadow: @shadow-popup;
-    background-color: #ffffff;
 
+    height: 100%;
 }
 
 .popup-pat__items {
-    overflow-y: scroll;
-    height: 500px;
+    overflow-y: auto;
+    height: 85%;
+    border-bottom-left-radius: @border-radius;
+    border-bottom-right-radius: @border-radius;
+}
+
+.popup-pat__items-content {
+    border-bottom-left-radius: @border-radius;
+    border-bottom-right-radius: @border-radius;
+    box-shadow: @shadow-popup;
+    background-color: #ffffff;
 }
 
 .popup-pat__title {
     padding: 15px 20px;
+    border-top-left-radius: @border-radius;
+    border-top-right-radius: @border-radius;
+    box-shadow: @shadow-popup;
+    background-color: #ffffff;
     font-size: 22px;
     font-weight: 300;
     color: @blue-gray;

@@ -378,18 +378,19 @@
                         </span>
                         </label>
 
-                    </div>
-                    <div class="payment-options__help">
-                        Карта помощь на дороге
-                   <div class="question-tooltip question-tooltip--relative">
-                   <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
-                   <div class="question-tooltip__body">
-                   <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
-                   <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщикап.</p>
-               </div>
-               </div>
-               <a href="#" data-modal="pat" class="payment-options__help-name">Пакет страховой</a>
-                    </div>
+                                </div>
+                                <div class="payment-options__help">
+                                    Карта помощь на дороге
+                                    <div class="question-tooltip question-tooltip--relative">
+                                        <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                                        <div class="question-tooltip__body">
+                                            <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
+                                            <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия
+                                                для угонщикап.</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" data-modal="pat" class="payment-options__help-name">Пакет страховой</a>
+                                </div>
                             </div>
                             <a href="#" class="payment-options__pat"><img src="img/PAT/PAT-logo.jpg" data-modal="pat" alt="РАТ" width="125" height="46"></a>
                         </div>
@@ -405,7 +406,7 @@
                                 <a href="#" class="step-btn step-btn--padding step-btn--payment">Оплатить <span>1 350 000 Р</span> <span class="step-btn__icon step-btn__icon-purse"><svg><use xlink:href="/img/svgsprites/payment.svg#purse"/></svg></span></a>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <a href="#" class="step-btn step-btn--padding">Забронировать на 5 дней за 1 Р <span class="step-btn__icon step-btn__icon--reserve"><svg><use xlink:href="/img/svgsprites/payment.svg#check-border"/></svg></span>
+                                <a href="#" class="step-btn step-btn--padding" data-modal="login">Забронировать на 5 дней за 1 Р <span class="step-btn__icon step-btn__icon--reserve"><svg><use xlink:href="/img/svgsprites/payment.svg#check-border"/></svg></span>
 
                                 </a>
                             </div>
@@ -537,151 +538,245 @@
         </div>
     </div>
 
+    <div class="popup-login" data-rel="login">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+        <span class="close-btn__icon">
+            <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+        </span>
+      </button>
+        <div class="popup-login__content">
+            <div class="popup-login__info">
+                <h4 class="popup-login__title">Зарегиcтрируйтесь в 2 клика!</h4>
+                <p class="popup-logn__text">Ваш заказ на <span>Hyundai Solaris 2016</span> будет сохранен в личном кабинете со всеми настройками и расчетами. Вы сможете вернуться к нему в любое время.
+                </p>
+                <p class="popup-logn__text">Успехов в выборе, Кармарт верит в вас!</p>
+            </div>
+            <form action="/" method="post" class="login-form">
+                <fieldset class="login-form__field">
+                    <legend class="login-form__legend">Вход / Регистрация:</legend>
+                    <div class="login-form__radio">
+                        <div class="radio-inputs radio-inputs--flex">
+                            <div class="radio-inputs__item">
+                                <input checked type="radio" name="login" id="login-new">
+                                <label class="radio-inputs__label radio-inputs__label--login" for="login-new">Я впервые на сайте</label>
+                            </div>
+                            <div class="radio-inputs__item">
+                                <input type="radio" name="login" id="login-sign">
+                                <label class="radio-inputs__label radio-inputs__label--login" for="login-sign">Я уже зарегистрирован</label>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" class="login-form__input" placeholder="Как вас зовут?">
+                    <input type="tel" required class="login-form__input" placeholder="Ваш телефон*">
+
+                    <div class="login-form__submit"><button class="step-btn step-btn--gradient" type="submit">Регистрация</button></div>
+                </fieldset>
+                <fieldset class="login-form__field">
+                    <legend class="login-form__legend">Или</legend>
+                    <p class="login-form__exp">Войти через аккаунт:</p>
+                    <div class="login-form__social">
+                        <div class="social">
+                            <a href="#" class="social__btn" title="Вконтакте"><svg><use xlink:href="/img/svgsprites/payment.svg#vk"/></svg></a>
+                            <a href="#" class="social__btn" title="Facebook"><svg><use xlink:href="/img/svgsprites/payment.svg#facebook"/></svg></a>
+                            <a href="#" class="social__btn" title="Google+"><svg><use xlink:href="/img/svgsprites/payment.svg#google"/></svg></a>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
     <div class="popup-pat" data-rel="pat">
         <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
         <span class="close-btn__icon">
             <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
         </span>
       </button>
-      <div class="popup-pat__content">
-        <div class="popup-pat__title">
-            Выбрано: <span>Самый необходимый набор</span>
+        <div class="popup-pat__content">
+            <div class="popup-pat__title">
+                Выбрано: <span>Самый необходимый набор</span>
+            </div>
+            <div class="popup-pat__items">
+                <div class="popup-pat__items-content">
+                    <div class="popup-pat__item popup-pat__item--select">
+                        <div class="popup-pat__item-content">
+                            <div class="popup-pat__left">
+                                <div class="popup-pat__img">
+                                    <span class="popup-pat__check"><svg><use xlink:href="/img/svgsprites/general.svg#check-circle"/></svg></span>
+                                    <img src="img/PAT/PAT_min.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="popup-pat__info">
+                                <div class="popup-pat__info-header">
+                                    <div class="popup-pat__info-title">
+                                        <h6 class="popup-pat__name">Самый необходимый набор</h6>
+                                        <p class="popup-pat__expl">Самый необходимый набор услуг для каждого автомобилиста</p>
+                                    </div>
+                                    <div class="popup-pat__info-control">
+                                        <div class="popup-pat__price">2500 Р</div>
+                                        <button class="services-btn services-btn--select services-btn--padding">Выбрано</button>
+                                    </div>
+                                </div>
+                                <div class="popup-pat__info-body">
+                                    <ul class="popup-pat__list">
+                                        <li>Эвакуация при ДТП.</li>
+                                        <li>Извлечение транспортного средства клиента из труднодоступных мест.</li>
+                                        <li>Дозаправка/Подвоз топлива в объеме до 10 литров.</li>
+                                        <li>Доставка клиента вместе/без транспортного средства к месту заправки.</li>
+                                        <li>Временный Ремонт без разбортировки/замена колеса на запасное.</li>
+                                        <li>Вскрытие авто.</li>
+                                        <li>Отключение сигнализации.</li>
+                                        <li>Мелкий ремонт электрики транспортного средства.</li>
+                                        <li>Запуск автомобиля от внешнего источника, зарядка АКБ.</li>
+                                        <li>Консультации технических специалистов для самостоятельного устранения неисправности.</li>
+                                        <li>Круглосуточная справочная помощь.</li>
+                                        <li>Юридические консультации.</li>
+                                        <li>Скидки у партнеров.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-pat__control">
+                            <button class="popup-pat__show popup-pat__show--more">Показать опции пакета</button>
+                        </div>
+                    </div>
+                    <div class="popup-pat__item">
+                        <div class="popup-pat__item-content">
+                            <div class="popup-pat__left">
+                                <div class="popup-pat__img">
+                                    <span class="popup-pat__check"><svg><use xlink:href="/img/svgsprites/general.svg#check-circle"/></svg></span>
+                                    <img src="img/PAT/PAT_solo.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="popup-pat__info">
+                                <div class="popup-pat__info-header">
+                                    <div class="popup-pat__info-title">
+                                        <h6 class="popup-pat__name">Базовый пакет</h6>
+                                        <p class="popup-pat__expl">Универсальное решение для большинства водителей.</p>
+                                    </div>
+                                    <div class="popup-pat__info-control">
+                                        <div class="popup-pat__price">2500 Р</div>
+                                        <button class="services-btn services-btn--select services-btn--padding">Выбрано</button>
+                                    </div>
+                                </div>
+                                <div class="popup-pat__info-body">
+                                    <ul class="popup-pat__list">
+                                        <li>Эвакуация при ДТП.</li>
+                                        <li>Извлечение транспортного средства клиента из труднодоступных мест.</li>
+                                        <li>Дозаправка/Подвоз топлива в объеме до 10 литров.</li>
+                                        <li>Доставка клиента вместе/без транспортного средства к месту заправки.</li>
+                                        <li>Временный Ремонт без разбортировки/замена колеса на запасное.</li>
+                                        <li>Вскрытие авто.</li>
+                                        <li>Отключение сигнализации.</li>
+                                        <li>Мелкий ремонт электрики транспортного средства.</li>
+                                        <li>Запуск автомобиля от внешнего источника, зарядка АКБ.</li>
+                                        <li>Консультации технических специалистов для самостоятельного устранения неисправности.</li>
+                                        <li>Круглосуточная справочная помощь.</li>
+                                        <li>Юридические консультации.</li>
+                                        <li>Скидки у партнеров.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="popup-pat__control">
+                            <button class="popup-pat__show popup-pat__show--more">Показать опции пакета</button>
+                        </div>
+                    </div>
+
+                    <div class="popup-pat__item">
+                        <div class="popup-pat__item-content">
+                            <div class="popup-pat__left">
+                                <div class="popup-pat__img">
+                                    <span class="popup-pat__check"><svg><use xlink:href="/img/svgsprites/general.svg#check-circle"/></svg></span>
+                                    <img src="img/PAT/PAT_capris.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="popup-pat__info">
+                                <div class="popup-pat__info-header">
+                                    <div class="popup-pat__info-title">
+                                        <h6 class="popup-pat__name">Расширенный пакет</h6>
+                                        <p class="popup-pat__expl">Универсальное решение для большинства водителей.</p>
+                                    </div>
+                                    <div class="popup-pat__info-control">
+                                        <div class="popup-pat__price">2500 Р</div>
+                                        <button class="services-btn services-btn--select services-btn--padding">Выбрано</button>
+                                    </div>
+                                </div>
+                                <div class="popup-pat__info-body">
+                                    <ul class="popup-pat__list">
+                                        <li>Эвакуация при ДТП.</li>
+                                        <li>Извлечение транспортного средства клиента из труднодоступных мест.</li>
+                                        <li>Дозаправка/Подвоз топлива в объеме до 10 литров.</li>
+                                        <li>Доставка клиента вместе/без транспортного средства к месту заправки.</li>
+                                        <li>Временный Ремонт без разбортировки/замена колеса на запасное.</li>
+                                        <li>Вскрытие авто.</li>
+                                        <li>Отключение сигнализации.</li>
+                                        <li>Мелкий ремонт электрики транспортного средства.</li>
+                                        <li>Запуск автомобиля от внешнего источника, зарядка АКБ.</li>
+                                        <li>Консультации технических специалистов для самостоятельного устранения неисправности.</li>
+                                        <li>Круглосуточная справочная помощь.</li>
+                                        <li>Юридические консультации.</li>
+                                        <li>Скидки у партнеров.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="popup-pat__control">
+                            <button class="popup-pat__show popup-pat__show--more">Показать опции пакета</button>
+                        </div>
+                    </div>
+                    <div class="popup-pat__item">
+                        <div class="popup-pat__item-content">
+                            <div class="popup-pat__left">
+                                <div class="popup-pat__img">
+                                    <span class="popup-pat__check"><svg><use xlink:href="/img/svgsprites/general.svg#check-circle"/></svg></span>
+                                    <img src="img/PAT/PAT_capris.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="popup-pat__info">
+                                <div class="popup-pat__info-header">
+                                    <div class="popup-pat__info-title">
+                                        <h6 class="popup-pat__name">Расширенный пакет</h6>
+                                        <p class="popup-pat__expl">Универсальное решение для большинства водителей.</p>
+                                    </div>
+                                    <div class="popup-pat__info-control">
+                                        <div class="popup-pat__price">2500 Р</div>
+                                        <button class="services-btn services-btn--select services-btn--padding">Выбрано</button>
+                                    </div>
+                                </div>
+                                <div class="popup-pat__info-body">
+                                    <ul class="popup-pat__list">
+                                        <li>Эвакуация при ДТП.</li>
+                                        <li>Извлечение транспортного средства клиента из труднодоступных мест.</li>
+                                        <li>Дозаправка/Подвоз топлива в объеме до 10 литров.</li>
+                                        <li>Доставка клиента вместе/без транспортного средства к месту заправки.</li>
+                                        <li>Временный Ремонт без разбортировки/замена колеса на запасное.</li>
+                                        <li>Вскрытие авто.</li>
+                                        <li>Отключение сигнализации.</li>
+                                        <li>Мелкий ремонт электрики транспортного средства.</li>
+                                        <li>Запуск автомобиля от внешнего источника, зарядка АКБ.</li>
+                                        <li>Консультации технических специалистов для самостоятельного устранения неисправности.</li>
+                                        <li>Круглосуточная справочная помощь.</li>
+                                        <li>Юридические консультации.</li>
+                                        <li>Скидки у партнеров.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="popup-pat__control">
+                            <button class="popup-pat__show popup-pat__show--more">Показать опции пакета</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="popup-pat__items">
-            <div class="popup-pat__item popup-pat__item--select">
-                <div class="popup-pat__item-content">
-                    <div class="popup-pat__left">
-                        <div class="popup-pat__img">
-                            <span class="popup-pat__check"><svg><use xlink:href="/img/svgsprites/general.svg#check-circle"/></svg></span>
-                            <img src="img/PAT/PAT_min.png" alt="">
-                        </div>
-
-                    </div>
-                    <div class="popup-pat__info">
-                        <div class="popup-pat__info-header">
-                            <div class="popup-pat__info-title">
-                                <h6 class="popup-pat__name">Самый необходимый набор</h6>
-                                <p class="popup-pat__expl">Самый необходимый набор услуг для каждого автомобилиста</p>
-                            </div>
-                            <div class="popup-pat__info-control">
-                                <div class="popup-pat__price">2500 Р</div>
-                                <button class="services-btn services-btn--select services-btn--padding">Выбрано</button>
-                            </div>
-                        </div>
-                        <div class="popup-pat__info-body">
-                            <ul class="popup-pat__list">
-                                <li>Эвакуация при ДТП.</li>
-                                <li>Извлечение транспортного средства клиента из труднодоступных мест.</li>
-                                <li>Дозаправка/Подвоз топлива в объеме до 10 литров.</li>
-                                <li>Доставка клиента вместе/без транспортного средства к месту заправки.</li>
-                                <li>Временный Ремонт без разбортировки/замена колеса на запасное.</li>
-                                <li>Вскрытие авто.</li>
-                                <li>Отключение сигнализации.</li>
-                                <li>Мелкий ремонт электрики транспортного средства.</li>
-                                <li>Запуск автомобиля от внешнего источника, зарядка АКБ.</li>
-                                <li>Консультации технических специалистов для самостоятельного устранения неисправности.</li>
-                                <li>Круглосуточная справочная помощь.</li>
-                                <li>Юридические консультации.</li>
-                                <li>Скидки у партнеров.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="popup-pat__control">
-                    <button class="popup-pat__show popup-pat__show--more">Показать опции пакета</button>
-                </div>
-            </div>
-            <div class="popup-pat__item">
-                <div class="popup-pat__item-content">
-                    <div class="popup-pat__left">
-                        <div class="popup-pat__img">
-                            <span class="popup-pat__check"><svg><use xlink:href="/img/svgsprites/general.svg#check-circle"/></svg></span>
-                            <img src="img/PAT/PAT_solo.png" alt="">
-                        </div>
-
-                    </div>
-                    <div class="popup-pat__info">
-                        <div class="popup-pat__info-header">
-                            <div class="popup-pat__info-title">
-                                <h6 class="popup-pat__name">Базовый пакет</h6>
-                                <p class="popup-pat__expl">Универсальное решение для большинства водителей.</p>
-                            </div>
-                            <div class="popup-pat__info-control">
-                                <div class="popup-pat__price">2500 Р</div>
-                                <button class="services-btn services-btn--select services-btn--padding">Выбрано</button>
-                            </div>
-                        </div>
-                        <div class="popup-pat__info-body">
-                            <ul class="popup-pat__list">
-                                <li>Эвакуация при ДТП.</li>
-                                <li>Извлечение транспортного средства клиента из труднодоступных мест.</li>
-                                <li>Дозаправка/Подвоз топлива в объеме до 10 литров.</li>
-                                <li>Доставка клиента вместе/без транспортного средства к месту заправки.</li>
-                                <li>Временный Ремонт без разбортировки/замена колеса на запасное.</li>
-                                <li>Вскрытие авто.</li>
-                                <li>Отключение сигнализации.</li>
-                                <li>Мелкий ремонт электрики транспортного средства.</li>
-                                <li>Запуск автомобиля от внешнего источника, зарядка АКБ.</li>
-                                <li>Консультации технических специалистов для самостоятельного устранения неисправности.</li>
-                                <li>Круглосуточная справочная помощь.</li>
-                                <li>Юридические консультации.</li>
-                                <li>Скидки у партнеров.</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="popup-pat__control">
-                    <button class="popup-pat__show popup-pat__show--more">Показать опции пакета</button>
-                </div>
-            </div>
-
-            <div class="popup-pat__item">
-                <div class="popup-pat__item-content">
-                    <div class="popup-pat__left">
-                        <div class="popup-pat__img">
-                            <span class="popup-pat__check"><svg><use xlink:href="/img/svgsprites/general.svg#check-circle"/></svg></span>
-                            <img src="img/PAT/PAT_capris.png" alt="">
-                        </div>
-
-                    </div>
-                    <div class="popup-pat__info">
-                        <div class="popup-pat__info-header">
-                            <div class="popup-pat__info-title">
-                                <h6 class="popup-pat__name">Расширенный пакет</h6>
-                                <p class="popup-pat__expl">Универсальное решение для большинства водителей.</p>
-                            </div>
-                            <div class="popup-pat__info-control">
-                                <div class="popup-pat__price">2500 Р</div>
-                                <button class="services-btn services-btn--select services-btn--padding">Выбрано</button>
-                            </div>
-                        </div>
-                        <div class="popup-pat__info-body">
-                            <ul class="popup-pat__list">
-                                <li>Эвакуация при ДТП.</li>
-                                <li>Извлечение транспортного средства клиента из труднодоступных мест.</li>
-                                <li>Дозаправка/Подвоз топлива в объеме до 10 литров.</li>
-                                <li>Доставка клиента вместе/без транспортного средства к месту заправки.</li>
-                                <li>Временный Ремонт без разбортировки/замена колеса на запасное.</li>
-                                <li>Вскрытие авто.</li>
-                                <li>Отключение сигнализации.</li>
-                                <li>Мелкий ремонт электрики транспортного средства.</li>
-                                <li>Запуск автомобиля от внешнего источника, зарядка АКБ.</li>
-                                <li>Консультации технических специалистов для самостоятельного устранения неисправности.</li>
-                                <li>Круглосуточная справочная помощь.</li>
-                                <li>Юридические консультации.</li>
-                                <li>Скидки у партнеров.</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="popup-pat__control">
-                    <button class="popup-pat__show popup-pat__show--more">Показать опции пакета</button>
-                </div>
-            </div>
-        </div>
-</div>
 
     </div>
 
