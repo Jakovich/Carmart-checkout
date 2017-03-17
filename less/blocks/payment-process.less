@@ -1,0 +1,100 @@
+.payment-process__title {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    color: rgba(26,26,26,0.6);
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.payment-process__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-process__item {
+    text-align: center;
+    flex-basis: 31.5%;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    border: 1px solid @blue-gray;
+    border-radius: @border-radius;
+    background: #ededed;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.1), rgba(255,255,255,0.1));
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.1), rgba(255,255,255,0.1));
+    background: linear-gradient(to top, rgba(0,0,0,0.1), rgba(255,255,255,0.1));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &:first-child {
+        font-weight: 500;
+    }
+}
+
+.payment-process__icon {
+    display: inline-block;
+}
+
+.payment-process__icon--card {
+    svg {
+        width: 84px;
+        height: 56px;
+    }
+}
+
+.payment-process__icon--account {
+    svg {
+        width: 77px;
+        height: 64px;
+    }
+}
+
+.payment-process__icon--cash {
+    svg {
+        width: 84px;
+        height: 65px;
+    }
+}
+
+.payment-process__exp {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.payment-process__checkbox-wrp {
+    display: flex;
+    align-items: center;
+}
+
+.payment-process__offer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.payment-process__offer-text {
+    margin-left: 10px;
+    position: relative;
+    top: -4px;
+    font-size: 14px;
+    font-weight: 600;
+
+    span {
+        font-weight: 300;
+    }
+}
+
+.payment-process__footer {
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+    &::before {
+        position: absolute;
+        height: 1px;
+        content: '';
+        background-color: rgba(26,26,26,0.15);
+        top: 0;
+        left: -20px;
+        right: -20px;
+    }
+}
