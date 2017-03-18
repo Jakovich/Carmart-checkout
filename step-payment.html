@@ -615,7 +615,6 @@
         </div>
     </div>
 
-
     <div class="popup-login" data-rel="login">
         <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
         <span class="close-btn__icon">
@@ -630,8 +629,8 @@
                 <p class="popup-logn__text">Успехов в выборе, Кармарт верит в вас!</p>
             </div>
             <form action="/" method="post" class="login-form">
-                <fieldset class="login-form__field">
-                    <legend class="login-form__legend">Вход / Регистрация:</legend>
+                <div class="login-form__field">
+                    <p class="login-form__legend">Вход / Регистрация:</p>
                     <div class="login-form__radio">
                         <div class="radio-inputs radio-inputs--flex">
                             <div class="radio-inputs__item">
@@ -644,13 +643,19 @@
                             </div>
                         </div>
                     </div>
+                    <label class="login-form__label">
+                    <span class="login-form__icon"><svg><use xlink:href="/img/svgsprites/payment.svg#user"/></svg></span>
                     <input type="text" class="login-form__input" placeholder="Как вас зовут?">
+                    </label>
+                    <label class="login-form__label">
+                        <span class="login-form__icon"><svg><use xlink:href="/img/svgsprites/payment.svg#tel"/></svg></span>
                     <input type="tel" required class="login-form__input" placeholder="Ваш телефон*">
+                </label>
 
                     <div class="login-form__submit"><button class="step-btn step-btn--gradient" type="submit">Регистрация</button></div>
-                </fieldset>
-                <fieldset class="login-form__field">
-                    <legend class="login-form__legend">Или</legend>
+                </div>
+                <div class="login-form__field">
+                    <p class="login-form__legend">Или</p>
                     <p class="login-form__exp">Войти через аккаунт:</p>
                     <div class="login-form__social">
                         <div class="social">
@@ -659,7 +664,7 @@
                             <a href="#" class="social__btn" title="Google+"><svg><use xlink:href="/img/svgsprites/payment.svg#google"/></svg></a>
                         </div>
                     </div>
-                </fieldset>
+                </div>
             </form>
         </div>
     </div>
