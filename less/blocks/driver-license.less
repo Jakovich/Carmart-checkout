@@ -5,7 +5,7 @@
   background-position: center;
   border: 2px solid #c5a6b7;
   border-radius: @border-radius;
-  max-width: 470px;
+  max-width: 475px;
   margin: 0 auto;
   //padding-left: 30px;
   //padding-right: 44px;
@@ -106,6 +106,15 @@
   margin-bottom: 10px;
 }
 
+.driver-license__series {
+  position: relative;
+  width: 35%;
+}
+
+.driver-license__number {
+  width: 35%;
+}
+
 .driver-license__tooltip {
   display: none;
   font-size: 14px;
@@ -157,4 +166,40 @@
   color: @text-color-dark;
   top: 12px;
   left: 20px;
+}
+
+.driver-license__input--number-part {
+
+}
+
+.driver-license__sex-wrp {
+width: 95px;
+  font-size: 0;
+}
+
+.driver-license__sex-item {
+  display: inline-block;
+
+  font-size: 26px;
+  font-weight: 500;
+  width: 45px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    border-radius: @border-radius;
+    border: 2px solid rgba(0,0,0,0);
+    color: #8C4D70;
+    cursor: pointer;
+    width: 100%;
+    padding: 4px 0;
+
+  }
+
+  input:checked~label {
+    border-color: #c5a6b7;
+    color: @text-color;
+  }
 }

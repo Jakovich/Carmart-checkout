@@ -301,16 +301,30 @@
 
                                                     <input class="driver-license__input driver-license__input--inline" type="text" name="date-delivery" placeholder="Дата выдачи">
                                                 </div>
-                                                <div class="driver-license__input-wrp">
-                                                    <input class="driver-license__input driver-license__input--number " type="text" name="insurance-number" placeholder="Номер страхования">
+                                                <div class="driver-license__inline-wrp "><label class="driver-license__series">
+                                                    <input class="driver-license__input driver-license__input--number " type="text" name="licence-series" placeholder="00 00">
                                                     <span class="driver-license__input-note">№</span>
+                                                    </label>
+                                                    <div class="driver-license__number">
+                                                    <input class="driver-license__input " type="text" name="licence-number" placeholder="123 456" >
+                                                    </div>
+                                                    <div class="driver-license__sex-wrp">
+                                                        <div class="driver-license__sex-item">
+                                                            <input type="radio" checked name="sex" id="M" value="M">
+                                                            <label for="M">M</label>
+                                                        </div>
+                                                        <div class="driver-license__sex-item">
+                                                            <input type="radio" name="sex" id="F" value="F">
+                                                            <label for="F">Ж</label>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="select__wrp">
                                                     <select name="region" class="select select--pink">
-                                            <option disabled selected>Регион страхования</option>
-                                            <option>Москва и МО</option>
-                                            <option>Не Москва</option>
-                                        </select>
+                                                        <option disabled selected>Регион страхования</option>
+                                                        <option>Москва и МО</option>
+                                                        <option>Не Москва</option>
+                                                </select>
                                                 </div>
                                             </form>
 

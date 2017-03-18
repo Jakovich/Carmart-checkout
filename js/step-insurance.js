@@ -88,10 +88,16 @@ $(document).ready(function() {
 
     //inputmask for form of driver licence
 
-    $('.drivers__form [name=insurance-number]').inputmask("99 99 9999999", {
+    $('.drivers__form [name=licence-series]').inputmask("99 99", {
         "placeholder": " ",
         "showMaskOnHover": false
     });
+
+    $('.drivers__form [name=licence-number]').inputmask("999 999", {
+        "placeholder": " ",
+        "showMaskOnHover": false
+    });
+
 
     $('.drivers__form [name=date-birdthday]').inputmask("date", {
         "showMaskOnHover": false,

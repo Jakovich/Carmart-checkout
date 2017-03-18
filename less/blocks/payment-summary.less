@@ -37,7 +37,7 @@
     border-radius: @border-radius;
 
     margin-bottom: 10px;
-
+    box-shadow: @shadow-item;
 }
 
 .payment-summary__item-basic {
@@ -67,11 +67,11 @@
 
 .payment-summary__item-addit {
     padding: 25px;
-    display: none;
-    border: 1px @blue-gray-light solid;
-    border-top: 0;
+    //display: none;
+
+
     position: relative;
-    top: -3px;
+
     border-bottom-left-radius: @border-radius;
     border-bottom-right-radius: @border-radius;
 }
@@ -111,9 +111,40 @@
     transform: rotate(90deg);
 }
 
+.payment-summary__sale {
+    background-color: rgba(0,171,138,0.08);
+    border-radius: @border-radius;
+    padding: 25px;
+    text-align: center;
+}
+
 .payment-summary__sale-icon {
+position: absolute;
+left:0;
+
   svg {
-    width: 42px;
-    height: 38px;
+    width: 21px;
+    height: 21px;
   }
+}
+
+.payment-summary__sale-title {
+    display: inline-block;
+    padding: 0 48px;
+    color: @green;
+    font-weight: 300;
+    font-size: 22px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.payment-summary__sale-sum {
+    font-weight: 500;
+}
+
+.payment-summary__sale-exp {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
 }
