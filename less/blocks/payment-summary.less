@@ -25,7 +25,6 @@
 .payment-summary__item {
     //border: 2px @blue-gray-light solid;
     border-radius: @border-radius;
-
     margin-bottom: 10px;
     box-shadow: @shadow-item;
 }
@@ -56,16 +55,12 @@
 }
 
 .payment-summary__item-addit {
-    padding: 25px;
+    padding: 5px;
     //display: none;
-
-
     position: relative;
-
     border-bottom-left-radius: @border-radius;
     border-bottom-right-radius: @border-radius;
 }
-
 
 .payment-summary__item-name {
     color: @text-color-dark;
@@ -75,15 +70,16 @@
     transition: @transition;
     position: relative;
     margin-left: 25px;
+
     &:hover {
         color: @green;
         text-decoration: none;
         border-color: @green;
+
         svg {
             stroke: @green;
         }
     }
-
 }
 
 .payment-summary__item-price {
@@ -105,17 +101,19 @@
     background-color: rgba(0,171,138,0.08);
     border-radius: @border-radius;
     padding: 25px;
+    margin: 15px;
+
     text-align: center;
 }
 
 .payment-summary__sale-icon {
-position: absolute;
-left:0;
+    position: absolute;
+    left: 0;
 
-  svg {
-    width: 21px;
-    height: 21px;
-  }
+    svg {
+        width: 21px;
+        height: 21px;
+    }
 }
 
 .payment-summary__sale-title {
@@ -137,4 +135,66 @@ left:0;
     font-size: 16px;
     font-weight: 300;
     margin: 0;
+}
+
+.payment-summary__table {
+    width: 100%;
+    margin-bottom: 20px;
+
+    tr {
+        border-bottom: 1px solid rgba(26,26,26,0.15);
+    }
+}
+
+.payment-summary__table--trade {
+    .payment-summary__data {
+        color: @blue-gray;
+    }
+}
+
+.payment-summary__data {
+    text-align: right;
+    font-size: 16px;
+    color: @blue-gray;
+    padding: 15px;
+}
+
+.payment-summary__name {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.payment-summary__table--equipment {
+    .payment-summary__name {
+        position: relative;
+        padding-left: 40px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 7px;
+            left: 15px;
+            top: 50%;
+            margin-top: -3.5px;
+            background-image: url('../img/payment/list-hexo.svg');
+        }
+
+        a {
+            color: @text-color;
+            border-bottom: 2px dashed #1a1a1a;
+            margin-right: 20px;
+            position: relative;
+            display: inline;
+            transition: all .2s ease;
+            text-decoration: none;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .payment-summary__data {
+        color: @text-color-dark;
+    }
 }

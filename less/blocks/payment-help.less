@@ -1,0 +1,51 @@
+.payment-help {
+  border: 2px solid rgba(128,141,155,0.2);
+  border-radius: @border-radius;
+  margin-top: 15px;
+  text-align: center;
+  position:relative;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.payment-help__icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left:0;
+  width: 110px;
+  top: 9px;
+  bottom: 9px;
+  border-right: 1px solid rgba(128,141,155,0.15);
+  svg {
+    width: 26px;
+    height: 48px;
+  }
+}
+
+.payment-help__title {
+  color: @text-color-dark;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.payment-help__text {
+  margin-top: 10px;
+  color: @text-color-dark;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.payment-help__phone {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px 27px;
+  margin-left: 5px;
+  background-image: url('../img/payment/orange-border.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
