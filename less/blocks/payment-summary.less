@@ -137,9 +137,26 @@
     margin: 0;
 }
 
+.payment-summary__insur-item {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    border-right: 1px dashed rgba(26,26,26,0.2);
+    }
+}
+
 .payment-summary__table {
     width: 100%;
     margin-bottom: 20px;
+    caption {
+        font-size: 16px;
+        font-weight: 500;
+        color: @text-color;
+    }
 
     tr {
         border-bottom: 1px solid rgba(26,26,26,0.15);
@@ -157,6 +174,7 @@
     font-size: 16px;
     color: @blue-gray;
     padding: 15px;
+    font-weight: 300;
 }
 
 .payment-summary__name {
@@ -213,4 +231,49 @@
       color: @green;
       text-decoration: none;
   }
+}
+
+.payment-summary__table--insurance {
+
+    tr {
+        border: none;
+    }
+    .payment-summary__name {
+        vertical-align: top;
+        padding: 0;
+        color: @text-color;
+    }
+    .payment-summary__data {
+        vertical-align: top;
+        padding: 0;
+        color: @text-color;
+    }
+}
+
+.payment-summary__table-wrp {
+    border-bottom: 1px solid rgba(26,26,26,0.15);
+    padding: 0 18px;
+}
+
+.payment-summary__data-link {
+    color: @green;
+    transition: @transition;
+    border-bottom: 1px dashed @green;
+    &:hover {
+        text-decoration: none;
+        color: @green;
+        opacity: 0.8;
+    }
+}
+
+.payment-summary__name--nobold {
+    font-weight: 300;
+    padding: 5px 0;
+}
+
+.payment-summary__insur-title {
+    font-size: 22px;
+    font-weight: 300;
+    color: @blue-gray;
+    margin-left: 20px;
 }
