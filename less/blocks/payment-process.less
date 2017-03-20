@@ -12,12 +12,29 @@
     justify-content: space-between;
 }
 
+.payment-process__item-wrp {
+  flex-basis: 31.5%;
+  input {
+      display: none;
+  }
+
+  input:checked~.payment-process__item {
+    border-color: @green;
+    .payment-process__exp {
+      font-weight: 500;
+    }
+  }
+
+}
+
 .payment-process__item {
     text-align: center;
-    flex-basis: 31.5%;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
     padding-top: 20px;
     padding-bottom: 12px;
-    border: 1px solid @blue-gray;
+    border: 2px solid rgba(79,90,103,0.4);
     border-radius: @border-radius;
     background: #ededed;
     background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.1), rgba(255,255,255,0.1));
@@ -27,9 +44,7 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    &:first-child {
-        font-weight: 500;
-    }
+
 }
 
 .payment-process__icon {
@@ -63,7 +78,7 @@
 
 .payment-process__exp {
     font-size: 16px;
-    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .payment-process__checkbox-wrp {

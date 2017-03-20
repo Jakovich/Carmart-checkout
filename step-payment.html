@@ -741,18 +741,26 @@
                     <div class="payment-process">
                         <div class="payment-process__title">Оплатить без комиссии в Carmart:</div>
                         <div class="payment-process__items">
-                            <div class="payment-process__item">
-                                <div class="payment-process__icon payment-process__icon--card"><svg><use xlink:href="/img/svgsprites/payment.svg#card"/></svg></div>
-                                <div class="payment-process__exp">Картой</div>
+                            <div class="payment-process__item-wrp">
+                                <input type="radio" name="payment-process" value="card" id="card" checked>
+                                <label for="card" class="payment-process__item"><div class="payment-process__icon payment-process__icon--card"><svg><use xlink:href="/img/svgsprites/payment.svg#card"/></svg></div>
+                                <div class="payment-process__exp">КАРТОЙ</div></label>
+
                             </div>
-                            <div class="payment-process__item">
+                            <div class="payment-process__item-wrp">
+                            <input type="radio" name="payment-process" value="account" id="account">
+                            <label for="account" class="payment-process__item">
                                 <div class="payment-process__icon payment-process__icon--account"><svg><use xlink:href="/img/svgsprites/payment.svg#account"/></svg></div>
-                                <div class="payment-process__exp">Со счета</div>
-                            </div>
-                            <div class="payment-process__item">
+                                <div class="payment-process__exp">СО СЧЕТА</div>
+                            </label>
+                        </div>
+                        <div class="payment-process__item-wrp">
+                            <input type="radio" name="payment-process" value="cash" id="cash">
+                            <label for="cash" class="payment-process__item">
                                 <div class="payment-process__icon payment-process__icon--cash"><svg><use xlink:href="/img/svgsprites/payment.svg#cash"/></svg></div>
-                                <div class="payment-process__exp">Наличными</div>
-                            </div>
+                                <div class="payment-process__exp">НАЛИЧНЫМИ</div>
+                            </label>
+                        </div>
                         </div>
                         <div class="payment-process__offer">
                             <div class="payment-process__checkbox-wrp">
@@ -777,18 +785,27 @@
                     <div class="payment-process">
                         <div class="payment-process__title">Какой картой будете оплачивать ваш автомобиль?</div>
                         <div class="payment-process__items">
-                            <div class="payment-process__item">
+                            <div class="payment-process__item-wrp">
+                                <input type="radio" name="payment-card" id="Mastercard" checked>
+                            <label for="Mastercard" class="payment-process__item">
                                 <div class="payment-process__icon payment-process__icon--padding"><img src="img/payment/master-card.svg" alt="MasterCard" width="87" height="52"></div>
                                 <div class="payment-process__exp">MasterСard</div>
+                            </label>
                             </div>
-                            <div class="payment-process__item">
+                            <div class="payment-process__item-wrp">
+                                <input type="radio" name="payment-card" id="Visa-sber">
+                            <label for="Visa-sber" class="payment-process__item">
                                 <div class="payment-process__icon payment-process__icon--padding"><img src="img/payment/visa-sber.svg" alt="Visa-сбербанк" width="137" height="37"></div>
-                                <div class="payment-process__exp">Visa - Сбербанк</div>
+                                <div class="payment-process__exp">VISA - Сбербанк</div>
+                            </label>
                             </div>
-                            <div class="payment-process__item">
+                            <div class="payment-process__item-wrp">
+                                <input type="radio" name="payment-card" id="Visa">
+                            <label for="Visa" class="payment-process__item">
                                 <div class="payment-process__icon payment-process__icon--padding"><img src="img/payment/visa.svg" alt="Visa" width="87" height="27"></div>
-                                <div class="payment-process__exp">Visa - другой банк</div>
-                            </div>
+                                <div class="payment-process__exp">VISA - другой банк</div>
+                            </label>
+                        </div>
                         </div>
                         <div class="payment-process__offer">
                             <div class="payment-process__checkbox-wrp">
