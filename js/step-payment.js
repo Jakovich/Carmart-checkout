@@ -44,10 +44,9 @@ $(document).ready(function(){
         var currentItem = $(evt.target).closest('.payment-summary__item');
         currentItem.find('.payment-summary__item-addit').slideToggle(300);
         currentItem.find('.payment-summary__caret').toggleClass('payment-summary__caret--up').toggleClass('payment-summary__caret--down');
+         currentItem.toggleClass('').toggleClass('payment-summary__item--active')
     }
-    $('.payment-summary__control').on('click', function(evt){
-     showAddit(evt);
-    });
+
     $('.payment-summary__item-name').on('click', function(evt){
      showAddit(evt);
     });

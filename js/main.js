@@ -6,7 +6,7 @@ $(document).ready(function() {
         var currentItem = $(event.target).closest('.faq__item');
         var answer = currentItem.find('.faq__answer');
         answer.slideToggle(300);
-        currentItem.toggleClass('faq__item').toggleClass('faq__item faq__item--active');
+        currentItem.toggleClass('').toggleClass('faq__item--active');
     });
 
     //show/hide additional info in section info

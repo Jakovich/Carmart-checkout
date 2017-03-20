@@ -29,6 +29,12 @@
     box-shadow: @shadow-item;
 }
 
+.payment-summary__item--active {
+    .payment-summary__item-name {
+        border-bottom: none;
+    }
+}
+
 .payment-summary__item-basic {
     display: flex;
     justify-content: space-between;
@@ -56,7 +62,7 @@
 
 .payment-summary__item-addit {
     padding: 5px;
-    //display: none;
+    display: none;
     position: relative;
     border-bottom-left-radius: @border-radius;
     border-bottom-right-radius: @border-radius;
@@ -102,7 +108,6 @@
     border-radius: @border-radius;
     padding: 25px;
     margin: 15px;
-
     text-align: center;
 }
 
@@ -129,6 +134,7 @@
 
 .payment-summary__sale-sum {
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .payment-summary__sale-exp {
@@ -139,19 +145,27 @@
 
 .payment-summary__insur-item {
     position: relative;
-    &::after {
+    padding-top: 10px;
+
+
+}
+
+.payment-summary__insur-items {
+    position: relative;
+    &::before {
         position: absolute;
         content: '';
-    top: 0;
-    bottom: 0;
-    right: -10px;
-    border-right: 1px dashed rgba(26,26,26,0.2);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        border-right: 1px dashed rgba(26,26,26,0.2);
     }
 }
 
 .payment-summary__table {
     width: 100%;
     margin-bottom: 20px;
+
     caption {
         font-size: 16px;
         font-weight: 500;
@@ -175,6 +189,11 @@
     color: @blue-gray;
     padding: 15px;
     font-weight: 300;
+    white-space: nowrap;
+}
+
+.payment-summary__data--name {
+    white-space: normal;
 }
 
 .payment-summary__name {
@@ -187,6 +206,7 @@
     .payment-summary__name {
         position: relative;
         padding-left: 40px;
+
         &::after {
             position: absolute;
             content: '';
@@ -204,8 +224,9 @@
             margin-right: 20px;
             position: relative;
             display: inline;
-            transition: all .2s ease;
+            transition: all 0.2s ease;
             text-decoration: none;
+
             &:hover {
                 opacity: 0.8;
             }
@@ -218,31 +239,34 @@
 }
 
 .payment-summary__link {
-  color: @green;
-  font-size: 16px;
-  font-weight: 300;
-  border-bottom: 1px dashed @green;
-  transition: @transition;
-  margin-left: 20px;
-  margin-top: 10px;
-  display: inline-block;
-  &:hover {
-      opacity: 0.8;
-      color: @green;
-      text-decoration: none;
-  }
+    color: @green;
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px dashed @green;
+    transition: @transition;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: inline-block;
+
+    &:hover {
+        opacity: 0.8;
+        color: @green;
+        text-decoration: none;
+    }
 }
 
 .payment-summary__table--insurance {
-
+    margin-bottom: 0;
     tr {
         border: none;
     }
+
     .payment-summary__name {
         vertical-align: top;
         padding: 0;
         color: @text-color;
     }
+
     .payment-summary__data {
         vertical-align: top;
         padding: 0;
@@ -253,12 +277,18 @@
 .payment-summary__table-wrp {
     border-bottom: 1px solid rgba(26,26,26,0.15);
     padding: 0 18px;
+    padding-top: 16px;
+    padding-bottom: 25px;
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
 .payment-summary__data-link {
     color: @green;
     transition: @transition;
     border-bottom: 1px dashed @green;
+
     &:hover {
         text-decoration: none;
         color: @green;
@@ -276,4 +306,14 @@
     font-weight: 300;
     color: @blue-gray;
     margin-left: 20px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .payment-summary__insur-items {
+
+        &::before {
+            display: none;
+        }
+    }
 }
