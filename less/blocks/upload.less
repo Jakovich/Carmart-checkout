@@ -83,7 +83,7 @@
 
 .upload__dropzone {
     border: 2px dashed rgba(128,141,155,0.2);
-    padding: 15px 7.5px;
+    padding: 15px 15px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -141,13 +141,15 @@
         width: 90px;
         height: 117px;
         border: 2px dashed rgba(128,141,155,0.4);
-        margin: 0 7.5px;
+        margin: 0;
         position: relative;
         cursor: pointer;
         transition: @transition;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 3px;
+        margin: 0 15px;
     }
 
     input {
@@ -179,8 +181,8 @@
 .upload__close-icon {
     cursor: pointer;
     position: absolute;
-    right: -21.5px;
-    top: -21.5px;
+    right: -12px;
+    top: -12px;
     svg {
         width: 43px;
         height: 43px;
@@ -197,11 +199,74 @@
 }
 
 .upload__item-preview {
+    width: 90px;
+    margin: 0 15px;
+}
+
+.upload__preview-img {
     border: 2px solid @blue-gray-light;
     width: 90px;
     height: 117px;
 
-    margin: 0 7.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-color: #f2f2f2;
+    border-radius: 3px;
+    img {
+        width: 78px;
+        height:111px;
+
+    }
+}
+
+.upload__preview-img--pdf {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    &::before {
+        position: absolute;
+        content:'';
+        background-image: url('../img/pdf-icon.svg');
+        width: 52px;
+        height: 23.5px;
+        top: 8px;
+        left: -6px;
+    }
+}
+
+.upload__preview-img--doc {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    &::before {
+        position: absolute;
+        content:'';
+        background-image: url('../img/doc-icon.svg');
+        width: 52px;
+        height: 23.5px;
+        top: 8px;
+        left: -6px;
+    }
+}
+
+.upload__preview-name {
+    font-size: 12px;
+    margin-top: 5px;
+    word-break:break-all;
+}
+
+
+
+.upload__success-icon {
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+  position: absolute;
+  right: -16px;
+  bottom: 5px;
 }
