@@ -57,6 +57,14 @@
   }
 }
 
+.step-btn__icon--payment {
+  right: 4%;
+  svg {
+    width: 31px;
+    height: 28px;
+  }
+}
+
 .step-btn__icon--return {
   transform: translateY(-50%);
     right: 4%;
@@ -143,13 +151,17 @@
 .step-btn--gradient {
   background: @green;
   background: linear-gradient(to top, #00ab8a, #55c6b0);
-  text-transform: none;
-  padding: 15px 0;
-    font-size: 21px;
+
     border: 1px solid #007B57;
   &:hover {
     opacity: 0.8;
   }
+}
+
+.step-btn--font {
+  font-size: 21px;
+    text-transform: none;
+      padding: 15px 0;
 }
 
 .step-btn--options-go {

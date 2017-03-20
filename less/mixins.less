@@ -11,3 +11,21 @@
     background-clip: padding-box, border-box, border-box, border-box, border-box;
     background-origin: padding-box, border-box, border-box, border-box, border-box;
 }
+
+
+.border-top() {
+  position: relative;
+  &::after {
+
+    position: absolute;
+    content: '';
+    top: 0;
+    left:0;
+    right:0;
+    height: 10px;
+    background-image: url('../img/payment/bg-popup.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+}
