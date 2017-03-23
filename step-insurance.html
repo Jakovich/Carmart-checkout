@@ -1256,13 +1256,51 @@
 
     </footer>
 
-    <div class="popup-refusing" data-rel="refusing">
-        <h4 class="popup-refusing__title">Отказаться от кредита?</h4>
-        <p class="popup-refusing__text">Отказываясь от кредита, вы поступаете очень неправильно, к тому же вы теряете скидку в <span>14 647  Р</span></p>
-        <div class="popup-refusing__btn-wrp">
-            <button class="popup-refusing__btn" data-action="close">Оставить как есть</button>
+    <div class="popup-confirm" data-rel="refusing">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+          <span class="close-btn__icon">
+              <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+          </span>
+        </button>
+        <div class="popup-confirm__content">
+            <p class="popup-confirm__title">Необходимо оформить КАСКО!</p>
+            <p class="popup-confirm__subtitle">Для покупки автомоиля в кредит необходимо оформить полис КАСКО</p>
+            <div class="popup-confirm__img">
+                <img src="img/popup-confirm/auto.jpg" alt="">
+                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#casco-info"/></svg>
+            </div>
+            <p class="popup-confirm__exp">Хотите оформить КАСКО и сохранить кредит, или отказаться от кредита и продолжить?</p>
+            <div class="popup-confirm__control">
+                <button class="popup-confirm__btn popup-confirm__btn--gray">ОТКАЗАТЬСЯ ОТ КРЕДИТА</button>
+                <button class="popup-confirm__btn">ОСТАВИТЬ КАСКО</button>
+            </div>
         </div>
     </div>
+
+    <div class="popup-confirm popup-confirm--warning" data-rel="refusing">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+          <span class="close-btn__icon">
+              <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+          </span>
+        </button>
+        <div class="popup-confirm__content">
+            <p class="popup-confirm__title">Вы хотите отказаться от КАСКО
+и&nbsp;большой скидки?</p>
+            <p class="popup-confirm__subtitle">Отказываясь от КАСКО вы теряете скидку <span>30 300 Р</span> на автомобиль</p>
+            <div class="popup-confirm__img">
+                <img src="img/popup-confirm/auto.jpg" alt="">
+                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#casco-refuse"/></svg>
+            </div>
+            <p class="popup-confirm__exp">При оформлении КАСКО дарим цену ОСАГО
+на покупку Дополнительного оборудования для вашего автомобиля</p>
+            <div class="popup-confirm__control">
+                <button class="popup-confirm__btn popup-confirm__btn--red">УБРАТЬ КАСКО</button>
+                <button class="popup-confirm__btn">ОСТАВИТЬ КАСКО</button>
+            </div>
+        </div>
+    </div>
+
+
 
     <div class="popup-insurance" data-rel="insurance">
         <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>

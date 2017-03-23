@@ -679,13 +679,26 @@
 
     </footer>
 
-    <div class="popup-refusing" data-rel="refusing">
-        <h4 class="popup-refusing__title">Отказаться от кредита?</h4>
-        <p class="popup-refusing__text">Отказываясь от кредита, вы поступаете очень неправильно, к тому же вы теряете скидку в <span>14 647  Р</span></p>
-        <div class="popup-refusing__btn-wrp">
-            <button class="popup-refusing__btn" data-action="close">Оставить как есть</button>
+    <div class="popup-confirm" data-rel="refusing">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+            <span class="close-btn__icon">
+                <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+            </span>
+          </button>
+            <div class="popup-confirm__content">
+                <p class="popup-confirm__title">Жаль, что у вас нет машины для обмена...</p>
+                <p class="popup-confirm__subtitle">Оформив Trade-in вы можете получить скидку на автомобиль до <span>90 000 Р</span> </p>
+                <div class="popup-confirm__img">
+                    <img src="img/popup-confirm/auto.jpg" alt="">
+                    <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#trade-in"/></svg>
+                </div>
+                <p class="popup-confirm__exp">Потерю скидки за трэйд-ин вы компенсируете на следующих шага</p>
+                <div class="popup-confirm__control">
+                    <button class="popup-confirm__btn popup-confirm__btn--gray">НЕ ХОЧУ TRADE-IN</button>
+                    <button class="popup-confirm__btn">ОФОРМИТЬ TRADE-IN</button>
+                </div>
+            </div>
         </div>
-    </div>
 
     <div class="popup-credit" data-rel="credit">
         <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>

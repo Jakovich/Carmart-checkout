@@ -873,11 +873,66 @@
 
     </footer>
 
-    <div class="popup-refusing" data-rel="refusing">
-        <h4 class="popup-refusing__title">Отказаться от кредита?</h4>
-        <p class="popup-refusing__text">Отказываясь от кредита, вы поступаете очень неправильно, к тому же вы теряете скидку в <span>14 647  Р</span></p>
-        <div class="popup-refusing__btn-wrp">
-            <button class="popup-refusing__btn" data-action="close">Оставить как есть</button>
+    <div class="popup-confirm" data-rel="refusing">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+            <span class="close-btn__icon">
+                <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+            </span>
+          </button>
+        <div class="popup-confirm__content">
+            <p class="popup-confirm__title">Будут изменены параметры кредита</p>
+            <p class="popup-confirm__subtitle">При отказе от финансовой защиты кредита ставка по кредиту может быть увеличена более чем на 5%</p>
+            <div class="popup-confirm__img">
+                <img src="img/popup-confirm/auto.jpg" alt="">
+                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#credit-gray"/></svg>
+            </div>
+            <p class="popup-confirm__exp">Невыгодное решение, оставляем защиту кредита?</p>
+            <div class="popup-confirm__control">
+                <button class="popup-confirm__btn popup-confirm__btn--gray">УБРАТЬ ЗАЩИТУ</button>
+                <button class="popup-confirm__btn">ОСТАВИТЬ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-confirm popup-confirm--success" data-rel="refusing">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+              <span class="close-btn__icon">
+                  <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+              </span>
+            </button>
+        <div class="popup-confirm__content">
+            <p class="popup-confirm__title">Будут изменены параметры кредита</p>
+            <p class="popup-confirm__subtitle">При выборе финансовой защиты кредита ставка по кредиту может быть уменьшена <span>более чем на 5%</span></p>
+            <div class="popup-confirm__img">
+                <img src="img/popup-confirm/auto.jpg" alt="">
+                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#credit-green"/></svg>
+            </div>
+            <p class="popup-confirm__exp">Правильное решение, включаем защиту кредита?</p>
+            <div class="popup-confirm__control">
+                <button class="popup-confirm__btn popup-confirm__btn--gray">НЕТ, СПАСИБО</button>
+                <button class="popup-confirm__btn">ВКЛЮЧИТЬ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-confirm popup-confirm--warning" data-rel="refusing">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+                <span class="close-btn__icon">
+                    <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+                </span>
+              </button>
+        <div class="popup-confirm__content">
+            <p class="popup-confirm__title">Вы хотите отказаться от кредита?</p>
+            <p class="popup-confirm__subtitle">Отказываясь от кредита цена на автомибиль увеличится на <span>23 213 Р</span></p>
+            <div class="popup-confirm__img">
+                <img src="img/popup-confirm/auto.jpg" alt="">
+                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#credit-red"/></svg>
+            </div>
+            <p class="popup-confirm__exp">Потерю скидки за отказ от кредитах вы компенсируете на следующих шагах</p>
+            <div class="popup-confirm__control">
+                <button class="popup-confirm__btn popup-confirm__btn--red">ОТКАЗАТЬСЯ ОТ КРЕДИТА</button>
+                <button class="popup-confirm__btn">ОСТАВИТЬ КРЕДИТ</button>
+            </div>
         </div>
     </div>
 
