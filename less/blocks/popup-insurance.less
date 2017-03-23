@@ -10,21 +10,24 @@
     transform: translateX(-50%);
 
     .radio-inputs__label {
-
-      &::before,&:after {
-          opacity: 1;
-      }
-  }
+        &::before,
+        &:after {
+            opacity: 1;
+        }
+    }
 }
 
-.popup-insurance_content {
+.popup-insurance__content {
+    height: 100%;
+    overflow-y: auto;
+    border-radius: @border-radius;
+}
+
+.popup-insurance__content-wrp {
     background-color: #ffffff;
     border-radius: @border-radius;
     box-shadow: @shadow-popup;
-    padding: 20px 30px 10px;
-    padding-bottom: 30px;
-    overflow-y: auto;
-    height: 100%;
+    padding: 20px 30px 30px;
 }
 
 .popup-insurance__title {
@@ -32,8 +35,9 @@
     padding-bottom: 20px;
     position: relative;
     margin-bottom: 20px;
+
     &::after {
-        content:'';
+        content: '';
         position: absolute;
         height: 1px;
         background-color: rgba(26,26,26,0.2);
@@ -43,16 +47,13 @@
     }
 }
 
-
-
 .popup-insurance__icon {
     margin-right: 18px;
 }
 
 .popup-insurance__icon-content {
-  width: 90px;
-  height: 100px;
-
+    width: 90px;
+    height: 100px;
     background-image: url('../img/logo/logo-hexagon.svg');
     background-repeat: no-repeat;
     background-size: content;
@@ -98,26 +99,25 @@
 }
 
 .payment-options__help {
-  margin-left: 10px;
-  font-size: 16px;
-  font-weight: 300;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .payment-options__help-name {
-  font-size: 15px;
-  color: @green;
-  font-weight: 400;
-  border-bottom: 2px dashed @green;
-  text-transform: uppercase;
-  transition: @transition;
-  &:hover {
-    opacity: 0.8;
+    font-size: 15px;
     color: @green;
-    text-decoration: none;
-  }
+    font-weight: 400;
+    border-bottom: 2px dashed @green;
+    text-transform: uppercase;
+    transition: @transition;
+
+    &:hover {
+        opacity: 0.8;
+        color: @green;
+        text-decoration: none;
+    }
 }
-
-
 
 .popup-insurance__info-title {
     font-size: 18px;
