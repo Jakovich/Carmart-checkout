@@ -207,7 +207,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <p class="info-short__text">Установленное <a href="#" class="info-short__link">дополнительное оборудование</a> (4 позиции на сумму 57 000 Р) дает вам скидку на а/м: <span class="info-short__sale">118 000 Р</span></p>
+                            <p class="info-short__text">Установленное <a data-modal="equipment" href="#" class="info-short__link">дополнительное оборудование</a> (4 позиции на сумму 57 000 Р) дает вам скидку на а/м: <span class="info-short__sale">118 000 Р</span></p>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                         <div class="tooltip-info__text col-sm-8">
                             <span class="tooltip-info__icon">
                         <svg width="3" height="19"><use xlink:href="/img/svgsprites/general.svg#attention"/></svg>
-                    </span>Программа <span>$название-шага</span> может  дать вам скидку
+                    </span>Программа <span>$название-шага</span> может дать вам скидку
                             <div class="tooltip-info__price">32 000 Р
                                 <div class="question-tooltip question-tooltip--inside">
                                     <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
@@ -272,7 +272,7 @@
                         <div class="tooltip-info__text col-sm-8">
                             <span class="tooltip-info__icon">
                                     <svg width="21.5" height="21.5"><use xlink:href="/img/svgsprites/general.svg#refusing"/></svg>
-                                </span> Вы отказались от  <span>$название-шага</span>, и теряете скидку
+                                </span> Вы отказались от <span>$название-шага</span>, и теряете скидку
                             <div class="tooltip-info__price">32 000 Р
                                 <div class="question-tooltip question-tooltip--inside">
                                     <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
@@ -298,7 +298,7 @@
                         <div class="tooltip-info__text col-sm-8">
                             <span class="tooltip-info__icon">
                                     <svg width="21.3" height="15"><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                                </span> Вы отказались от  <span>$название-шага</span>, и теряете скидку
+                                </span> Вы отказались от <span>$название-шага</span>, и теряете скидку
                             <div class="tooltip-info__price">32 000 Р
                                 <div class="question-tooltip question-tooltip--inside">
                                     <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
@@ -1308,174 +1308,301 @@
         </div>
 
     </footer>
-
-    <div class="popup-confirm" data-rel="refusing">
-        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+    <div class="popup-wrp">
+        <div class="popup-confirm" data-rel="refusing">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
           <span class="close-btn__icon">
               <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
           </span>
         </button>
-        <div class="popup-confirm__content">
-            <p class="popup-confirm__title">Необходимо оформить КАСКО!</p>
-            <p class="popup-confirm__subtitle">Для покупки автомоиля в кредит необходимо оформить полис КАСКО</p>
-            <div class="popup-confirm__img">
-                <img src="img/popup-confirm/auto.jpg" alt="">
-                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#casco-info"/></svg>
-            </div>
-            <p class="popup-confirm__exp">Хотите оформить КАСКО и сохранить кредит, или отказаться от кредита и продолжить?</p>
-            <div class="popup-confirm__control">
-                <button class="popup-confirm__btn popup-confirm__btn--gray">ОТКАЗАТЬСЯ ОТ КРЕДИТА</button>
-                <button class="popup-confirm__btn">ОСТАВИТЬ КАСКО</button>
+            <div class="popup-confirm__content">
+                <p class="popup-confirm__title">Необходимо оформить КАСКО!</p>
+                <p class="popup-confirm__subtitle">Для покупки автомоиля в кредит необходимо оформить полис КАСКО</p>
+                <div class="popup-confirm__img">
+                    <img src="img/popup-confirm/auto.jpg" alt="">
+                    <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#casco-info"/></svg>
+                </div>
+                <p class="popup-confirm__exp">Хотите оформить КАСКО и сохранить кредит, или отказаться от кредита и продолжить?</p>
+                <div class="popup-confirm__control">
+                    <button class="popup-confirm__btn popup-confirm__btn--gray">ОТКАЗАТЬСЯ ОТ КРЕДИТА</button>
+                    <button class="popup-confirm__btn">ОСТАВИТЬ КАСКО</button>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="popup-confirm popup-confirm--warning" data-rel="refusing">
-        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+    <div class="popup-wrp">
+        <div class="popup-confirm popup-confirm--warning" data-rel="refusing">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
           <span class="close-btn__icon">
               <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
           </span>
         </button>
-        <div class="popup-confirm__content">
-            <p class="popup-confirm__title">Вы хотите отказаться от КАСКО
-и&nbsp;большой скидки?</p>
-            <p class="popup-confirm__subtitle">Отказываясь от КАСКО вы теряете скидку <span>30 300 Р</span> на автомобиль</p>
-            <div class="popup-confirm__img">
-                <img src="img/popup-confirm/auto.jpg" alt="">
-                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#casco-refuse"/></svg>
-            </div>
-            <p class="popup-confirm__exp">При оформлении КАСКО дарим цену ОСАГО
-на покупку Дополнительного оборудования для вашего автомобиля</p>
-            <div class="popup-confirm__control">
-                <button class="popup-confirm__btn popup-confirm__btn--red">УБРАТЬ КАСКО</button>
-                <button class="popup-confirm__btn">ОСТАВИТЬ КАСКО</button>
+            <div class="popup-confirm__content">
+                <p class="popup-confirm__title">Вы хотите отказаться от КАСКО и&nbsp;большой скидки?</p>
+                <p class="popup-confirm__subtitle">Отказываясь от КАСКО вы теряете скидку <span>30 300 Р</span> на автомобиль</p>
+                <div class="popup-confirm__img">
+                    <img src="img/popup-confirm/auto.jpg" alt="">
+                    <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#casco-refuse"/></svg>
+                </div>
+                <p class="popup-confirm__exp">При оформлении КАСКО дарим цену ОСАГО на покупку Дополнительного оборудования для вашего автомобиля</p>
+                <div class="popup-confirm__control">
+                    <button class="popup-confirm__btn popup-confirm__btn--red">УБРАТЬ КАСКО</button>
+                    <button class="popup-confirm__btn">ОСТАВИТЬ КАСКО</button>
+                </div>
             </div>
         </div>
     </div>
 
 
-
-    <div class="popup-insurance" data-rel="insurance">
-        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+    <div class="popup-wrp">
+        <div class="popup-insurance" data-rel="insurance">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
         <span class="close-btn__icon">
             <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
         </span>
       </button>
-        <div class="popup-insurance_content">
-            <div class="popup-insurance__title">
-                <div class="popup-insurance__icon">
-                    <div class="popup-insurance__icon-content">
-                        <img src="img/logo/alfa.jpg" alt="">
-                    </div>
-                </div>
-                <div class="popup-insurance__title-text">
-                    <h4 class="popup-insurance__name">Альфа-Страхование</h4>
-
-                    <p class="popup-insurance__subtitle">Cтоимость КАСКО: </p>
-                    <p class="popup-insurance__price">90 000 Р</p>
-                </div>
-            </div>
-            <div class="popup-insurance__radio">
-                <div class="radio-inputs">
-                    <div class="radio-inputs__title">Выберите одну из Противоугонных систем
-                        <div class="question-tooltip question-tooltip--left">
-                            <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
-                            <div class="question-tooltip__body">
-                                <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
-                                <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для
-                                    угонщикап.
-                                </p>
-                            </div>
+      
+            <div class="popup-insurance_content">
+                <div class="popup-insurance__title">
+                    <div class="popup-insurance__icon">
+                        <div class="popup-insurance__icon-content">
+                            <img src="img/logo/alfa.jpg" alt="">
                         </div>
                     </div>
-                    <div class="radio-inputs__item">
-                        <input checked type="radio" name="protect-popup" id="M17-popup">
-                        <label class="radio-inputs__label" for="M17-popup"><a href="#" data-modal="description"
+                    <div class="popup-insurance__title-text">
+                        <h4 class="popup-insurance__name">Альфа-Страхование</h4>
+
+                        <p class="popup-insurance__subtitle">Cтоимость КАСКО: </p>
+                        <p class="popup-insurance__price">90 000 Р</p>
+                    </div>
+                </div>
+                <div class="popup-insurance__radio">
+                    <div class="radio-inputs">
+                        <div class="radio-inputs__title">Выберите одну из Противоугонных систем
+                            <div class="question-tooltip question-tooltip--left">
+                                <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                                <div class="question-tooltip__body">
+                                    <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
+                                    <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия
+                                        для угонщикап.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="radio-inputs__item">
+                            <input checked type="radio" name="protect-popup" id="M17-popup">
+                            <label class="radio-inputs__label" for="M17-popup"><a href="#" data-modal="description"
                          class="radio-inputs__text">Маяк «StarLine M17»</a></label>
 
-                    </div>
-                    <div class="radio-inputs__item">
-                        <input type="radio" name="protect-popup" id="B94-popup">
-                        <label class="radio-inputs__label" for="B94-popup">
+                        </div>
+                        <div class="radio-inputs__item">
+                            <input type="radio" name="protect-popup" id="B94-popup">
+                            <label class="radio-inputs__label" for="B94-popup">
                             <a href="#" data-modal="description"
                              class="radio-inputs__text">Сигнализация «StarLine B94 CAN GSM/GPS»</a>
                             </label>
-                    </div>
-                    <div class="radio-inputs__item">
-                        <input type="radio" name="protect-popup" id="A93-popup">
-                        <label class="radio-inputs__label" for="A93-popup"><a href="#" data-modal="description"
+                        </div>
+                        <div class="radio-inputs__item">
+                            <input type="radio" name="protect-popup" id="A93-popup">
+                            <label class="radio-inputs__label" for="A93-popup"><a href="#" data-modal="description"
                          class="radio-inputs__text">Сигнализация  «StarLine A93 (A39)»</a></label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="popup-insurance__btn">
-                <a class="step-btn">
+                <div class="popup-insurance__btn">
+                    <a class="step-btn">
                     Выбрать альфа-страхование
                 </a>
-            </div>
-            <div class="popup-insurance__info">
-                <p class="popup-insurance__info-title">Регион прописки страхователя.</p>
-                <p class="popup-insurance__info-subtitle">В зависимости от места регистрации собственника применяется повышающий коэффициент: </p>
-                <p class="popup-insurance__info-text">СПб, Ленинградская область, Псков, Псковская область – 1</p>
-                <p class="popup-insurance__info-text">Карелия, Новгородская, Вологодская области – 1,2</p>
-                <p class="popup-insurance__info-text">Дагестан, Чечня, Осетия – 5.</p>
-                <p class="popup-insurance__info-text">Другие регионы – 1,5</p>
+                </div>
+                <div class="popup-insurance__info">
+                    <p class="popup-insurance__info-title">Регион прописки страхователя.</p>
+                    <p class="popup-insurance__info-subtitle">В зависимости от места регистрации собственника применяется повышающий коэффициент: </p>
+                    <p class="popup-insurance__info-text">СПб, Ленинградская область, Псков, Псковская область – 1</p>
+                    <p class="popup-insurance__info-text">Карелия, Новгородская, Вологодская области – 1,2</p>
+                    <p class="popup-insurance__info-text">Дагестан, Чечня, Осетия – 5.</p>
+                    <p class="popup-insurance__info-text">Другие регионы – 1,5</p>
 
-                <p class="popup-insurance__info-title">Условия страхования б/у авто.</p>
-                <p class="popup-insurance__info-subtitle">В обязательном порядке необходимо согласовывать следующие ТС:</p>
-                <p class="popup-insurance__info-text">Все б/у ТС отечественного и иностранного производства со страховой суммой 500 000 рублей и ВЫШЕ (за исключением новых автомобилей из автосалона и пролонгации АО "ОСК")</p>
-                <p class="popup-insurance__info-text">Автомобили с дубликатами ПТС (взамен утраченых).</p>
-                <p class="popup-insurance__info-text">«Объединенная страховая компания» - инновационная страховая компания, стремящаяся развивать и пропагандировать страховую культуру, для того, чтобы деловая жизнь общества становилась более плодотворной, а само общество – стабильным и процветающим.</p>
+                    <p class="popup-insurance__info-title">Условия страхования б/у авто.</p>
+                    <p class="popup-insurance__info-subtitle">В обязательном порядке необходимо согласовывать следующие ТС:</p>
+                    <p class="popup-insurance__info-text">Все б/у ТС отечественного и иностранного производства со страховой суммой 500 000 рублей и ВЫШЕ (за исключением новых автомобилей из автосалона и пролонгации АО "ОСК")</p>
+                    <p class="popup-insurance__info-text">Автомобили с дубликатами ПТС (взамен утраченых).</p>
+                    <p class="popup-insurance__info-text">«Объединенная страховая компания» - инновационная страховая компания, стремящаяся развивать и пропагандировать страховую культуру, для того, чтобы деловая жизнь общества становилась более плодотворной, а само общество – стабильным
+                        и процветающим.</p>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="popup-descr" data-rel="description">
-        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+    <div class="popup-wrp">
+        <div class="popup-descr" data-rel="description">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
         <span class="close-btn__icon">
             <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
         </span>
       </button>
-        <div class="popup-descr__content">
-            <div class="popup-descr__content-wrp">
-                <div class="popup-descr__header">
-                    <div class="popup-descr__icon"><img src="img/services/window.png" alt=""></div>
-                    <div class="popup-descr__header-info">
-                        <h3 class="popup-descr__title">Комплект «Защита автомобиля» Outlander Максимальный</h3>
-                        <p class="popup-descr__price">стоимость: 16 000 Р</p>
+            <div class="popup-descr__content">
+                <div class="popup-descr__content-wrp">
+                    <div class="popup-descr__header">
+                        <div class="popup-descr__icon"><img src="img/services/window.png" alt=""></div>
+                        <div class="popup-descr__header-info">
+                            <h3 class="popup-descr__title">Комплект «Защита автомобиля» Outlander Максимальный</h3>
+                            <p class="popup-descr__price">стоимость: 16 000 Р</p>
+                        </div>
+                    </div>
+                    <div class="popup-descr__text">
+                        <p>Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщика:</p>
+                        <ul class="popup-descr__advantages">
+                            <li>не дает обеззвучить сирену автосигнализации</li>
+                            <li>не позволяет восстановить блокировки двигателя, расположенные под капотом</li>
+                            <li>не позволяет завести автомобиль, используя автономную (не штатную) систему управления двигателем (т.н. «паук»), а также автономную систему питания
+                            </li>
+                            <li>не позволяет произвести замену контроллера управления двигателем (для обхода штатного иммобилайзера)</li>
+                            <li>делает недоступным диагностический разъем (в тех случаях, когда он находится под капотом), затрудняя выявление блокировок и манипуляции со штатным иммобилайзером</li>
+                            <li>значительно затрудняет угон на том этапе, когда автосигнализация уже обезврежена (вскрыт или подобран код радиоканала), но под заблокированным капотом остается невосстановленная блокировка двигателя</li>
+                        </ul>
+
+                    </div>
+                    <div class="popup-desc__consist">
+                        <h4 class="popup-descr_consist-title">Состав комплекта:</h4>
+                        <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
+                        <p>Обработка рамы</p>
+                        <p>Сетка для бампера</p>
+                        <p>Обработка днища и скрытых полостей</p>
+                        <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
+                        <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
+                    </div>
+                    <div class="popup-descr__btn">
+                        <button class="services-btn">Установить</button>
                     </div>
                 </div>
-                <div class="popup-descr__text">
-                    <p>Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщика:</p>
-                    <ul class="popup-descr__advantages">
-                        <li>не дает обеззвучить сирену автосигнализации</li>
-                        <li>не позволяет восстановить блокировки двигателя, расположенные под капотом</li>
-                        <li>не позволяет завести автомобиль, используя автономную (не штатную) систему управления двигателем (т.н. «паук»), а также автономную систему питания
-                        </li>
-                        <li>не позволяет произвести замену контроллера управления двигателем (для обхода штатного иммобилайзера)</li>
-                        <li>делает недоступным диагностический разъем (в тех случаях, когда он находится под капотом), затрудняя выявление блокировок и манипуляции со штатным иммобилайзером</li>
-                        <li>значительно затрудняет угон на том этапе, когда автосигнализация уже обезврежена (вскрыт или подобран код радиоканала), но под заблокированным капотом остается невосстановленная блокировка двигателя</li>
-                    </ul>
+            </div>
+        </div>
+    </div>
 
-                </div>
-                <div class="popup-desc__consist">
-                    <h4 class="popup-descr_consist-title">Состав комплекта:</h4>
-                    <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
-                    <p>Обработка рамы</p>
-                    <p>Сетка для бампера</p>
-                    <p>Обработка днища и скрытых полостей</p>
-                    <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
-                    <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
-                </div>
-                <div class="popup-descr__btn">
-                    <button class="services-btn">Установить</button>
+    <div class="popup-wrp">
+        <div class="popup-equipment" data-rel="equipment">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+          <span class="close-btn__icon">
+              <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+          </span>
+        </button>
+            <div class="popup-equipment__content">
+                <p class="popup-equipment__title"> Установленное оборудование <span>(3)</span></p>
+                <div class="services__items">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="services__item services__item--select">
+                                <div class="services__content ">
+
+                                    <div class="services__info">
+                                        <div class="services__icon">
+                                            <img src="img/services/protect-optim.svg" alt="">
+
+                                        </div>
+                                        <div class="services__text">
+                                            <h3 class="services__title">
+                                            Комплект &#171;Защита автомобиля&#187; Оптимальный Pajero Sport <div class="services__title-icon">
+                                            <svg><use xlink:href="/img/svgsprites/services.svg#drill"/></svg>
+                                            <div class="services__title-tooltip">
+                                                Не демонтируемое оборудование. Будьте бдительны. Установку этого оборудования отменить не получится.
+                                            </div>
+                                        </div></h3>
+                                            <div class="services__details">
+                                                <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
+                                                <p>Обработка рамы</p>
+                                                <p>Сетка для бампера</p>
+                                                <p>Обработка днища и скрытых полостей</p>
+                                                <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
+                                                <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
+                                            </div>
+                                            <p class="services__sale"><span class="services__sale-icon"><svg><use xlink:href="/img/svgsprites/services.svg#sale"/></svg></span> Скидка за комплект: <span>11 123 Р</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="services__control">
+                                        <p class="services__price">42 800 Р</p>
+                                        <p class="services__exp">Цена комплекта с установкой</p>
+                                        <button class="services-btn services-btn--select">Установлено</button>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="services__item services__item--select services__item--drill">
+                                <div class="services__content">
+
+                                    <div class="services__info">
+                                        <div class="services__icon">
+                                            <img src="img/services/treatment.svg" alt="">
+                                        </div>
+                                        <div class="services__text">
+                                            <h3 class="services__title">Комплект &#171;Обработка салона и стекол&#187;
+                                            <div class="services__title-icon">
+                                                <svg><use xlink:href="/img/svgsprites/services.svg#drill"/></svg>
+                                                <div class="services__title-tooltip">
+                                                    Не демонтируемое оборудование. Будьте бдительны. Установку этого оборудования отменить не получится.
+                                                </div>
+                                            </div>
+                                        </h3>
+                                            <div class="services__details">
+                                                <p>Обработка салона Bari-Tools</p>
+                                                <p>Обработка всех стекол( Антидождь, антигрязь)</p>
+                                            </div>
+                                            <p class="services__sale"><span class="services__sale-icon"><svg><use xlink:href="/img/svgsprites/services.svg#sale"/></svg></span> Скидка за комплект: <span>5 414 Р</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="services__control">
+                                        <p class="services__price">17 370 Р</p>
+                                        <p class="services__exp">Цена комплекта с установкой</p>
+                                        <button class="services-btn services-btn--select">Установлено</button>
+
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="services__item services__item--select">
+                                <div class="services__content">
+
+                                    <div class="services__info">
+                                        <div class="services__icon">
+                                            <img src="img/services/window.png" alt="">
+                                        </div>
+                                        <div class="services__text">
+                                            <h3 class="services__title">Обработка салона «BariTools» <div class="services__title-icon">
+                                            <svg><use xlink:href="/img/svgsprites/services.svg#drill"/></svg>
+                                            <div class="services__title-tooltip">
+                                                Не демонтируемое оборудование. Будьте бдительны. Установку этого оборудования отменить не получится.
+                                            </div>
+                                        </div></h3>
+                                            <div class="services__category">Категория: Защита автомобиля</div>
+                                            <div class="services__details">
+                                                <p>Водоотталкивающее средство KillAqua имеет следующие характеристики: - защищает стекло от любой жидкости, снега, льда - снижает расход жидкости омывателя, щеток очистителя, облегчает очистку от воды, грязи,
+                                                    льда в любое время года - действует более года с момента нанесения - создает водо-, насекомо- и грязеотталкивающий эффект - устойчиво к ультрафиолетовым лучам, к механическим и химическим воздействиям.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services__control">
+                                        <p class="services__price">14 860- P</p>
+                                        <p class="services__exp">Цена комплекта с установкой</p>
+                                        <button class="services-btn services-btn--select">Установлено</button>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="popup-wrp"></div>
 
     <div width="0" height="0" style="font-size:0;line-height:0;">
         <svg height="0" width="0" style="line-height:0;">
