@@ -55,11 +55,19 @@ $(document).ready(function() {
         $('.popup-wrp').fadeIn();
     }
 
+    /*function showPopup(popup) {
+        popup.fadeIn();
+        popup.wrap( "<div class='popup-wrp'></div>" );
+        $('.popup-wrp').fadeIn().on('click', function(evt) {
+                hidePopup($('[data-rel]:visible:last'));
+        });
+    }*/
+
     function hidePopup(popup) {
         popup.fadeOut();
         if($('[data-rel]:visible').length === 1) {
             $('.popup-wrp').fadeOut();
-
+            $('.popup-wrp').fadeOut();
         }
     }
 

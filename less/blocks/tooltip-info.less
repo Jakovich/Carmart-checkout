@@ -8,7 +8,24 @@
     font-size: 16px;
     padding: 26px 15px;
     color: @text-color-dark;
+}
 
+.tooltip-info--warning {
+  border-color: rgba(255,98,98,0.5);
+  background-color: rgba(255,98,98,0.1);
+}
+
+.tooltip-info--success {
+  border-color: rgba(0,171,138,0.5);
+  background-color: rgba(0,171,138,0.08);
+  .tooltip-info__icon {
+    svg {
+      stroke: @green;
+    }
+  }
+  .tooltip-info__price {
+    color: @green;
+  }
 }
 
 
@@ -17,18 +34,19 @@
     display: inline-block;
     vertical-align: middle;
     margin-left: 1%;
-    color: @green;
+    color: @text-color;;
     font-size: 16px;
     position: relative;
 }
 
 .tooltip-info__icon {
+  text-align: center;
+  width: 19px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
     svg {
-        width: 22px;
-        height: 16px;
-        fill: none;
-        stroke: @blue-gray-light;
-        opacity: 0.4;
+        opacity: 1;
     }
 }
 
@@ -58,7 +76,7 @@
     border-bottom: 1.5px dashed @blue-gray;
     color: @blue-gray;
     opacity: 0.8;
-    display: none;
+    display: inline-block;
     transition: @transition;
 
     &:hover {
@@ -74,8 +92,7 @@
 
     .tooltip-info__icon {
         svg {
-            width: 22px;
-            height: 16px;
+
             fill: none;
             opacity: 1;
             stroke: #08AB8A;
