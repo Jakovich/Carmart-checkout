@@ -1,0 +1,32 @@
+.popup-equipment {
+  position: fixed;
+    width: 945px;
+    max-width: 100%;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 45;
+    display: none;
+}
+
+.popup-equipment__content {
+    background-color: #ffffff;
+
+    padding: 25px 40px 28px;
+    box-shadow: @shadow-popup;
+    text-align: left;
+    border-radius: @border-radius;
+}
+
+.popup-equipment__title {
+  font-size:22px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.popup-equipment {
+  .services__item {
+    box-shadow: none;
+    border: 1px solid @blue-gray-light;
+  }
+}
