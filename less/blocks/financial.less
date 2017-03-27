@@ -8,6 +8,9 @@
     border-radius: @border-radius;
     box-shadow: @shadow-item;
     margin-bottom: 10px;
+
+
+
     padding-top: 10px;
     padding-bottom: 10px;
     min-height: 130px;
@@ -15,7 +18,7 @@
 }
 
 .financial__item:hover {
-    border: 3px solid @green;
+    border-color: @green;
 
     .radio-inputs__label {
         &::after,
@@ -57,10 +60,18 @@
     display: flex;
     text-align: center;
 }
+
+.financial__content {
+    min-height: 130px;
+}
 //header
 
 .financial__header-content {
     align-items: flex-end;
+}
+
+.financial__content {
+    align-items: center;
 }
 
 .financial__header .financial__header-content {
@@ -182,13 +193,15 @@
     flex-basis: 20%;
     padding-left: 8px;
     max-width: 100px;
+    display: flex;
+    align-items: center;
     opacity: 0.6;
 }
 
 .financial__icon-content {
     width: 80%;
-    padding: 17.5% 13%;
-    background-image: url('../img/logo/logo-hexagon.svg');
+    padding: 0 13%;
+    margin-bottom: 10px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -205,17 +218,19 @@
 
 }
 
-.financial__icon-logo {
-
-}
-
 .financial__icon--insurance {
     flex-basis: 24%;
     min-width: 70px;
+    .financial__icon-content {
+        margin-bottom: 0;
+    }
 }
 
 .financial__text {
+    align-items: flex-start;
+
     flex-basis: 82%;
+    
     padding-top: 6px;
 }
 
@@ -227,6 +242,21 @@
 .financial__percent {
     flex-basis: 13%;
     max-width: 110px;
+}
+
+.financial__percent, .financial__term,
+.financial__fee, .financial__payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.financial__addit, .financial__cost  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .financial__term {
@@ -289,6 +319,7 @@
 .financial__body .financial__documents {
     font-size: 14px;
     font-weight: 300;
+    margin-bottom: 10px;
     color: @blue-gray;
 }
 
@@ -349,6 +380,8 @@
 .financial__control {
     display: none;
     text-align: right;
+    margin-bottom: 10px;
+    margin-top: -20px;
     padding-right: 3.5%;
     transition: @transition;
 }
@@ -363,6 +396,7 @@
 .financial__body .financial__info-check {
     display: flex;
     align-items: flex-start;
+    align-items: center;
 }
 
 .financial__info-check {
