@@ -6,6 +6,8 @@
     font-size: 0;
 }
 
+
+
 .filters__item {
     position: relative;
     display: inline-block;
@@ -47,6 +49,12 @@
     }
 }
 
+.filters__item--selected {
+  label {
+    padding-right: 9px;
+  }
+}
+
 .filters__item input:checked~label {
     border-color: #cccccc;
     font-weight: 500;
@@ -59,4 +67,19 @@
 
 .filters__item input:checked~label:hover {
     border-color: #cccccc;
+}
+
+.filters__choice {
+  display: inline-block;
+  vertical-align: middle;
+  width: 23px;
+  height: 23px;
+  background: @green;
+  background:@green-gradient;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 23px;
+  font-weight: 500;
+  margin-left: 3px;
 }
