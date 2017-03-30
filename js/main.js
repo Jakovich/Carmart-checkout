@@ -63,29 +63,27 @@ function addTooltipTop() {
           if (!infoWrp.hasClass('info--fixed')) {
             var menuHeight = infoWrp.innerHeight() + 'px';
             $('main').css({'padding-top': menuHeight});
+            infoWrp.fadeOut(0);
             infoWrp.addClass('info--fixed').fadeIn(300);
-              /*infoWrp.fadeOut(0, function(){
-
-
-
-              })*/
           }
 
-          if(!tooltipWrp.hasClass('tooltip-info__wrp--fixed')) {
-            addTooltipTop()
-            tooltipWrp.addClass('tooltip-info__wrp--fixed');
+          if (!tooltipWrp.hasClass('tooltip-info__wrp--fixed')) {
+            var tooltipHeight = tooltipWrp.innerHeight() + 25 + 'px';
+            $('main').css({'padding-top': menuHeight});
+            addTooltipTop();
+            $('.services').css({'padding-top': tooltipHeight});
+            tooltipWrp.fadeOut(0);
+            tooltipWrp.addClass('tooltip-info__wrp--fixed').fadeIn(300);
           }
 
       } else {
           if (infoWrp.hasClass('info--fixed')) {
-              infoWrp.fadeOut(0, function(){
-                  $('main').css({'padding-top': '0px'});
-                  infoWrp.removeClass('info--fixed').fadeIn(0);
-
-              })
+              infoWrp.removeClass('info--fixed');
+              $('main').css({'padding-top': '0px'});
           }
-          if(tooltipWrp.hasClass('tooltip-info__wrp--fixed')) {
-            tooltipWrp.removeClass('tooltip-info__wrp--fixed');
+          if (tooltipWrp.hasClass('tooltip-info__wrp--fixed')) {
+              tooltipWrp.removeClass('tooltip-info__wrp--fixed');
+              $('.services').css({'padding-top': '25px'});
           }
       }
     }
