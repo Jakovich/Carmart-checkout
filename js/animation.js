@@ -1,8 +1,8 @@
 'use strict';
 $(document).ready(function() {
 
-    function addIcon(elem, target) {
-        var currentIcon = $(elem).closest('.services__item').find('.services__icon img');
+    function addIcon(context, target) {
+        var currentIcon = $(context).closest('.services__item').find('.services__icon img');
         var target = $(target);
         var iconClone = currentIcon.clone().appendTo("body");
         iconClone.css({
@@ -17,29 +17,56 @@ $(document).ready(function() {
 
         iconClone.animate({
                 top: target.offset().top,
-                left: target.offset().left + target.innerWidth()/2 - 10,
+                left: target.offset().left + target.innerWidth() / 2 - 10,
                 width: '30px',
                 height: '30px'
             }, 500,
 
             function() {
-                $(this).remove()
+                $(this).remove();
+
             })
     }
 
-    function addSale(elem) {
-         addIcon(elem,'.info__price');
+
+
+    function blink(elem,color) {
+        var priceAuto = $(elem);
+        priceAuto.css({
+            color: '#00ab8a'
+        })
+
+        setTimeout(function() {
+            priceAuto.css({
+                color: color
+            })
+        }, 200)
+
     }
 
-    function addPrice(elem) {
-         addIcon(elem,'.info__sum span');
-    }
 
 
-    $('main .services-btn').on('click', function(event) {
-            if ($(this).hasClass('services-btn--select')) {
-                addSale(this);
-                addPrice(this);
-            }
+    $('main .services__items .row:nth-child(1) .services-btn').on('click', function(event) {
+        var target = '.info__price';
+        if ($(this).hasClass('services-btn--select')) {
+            addIcon(this, target);
+            setTimeout(function() {
+                $(target).html('1 200 500 Р');
+                blink(target, '#ffffff');
+            }, 550)
+        }
+    });
+
+    $('main .services__items .row:nth-child(2) .services-btn').on('click', function(event) {
+        var target = '.info__sum span';
+        if ($(this).hasClass('services-btn--select')) {
+            addIcon(this, target);
+            setTimeout(function() {
+                $(target).html('1 500 000 Р');
+                blink(target, 'rgba(255,255,255,0.7)');
+            }, 550)
+        }
     })
+
+
 });
