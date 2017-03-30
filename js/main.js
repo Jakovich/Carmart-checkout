@@ -13,6 +13,7 @@ $(document).ready(function() {
     var infoWrp = $('.info');
     var infoAddit = $('.info__addit');
     var infoShort = $('.info__short');
+    var tooltipWrp = $('.tooltip-info__wrp');
 
 
     function infoToggle(event) {
@@ -47,24 +48,44 @@ $(document).ready(function() {
         $(this).toggleClass('sorting-icon--down').toggleClass('sorting-icon--up');
     });
 
-    //show short check
+
+function addTooltipTop() {
+      var menuHeight = infoWrp.innerHeight() - 1 + 'px';
+      tooltipWrp.css({'top':menuHeight});
+}
+
+
+    //stick menu
 
     function toggleMenu() {
-      if ($(window).scrollTop() > 450) {
+      if ($(window).scrollTop() > 400) {
+
           if (!infoWrp.hasClass('info--fixed')) {
-              infoWrp.fadeOut(0, function(){
-                  $('main').addClass('main-padding');
-                  infoWrp.addClass('info--fixed').fadeIn(200);
-                  infoAddit.fadeOut(0);
-              })
+            var menuHeight = infoWrp.innerHeight() + 'px';
+            $('main').css({'padding-top': menuHeight});
+            infoWrp.addClass('info--fixed').fadeIn(300);
+              /*infoWrp.fadeOut(0, function(){
+
+
+
+              })*/
           }
+
+          if(!tooltipWrp.hasClass('tooltip-info__wrp--fixed')) {
+            addTooltipTop()
+            tooltipWrp.addClass('tooltip-info__wrp--fixed');
+          }
+
       } else {
           if (infoWrp.hasClass('info--fixed')) {
-              infoWrp.fadeOut(200, function(){
-                  $('main').removeClass('main-padding');
+              infoWrp.fadeOut(0, function(){
+                  $('main').css({'padding-top': '0px'});
                   infoWrp.removeClass('info--fixed').fadeIn(0);
-                  infoAddit.fadeOut(0);
+
               })
+          }
+          if(tooltipWrp.hasClass('tooltip-info__wrp--fixed')) {
+            tooltipWrp.removeClass('tooltip-info__wrp--fixed');
           }
       }
     }
@@ -73,6 +94,12 @@ $(document).ready(function() {
 
     $(window).scroll(function(){
       toggleMenu();
+    });
+
+    $(window).resize(function() {
+      if(tooltipWrp.hasClass('tooltip-info__wrp--fixed')) {
+        addTooltipTop()
+      }
     });
 
 

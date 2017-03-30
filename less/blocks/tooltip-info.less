@@ -1,13 +1,33 @@
 .tooltip-info {
     border: 2px solid rgba(128,141,155,0.4);
+    background-color: @services-color;
     border-radius: 5px;
     padding-top: 26px;
     padding-bottom: 26px;
-    margin-bottom: 12px;
     font-weight: 300;
     font-size: 16px;
     padding: 26px 15px;
     color: @text-color-dark;
+}
+
+.tooltip-info__wrp {
+  background-color:  @services-color;
+  margin-bottom: 12px;
+}
+.tooltip-info__wrp--fixed {
+  position: fixed;
+  z-index: 37;
+  left: 0;
+  right: 0;
+}
+.tooltip-info--fixed {
+  position: fixed;
+  left:50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+
+  width: 1220px;
+  min-width: 800px;
 }
 
 .tooltip-info--warning {
@@ -49,6 +69,8 @@
         opacity: 1;
     }
 }
+
+
 
 .tooltip-info__service {
     color: @text-color;
