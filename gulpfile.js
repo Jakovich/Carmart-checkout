@@ -202,6 +202,13 @@ gulp.task("min-js", function(){
   .pipe(rename("step-tradein.min.js"))
   .pipe(gulp.dest("build/js/"))
 
+  gulp.src("js/animation.js")
+  .pipe(plumber())
+  .pipe(gulp.dest("build/js/"))
+  .pipe(uglify())
+  .pipe(rename("animation.min.js"))
+  .pipe(gulp.dest("build/js/"))
+
 });
 
 gulp.task("min-vendor-js", function(){

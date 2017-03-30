@@ -58,7 +58,7 @@ function addTooltipTop() {
     //stick menu
 
     function toggleMenu() {
-      if ($(window).scrollTop() > 400) {
+      if ($(window).scrollTop() > 300) {
 
           if (!infoWrp.hasClass('info--fixed')) {
             var menuHeight = infoWrp.innerHeight() + 'px';
