@@ -11,77 +11,86 @@
 }
 
 .tooltip-info__wrp {
-  background-color:  @services-color;
-  margin-bottom: 12px;
-}
-.tooltip-info__wrp--fixed {
-  position: fixed;
-  z-index: 37;
-  left: 0;
-  right: 0;
-}
-.tooltip-info--fixed {
-  position: fixed;
-  left:50%;
-  transform: translateX(-50%);
-  max-width: 100%;
-
-  width: 1220px;
-  min-width: 800px;
+    background-color: @services-color;
+    margin-bottom: 12px;
 }
 
 .tooltip-info--warning {
-  border-color: rgba(255,98,98,0.5);
-  background-color: rgba(255,98,98,0.1);
+    border-color: #f49e9f;
+    background-color: #e8d9da;
 }
 
 .tooltip-info--success {
-  border-color: rgba(0,171,138,0.5);
-  background-color: rgba(0,171,138,0.08);
-  .tooltip-info__icon {
-    svg {
-      stroke: @green;
+    border-color: #6ac6b6;
+    background-color: #d3e2e0;
+
+    .tooltip-info__icon {
+        svg {
+            stroke: @green;
+        }
     }
-  }
-  .tooltip-info__price {
-    color: @green;
-  }
+
+    .tooltip-info__price {
+        color: @green;
+    }
 }
 
+.tooltip-info__wrp--fixed {
+    position: fixed;
+    z-index: 37;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgba(128,141,155,0.4);
+    .tooltip-info {
+        padding: 15px 0px;
+        border: none;
+        font-size: 14px;
+        color: #4f5a67;
+    }
+}
+
+.tooltip-info__wrp--fixed.tooltip-info__wrp--warning {
+    background-color: #e8d9da;
+    border-color: #f49e9f;
+}
+.tooltip-info__wrp--fixed.tooltip-info__wrp--success {
+    border-color: #6ac6b6;
+    background-color: #d3e2e0;
+}
 
 .tooltip-info__price {
     font-weight: 500;
     display: inline-block;
     vertical-align: middle;
     margin-left: 1%;
-    color: @text-color;;
+    color: @text-color;
     font-size: 16px;
     position: relative;
 }
 
 .tooltip-info__icon {
-  text-align: center;
-  width: 19px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 7px;
+    text-align: center;
+    width: 19px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+
     svg {
         opacity: 1;
     }
 }
 
-
-
 .tooltip-info__service {
     color: @text-color;
     border-bottom: 1.5px dashed @text-color;
     text-decoration: none;
-  transition: @transition;
-  &:hover {
-    text-decoration: none;
-    color: @green;
-    border-color: @green;
-  }
+    transition: @transition;
+
+    &:hover {
+        text-decoration: none;
+        color: @green;
+        border-color: @green;
+    }
 }
 
 .tooltip-info__btn {
@@ -102,8 +111,8 @@
     transition: @transition;
 
     &:hover {
-       color: @green;
-      border-color: @green;
+        color: @green;
+        border-color: @green;
     }
 }
 
@@ -114,7 +123,6 @@
 
     .tooltip-info__icon {
         svg {
-
             fill: none;
             opacity: 1;
             stroke: #08AB8A;
@@ -129,12 +137,11 @@
 }
 
 .tooltip-info__control {
-text-align: right;
+    text-align: right;
 }
-
 @media (max-width: 768px) {
-     .tooltip-info__control {
-         text-align: left;
-         margin-top: 10px;
-     }
+    .tooltip-info__control {
+        text-align: left;
+        margin-top: 10px;
+    }
 }
