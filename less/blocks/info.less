@@ -1,4 +1,4 @@
-.info {
+.info__full {
     background-color: @blue-gray;
     border-top: 6px solid #47515b;
     padding: 5px 0;
@@ -18,15 +18,6 @@
     z-index: 10;
 }
 
-.info--nopadding {
-    .info__content {
-        padding-bottom: 0;
-    }
-
-    .info__basic {
-        margin-bottom: 0;
-    }
-}
 
 .info__content {
     padding: 3px 0;
@@ -181,18 +172,8 @@
         outline: none;
     }
 }
-/*.info__btn--save {
-    margin-right: 5px;
-}*/
-/*additional section*/
-.info-fluid {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 38;
-}
+
+
 //дополнительное оборудование font-weight:500;
 //сумма скидкиfont-weight: 500
 
@@ -310,18 +291,18 @@
     }
 }
 
-.info__wrp--fixed {
+.info--fixed {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 38;
 
-    .info {
+    .info__full {
         padding: 5px 0;
     }
 
-    .info-short {
+    .info__short {
         display: block;
     }
 
@@ -344,4 +325,58 @@
     .info__auto {
         display: block;
     }
+}
+
+.info__short {
+    background-color: #d9dce1;
+    margin-top: -15px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    z-index: 9;
+    border-bottom: 1px solid rgba(128,141,155,0.5);
+    display: none;
+}
+
+.info__short-text {
+  position: relative;
+  padding-left: 15px;
+  margin: 0;
+  font-size: 14px;
+  color: @blue-gray;
+  font-weight: 300;
+  &::after {
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 7px;
+        left: 0;
+        top: 50%;
+        margin-top: -3.5px;
+        background-image: url('../img/point.svg');
+    }
+}
+
+.info__short-sale {
+  color: @green;
+  font-weight: 500;
+}
+
+.info__short-link {
+  font-weight: 500;
+  color: @blue-gray;
+  border-bottom: 2px dashed @blue-gray;
+  transition: @transition;
+  text-decoration: none;
+  &:hover {
+    color: @text-color-dark;
+    border-color: @text-color-dark;
+    text-decoration: none;
+  }
+  &:focus {
+    opacity: 1;
+    color: @text-color-dark;
+    border-color: @text-color-dark;
+    text-decoration: none;
+  }
 }

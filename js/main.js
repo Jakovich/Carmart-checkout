@@ -10,15 +10,15 @@ $(document).ready(function() {
     });
 
     //show/hide additional info in section info
-    var infoWrp = $('.info__wrp');
+    var infoWrp = $('.info');
     var infoAddit = $('.info__addit');
-    var infoShort = $('.info-short');
+    var infoShort = $('.info__short');
 
 
     function infoToggle(event) {
         infoAddit.slideToggle(300);
 
-        if (infoWrp.hasClass('info__wrp--fixed')) {
+        if (infoWrp.hasClass('info--fixed')) {
             infoShort.slideToggle(300);
         }
     }
@@ -49,24 +49,30 @@ $(document).ready(function() {
 
     //show short check
 
+    function toggleMenu() {
+      if ($(window).scrollTop() > 450) {
+          if (!infoWrp.hasClass('info--fixed')) {
+              infoWrp.fadeOut(0, function(){
+                  $('main').addClass('main-padding');
+                  infoWrp.addClass('info--fixed').fadeIn(200);
+                  infoAddit.fadeOut(0);
+              })
+          }
+      } else {
+          if (infoWrp.hasClass('info--fixed')) {
+              infoWrp.fadeOut(200, function(){
+                  $('main').removeClass('main-padding');
+                  infoWrp.removeClass('info--fixed').fadeIn(0);
+                  infoAddit.fadeOut(0);
+              })
+          }
+      }
+    }
+
+    toggleMenu();
+
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 450) {
-            if (!infoWrp.hasClass('info__wrp--fixed')) {
-                infoWrp.fadeOut(0, function(){
-                    $('main').addClass('main-padding');
-                    infoWrp.addClass('info__wrp--fixed').fadeIn(200);
-                    infoAddit.fadeOut(0);
-                })
-            }
-        } else {
-            if (infoWrp.hasClass('info__wrp--fixed')) {
-                infoWrp.fadeOut(200, function(){
-                    $('main').removeClass('main-padding');
-                    infoWrp.removeClass('info__wrp--fixed').fadeIn(0);
-                    infoAddit.fadeOut(0);
-                })
-            }
-        }
+      toggleMenu();
     });
 
 
