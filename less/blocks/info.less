@@ -15,16 +15,17 @@
     background-size: auto auto, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
     background-clip: padding-box, border-box, border-box, border-box, border-box;
     background-origin: padding-box, border-box, border-box, border-box, border-box;
-    z-index:10;
+    z-index: 10;
 }
 
 .info--nopadding {
-  .info__content {
-    padding-bottom: 0;
-  }
-  .info__basic {
-    margin-bottom: 0;
-  }
+    .info__content {
+        padding-bottom: 0;
+    }
+
+    .info__basic {
+        margin-bottom: 0;
+    }
 }
 
 .info__content {
@@ -32,31 +33,33 @@
 }
 
 .info__auto {
-  display: flex;
+    display: flex;
 }
 
 .info__auto--noflex {
-  display: block;
+    display: block;
 }
 
 .info__img {
-  margin-right: 10px;
-  width: 76px;
-  flex-basis: 76px;
-  min-width: 76px;
-  height: 86px;
-  clip-path: url(#autoimgPath);
-  background-color: #ffffff;
-  position: relative;
-  overflow: hidden;
-  img {
-    height: 100%;
-    width: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-right: 10px;
+    width: 76px;
+    flex-basis: 76px;
+    min-width: 76px;
+    height: 86px;
+    clip-path: url("#autoimgPath");
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
+
 .info__model {
     font-weight: 500;
     font-size: 18px;
@@ -183,24 +186,24 @@
 }*/
 /*additional section*/
 .info-fluid {
-
-  display: none;
-  position: fixed;
-  top:0;
-  left:0;
-  right: 0;
-  z-index: 38;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 38;
 }
 //дополнительное оборудование font-weight:500;
 //сумма скидкиfont-weight: 500
+
 .info__addit {
     padding-top: 25px;
     display: none;
 }
 
 .info__addit-total {
-  border-top: 1px solid rgba(255,255,255,0.5);
-  padding-top: 13px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    padding-top: 13px;
 }
 
 .info__addit-details {
@@ -209,7 +212,6 @@
     }
     padding-bottom: 18px;
     margin-bottom: 0;
-
     border-top: 1px solid rgba(255,255,255,0.5);
 
     caption {
@@ -279,8 +281,6 @@
     }
 }
 
-
-
 .info__addit-sale {
     display: inline-block;
     vertical-align: middle;
@@ -307,5 +307,41 @@
     .info__sum {
         min-width: auto;
         width: 132px;
+    }
+}
+
+.info__wrp--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 38;
+
+    .info {
+        padding: 5px 0;
+    }
+
+    .info-short {
+        display: block;
+    }
+
+    .info__img {
+        display: none;
+    }
+
+    .info__content {
+        padding-bottom: 0;
+    }
+
+    .info__basic {
+        margin-bottom: 0;
+    }
+
+    .info__details {
+        display: none;
+    }
+
+    .info__auto {
+        display: block;
     }
 }

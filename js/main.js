@@ -10,15 +10,26 @@ $(document).ready(function() {
     });
 
     //show/hide additional info in section info
+    var infoWrp = $('.info__wrp');
+    var infoAddit = $('.info__addit');
+    var infoShort = $('.info-short');
+
+
+    function infoToggle(event) {
+        infoAddit.slideToggle(300);
+
+        if (infoWrp.hasClass('info__wrp--fixed')) {
+            infoShort.slideToggle(300);
+        }
+    }
+
     $('.info__addit-btn').on('click', function(event) {
-      $(event.target).closest('.info').find('.info__addit').slideToggle(300);
-      $(event.target).closest('.info-fluid').find('.info-short').slideToggle(300);
-    })
+      infoToggle(event);
+  });
 
     $('.info__btn--more').on('click', function(event) {
-        $(event.target).closest('.info').find('.info__addit').slideToggle(300);
-        $(event.target).closest('.info-fluid').find('.info-short').slideToggle(300);
-    })
+        infoToggle(event);
+    });
 
     //unblur links & buttons after click
 
@@ -39,11 +50,22 @@ $(document).ready(function() {
     //show short check
 
     $(window).scroll(function(){
-        //element['fade'+ ($(this).scrollTop() > 400 ? 'In': 'Out')](500);
-        if ($(this).scrollTop() > 350) {
-             $('.info-fluid').fadeIn();
+        if ($(this).scrollTop() > 450) {
+            if (!infoWrp.hasClass('info__wrp--fixed')) {
+                infoWrp.fadeOut(0, function(){
+                    $('main').addClass('main-padding');
+                    infoWrp.addClass('info__wrp--fixed').fadeIn(200);
+                    infoAddit.fadeOut(0);
+                })
+            }
         } else {
-            $('.info-fluid').fadeOut();
+            if (infoWrp.hasClass('info__wrp--fixed')) {
+                infoWrp.fadeOut(200, function(){
+                    $('main').removeClass('main-padding');
+                    infoWrp.removeClass('info__wrp--fixed').fadeIn(0);
+                    infoAddit.fadeOut(0);
+                })
+            }
         }
     });
 
@@ -54,7 +76,6 @@ $(document).ready(function() {
     function showPopup(popup) {
         popup.fadeIn();
         popup.closest($('.popup-wrp')).fadeIn();
-
     }
 
     function hidePopup(popup) {
@@ -64,7 +85,7 @@ $(document).ready(function() {
 
     $('[data-rel]').on('click', function(evt){
         evt.stopPropagation();
-    })
+    });
 
     $('[data-modal]').on('click', function(evt){
         evt.preventDefault();
@@ -77,11 +98,10 @@ $(document).ready(function() {
         evt.preventDefault();
         var currentPopup = $(this).closest('[data-rel]');
         hidePopup(currentPopup);
-    })
+    });
 
     $('.popup-wrp').on('click', function(evt) {
             hidePopup($('[data-rel]:visible:last'));
-    })
-
+    });
 
 });
