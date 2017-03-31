@@ -50,7 +50,7 @@ $(document).ready(function() {
 
 
 function addTooltipTop() {
-      var menuHeight = infoWrp.innerHeight() - 1 + 'px';
+      var menuHeight = infoWrp.innerHeight() - 10 + 'px';
       tooltipWrp.css({'top':menuHeight});
 }
 
