@@ -50,19 +50,26 @@ $(document).ready(function() {
 
 
 function addTooltipTop() {
-      var menuHeight = infoWrp.innerHeight() - 10 + 'px';
+      var menuHeight = infoWrp.find('.info__full').innerHeight() + 5 + 'px';
       tooltipWrp.css({'top':menuHeight});
 }
 
 
     //stick menu
+    var additVisible;
 
     function toggleMenu() {
-      if ($(window).scrollTop() > 300) {
+      if ($(window).scrollTop() > $(".steps").offset().top + 250) {
 
           if (!infoWrp.hasClass('info--fixed')) {
             var menuHeight = infoWrp.innerHeight() + 'px';
             $('main').css({'padding-top': menuHeight});
+            if (infoAddit.is(":visible")) {
+              additVisible = 1;
+              infoAddit.hide();
+            } else {
+              additVisible = 0;
+            }
             infoWrp.fadeOut(0);
             infoWrp.addClass('info--fixed').fadeIn(300);
           }
@@ -78,6 +85,9 @@ function addTooltipTop() {
 
       } else {
           if (infoWrp.hasClass('info--fixed')) {
+              if(additVisible === 1) {
+                infoAddit.show(0);
+              }
               infoWrp.removeClass('info--fixed');
               $('main').css({'padding-top': '0px'});
           }
