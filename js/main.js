@@ -17,12 +17,10 @@ $(document).ready(function() {
 
 
     function infoToggle(event) {
-        if (!infoAddit.is(':visible')){
+        if (!infoAddit.is(':visible') && infoWrp.hasClass('info--fixed')){
           infoWrp.css({'height': '100%', 'overflow-y': 'auto'});
-
-
         } else {
-          infoWrp.css({'height': 'auto', 'overflow-y': 'inherit'});
+          infoWrp.css({'height': 'auto', 'overflow-y': 'visible'});
           infoAddit.find('.question-tooltip__body').css({'bottom': 'auto', 'top': '15px'})
         }
         infoAddit.slideToggle(300, function(){
