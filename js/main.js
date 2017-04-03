@@ -19,12 +19,17 @@ $(document).ready(function() {
     function infoToggle(event) {
         if (!infoAddit.is(':visible')){
           infoWrp.css({'height': '100%', 'overflow-y': 'auto'});
-          infoAddit.find('.question-tooltip__body').css({'top': 'auto', 'bottom': '15px'});
+
+
         } else {
           infoWrp.css({'height': 'auto', 'overflow-y': 'inherit'});
           infoAddit.find('.question-tooltip__body').css({'bottom': 'auto', 'top': '15px'})
         }
-        infoAddit.slideToggle(300);
+        infoAddit.slideToggle(300, function(){
+          if ($('.info__full').innerHeight() > 500) {
+            infoAddit.find('.question-tooltip__body').css({'top': 'auto', 'bottom': '15px'});
+          }
+        });
 
         /*if (infoWrp.hasClass('info--fixed')) {
 
