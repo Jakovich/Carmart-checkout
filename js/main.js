@@ -17,23 +17,26 @@ $(document).ready(function() {
 
 
     function infoToggle(event) {
-        if (!infoAddit.is(':visible') && infoWrp.hasClass('info--fixed')){
-          infoWrp.css({'height': '100%', 'overflow-y': 'auto'});
+        /*if (!infoAddit.is(':visible') && infoWrp.hasClass('info--fixed')){
+
         } else {
+          infoWrp.css({'height': 'auto', 'overflow-y': 'visible'});
+          infoAddit.find('.question-tooltip__body').css({'bottom': 'auto', 'top': '15px'})
+        }*/
+        if (infoAddit.is(':visible') && infoWrp.hasClass('info--fixed')){
           infoWrp.css({'height': 'auto', 'overflow-y': 'visible'});
           infoAddit.find('.question-tooltip__body').css({'bottom': 'auto', 'top': '15px'})
         }
         infoAddit.slideToggle(300, function(){
+          if (infoWrp.hasClass('info--fixed') && $('.info__full').innerHeight() > $(window).innerHeight() - 50) {
+            infoWrp.css({'height': '100%', 'overflow-y': 'auto'});
+          }
           if ($('.info__full').innerHeight() > 500) {
             infoAddit.find('.question-tooltip__body').css({'top': 'auto', 'bottom': '15px'});
           }
+
+
         });
-
-        /*if (infoWrp.hasClass('info--fixed')) {
-
-            infoShort.slideToggle(300);
-
-        }*/
     }
 
     $('.info__addit-btn').on('click', function(event) {
@@ -101,6 +104,7 @@ function addTooltipTop() {
                 infoAddit.show(0);
               }
               infoWrp.removeClass('info--fixed');
+              infoWrp.css({'height': 'auto', 'overflow-y': 'visible'});
               $('main').css({'padding-top': '0px'});
           }
           if (tooltipWrp.hasClass('tooltip-info__wrp--fixed')) {
