@@ -5,466 +5,358 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Carmart</title>
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="wrapper">
-            <div class="page-header__content">
-                <div class="page-header__logo">
-                    <a href="#"><img src="img/logo.svg" alt="Carmart"></a>
-                </div>
-                <nav class="main-nav">
-                    <ul class="main-nav__items">
-                        <li class="main-nav__item"><a href="#">Как работает Carmart</a></li>
-                        <li class="main-nav__item"><a href="#">Способы оплаты</a></li>
-                        <li class="main-nav__item"><a href="#">Доставка и выдача</a></li>
-                    </ul>
-                </nav>
-                <div class="page-header__user-block">
-                    <a href="#">
-                        <span class="page-header__icon">
-                        <svg><use xlink:href="/img/svgsprites/general.svg#login"/></svg>
-                    </span>Войти</a>
-                </div>
-            </div>
-        </div>
-    </header>
+  <header class="page-header">
+      <div class="container-fluid">
+          <div class="page-header__content row">
+              <div class="page-header__logo col-md-3 col-sm-3 col-xs-3">
+                  <a href="#"><img src="img/logo.svg" alt="Carmart"></a>
+              </div>
+              <nav class="main-nav col-md-6 col-sm-7 col-xs-7">
+                  <ul class="main-nav__items">
+                      <li class="main-nav__item"><a href="#">Как работает Carmart</a></li>
+                      <li class="main-nav__item"><a href="#">8 800 <b>550-59-59</b></a></li>
+                  </ul>
+              </nav>
+              <div class="page-header__user-block col-md-3 col-sm-2  col-xs-2">
+                  <a href="#">
+                      <span class="page-header__icon">
+                      <svg><use xlink:href="/img/svgsprites/general.svg#login"/></svg>
+                  </span>Войти</a>
+              </div>
+          </div>
+      </div>
+  </header>
     <main>
-        <section class="info">
-            <div class="wrapper">
-                <div class="info__content">
-                    <div class="info__auto">
-                        <p class="info__basic">
-                            <span class="info__model">Mitsubishi Pajero Sport:</span>
-                            <span class="info__price">1 232 500 Р</span>
-                            <button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
-                        </p>
-                        <p class="info__details">2016 / NEW / 3.0 AT (249 л.с.) / АИ-95 / 4WD</p>
-                        <p class="info__details"><span>Цвет:</span> Темно-серый (металлик): <span>Кузов:</span> Внедорожник</p>
-                    </div>
-                    <div class="info__sum">Сумма заказа: <span>1 350 000 Р</span></div>
-                    <div class="info__controls">
-                        <button class="info__btn info__btn--save"><span><svg><use xlink:href="/img/svgsprites/general.svg#save"/></svg></span>Сохранить заказ</button>
-                        <button class="info__btn info__btn--more"><span><svg><use xlink:href="/img/svgsprites/general.svg#more"/></svg></span>Подробно</button>
-                    </div>
-                </div>
-                <div class="info__addit">
-                    <table class="info__addit-details">
-                        <caption>Дополнительное оборудование &#8211;</caption>
-                        <tr>
-                            <td class="info__addit-name">
-                                Комплект «Защита от угона» Explorer Минимальный
-                            </td>
-                            <td class="info__addit-price">42 008 Р</td>
-                        </tr>
-                        <tr>
-                            <td class="info__addit-name">
-                                Диск колесный легкоспл. FD66 R16 FIII/Mn07/F2/CM (S), компл. 4шт.
+      <div class="container-fluid">
+      <section class="pages-list">
+        <h1 class="main-title">List of pages of Carmart Checkout site
+        </h2>
+        <ul class="pages-list__items" style="list-style: none; max-width: 400px;padding: 0;margin-bottom: 40px; margin-top: 20px;">
+          <li style="margin-bottom: 10px;">
+            <a class="step-btn" style="text-align: left; padding: 12px 20px"  href="step-tradein.html" target="_blank">Step 1 - Trade In</a>
+          </li>
+          <li style="margin-bottom: 10px;">
+            <a class="step-btn" style="text-align: left; padding: 12px 20px"  href="step-equipment.html" target="_blank">Step 2 - Equipment</a>
+          </li>
+          <li style="margin-bottom: 10px;">
+            <a class="step-btn" style="text-align: left; padding: 12px 20px" href="step-credit.html" target="_blank">Step 3 - Credit</a>
+          </li>
+          <li style="margin-bottom: 10px;">
+            <a class="step-btn" style="text-align: left; padding: 12px 20px" href="step-credit_v2.html" target="_blank">Step 3 - Credit (second variant)</a>
+          </li>
+          <li style="margin-bottom: 10px;">
+            <a class="step-btn" style="text-align: left; padding: 12px 20px"  href="step-insurance.html" target="_blank">Step 4 - Insurance</a>
+          </li>
+          <li style="margin-bottom: 10px;">
+            <a class="step-btn" style="text-align: left; padding: 12px 20px"  href="step-payment.html" target="_blank">Step 5 - Payment</a>
+          </li>
+        </ul>
+      </section>
+      <div>
 
-                            </td>
-                            <td class="info__addit-price">34 408 Р
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="info__addit-total">
-                        <div class="info__addit-info">
-                            <div class="info__addit-sale">Ваша скидка: <span>120 000 Р</span> </div> <button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
-                        </div>
-                        <button class="info__addit-btn"><span><svg><use xlink:href="/img/svgsprites/general.svg#arrow-up"/></svg></span>Свернуть чек</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="steps">
-            <div class="wrapper">
-                <div class="steps__items">
-                    <div class="steps__item steps__item--active"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>1</span> Оборудование</div>
-                    <div class="steps__item steps__item"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>2</span> Кредит</div>
-                    <div class="steps__item"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>3</span>Страховка</div>
-                    <div class="steps__item"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>4</span>Trade-in</div>
-                    <div class="steps__item"><span class="steps__number"><svg><use xlink:href="/img/svgsprites/general.svg#step"/></svg>5</span>Оплата</div>
-                </div>
-                <div class="steps__title">
-                    <h1 class="main-title">Дополнительное оборудование</h1>
-                    <div class="step-btn__wrapper">
-                        <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                        </buttom>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <section class="services">
-            <div class="wrapper">
-                <div class="tooltip">
-                    <div class="tooltip__text">
-                        <span class="tooltip__icon">
-                        <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                     </span> Установите <a href="#" class="tooltip__service">оборудование</a> чтобы получить скидку до <span class="tooltip__price">32 000 Р</span><button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
-                    </div>
-                    <button class="tooltip__btn">Снять все оборудование</button>
-                </div>
-                <div class="tooltip tooltip--active">
-                    <div class="tooltip__text">
-                        <span class="tooltip__icon">
-                        <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                     </span> Установлен <a href="#" class="tooltip__service">1 комплект оборудования</a> дает вам скидку
-                        <span class="tooltip__price">32 000 Р</span><button class="question-btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
-                    </div>
-                    <button class="tooltip__btn">Снять все оборудование</button>
-                </div>
-                <div class="filters">
-                    <button class="filters__item filters__item--active">
-                        Распродажа комплектов <span class="filter__count"> (15)</span>
-                    </button>
-                    <button class="filters__item">
-                        Защита автомобиля <span class="filter__count"> (15)</span>
-                    </button>
-                    <button class="filters__item">
-                        Экстерьер <span class="filter__count"> (15)</span>
-                    </button>
-                    <button class="filters__item">
-                        Звук и мультимедиа <span class="filters__count"> (15)</span>
-                    </button>
-                    <button class="filters__item">
-                        Комфорт <span class="filters__count"> (15)</span>
-                    </button>
-                    <button class="filters__item">
-                        Электронные охранные системы <span class="filters__count"> (15)</span>
-                    </button>
-                    <button class="filters__item">
-                        Парктоники <span class="filters__count"> (15)</span>
-                    </button>
-                    <button class="filters__item">
-                        Аксессуары <span class="filters__count"> (15)</span>
-                    </button>
-                </div>
-                <div class="sorting">
-                    <div class="sorting__content">
-                        <div class="sorting__name">
-                            Упорядочено:
-                            <select class="sorting__select">
-                          <option value="">по названию</option>
-                          <option value="">по цене</option>
-                      </select>
-                        </div>
-                        <span class="sorting__icon">
-                                <svg><use xlink:href="/img/svgsprites/general.svg#order"/></svg>
-                            </span>
-                    </div>
-                </div>
-                <div class="services__items">
-                    <article class="services__item">
-                        <div class="services__content">
-
-                            <div class="services__info">
-                                <div class="services__icon">
-                                    <img src="img/services/protect-optim.svg" alt="">
-
-                                </div>
-                                <div class="services__text">
-                                    <h3 class="services__title">Комплект &#171;Защита автомобиля&#187; Оптимальный Pajero Sport</h3>
-                                    <div class="services__details">
-                                        <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
-                                        <p>Обработка рамы</p>
-                                        <p>Сетка для бампера</p>
-                                        <p>Обработка днища и скрытых полостей</p>
-                                        <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
-                                        <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
-                                    </div>
-                                    <p class="services__sale">Скидка за комплект: <span>11 123 Р</span></p>
-                                </div>
-                            </div>
-                            <div class="services__control">
-                                <p class="services__price">42 800 Р</p>
-                                <p class="services__exp">Цена комплекта с установкой</p>
-                                <button class="services__btn">Установить</button>
-                            </div>
-                        </div>
-                        <div class="services__more"><a href="#">Подробное описание</a></div>
-                    </article>
-                    <article class="services__item">
-                        <div class="services__content">
-
-                            <div class="services__info">
-                                <div class="services__icon">
-                                    <img src="img/services/treatment.svg" alt="">
-                                </div>
-                                <div class="services__text">
-                                    <h3 class="services__title">Комплект &#171;Обработка салона и стекол&#187;</h3>
-                                    <div class="services__details">
-                                        <p>Обработка салона Bari-Tools</p>
-                                        <p>Обработка всех стекол( Антидождь, антигрязь)</p>
-                                    </div>
-                                    <p class="services__sale">Скидка за комплект: <span>5414 Р</span></p>
-                                </div>
-                            </div>
-                            <div class="services__control">
-                                <p class="services__price">17 370 Р</p>
-                                <p class="services__exp">Цена комплекта с установкой</p>
-                                <button class="services__btn">Установить</button>
-
-                            </div>
-                        </div>
-                        <div class="services__more"><a href="#">Подробное описание</a></div>
-                    </article>
-                    <article class="services__item">
-                        <div class="services__content">
-
-                            <div class="services__info">
-                                <div class="services__icon">
-                                    <img src="img/services/protect-min.svg" alt="">
-                                </div>
-                                <div class="services__text">
-                                    <h3 class="services__title">Комплект &#171;Защита автомобиля&#187; Минимальный Pajero Sport</h3>
-                                    <div class="services__details">
-                                        <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
-                                        <p>Сетка для бампера</p>
-                                        <p>Обработка днища и скрытых полостей</p>
-                                        <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
-                                        <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
-                                    </div>
-                                    <p class="services__sale">Скидка за комплект: <span>6911 Р</span></p>
-                                </div>
-                            </div>
-                            <div class="services__control">
-                                <p class="services__price">36 968 Р</p>
-                                <p class="services__exp">Цена комплекта с установкой</p>
-                                <button class="services__btn">Установить</button>
-                            </div>
-                        </div>
-                        <div class="services__more"><a href="#">Подробное описание</a></div>
-                    </article>
-                    <article class="services__item">
-                        <div class="services__content">
-
-                            <div class="services__info">
-                                <div class="services__icon">
-                                    <img src="img/services/treatment.svg" alt="">
-                                </div>
-                                <div class="services__text">
-                                    <h3 class="services__title">Комплект &#171;Обработка салона и стекол&#187;</h3>
-                                    <div class="services__details">
-                                        <p>Обработка салона Bari-Tools</p>
-                                        <p>Обработка всех стекол( Антидождь, антигрязь)</p>
-                                    </div>
-                                    <p class="services__sale">Скидка за комплект: <span>5414 Р</span></p>
-                                </div>
-                            </div>
-                            <div class="services__control">
-                                <p class="services__price">17 370 Р</p>
-                                <p class="services__exp">Цена комплекта с установкой</p>
-                                <button class="services__btn">Установить</button>
-
-                            </div>
-                        </div>
-                        <div class="services__more"><a href="#">Подробное описание</a></div>
-                    </article>
-                    <article class="services__item">
-                        <div class="services__content">
-
-                            <div class="services__info">
-                                <div class="services__icon">
-                                    <img src="img/services/steal-min.svg" alt="">
-                                </div>
-                                <div class="services__text">
-                                    <h3 class="services__title">Комплект &#171;Защита от угона&#187; Минимальный Pajero Sport</h3>
-                                    <div class="services__details">
-                                        <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
-                                        <p>Сетка для бампера</p>
-                                        <p>Обработка днища и скрытых полостей</p>
-                                        <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
-                                        <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
-                                    </div>
-                                    <p class="services__sale">Скидка за комплект: <span>33763 Р</span></p>
-                                </div>
-                            </div>
-                            <div class="services__control">
-                                <p class="services__price">17 370 Р</p>
-                                <p class="services__exp">Цена комплекта с установкой</p>
-                                <button class="services__btn">Установить</button>
-
-                            </div>
-                        </div>
-                        <div class="services__more"><a href="#">Подробное описание</a></div>
-                    </article>
-                    <article class="services__item">
-                        <div class="services__content">
-
-                            <div class="services__info">
-                                <div class="services__icon">
-                                    <img src="img/services/steal-optim.svg" alt="">
-                                </div>
-                                <div class="services__text">
-                                    <h3 class="services__title">Комплект &#171;Защита от угона&#187; Оптимальный Pajero Sport</h3>
-                                    <div class="services__details">
-                                        <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
-                                        <p>Сетка для бампера</p>
-                                        <p>Обработка днища и скрытых полостей</p>
-                                        <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
-                                        <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
-                                    </div>
-                                    <p class="services__sale">Скидка за комплект: <span>33763 Р</span></p>
-                                </div>
-                            </div>
-                            <div class="services__control">
-                                <p class="services__price">17 370 Р</p>
-                                <p class="services__exp">Цена комплекта с установкой</p>
-                                <button class="services__btn">Установить</button>
-
-                            </div>
-                        </div>
-                        <div class="services__more"><a href="#">Подробное описание</a></div>
-                    </article>
-                    <article class="services__item">
-                        <div class="services__content">
-
-                            <div class="services__info">
-                                <div class="services__icon">
-                                    <img src="img/services/window.png" alt="">
-                                </div>
-                                <div class="services__text">
-                                    <h3 class="services__title">Обработка передних стекол (антидождь, антигрязь)</h3>
-                                    <div class="services__category">Категория: Защита автомобиля</div>
-                                    <div class="services__details">
-                                        <p>Водоотталкивающее средство KillAqua имеет следующие характеристики: - защищает стекло от любой жидкости, снега, льда - снижает расход жидкости омывателя, щеток очистителя, облегчает очистку от воды, грязи, льда
-                                            в любое время года - действует более года с момента нанесения - создает водо-, насекомо- и грязеотталкивающий эффект - устойчиво к ультрафиолетовым лучам, к механическим и химическим воздействиям.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="services__control">
-                                <p class="services__price">3 550 P</p>
-                                <p class="services__exp">Цена комплекта с установкой</p>
-                                <button class="services__btn">Установить</button>
-                            </div>
-                        </div>
-                        <div class="services__more"><a href="#">Подробное описание</a></div>
-                    </article>
-                    <article class="services__item">
-                        <div class="services__content">
-
-                            <div class="services__info">
-                                <div class="services__icon">
-                                    <img src="img/services/window.png" alt="">
-                                </div>
-                                <div class="services__text">
-                                    <h3 class="services__title">Обработка салона «BariTools»</h3>
-                                    <div class="services__category">Категория: Защита автомобиля</div>
-                                    <div class="services__details">
-                                        <p>Водоотталкивающее средство KillAqua имеет следующие характеристики: - защищает стекло от любой жидкости, снега, льда - снижает расход жидкости омывателя, щеток очистителя, облегчает очистку от воды, грязи, льда
-                                            в любое время года - действует более года с момента нанесения - создает водо-, насекомо- и грязеотталкивающий эффект - устойчиво к ультрафиолетовым лучам, к механическим и химическим воздействиям.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="services__control">
-                                <p class="services__price">14 860- P</p>
-                                <p class="services__exp">Цена комплекта с установкой</p>
-                                <button class="services__btn">Установить</button>
-                            </div>
-                        </div>
-                        <div class="services__more"><a href="#">Подробное описание</a></div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section class="page-bottom">
-            <div class="wrapper">
-                <div class="page-bottom__content">
-                    <div class="faq">
-                        <h2 class="faq__title">Вопрос / ответ</h2>
-                        <ul class="faq__items">
-                            <li class="faq__item">
-                                <div class="faq__question"><span class="faq__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span> Как получить максимальную выгоду от покупки?</div>
-                                <div class="faq__answer">
-                                    <p>В Carmart предусмотрена система бонусов, которой может воспользоваться каждый.</p>
-
-                                    <p>1) Получить подарки можно при оплате с расчетного счета всей стоимости автомобиля или ее части (эквивалентной сумме более 500 тысяч рублей), в таком случае мы дарим вам бонус до 10 000 рублей.</p>
-
-                                    <p>2) При покупке минимального пакета дополнительного оборудования, индивидуально определённого для каждого автомобиля, вы получаете скидку в размере 1% от стоимости выбранного автомобиля.</p>
-
-                                    <p>3) При одновременном оформлении КАСКО и ОСАГО в качестве подарка от Carmart вы сможете подобрать дополнительное оборудование на сумму, равную стоимости вашего полиса ОСАГО.</p>
-
-                                    <p>Делайте выгодные покупки в Carmart!</p>
-
-                                </div>
-                            </li>
-                            <li class="faq__item">
-                                <div class="faq__question">
-                                    <span class="faq__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span> Как получить максимальную выгоду от покупки?
-                                </div>
-                                <div class="faq__answer">
-                                    <p>В Carmart предусмотрена система бонусов, которой может воспользоваться каждый.</p>
-                                </div>
-                            </li>
-
-                            <li class="faq__item">
-                                <div class="faq__question">
-                                    <span class="faq__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span> Как оплатить покупку онлайн?
-                                </div>
-                                <div class="faq__answer">
-                                    <p>В Carmart предусмотрена система бонусов, которой может воспользоваться каждый.</p>
-                                </div>
-                            </li>
-                            <li class="faq__item">
-                                <div class="faq__question">
-                                    <span class="faq__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span> Как оформить кредит онлайн?
-                                </div>
-                                <div class="faq__answer">
-                                    <p>В Carmart предусмотрена система бонусов, которой может воспользоваться каждый.</p>
-                                </div>
-                            </li>
-                            <li class="faq__item">
-                                <div class="faq__question">
-                                    <span class="faq__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span> Что делать, если заявка на кредит отклонена?
-                                </div>
-                                <div class="faq__answer">
-                                    <p>В Carmart предусмотрена система бонусов, которой может воспользоваться каждый.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="advantages">
-                        <div class="advantages__item">
-                            <div class="advantages__icon advantages__icon--reserve"><svg><use xlink:href="/img/svgsprites/advantages.svg#reserve"/></svg></div>
-                            <p class="advantages__text"><span>Бронь за 1 рубль!</span> Любой авто</p>
-                        </div>
-                        <div class="advantages__item advantages__icon--return">
-                            <div class="advantages__icon">
-                                <svg><use xlink:href="/img/svgsprites/advantages.svg#return"/></svg>
-                            </div>
-                            <p class="advantages__text"><span>7 дней на возврат</span> автомобиля</p>
-                        </div>
-                        <div class="advantages__item advantages__icon--payment">
-                            <div class="advantages__icon"><svg><use xlink:href="/img/svgsprites/advantages.svg#payment"/></svg></div>
-                            <p class="advantages__text"><span>Оплата автомобиля</span> при получении</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="step-btn__wrapper step-btn__wrapper--margin">
-                    <buttom class="step-btn">Следующий шаг <span class="step-btn__icon"><svg><use xlink:href="/img/svgsprites/general.svg#arrow-right"/></svg></span>
-                    </buttom>
-                </div>
-            </div>
-        </section>
     </main>
     <footer class="page-footer">
-        <div class="wrapper">
-            <div class="page-footer__content">
-                <div class="page-footer__copyright"> &#169; 1996&#8211;2017 OOO "Кармарт"</div>
-                <a class="page-footer__link" href="#">Предложение оферты</a>
-                <a class="page-footer__link" href="#">Карта сайта</a>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-footer__content">
+                        <div class="page-footer__copyright"> &#169; 1996&#8211;2017 OOO "Кармарт"</div>
+                        <a class="page-footer__link" href="#">Предложение оферты</a>
+                        <a class="page-footer__link" href="#">Карта сайта</a>
+                    </div>
+                </div>
             </div>
         </div>
+
     </footer>
+    <div class="popup-wrp">
+        <div class="popup-equipment" data-rel="equipment">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+              <span class="close-btn__icon">
+                  <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+              </span>
+            </button>
+            <div class="popup-equipment__content">
+                <p class="popup-equipment__title"> Установленное оборудование <span>(3)</span></p>
+                <div class="services__items">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="services__item services__item--select">
+                                <div class="services__content ">
+
+                                    <div class="services__info">
+                                        <div class="services__icon">
+                                            <img src="img/services/protect-optim.svg" alt="">
+
+                                        </div>
+                                        <div class="services__text">
+                                            <h3 class="services__title">
+                                                Комплект &#171;Защита автомобиля&#187; Оптимальный Pajero Sport <div class="services__title-icon">
+                                                <svg><use xlink:href="/img/svgsprites/services.svg#drill"/></svg>
+                                                <div class="services__title-tooltip">
+                                                    Не демонтируемое оборудование. Будьте бдительны. Установку этого оборудования отменить не получится.
+                                                </div>
+                                            </div></h3>
+                                            <div class="services__details">
+                                                <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
+                                                <p>Обработка рамы</p>
+                                                <p>Сетка для бампера</p>
+                                                <p>Обработка днища и скрытых полостей</p>
+                                                <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
+                                                <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
+                                            </div>
+                                            <p class="services__sale"><span class="services__sale-icon"><svg><use xlink:href="/img/svgsprites/services.svg#sale"/></svg></span> Скидка за комплект: <span>11 123 Р</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="services__control">
+                                        <p class="services__price">42 800 Р</p>
+                                        <p class="services__exp">Цена комплекта с установкой</p>
+                                        <button class="services-btn services-btn--select">Установлено</button>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="services__item services__item--select services__item--drill">
+                                <div class="services__content">
+
+                                    <div class="services__info">
+                                        <div class="services__icon">
+                                            <img src="img/services/treatment.svg" alt="">
+                                        </div>
+                                        <div class="services__text">
+                                            <h3 class="services__title">Комплект &#171;Обработка салона и стекол&#187;
+                                                <div class="services__title-icon">
+                                                    <svg><use xlink:href="/img/svgsprites/services.svg#drill"/></svg>
+                                                    <div class="services__title-tooltip">
+                                                        Не демонтируемое оборудование. Будьте бдительны. Установку этого оборудования отменить не получится.
+                                                    </div>
+                                                </div>
+                                            </h3>
+                                            <div class="services__details">
+                                                <p>Обработка салона Bari-Tools</p>
+                                                <p>Обработка всех стекол( Антидождь, антигрязь)</p>
+                                            </div>
+                                            <p class="services__sale"><span class="services__sale-icon"><svg><use xlink:href="/img/svgsprites/services.svg#sale"/></svg></span> Скидка за комплект: <span>5 414 Р</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="services__control">
+                                        <p class="services__price">17 370 Р</p>
+                                        <p class="services__exp">Цена комплекта с установкой</p>
+                                        <button class="services-btn services-btn--select">Установлено</button>
+
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="services__item services__item--select">
+                                <div class="services__content">
+
+                                    <div class="services__info">
+                                        <div class="services__icon">
+                                            <img src="img/services/window.png" alt="">
+                                        </div>
+                                        <div class="services__text">
+                                            <h3 class="services__title">Обработка салона «BariTools» <div class="services__title-icon">
+                                                <svg><use xlink:href="/img/svgsprites/services.svg#drill"/></svg>
+                                                <div class="services__title-tooltip">
+                                                    Не демонтируемое оборудование. Будьте бдительны. Установку этого оборудования отменить не получится.
+                                                </div>
+                                            </div></h3>
+                                            <div class="services__category">Категория: Защита автомобиля</div>
+                                            <div class="services__details">
+                                                <p>Водоотталкивающее средство KillAqua имеет следующие характеристики: - защищает стекло от любой жидкости, снега, льда - снижает расход жидкости омывателя, щеток очистителя, облегчает очистку от воды, грязи,
+                                                    льда в любое время года - действует более года с момента нанесения - создает водо-, насекомо- и грязеотталкивающий эффект - устойчиво к ультрафиолетовым лучам, к механическим и химическим воздействиям.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services__control">
+                                        <p class="services__price">14 860- P</p>
+                                        <p class="services__exp">Цена комплекта с установкой</p>
+                                        <button class="services-btn services-btn--select">Установлено</button>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-wrp">
+        <div class="popup-confirm popup-confirm--warning" data-rel="refusing">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+              <span class="close-btn__icon">
+                  <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+              </span>
+            </button>
+            <div class="popup-confirm__content">
+                <p class="popup-confirm__title">Вы хотите отказаться от дополнительного оборудования?</p>
+                <p class="popup-confirm__subtitle">Без установки дополнительного оборудования вы теряете скидку до <span>45 000 Р</span> </p>
+                <div class="popup-confirm__img">
+                    <img src="img/popup-confirm/auto.jpg" alt="">
+                    <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#equip-refuse"/></svg>
+                </div>
+                <p class="popup-confirm__exp">Установить дополнительное оборудование на сумму более 45&nbsp;000&nbsp;Р и получить скидку?</p>
+                <div class="popup-confirm__control">
+                    <button class="popup-confirm__btn popup-confirm__btn--red">НЕ УСТАНАВЛИВАТЬ</button>
+                    <button class="popup-confirm__btn">УСТАНОВИТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-wrp">
+        <div class="popup-confirm popup-confirm--warning" data-rel="refusing">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+                    <span class="close-btn__icon">
+                        <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+                    </span>
+                  </button>
+            <div class="popup-confirm__content">
+                <p class="popup-confirm__title">Автомобиль станет дороже, изменится стоимость кредита</p>
+                <p class="popup-confirm__subtitle">Вы сняли дополнительное оборудование, цена на автомибиль увеличится на <span>26 456 Р</span> </p>
+                <div class="popup-confirm__img">
+                    <img src="img/popup-confirm/auto.jpg" alt="">
+                    <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#equip-credit"/></svg>
+                </div>
+                <p class="popup-confirm__exp">Убрать дополнительное оборудование и пересчитать кредит?</p>
+                <div class="popup-confirm__control">
+                    <button class="popup-confirm__btn popup-confirm__btn--red">ПЕРЕСЧИТАТЬ КРЕДИТ</button>
+                    <button class="popup-confirm__btn">ОТМЕНИТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-wrp">
+        <div class="popup-confirm popup-confirm--warning" data-rel="refusing">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+                          <span class="close-btn__icon">
+                              <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+                          </span>
+                        </button>
+            <div class="popup-confirm__content">
+                <p class="popup-confirm__title">Этот автомобиль станет дороже!</p>
+                <p class="popup-confirm__subtitle">Вы сняли дополнительное оборудование, цена на автомобиль увеличится <span>28 382 Р</span> </p>
+                <div class="popup-confirm__img">
+                    <img src="img/popup-confirm/auto.jpg" alt="">
+                    <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#equip-increase"/></svg>
+                </div>
+                <p class="popup-confirm__exp">Потерю скидки за <span>$текущий-шаг</span> вы компенсируете на следующих шагах</p>
+                <div class="popup-confirm__control">
+                    <button class="popup-confirm__btn popup-confirm__btn--red">ПУСТЬ ДОРОЖАЕТ</button>
+                    <button class="popup-confirm__btn">ОТМЕНИТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-wrp">
+        <div class="popup-confirm popup-confirm--success" data-rel="refusing">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+                                <span class="close-btn__icon">
+                                    <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+                                </span>
+                              </button>
+            <div class="popup-confirm__content">
+                <p class="popup-confirm__title">Этот автомобиль стал дешевле!</p>
+                <p class="popup-confirm__subtitle">Вы установили дополнительное оборудование и цена на автомибиль была снижена на <span>28 382 Р</span> </p>
+                <div class="popup-confirm__img">
+                    <img src="img/popup-confirm/auto.jpg" alt="">
+                    <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#equip-decrease"/></svg>
+                </div>
+                <p class="popup-confirm__exp">Вы можете убрать оборудование, но стоимость автомобиля увеличится на <span>$скидка-за-до</span>.</p>
+                <div class="popup-confirm__control">
+
+                    <button class="popup-confirm__btn popup-confirm__btn--full">ОТЛИЧНО</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-wrp">
+        <div class="popup-descr" data-rel="description">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+        <span class="close-btn__icon">
+            <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+        </span>
+      </button>
+            <div class="popup-descr__content">
+                <div class="popup-descr__content-wrp">
+                    <div class="popup-descr__header">
+                        <div class="popup-descr__icon"><img src="img/services/window.png" alt=""></div>
+                        <div class="popup-descr__header-info">
+                            <h3 class="popup-descr__title">Комплект «Защита автомобиля» Outlander Максимальный</h3>
+                            <p class="popup-descr__price">стоимость: 16 000 Р</p>
+                        </div>
+                    </div>
+                    <div class="popup-descr__text">
+                        <p>Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщика:</p>
+                        <ul class="popup-descr__advantages">
+                            <li>не дает обеззвучить сирену автосигнализации</li>
+                            <li>не позволяет восстановить блокировки двигателя, расположенные под капотом</li>
+                            <li>не позволяет завести автомобиль, используя автономную (не штатную) систему управления двигателем (т.н. «паук»), а также автономную систему питания
+                            </li>
+                            <li>не позволяет произвести замену контроллера управления двигателем (для обхода штатного иммобилайзера)</li>
+                            <li>делает недоступным диагностический разъем (в тех случаях, когда он находится под капотом), затрудняя выявление блокировок и манипуляции со штатным иммобилайзером</li>
+                            <li>значительно затрудняет угон на том этапе, когда автосигнализация уже обезврежена (вскрыт или подобран код радиоканала), но под заблокированным капотом остается невосстановленная блокировка двигателя</li>
+                            <li>не позволяет произвести замену контроллера управления двигателем (для обхода штатного иммобилайзера)</li>
+                            <li>делает недоступным диагностический разъем (в тех случаях, когда он находится под капотом), затрудняя выявление блокировок и манипуляции со штатным иммобилайзером</li>
+                            <li>значительно затрудняет угон на том этапе, когда автосигнализация уже обезврежена (вскрыт или подобран код радиоканала), но под заблокированным капотом остается невосстановленная блокировка двигателя</li>
+                            <li>значительно затрудняет угон на том этапе, когда автосигнализация уже обезврежена (вскрыт или подобран код радиоканала), но под заблокированным капотом остается невосстановленная блокировка двигателя</li>
+                            <li>не позволяет произвести замену контроллера управления двигателем (для обхода штатного иммобилайзера)</li>
+                            <li>делает недоступным диагностический разъем (в тех случаях, когда он находится под капотом), затрудняя выявление блокировок и манипуляции со штатным иммобилайзером</li>
+                            <li>значительно затрудняет угон на том этапе, когда автосигнализация уже обезврежена (вскрыт или подобран код радиоканала), но под заблокированным капотом остается невосстановленная блокировка двигателя</li>
+                        </ul>
+
+                    </div>
+                    <div class="popup-desc__consist">
+                        <h4 class="popup-descr_consist-title">Состав комплекта:</h4>
+                        <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
+                        <p>Обработка рамы</p>
+                        <p>Сетка для бампера</p>
+                        <p>Обработка днища и скрытых полостей</p>
+                        <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
+                        <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
+                    </div>
+                    <div class="popup-descr__btn">
+                        <button class="services-btn">Установить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div width="0" height="0" style="font-size:0;line-height:0;">
+        <svg height="0" width="0" style="line-height:0;">
+            <defs>
+            <clippath id="autoimgPath">
+                <path  d="M0,24.88V60.64a7,7,0,0,0,3.5,6.06l31,17.88a7,7,0,0,0,7,0l31-17.88A7,7,0,0,0,76,60.64V24.88a7,7,0,0,0-3.5-6.06L41.5.94a7,7,0,0,0-7,0L3.5,18.82A7,7,0,0,0,0,24.88Z" fill="#fff"/>
+            </clippath>
+            </defs>
+        </svg>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
     </script>
     <script src="js/main.min.js"></script>
+    <script src="js/step-equipment.min.js"></script>
+    <script src="js/animation.min.js"></script>
 </body>
 
 </html>
