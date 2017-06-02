@@ -12,6 +12,12 @@ var rename = require("gulp-rename");
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var path = require('path');
+var deploy = require('gulp-gh-pages');
+
+gulp.task("deploy", function () {
+  return gulp.src("build/**/*")
+    .pipe(deploy())
+});
 
 gulp.task('svgstore-advantages', function () {
     return gulp
