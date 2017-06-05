@@ -2883,9 +2883,6 @@ template {
     padding-right: 0;
   }
 }
-.insurance-info {
-  display: none;
-}
 .radio-inputs__item {
   /*  input~label {
     &::after,&::before{
